@@ -35,7 +35,7 @@ Change `DP-1` to the correct output.
 You can find your display outputs using the command
 
 ```
-grep -r '^connected' /sys/class/drm/*/status | grep -Po 'card.-\K.*'
+grep -r '^connected' /sys/class/drm/*/status | grep -Po 'card.-e\K([^/]*)'
 ```
 
 Save with <kbd>CTRL</kbd> + <kbd>X</kbd> then pressing <kbd>Y</kbd> followed by <kbd>ENTER</kbd>
