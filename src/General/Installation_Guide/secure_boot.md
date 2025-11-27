@@ -19,7 +19,7 @@ tags:
 
 !!! important
 
-    The enrollment prompt uses a QWERTY keyboard layout, indiscriminately of your actual hardware keyboard. Other layouts can therefore interfere with the characters of the password (i.e. `A` and `Q` are swapped on AZERTY layouts).
+    The enrollment prompt uses a English QWERTY keyboard layout, indiscriminately of your actual hardware keyboard. Other layouts can therefore interfere with the characters of the password (i.e. `A` and `Q` are swapped on AZERTY layouts).
 
 - Entering the password will register invisible characters for security purposes, so you will not be able to see what you are typing!
 
