@@ -1,10 +1,12 @@
-# Bazzite Developer eXperience
+# Bazzite for Developers
+
+Bazzite's desktop images serve as stable platforms for software development. If IDEs from Flathub and CLI tools from Homebrew serve your needs, no further action is required. If deeper system integration is needed for VSCode (ie. devcontainers), Docker (ie. Podman is not sufficient), etc - then see below specialized images.
+
+## Bazzite Developer eXperience
 
 !!! attention
 
     This documentation is under construction and subject to change.
-
-## Bazzite Developer eXperience Website
 
 ### New Additions:
 

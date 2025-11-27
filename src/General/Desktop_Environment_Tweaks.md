@@ -62,40 +62,7 @@ Install it with this **command**:
 ```
 rpm-ostree install kvantum
 ```
-
 > [**Check out this external resource on KDE themes for more information**](https://itsfoss.com/properly-theme-kde-plasma/).
-
-## Wallpaper Engine Guide (<sub>_Only on KDE Images_</sub>)
-
-!!! note
-
-    Not all wallpapers are compatible and may even cause issues since most are not intended for use on the Linux desktop. See their [note](https://github.com/catsout/wallpaper-engine-kde-plugin/blob/main/README.md#note) on supported wallpaper type.
-
-![KDE Wallpaper Settings|682x500, 75%](../img/KDE_Wallpaper_Settings.jpeg)
-
-
-
-**[Wallpaper Engine](https://www.wallpaperengine.io/en) is a live wallpaper application intended for Windows.**
-
-
-![Wallpaper settings|549x500, 75%](../img/Wallpaper_settings.png)
-
-
-Read this [guide](https://github.com/catsout/wallpaper-engine-kde-plugin/blob/main/README.md#usage) on how to set it up on KDE Plasma.
-
-### Did Wallpaper Engine Break Your Desktop?
-
-!!! warning
-
-    This will remove any "applet" changes including widgets you have added or downloaded.
-
-Open the terminal or enter a TTY session by entering <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F4</kbd> if you can't access the desktop.  Then enter the following command:
-
-```command
-mv ~/.config/plasma-org.kde.plasma.desktop-appletsrc ~/.config/plasma-org.kde.plasma.desktop-appletsrc.bak
-```
-
-Reboot your system after entering this command and the desktop session should no longer crash.
 
 <hr>
 
@@ -112,6 +79,5 @@ The "Extension Manager" applicaton alllows for installing new extensions to GNOM
 Install [Decky Loader](https://decky.xyz/) then install [CSS Loader](https://docs.deckthemes.com/) to customize how Steam Gaming Mode looks. Be aware that third-party plugins may cause issues. Read Bazzite's [Steam Gaming Mode documentation](../Handheld_and_HTPC_edition/quirks.md) to resolve common issues if you run into them after using Decky Loader.
 
 ## **See also**:
-
 - [KDE Plasma Documentation](https://docs.kde.org/stable5/en/plasma-desktop/plasma-desktop/index.html)
 - [GNOME Documentation](https://help.gnome.org/users/gnome-help/stable/)

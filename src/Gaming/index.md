@@ -33,6 +33,7 @@ Linux gaming being a viable competitor to Windows is a relatively new paradigm. 
 - [Proton Logs](/Gaming/Common_gaming_issues.md#steam-logs)
 - [Native Linux Builds vs. Proton](/Gaming/Common_gaming_issues.md#native-linux-port-versus-windows-version)
 - [Issues with Valve/Source Games](/Gaming/Common_gaming_issues.md#valve-source-engine-game-problems)
+- [Frame Rate Limiting Issues and Inconsistency](/Gaming/Common_gaming_issues.md#frame-rate-limiting-issues-and-inconsistency)
 
 ### - [**Hardware Compatibility for Gaming**](Hardware_compatibility_for_gaming.md)
 

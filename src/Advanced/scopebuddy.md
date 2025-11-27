@@ -34,6 +34,18 @@ XDG_DEFAULT_LAYOUT=no scb -w 1920 -h 1080 -W 2560 -H 1440 -- %command% --launche
 
 Now your Steam Overlay will work when using gamescope for a game in desktop mode! 🎉
 
+### Usage in Lutris
+
+1. Open Lutris and right click on the game you want to use ScopeBuddy with.
+2. Click `Configure`
+3. Go to the `System Options` tab and scroll down to `Game execution`
+4. Click `Add` under `Environment variables` and set the key to `SCB_APPID` and the value to `lutris/nameofgame`.
+5. In the `Command prefix` add `scb --`
+6. Click Save
+
+![ScopeBuddy configuration for Lutris|1210x600](../img/ScopeBuddy_Lutris_config.png)
+
+!!! info "The `SCB_APPID` Environment variable is optional, but will let you take advantage of game specific config files"
 
 ## Configuration files
 
@@ -62,7 +74,7 @@ scb -- %command% --launcher-skip
 
 For users that routinely change resolutions or use game streaming via Sunshine/Moonlight or Steam Remote Play, your display properties may change frequently.
 
-On KDE desktops (Gnome support TBD), scopebuddy accepts configuration to automatically inject the width and height, HDR state, or VRR state of your primary display.
+On KDE desktops (early Gnome support [added with caveats](https://github.com/HikariKnight/ScopeBuddy?tab=readme-ov-file#gnome-support)), scopebuddy accepts configuration to automatically inject the width and height, HDR state, or VRR state of your primary display.
 
 Add the following variables to the following to the config file at `~/config/scopebuddy/scb.conf`:
 
@@ -136,6 +148,10 @@ Notice how `SCB_GAMESCOPE_ARGS` uses `+=` instead of `=`.
 
 This let's us re-use the `SCB_GAMESCOPE_ARGS` we set in our `scb.conf`
 
+!!! note
+
+    You can also set an AppID manually using `SCB_APPID="somecoolgame"` to override the automatic AppID detection which only supports Steam currently. This can be used to manually add rudimentary support for "AppID"-like configs for games in other launchers like Lutris or Heroic; for example, `SCB_APPID="heroic/somecoolgame"` would use the config file `AppID/heroic/somecoolgame.conf`.
+
 ## Frequently asked questions (FAQ)
 
 ### Can I use scopebuddys functions without using gamescope?
@@ -151,7 +167,7 @@ The default config file will also be set to `noscope.conf` instead of `scb.conf`
 
 !!! note
 
-    You can also export `SCB_NOSCOPE=1` inside an appid config if you never want to use gamescope for a game but still use scopebuddy for it.
+    You can also export `SCB_NOSCOPE=1` inside an appid config if you never want to use gamescope for a game but still use scopebuddy for it. However `noscope.conf` will be ignored when used like this, due to it being applied after `scb.conf` has been loaded.
 
 ### Does ScopeBuddy work inside Steam Gamemode?
 

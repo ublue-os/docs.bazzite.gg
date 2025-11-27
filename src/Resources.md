@@ -2,7 +2,7 @@
 title: Social Platforms
 ---
 
-## [:simple-discourse: Project News](https://universal-blue.discourse.group/tag/bazzite-news)
+## [:simple-discourse: Forums](https://universal-blue.discourse.group/tag/bazzite-news)
 
 ## [:simple-discord: Discord](https://discord.gg/WEu6BdFEtp) <sup>([Answer Overflow](https://www.answeroverflow.com/c/1072614816579063828/1143023993041993769))</sup>
 

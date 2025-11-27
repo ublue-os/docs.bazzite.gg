@@ -2,6 +2,7 @@
 authors:
   - "@nicknamenamenick"
   - "@m2Giles"
+  - "@porkloin"
 tags:
   - Troubleshooting
 ---
@@ -98,6 +99,41 @@ LD_PRELOAD=/usr/lib/libtcmalloc_and_profiler.so.4 %command%
 Delete `libtcmalloc_minimal.so.x` in the game's bin folder if present.
 
 If this fails to fix it, then try forcing Proton Experimental in the game's properties.
+
+
+## Frame Rate Limiting Issues and Inconsistency
+
+When using Gamescope, framerate limits can be applied in several ways. Unfortunately not all methods work for every enviroment, game, or hardware configuration.
+
+Many inconsistencies can be observed, especially when applying framerate limits in desktop mode.
+
+The tables below show the behavior of different framerate limiting methods.
+
+### Steam Game Mode (Deck OS / Game Mode session)
+| Method | Setup steps | Requires V-Sync On In-Game? | Change limit without restarting game? | Latency | Preferred | Notes |
+|---|---|---|---|---|---|---|
+| **Gamescope FPS limiter** | Use **Quick Access Menu > Performance > Framerate Limit** | No | Yes | Meh | **Preferred** | Automatically turns v-sync on at driver-level whenever the framerate cap is enabled. Additional latency will be introduced. |
+| **MangoAPP (embedded)** | N/A - doesn't work at all. | - | - | - | – | Frame limiter settings from mangoapp are ignored in game mode/deck mode. Use the slider or external mangohud instead. |
+| **MangoHUD (external)** | **Launch Options:** `MANGOHUD=1 %command%` | No | Yes | Meh | – | Set `fps_limit=0,30,60,120...` (0=no cap) in MangoHud.conf. May clash with MangoAPP. |
+| **DXVK/VKD3D runtime frame limiter** | **DXVK (D3D8/9/10/11):** `DXVK_FRAME_RATE={fps} %command%`<br>**VKD3D-Proton (D3D12):** `VKD3D_FRAME_RATE={fps} %command%` | No | No | Best | – | Applies only to DXVK/VKD3D titles (no effect on native OpenGL or native Vulkan). |
+
+
+
+
+### Desktop Mode (GNOME / KDE)
+| Method | Setup steps | Requires V-Sync On In-Game? | Change limit without restarting game? | Latency | Preferred | Notes |
+|---|---|---|---|---|---|---|
+| **Gamescope FPS limiter** | **Launch Options**: `gamescope -r {fps} -- %command%` / `--framerate-limit {fps}` | Yes | Yes | Meh | – | Use `gamescopectl debug_set_fps_limit {fps}` to change the limiter value live without restarting. |
+| **MangoAPP (embedded)** | **Launch Options:** `gamescope --mangoapp -- %command%` | Yes | Yes | Meh | – | Caps are sometimes not effective. Set `fps_limit=0,30,60,120...` (0=no cap) in MangoHud.conf (or via `MANGOHUD_CONFIG=...`). Add `show_fps_limit` to preset to see in game. Change with `ShiftL+F1`. |
+| **MangoHUD (external)** | **Launch Options:** `MANGOHUD=1 gamescope -- %command%` | No | Yes | Meh | **Preferred** | Caps are almost always effective. Set `fps_limit=0,30,60,120...` (0=no cap) in MangoHud.conf (or via `MANGOHUD_CONFIG=...`). Add `show_fps_limit` to preset to see in game. Change with `ShiftL+F1`. |
+| **DXVK/VKD3D runtime frame limiter** | **DXVK (D3D8/9/10/11):** `DXVK_FRAME_RATE={fps} %command%`<br>**VKD3D-Proton (D3D12):** `VKD3D_FRAME_RATE={fps} %command%` | No | No | Best | – | In-process/API-level caps; excellent timing, but you must restart to change. |
+
+
+If your framerate limiter isn't working, the following steps can often help:
+
+1. Disable adaptive sync/VRR or remove the `--adaptive-sync` flag from your gamescope args.
+2. Set vsync in-game to "on".
+
 
 <hr>
 

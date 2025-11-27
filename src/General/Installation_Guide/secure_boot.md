@@ -9,7 +9,7 @@ tags:
 <!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=2742", "fetched_at": "2024-09-03 16:43:23.922705+00:00"}-->
 <!-- ANCHOR_END: METADATA -->
 
-![Secure Boot|690x378, 50%](../../img/Secure_Boot.jpeg)
+![Secure Boot menu: Continue boot / Enroll MOK / Enroll key from disk / Enroll hash from disk|690x378, 50%](../../img/Secure_Boot.jpeg 'Secure Boot')
 
 ## Secure Boot Notes and Gotchas
 
@@ -19,7 +19,7 @@ tags:
 
 !!! important
 
-    Certain keyboard layouts can interfere with the characters of the password.
+    The enrollment prompt uses a English QWERTY keyboard layout, indiscriminately of your actual hardware keyboard. Other layouts can therefore interfere with the characters of the password (i.e. `A` and `Q` are swapped on AZERTY layouts).
 
 - Entering the password will register invisible characters for security purposes, so you will not be able to see what you are typing!
 
@@ -29,7 +29,14 @@ tags:
 
 ### Error message if key is **not** enrolled properly:
 
-![load the kernel first error|613x63](../../img/load_the_kernel_first_error.jpeg)
+```
+error: ../../grub-core/kern/efi/sb.c:182:bad shim signature.
+error: ../../grub-core/loader/1389/efi/linux.c:256:you need to load the kernel first.
+
+Press any key to continue...
+```
+
+![error: ../../grub-core/kern/efi/sb.c:182:bad shim signature. / error: ../../grub-core/loader/1389/efi/linux.c:256:you need to load the kernel first. / Press any key to continue...|613x63](../../img/load_the_kernel_first_error.jpeg 'load the kernel first error')
 
 Follow **Method B** below to resolve this and move past the error message if you encounter it.
 
@@ -71,6 +78,17 @@ Use the following command to boot straight into your system's BIOS (if supported
 ```command
 ujust bios
 ```
+### Complete MOK enrollment at boot
+
+On the next boot, you will see the blue MokManager screen:
+
+1.  Choose **Enroll MOK**.
+2.  When prompted for a password, enter:
+    ```command
+    universalblue
+    ```
+
+After the reboot, the key is enrolled and Secure Boot can remain enabled. Your system should now boot normally under Secure Boot.
 
 ## Secure Boot Instructions for Upstream Fedora Atomic Desktop Images
 

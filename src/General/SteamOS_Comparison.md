@@ -47,7 +47,7 @@ Otherwise, **Bazzite** is a natural choice. You will also find **other benefits*
 - **Android** applications can be installed with [Waydroid](/Installing_and_Managing_Software/Waydroid_Setup_Guide.md) which is pre-installed.
 - **Sunshine** is pre-installed, allowing you to easily stream your games.
 - [`ujust`](/Installing_and_Managing_Software/ujust.md) convenience scripts for setting up software and tweaks such as secure boot, and additional software.
-- Uses the disk format **btrfs** with **deduplicaton** and **compression** (SteamOS uses **ext4**) and supports **auto-mounting** for **internal drives** and **SD cards**.
+- Uses the disk format **btrfs** with **deduplication** and **compression** (SteamOS uses **ext4**) and supports **auto-mounting** for **internal drives** and **SD cards**.
 
 ### Daily Driving
 - System packages get updated on a **weekly basis** (not **biannually** like SteamOS).

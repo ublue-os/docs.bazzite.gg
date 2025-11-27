@@ -133,6 +133,7 @@ nav:
       - "Installing Bazzite on Handheld PCs": General/Installation_Guide/Installing_Bazzite_for_Handheld_PCs.md
       - "Dual Boot Preliminary and Post-Installation Setup Guide": General/Installation_Guide/dual_boot_setup_guide.md
       - "Secure Boot Instructions": General/Installation_Guide/secure_boot.md
+      - "Manual Partitioning": General/Installation_Guide/manual_partitioning.md
       - "Installation Troubleshoot Guide": General/Installation_Guide/troubleshoot_guide.md
       - "Alternative Installation Method": General/Installation_Guide/alternate-install-guide.md
   - General:

@@ -71,14 +71,6 @@ rpm-ostree status
 | `bazzite-deck-nvidia`              | KDE Plasma          | Yes               | Nvidia GPUs (Newer Nvidia GPUs)                       | Bazzite-Deck |
 | `bazzite-deck-nvidia-gnome`              | GNOME          | Yes               | Nvidia GPUs (Newer Nvidia GPUs)                       | Bazzite-Deck |
 | `bazzite-deck-gnome`        | GNOME               | Yes               | AMD/Intel Arc GPUs                       | Bazzite-Deck |
-| `bazzite-asus`              | KDE Plasma          | No                | ASUS Laptops (AMD/Intel GPUs             | Desktop       |
-| `bazzite-asus-gnome`        | GNOME               | No                | ASUS Laptops (AMD/Intel GPUs)            | Desktop       |
-| `bazzite-asus-nvidia`       | KDE Plasma          | No                | ASUS Laptops (Nvidia GPUs)               | Desktop       |
-| `bazzite-asus-nvidia-open`       | KDE Plasma          | No                | ASUS Laptops (Newer Nvidia GPUs)               | Desktop       |
-| `bazzite-gnome-asus-nvidia` | GNOME               | No                | ASUS Laptops (Nvidia GPUs)               | Desktop       |
-| `bazzite-gnome-asus-nvidia-open` | GNOME               | No                | ASUS Laptops (Newer Nvidia GPUs)               | Desktop       |
-| `bazzite-ally`              | KDE Plasma          | Yes               | ASUS Laptops (Steam Gaming Mode Enabled) | Bazzite-Deck |
-| `bazzite-ally-gnome`        | GNOME               | Yes               | ASUS Laptops (Steam Gaming Mode Enabled) | Bazzite-Deck |
 
 ## SteamOS is based on Arch Linux, so why use Fedora Atomic Desktop?
 

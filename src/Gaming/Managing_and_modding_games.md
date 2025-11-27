@@ -99,9 +99,9 @@ Replace files and directories is still supported in both the game directory and 
 
 ## Enhancements Pre-Installed on Bazzite
 
-- [LatencyFleX](https://github.com/ishitatsuyuki/LatencyFleX) - Vendor agnostic alternative to Nvidia Reflex
-- [vkBasalt](https://github.com/DadSchoorse/vkBasalt) - Vulkan post-processing layer with ReShade FX support
-- [Mangohud](https://github.com/flightlessmango/Mangohud) - Hardware and frame-rate monitoring overlay
+- [vkBasalt](https://github.com/DadSchoorse/vkBasalt) - Vulkan post-processing layer with ReShade FX support.
+- [Mangohud](https://github.com/flightlessmango/Mangohud) - Hardware and frame-rate monitoring overlay.
+- [ScopeBuddy](../Advanced/scopebuddy.md) - A manager script to make gamescope easier to use on desktop.
 
 ### Configuration Templates for DXVK, MangoHud, & vkBasalt
 
