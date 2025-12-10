@@ -141,7 +141,7 @@ Most hardware changes should **not** require any manual intervention outside of 
 ## Am I able to use AMD Fluid Motion Frames?
 
 **Yes**, but only if the game supports it. It's not available globally for every game like on Windows, but:
-* There may individual game mods or [Decky plugins](https://github.com/xXJSONDeruloXx/Decky-Framegen) that mimic similar functionality.
+* There may be individual game mods or [Decky plugins](https://github.com/xXJSONDeruloXx/Decky-Framegen) that mimic similar functionality.
 * If you own [Lossless Scaling](https://store.steampowered.com/app/993090/Lossless_Scaling/) on Steam, you can set up a LSFG Vulkan layer with `ujust get-lsfg`.
 
 ## Can I change the hostname of my device?
