@@ -1,9 +1,5 @@
 ---
 title: Custom Resolutions
-authors:
-  - "@ykshek"
-tags:
-  - Guide
 ---
 
 # `custom-resolution-helper`
