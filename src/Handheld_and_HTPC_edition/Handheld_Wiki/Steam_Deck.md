@@ -1,10 +1,3 @@
----
-authors:
-  - "@nicknamenamenick"
-tags:
-  -  Handhelds
----
-
 <!-- ANCHOR: METADATA -->
 <!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=1849", "fetched_at": "2024-09-03 16:43:16.550432+00:00"}-->
 <!-- ANCHOR_END: METADATA -->
