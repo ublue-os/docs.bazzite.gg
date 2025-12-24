@@ -1,9 +1,5 @@
 ---
 title: Alternative Installation Guide
-authors:
-  - "@nicknamenamenick"
-tags:
-  - Installation
 ---
 
 !!! warning
