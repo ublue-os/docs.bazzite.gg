@@ -1,10 +1,5 @@
 ---
 title: ScopeBuddy
-authors:
-  - "@HikariKnight"
-  - "@porkloin"
-tags:
-  - Guide
 ---
 
 ## What is it?
@@ -189,7 +184,7 @@ command+=" --launcher-skip --some-other-parameter"
 
     The `+=` is very important as you NEED to append launch options to the %command%, it is also vital that you start with a space after the first " otherwise the game will fail to launch.
 
-### Wait... This is all just bash!?
+### Wait... This is all just Bash!?
 
 Every config file for scopebuddy is a full bash script that is sourced before running gamescope and the game. This means if you are an advanced user you can do some really creative stuff!
 !!! note
