@@ -1,11 +1,5 @@
 ---
 title: Manual Partitioning
-authors:
-  - "@nicknamenamenick"
-  - "@Zeglius"
-  - "@tired-runner"
-tags:
-  - Installation
 ---
 
 <!-- ANCHOR: METADATA -->
