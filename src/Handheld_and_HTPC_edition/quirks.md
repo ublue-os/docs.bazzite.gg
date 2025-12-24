@@ -1,15 +1,6 @@
 ---
 title: Steam Gaming Mode Quirks and Workarounds
-authors:
-  - "@nicknamenamenick"
-  - "@HikariKnight"
-  - "@AkazaRenn"
-  - "@snipem"
-tags:
-  -  Troubleshooting
 ---
-
-# Common Issues and Workarounds for Steam Gaming Mode
 
 ## How do I use my microSD card that I used on my Steam Deck running SteamOS?
 
