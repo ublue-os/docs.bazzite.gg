@@ -1,11 +1,3 @@
----
-authors:
-  - "@HikariKnight"
-  - "@nicknamenamenick"
-tags:
-  -  Guide
----
-
 ## READ FIRST!
 [Looking-Glass](https://looking-glass.io/) is a very experimental project and is not ready for production use!
 This means there are no official packages for `looking-glass-client` yet. <br>
