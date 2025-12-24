@@ -181,7 +181,7 @@ Deployments can also be pinned to rollback for future use, so `:2`, `:3`, etc. c
 
     Search for the appropriate keywords in Bazzite's documentation first before proceeding with the next steps.
 
-We strongly urge you to [report it to the issue tracker](/General/reporting_bugs.md).  Keep in mind that certain areas and topics are out of our control especially when it comes to Nvidia driver problems, game compatibility, or other problems that plague the modern day Linux desktop regardless if you're running Bazzite or another Linux operating system.
+We strongly urge you to [report it to the issue tracker](https://github.com/ublue-os/bazzite/issues).  Keep in mind that certain areas and topics are out of our control especially when it comes to Nvidia driver problems, game compatibility, or other problems that plague the modern day Linux desktop regardless if you're running Bazzite or another Linux operating system.
 
 <hr>
 
