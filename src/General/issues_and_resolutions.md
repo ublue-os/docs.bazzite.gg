@@ -1,12 +1,8 @@
 ---
-title: Issues & Resolutions
-authors:
-  - "@wolfyreload"
-tags:
-  -  Troubleshooting
+title: Common Issues & Resolutions
 ---
 
-# Issues & Resolution
+# Common Issues & Resolution
 
 ## Steam Big Picture Mode is slow
 
