@@ -1,11 +1,3 @@
----
-authors:
-  - "@castrojo"
-  - "@nicknamenamenick"
-tags:
-  -  Guide
----
-
 <!-- ANCHOR: METADATA -->
 <!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=970", "fetched_at": "2024-09-03 16:43:14.005694+00:00"}-->
 <!-- ANCHOR_END: METADATA -->
@@ -42,4 +34,4 @@ Bazzite's opt-in command line experience. `bazzite-cli` comes with some fantasti
 - [**yq**](https://github.com/mikefarah/yq) - A command-line processor for YAML, JSON, and XML data
 - [**zoxide**](https://github.com/ajeetdsouza/zoxide) - A smarter `cd` command that learns your habits
 
-The community may add new tools over time, re-running `ujust bazzite-cli` will pull in the new tools.
+The community may add new tools over time, re-running `ujust bazzite-cli` will install the new tools.
