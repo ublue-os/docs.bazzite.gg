@@ -1,15 +1,3 @@
----
-authors:
-  - "@nicknamenamenick"
-tags:
-  -  Software
-# preview: "../img/distrobox.png"
-preview:
-  alpha: 150
-  image: "../img/distrobox.png"
-description: ""
----
-
 <!-- ANCHOR: METADATA -->
 <!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=2640", "fetched_at": "2024-09-03 16:43:09.168054+00:00"}-->
 <!-- ANCHOR_END: METADATA -->
