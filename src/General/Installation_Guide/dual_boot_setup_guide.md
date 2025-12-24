@@ -1,14 +1,5 @@
 ---
 title: Dual Boot Preliminary and Post-Installation Setup Guide
-authors:
-  - "@nicknamenamenick"
-  - "@atimeofday"
-  - "@damiankorcz"
-  - "@aarron-lee"
-  - "@Zeglius"
-  - "@tired-runner"
-tags:
-  - Installation
 ---
 
 <!-- ANCHOR: METADATA -->
