@@ -4,7 +4,7 @@ hide:
   - navigation
 ---
 
-# Introduction to Bazzite
+# Getting Started with [Bazzite](https://bazzite.gg)
 
 <div class="grid cards _bz" markdown>
 
