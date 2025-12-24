@@ -1,16 +1,3 @@
----
-authors:
-  - "@nicknamenamenick"
-tags:
-  -  Software
-preview:
-  src: "../img/AppImage.png"
-  contain: True
-  alpha: 50
-description: |
-  AppImage is a universal package format that bundles every dependency an application needs.
----
-
 <!-- ANCHOR: METADATA -->
 <!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=2641", "fetched_at": "2024-09-03 16:43:10.114605+00:00"}-->
 <!-- ANCHOR_END: METADATA -->
