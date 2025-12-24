@@ -1,9 +1,5 @@
 ---
 title: Using Swap for Additional Memory or Hibernation
-authors:
-  - "@antheas"
-tags:
-  -  Guide
 ---
 
 This guide will walk you through the steps to create a swapfile on a BTRFS filesystem, which can be used for additional memory or hibernation.
