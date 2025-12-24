@@ -1,13 +1,14 @@
 ---
 title: "VPN Setup"
-authors:
-  - "@tired-runner"
-  - "@zachrielforever"
 ---
 
-VPNs are usually not offered on Flathub as the Flatpak sandbox is too strict for most VPN clients to work as is.
+## Using functional VPN Flatpaks
 
-We recommend you the following options:
+
+VPN clients are usually not offered on Flathub as the Flatpak sandbox is too strict for most VPN clients to work as is which means they are not available in Bazaar to install.  However examples of good VPN clients:
+
+- [Mozilla VPN](https://flathub.org/apps/org.mozilla.vpn)
+- [ProtonVPN](https://flathub.org/apps/com.protonvpn.www)
 
 ## Tailscale
 
@@ -49,8 +50,3 @@ This option may be good enough for you if you don't need special features provid
     <img src="/img/add_vpn_file_gnome.png" alt="Import VPN config file dialog in GNOME" width="600" height="487" />
 
     5\. Select your downloaded configuration file.
-
-## Using functional VPN Flatpaks
-
-- [Mozilla VPN](https://flathub.org/apps/org.mozilla.vpn)
-- [ProtonVPN](https://flathub.org/apps/com.protonvpn.www)
