@@ -1,12 +1,3 @@
----
-authors:
-  - "@nicknamenamenick"
-
-tags:
-  - Installation
-  - Troubleshooting
----
-
 <!-- ANCHOR: METADATA -->
 <!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=2495", "fetched_at": "2024-09-03 16:43:22.238775+00:00"}-->
 <!-- ANCHOR_END: METADATA -->
