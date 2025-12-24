@@ -1,8 +1,5 @@
 ---
 title: "ZeroTier setup"
-authors:
-  - "@Zeglius"
-  - "@adokitkat"
 ---
 
 !!! warning
