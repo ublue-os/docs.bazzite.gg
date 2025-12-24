@@ -1,8 +1,3 @@
----
-tags:
-  -  Knowledge Base
----
-
 # Major Differences Between Bazzite & Upstream Fedora Atomic Desktop
 
 Bazzite is a custom image of [**Fedora Kinoite (KDE Plasma images)**](https://fedoraproject.org/atomic-desktops/kinoite/) or [**Fedora Silverblue (GNOME images)**](https://fedoraproject.org/atomic-desktops/silverblue/) with modifications made to try and provide a user friendly experience out of the box with a focus on PC gaming.
@@ -10,7 +5,6 @@ Bazzite is a custom image of [**Fedora Kinoite (KDE Plasma images)**](https://fe
 ## Key Differences:
 
 - Better hardware support out of the box from PC hardware to peripheral devices.
-- [**System and application updates will be upgraded automatically daily**](/Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/updating_guide/) (for [**Desktop images**](/General/FAQ/#1-desktop-edition) only).
 - Fedora Flatpak remote removed in favor of using the [**System Flathub**](https://flathub.org/) remote for all applications.
 - [**Homebrew**](/Installing_and_Managing_Software/Homebrew/) is the intended package manager for command-line tools.
 - Convenient [**`ujust`**](/Installing_and_Managing_Software/ujust/) scripts by maintainers and contributors of the project.
