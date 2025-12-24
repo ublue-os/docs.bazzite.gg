@@ -1,18 +1,3 @@
----
-authors:
-  - "@nicknamenamenick"
-  - "@KyleGospo"
-  - "@storyaddict"
-  - "@castrojo"
-  - "@noelmiller"
-  - "@rothgar"
-  - "@aarron-lee"
-  - "@HikariKnight"
-  - "@ryanpolasky"
-tags:
-  - Installation
----
-
 <!-- ANCHOR: METADATA -->
 <!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=1144", "fetched_at": "2024-09-03 16:43:22.899176+00:00"}-->
 <!-- ANCHOR_END: METADATA -->
