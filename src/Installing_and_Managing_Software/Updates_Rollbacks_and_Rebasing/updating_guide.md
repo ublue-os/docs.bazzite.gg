@@ -1,10 +1,3 @@
----
-authors:
-  - "@nicknamenamenick"
-tags:
-  -  Updates
----
-
 <!-- ANCHOR: METADATA -->
 <!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=2637", "fetched_at": "2024-09-03 16:43:13.297624+00:00"}-->
 <!-- ANCHOR_END: METADATA -->
