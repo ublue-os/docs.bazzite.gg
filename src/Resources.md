@@ -1,5 +1,5 @@
 ---
-title: Social Platforms
+title: Community
 ---
 
 ## [:simple-discourse: Forums](https://universal-blue.discourse.group/tag/bazzite-news)
