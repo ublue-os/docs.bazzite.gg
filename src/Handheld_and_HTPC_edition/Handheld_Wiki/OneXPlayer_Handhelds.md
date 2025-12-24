@@ -1,10 +1,3 @@
----
-authors:
-  - "@nicknamenamenick"
-tags:
-  -  Handhelds
----
-
 
 !!! disclaimer
 
