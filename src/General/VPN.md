@@ -5,7 +5,7 @@ title: "VPN Setup"
 ## Using functional VPN Flatpaks
 
 
-VPN clients are usually not offered on Flathub as the Flatpak sandbox is too strict for most VPN clients to work as is which means they are not available in Bazaar to install.  However examples of good VPN clients:
+VPN clients are usually not offered on Flathub as the Flatpak sandbox is too strict for most VPN clients to work as is which means they are not available in Bazaar to install.  However examples of good VPN clients in Bazaar:
 
 - [Mozilla VPN](https://flathub.org/apps/org.mozilla.vpn)
 - [ProtonVPN](https://flathub.org/apps/com.protonvpn.www)
