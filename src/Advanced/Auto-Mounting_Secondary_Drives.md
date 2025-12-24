@@ -1,14 +1,3 @@
----
-authors:
-  - "@nicknamenamenick"
-  - "@HikariKnight"
-  - "@asen23"
-  - "@TheScreechingBagel"
-  - "@Zeglius"
-tags:
-  - Guide
----
-
 <!-- ANCHOR: METADATA -->
 <!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=970", "fetched_at": "2024-09-03 16:43:14.005694+00:00"}-->
 <!-- ANCHOR_END: METADATA -->
