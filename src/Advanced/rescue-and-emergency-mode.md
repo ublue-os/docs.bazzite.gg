@@ -1,10 +1,3 @@
----
-authors:
-  - "@bsherman"
-tags:
-  -  Troubleshooting
----
-
 ## Preface
 
 Fedora already has a built-in mechanism (provided by `systemd`) for booting into rescue/emergency modes.
