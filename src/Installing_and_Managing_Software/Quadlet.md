@@ -1,15 +1,3 @@
----
-authors:
-  - "@asen23"
-  - "@noelmiller"
-tags:
-  -  Software
-preview:
-  alpha: 70
-  image: "../img/podman.png"
-description: "Run services."
----
-
 ## What is Quadlet?
 
 ![podman|385x358, 50%](../img/podman.png)
