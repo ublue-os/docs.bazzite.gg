@@ -112,16 +112,6 @@ Unlike traditional Linux distributions, **most of the maintenance and security u
 
 **The purpose of Bazzite is to be Fedora Linux, but provide a great gaming experience out of the box while also being an alternative operating system for the Steam Deck and other handheld devices**.
 
-## What are some of the utilities that Bazzite ships?
-
-(_in alphabetical order_)
-
-- [**Boxkit**](https://github.com/ublue-os/boxkit): Tool used for custom OCI Distrobox/Toolbox containers, and anything from [DaVinci Resolve](https://github.com/zelikos/davincibox) to [OBS Studio Portable](https://github.com/ublue-os/obs-studio-portable) can be accessed with this. (The software is in their own special container, so dependencies do not affect your host.)
-- [**Handheld Daemon**](https://github.com/hhd-dev/hhd): Tool for configuring and managing handheld devices from gyro, LEDs, paddles, and TDP.
-- [**Ptyxis**](https://devsuite.app/ptyxis/): Terminal with first-class container support.
-- [**ScopeBuddy**](https://github.com/HikariKnight/ScopeBuddy): A manager script to make Gamescope easier on the Desktop.
-- [**`ujust`**](../Installing_and_Managing_Software/ujust.md): Execute custom commands based on recipes.
-
 ## Is Secure Boot supported?
 
 !!! warning
@@ -155,17 +145,12 @@ Edit the `/etc/hostname` file with a new hostname, save it, and reboot.
 ```
 hostnamectl hostname <hostname>
 ```
-## I need a different version of Java
 
-If its for Minecraft modding then install the [Prism Launcher](https://flathub.org/apps/org.prismlauncher.PrismLauncher) since this would not affect your host Java installation. If Java needs to be modified for development purposes then use [**Distrobox**](../Installing_and_Managing_Software/Distrobox.md). You will **not** be able to modify Java on your host at a system level.
-
-**This also applies to other system-level packages that act as dependencies for other pieces of software or for development.**
-
-## I installed Windows, now cant boot Bazzite { id="windows-bootloader-override" }
+## I installed Windows but Bazzite won't boot { id="windows-bootloader-override" }
 
 Flash the Bazzite Live ISO to a thumb drive, and run the **Bazzite Bootloader Restoration Tool**.
 
-## Windows updated and grub no longer shows up
+## Windows updated and GRUB no longer shows up
 
 See [this](#windows-bootloader-override).
 
@@ -174,8 +159,6 @@ See [this](#windows-bootloader-override).
 <sub> (Example: Swapping from KDE Plasma to GNOME or vice-versa) </sub>
 
 It is **not recommended to rebase between desktop environments** due to configuration files having different standards which usually lead to broken installations after rebasing between two different DEs.
-
->[**Read more about Rebasing on Bazzite**](/Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/rebase_guide.md).
 
 ## Am I able to install _this_ desktop environment or _that_ window manager?
 
@@ -198,7 +181,7 @@ Deployments can also be pinned to rollback for future use, so `:2`, `:3`, etc. c
 
     Search for the appropriate keywords in Bazzite's documentation first before proceeding with the next steps.
 
-Reach out to us on our [forums](https://universal-blue.discourse.group/c/bazzite/5), [Subreddit](https://www.reddit.com/r/Bazzite/) or [Discord](https://discord.gg/WEu6BdFEtp), but if it's an issue or bug you are encountering then we strongly urge you to [report it to the issue tracker](/General/reporting_bugs.md).  Keep in mind that certain areas and topics are out of our control especially when it comes to Nvidia driver problems, game compatibility, or other problems that plague the modern day Linux desktop regardless if you're running Bazzite or not.
+We strongly urge you to [report it to the issue tracker](/General/reporting_bugs.md).  Keep in mind that certain areas and topics are out of our control especially when it comes to Nvidia driver problems, game compatibility, or other problems that plague the modern day Linux desktop regardless if you're running Bazzite or another Linux operating system.
 
 <hr>
 
