@@ -7,15 +7,15 @@ tags:
 
 ## Preface
 
-Fedora already has a built-in mechanism (provided by `systemd`) for booting into [rescue](https://docs.fedoraproject.org/en-US/fedora/latest/system-administrators-guide/kernel-module-driver-configuration/Working_with_the_GRUB_2_Boot_Loader/#sec-Booting_to_Rescue_Mode) and [emergency](https://docs.fedoraproject.org/en-US/fedora/latest/system-administrators-guide/kernel-module-driver-configuration/Working_with_the_GRUB_2_Boot_Loader/#sec-Booting_to_Emergency_Mode) modes.
+Fedora already has a built-in mechanism (provided by `systemd`) for booting into rescue/emergency modes.
 
-However, those documents have limitations as by default, Fedora (and thus Universal Blue systems), do not set a `root` password during install. Thus, when the emergency or rescue mode is reached, the user is shown the error:
+However, Fedora (and thus Universal Blue systems), do not set a `root` password during install. Thus, when the emergency or rescue mode is reached, the user is shown the error:
 
 ```
 Cannot open access to console, the root account is locked.
 ```
 
-??? note "We've improved the situation for all _Universal Blue_ derivatives (including _Bazzite_ and _Bluefin_) using inspiration from _Fedora CoreOS_."
+??? note "We've improved the situation for all _Universal Blue_ derivatives using inspiration from _Fedora CoreOS_."
 
     Now, when booting to [emergency](#booting-to-emergency-mode-2) or [rescue](#booting-to-rescue-mode-3) mode with a locked root account, the user is instead presented a more standard prompt:
 
