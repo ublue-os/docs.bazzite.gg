@@ -10,7 +10,7 @@ title: Installing and Managing Applications
 
 ![Bazaar|2840x2038, 50%](../img/Bazaar.jpg)
 
-Flatpak is a universal containerized package format that tries to sandbox applications through flexible permissions that the application has access to on your system.  It is the **primary method of installing applications on Bazzite** is recommended to use Flatpak over other formats for most software when possible outside of the few exceptions of software available in the Bazzite Portal. Flatpaks can be installed, upgraded, and uninstalled via the Bazaar app store.
+Flatpak is a universal containerized package format that tries to sandbox applications through flexible permissions that the application has access to on your system.  It is the **primary method of installing applications on Bazzite** is recommended to use Flatpak over other formats for most software when possible outside of the few exceptions of software available in the Bazzite Portal. Flatpaks can be installed, upgraded, and uninstalled via the Bazaar app store.  The applications that are in Bazaar are from [Flathub](https://flathub.org/).
 
 ### Manage Flatpaks
 
@@ -24,7 +24,7 @@ Sometimes a project's website or [Github repository](<https://github.com/flathub
 
 #### Warehouse
 
-**Warehouse** is a utility that gives users a graphical interface to downgrade applications, add other Flatpak sources outside of Flathub, and backup application user data. Its also a helpful tool for installing Flatpaks outside of Flathub, **at your own risk**.
+**Warehouse** is a utility that gives users a graphical interface to **downgrade applications**, install remote Flatpak sources outside of Flathub at your own risk, and backup application user data.
 
 ## Homebrew (Command-Line Utilites)
 
