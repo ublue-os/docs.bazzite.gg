@@ -8,17 +8,134 @@ title: Installing and Managing Applications
 
 ## Bazaar App Store (Flatpak) [Recommended for Most Apps]
 
+![Bazaar|2840x2038, 50%](../img/Bazaar.jpg)
+
+Flatpak is a universal containerized package format that tries to sandbox applications through flexible permissions that the application has access to on your system.  It is the **primary method of installing applications on Bazzite** is recommended to use Flatpak over other formats for most software when possible outside of the few exceptions of software available in the Bazzite Portal. Flatpaks can be installed, upgraded, and uninstalled via the Bazaar app store.
+
+### Manage Flatpaks
+
+Manage Flatpaks with [Flatseal](https://github.com/tchx84/Flatseal) and [Warehouse](https://github.com/flattool/warehouse) which are both pre-installed.
+
+#### Flatseal
+
+**Flatseal** is for changing [application permissions](https://github.com/tchx84/Flatseal/blob/92e675e5ad2129f2aabf324261570eef442494f6/DOCUMENTATION.md) if necessary. Alternatively, use KDE Plasma's system settings which has application permissions to adjust as well on KDE Plasma images.
+
+Sometimes a project's website or [Github repository](<https://github.com/flathub/com.discordapp.Discord/wiki/Rich-Precense-(discord-rpc)#flatpak-applications>) contain information on what permissions need to be changed to perform certain functionality.
+
+#### Warehouse
+
+**Warehouse** is a utility that gives users a graphical interface to downgrade applications, add other Flatpak sources outside of Flathub, and backup application user data. Its also a helpful tool for installing Flatpaks outside of Flathub, **at your own risk**.
+
 ## Homebrew (Command-Line Utilites)
+
+![Homebrew|332x500, 15%](../img/Homebrew.png)
+
+!!! note
+
+    Any package that requires root privileges will either need a rootful Distrobox container or has to be layered with `rpm-ostree`.
+
+Homebrew is a package manager that installs packages into their own prefix. It is primarily used for command-line interface (CLI) and terminal user interface (TUI) applications. Homebrew can also install graphical applications using the `--cask` flag, but most are for macOS as support for casks on Linux is still developing.
+
+Install packages in a host terminal with this **terminal command**:
+
+```
+brew install <package>
+```
 
 ## Bazzite Portal (`ujust` Commands)
 
+<show screenshot of bazzite portal>
+<talk about ujust commands that can install certain software>
+
+<ujust might just be its own page and linked here>
+
 ## Containers (Distrobox/Quadlet)
+
+<!-- ANCHOR: METADATA -->
+<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=2640", "fetched_at": "2024-09-03 16:43:09.168054+00:00"}-->
+<!-- ANCHOR_END: METADATA -->
+
+### Distrobox Containers
+
+![distrobox|510x413](../img/distrobox.png)
+
+Run other minimal variants of popular Linux distributions in Bazzite inside of a container, and access each distribution's packages without any of their dependencies and libraries affecting the host machine.
+
+- Containers are **not** virtual machines.
+- Containers are intended to be **disposable** and may run into issues where they need to be recreated.
+- Using this method to obtain software **requires knowledge of how traditional Linux operating systems install packages**.
+  - Create a test container to familiarize yourself with basic Linux commands before diving in further.
+
+Distrobox containers run sub-systems of other popular [Linux distributions](https://distrobox.it/compatibility/#containers-distros) with access to their package managers (`apt`, `dnf`, `pacman`, etc.) and their package formats (`.deb`/`.rpm`) and any additional repositories like the [AUR](https://aur.archlinux.org/). Distrobox containers can be used for both **development environments** and **installing applications that are not available in any of the other installation methods** which can be exclusive to specific package managers.
+
+![i use arch btw|1022x822, 75%](../img/i_use_arch_btw.png)
+
+<sub><sup>i use arch (in a container) btw.</sup></sub>
+
+**Linux Distribution Examples**:
+
+| OS                                  | Package Manager    | Search for Packages                                                       |
+| ----------------------------------- | ------------------ | ------------------------------------------------------------------------- |
+| [Fedora][fedora]                    | [`dnf`][dnf]       | [Fedora Packages][fedora_pkgs] / [COPR Packages][copr]                    |
+| [Arch][arch]                  | [`pacman`][pacman] | [Arch Linux Packages][arch_pkgs] / [AUR Packages][aur_pkgs]               |
+| [Debian][debian] / [Ubuntu][ubuntu] | [`apt`][apt]       | [Debian Packages][deb_pkgs] / [Ubuntu Packages][ubuntu_pkgs] ([PPA][ppa]) |
+| [openSUSE][osuse]                   | [`zypper`][zypper] | [openSUSE Packages][osuse_pkgs]                                           |
+| [Void][void]                  | [`xbps`][xbps]     | [Void Linux Packages][void_pkgs]                                          |
+| [Alpine][alpine]              | [`apk`][apk]       | [Alpine Linux Packages][alpine_pkgs]                                      |
+
+#### Distrobox Graphical Interface
+
+![Distroshelf|970x752, 75%](../img/distroshelf_fixedcrop.png)
+
+Distrobox containers can be created and managed graphically with [**DistroShelf**](https://github.com/ranfdev/DistroShelf) which is pre-installed.
+
+#### Distrobox Video Guide
+
+https://youtu.be/5m0YfIiypwA
+
+[fedora]: https://fedoraproject.org/
+[dnf]: https://docs.fedoraproject.org/en-US/quick-docs/dnf/
+[fedora_pkgs]: https://packages.fedoraproject.org/index-static.html
+[copr]: https://copr.fedorainfracloud.org/
+[arch]: https://archlinux.org/
+[pacman]: https://wiki.archlinux.org/title/Pacman
+[arch_pkgs]: https://archlinux.org/packages/
+[aur_pkgs]: https://aur.archlinux.org/packages?SB=l&SO=d
+[debian]: https://www.debian.org/
+[ubuntu]: https://ubuntu.com/
+[apt]: https://ubuntu.com/server/docs/package-management
+[deb_pkgs]: https://packages.debian.org/stable/
+[ubuntu_pkgs]: https://packages.ubuntu.com/
+[ppa]: https://launchpad.net/ubuntu/+ppas
+[osuse]: https://get.opensuse.org/
+[zypper]: https://documentation.suse.com/smart/systems-management/html/concept-zypper/index.html
+[osuse_pkgs]: https://search.opensuse.org/packages/
+[void]: https://voidlinux.org/
+[xbps]: https://docs.voidlinux.org/xbps/index.html
+[void_pkgs]: https://voidlinux.org/packages/
+[alpine]: https://www.alpinelinux.org/
+[apk]: https://wiki.alpinelinux.org/wiki/Alpine_Package_Keeper
+[alpine_pkgs]: https://pkgs.alpinelinux.org/packages
+
+### Quadlet
+
+![podman|385x358, 50%](../img/podman.png)
+
+Quadlet is a feature of [podman](https://podman.io/) that allows a user to run a container as [systemd](https://systemd.io/) units. It works by using a declarative syntax like [docker compose](https://docs.docker.com/compose/) but integrates to systemd and use podman as a backend.
 
 ## AppImage (Portable Applications Downloaded from Trusted Source)
 
+![AppImage|100x100, 100%](../img/AppImage.png)
+
+AppImage is a universal package format that attempts to bundle every dependency that an application needs into one portable file. They can be installed by downloading any file with a `.AppImage` file extension and then giving it executable permissions in the file's properties so the application can run properly. Like Windows executable files, they are usually found on the project's website to download.
+
 ## System-Level Package Layering (`rpm-ostree` Commands) [_**Not Recommended**_]
 
+<link to rpm-ostree guide>
+
 ## Other
+
+Bazzite can also run Windows and Android applications too!
 
 ### Windows Executables
 
