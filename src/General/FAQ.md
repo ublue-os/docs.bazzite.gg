@@ -6,22 +6,14 @@ title: Frequently Asked Questions
 <!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=33", "fetched_at": "2024-09-03 16:43:17.727110+00:00"}-->
 <!-- ANCHOR_END: METADATA -->
 
-## Why is it called Bazzite?
-
-[Fedora Linux's Atomic Desktops](https://fedoraproject.org/atomic-desktops/) originally followed a naming scheme based on [minerals.](https://fedoraproject.org/kinoite/) Bazzite is a mineral that is known for being strong, lightweight, and is colored [blue](https://universal-blue.org/).
-
 ## Who is Bazzite for?
 
-- Individuals who desire a desktop operating system designed for gaming with inspiration from SteamOS that has fairly low maintenance in comparison to other desktop Linux operating systems.
-- Individuals who want a controller-friendly experience for couch PC gaming.
-- Individuals who own a [Handheld PC](../Handheld_and_HTPC_edition/Handheld_Wiki/index.md) and would prefer a SteamOS-like experience.
-- Individuals who own a Steam Deck and feel limited by SteamOS and/or also desire newer system packages or alternate desktop enviornments.
+Bazzite is for those seeking an operating system that fits the following criteria:
 
-## What is the difference between SteamOS and Bazzite?
-
-Bazzite originally was developed for the Steam Deck targeting users who used their Steam Deck as their primary PC. Bazzite is a collection of custom Fedora Atomic Desktop images built with Universal Blue's tooling (with the power of [OCI](https://opencontainers.org/about/overview/)) as opposed to using an [Arch Linux](https://archlinux.org/) base with A/B updates utilizing [RAUC](https://github.com/rauc/rauc).  The main advantages of Bazzite versus SteamOS is receiving system packages in updates at a much faster rate and a choice of an alternative desktop environment.
-
-> A list of major differences can be found in the [**SteamOS Comparison**](/General/SteamOS_Comparison.md), [**Steam Deck wiki entry**](/Handheld_and_HTPC_edition/Handheld_Wiki/Steam_Deck.md#how-similar-is-bazzite-to-steamos-on-steam-deck-hardware), and the [**Bazzite README**](https://github.com/ublue-os/bazzite/blob/main/README.md).
+- A desktop operating system designed for gaming with inspiration from SteamOS that has fairly low maintenance in comparison to other desktop Linux operating systems.
+- A controller-friendly experience for couch PC gaming.
+- An alternative to Windows-based handhelds where a SteamOS-like experience is preferable and SteamOS doesn't work well on the handheld hardware presently.
+- A SteamOS-like experience on SteamOS handhelds (like the Steam Deck) with newer system packages and alternate desktop enviornments with the same image-based OS approach for stability.
 
 ## What Bazzite image do I use?
 
@@ -29,7 +21,7 @@ Bazzite's [website](https://bazzite.gg/#image-picker) offers a streamlined way o
 
 Bazzite offers multiple images, but most images will be following _one of these **two variants**_:
 
-- **Variant 1**: Bazzite images that do **not** have Steam Gaming Mode and receive automatic updates daily that can be viewed as a Fedora Atomic Desktop with gaming packages pre-installed.
+- **Variant 1**: Bazzite images that do **not** have Steam Gaming Mode and receive automatic updates daily with gaming packages pre-installed.
 - **Variant 2**: Bazzite images that automatically boot into Steam Gaming Mode (like SteamOS) and are intended for controller-oriented setups.
 
 ### 1. Desktop Edition
@@ -48,7 +40,7 @@ Intended specifically for desktops and laptops with a focus on gaming which is i
 
 #### Full Bazzite Image Chart
 
-Verify your image by entering this **commmand**:
+Verify your image by entering this **commmand** in the termi:
 
 ```
 rpm-ostree status
@@ -76,49 +68,16 @@ rpm-ostree status
 
 SteamOS receives package and driver updates less frequently despite the rolling release base.  Bazzite will follow Fedora's update release cycle which means early access to new graphics card driver and kernel updates in comparison to SteamOS.  Fedora Linux and Universal Blue currently supports a specific "atomic" implementation to maintain multiple images that can receive all of the same updates at once, which is unlike a derivative Linux distribution.  The **goal** of Bazzite is to have an operating system ready to game after installing it.
 
-## What are the advantages to using Fedora Atomic Desktop?
+### What are the advantages to using Fedora Atomic Desktop as a base?
 
 Since Bazzite is a custom Fedora Atomic Desktop image, it makes use of read-only root files for stability purposes, and is built as a [**bootable container image**](https://containers.github.io/bootable/) which has advantages such as:
 
 - Low risk of an unbootable system
 - Rollback system updates if necessary, and the ability to pin your current deployment as a backup save state without losing user data.
 - Smooth upgrade process from major Fedora point releases.
-- Layer Fedora packages to the host that survive between updates.
 - Focus on containerized applications that do not interfere with your host system.
 
 > Check out the [**Universal Blue homepage**](https://universal-blue.org) for more information on what this project is capable of.
-
-### How is Fedora Atomic Desktop different than Fedora Workstation?
-
-If you're familiar with [Fedora Workstation](https://www.fedoraproject.org/workstation/) and [Fedora's Spins](https://www.fedoraproject.org/spins/), but not the Fedora Atomic Desktops paradigm then the major difference deals with obtaining a reproducable and consistent OS image, separation between installing additional software and the system, and stability between system upgrades.
-
-#### Installing Software
-
-There are **read-only root files** and an emphasis on installing applications as a [Flatpak](/Installing_and_Managing_Software/Flatpak.md), [Homebrew](/Installing_and_Managing_Software/Homebrew.md), or inside of a [Distrobox container](/Installing_and_Managing_Software/Distrobox.md).
-
->**Read more about [**obtaining software on Bazzite**](../Installing_and_Managing_Software/index.md)**.
-
-#### Updates
-
-Users can also rollback to a previous deployment if a system update breaks their workflow, or rebase entirely back to a stock Fedora Atomic image, [Aurora](https://getaurora.dev/), [Bluefin](https://projectbluefin.io/), or a [custom image by the community](https://universal-blue.discourse.group/t/list-of-community-created-custom-images/340). Do **not** rebase between different desktop environments.
-
->**Read more about how [**updates, rolling back, and rebasing works on Bazzite**](../Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/index.md)**.
-
-## Is this another fringe Linux distribution?
-
-Bazzite is **not** a Linux distribution in the traditional sense. Yes, it is a Linux operating system that is distributed for the public to use however it is a custom Fedora Atomic Desktop image with a recipe on top of it. Universal Blue images are a proof of concept of using containerized workflows with transactional and in-place operating system updates, and Bazzite exists by being gaming focused with inspiration from SteamOS.  Bazzite is a Fedora Atomic Desktop installation, but with the aid of Universal Blue's tooling, adds packages, services, drivers, etc. to the base image of it. Bazzite is using a new "**container-native**" approach that Fedora has been testing, and we are taking full advantage of it.  The team is utilizing the [Open Container Initiative (OCI)](https://opencontainers.org/about/overview/) to build the images, and are adding packages, services, and kernel modules to existing Fedora operating systems.
-
-Unlike traditional Linux distributions, **most of the maintenance and security updates are done upstream** by Fedora and Universal Blue contributors while the primary Bazzite maintainers only have to focus on creating a great experience for an OS geared towards playing video games. Bazzite provides several images that all get the same additions and fixes through updates at the same time unless specified otherwise.  There can be a hypothetical scenario where everyone involved with Bazzite could stop maintaining the project at once and it will still continue to receive updates directly from upstream until the scheduled builds are broken.
-
-**The purpose of Bazzite is to be Fedora Linux, but provide a great gaming experience out of the box while also being an alternative operating system for the Steam Deck and other handheld devices**.
-
-## Is Secure Boot supported?
-
-!!! warning
-
-    The Steam Deck does not come with secure boot enabled and does not ship with any keys enrolled by default, so do not enable this on Steam Deck hardware unless you absolutely know what you're doing! (Steam Deck hardware only)
-
-**Yes**, but you will have to enroll our key.  More information on enrolling the key in our [Secure Boot guide](https://universal-blue.discourse.group/docs?topic=2742).
 
 ## Are AMD, Intel, and Nvidia graphics card drivers pre-installed?
 
@@ -132,7 +91,7 @@ Most hardware changes should **not** require any manual intervention outside of 
 
 **Yes**, but only if the game supports it. It's not available globally for every game like on Windows, but:
 * There may be individual game mods or [Decky plugins](https://github.com/xXJSONDeruloXx/Decky-Framegen) that mimic similar functionality.
-* If you own [Lossless Scaling](https://store.steampowered.com/app/993090/Lossless_Scaling/) on Steam, you can set up a LSFG Vulkan layer with `ujust get-lsfg`.
+* If you own [Lossless Scaling](https://store.steampowered.com/app/993090/Lossless_Scaling/) on Steam, you can set up a LSFG Vulkan layer with the `ujust get-lsfg` terminal command.
 
 ## Can I change the hostname of my device?
 
@@ -149,10 +108,6 @@ hostnamectl hostname <hostname>
 ## I installed Windows but Bazzite won't boot { id="windows-bootloader-override" }
 
 Flash the Bazzite Live ISO to a thumb drive, and run the **Bazzite Bootloader Restoration Tool**.
-
-## Windows updated and GRUB no longer shows up
-
-See [this](#windows-bootloader-override).
 
 ## Can I switch to a different desktop environment on my current installation?
 
@@ -171,9 +126,11 @@ This allows users to rollback a bad system upgrade by selecting the previous dep
 - `:0` = Current deployment/newest update
 - `:1` = Previous deployment/update.
 
-Deployments can also be pinned to rollback for future use, so `:2`, `:3`, etc. can also exist as long as you have the storage for it.
+Deployments can also be pinned to rollback for future use, so `:2`, `:3`, etc. can also exist as long as you have the storage space for it.
 
->**See also**: [**Rolling Back System Updates**](/Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/rolling_back_system_updates.md)
+## Why is it called Bazzite?
+
+[Fedora Linux's Atomic Desktops](https://fedoraproject.org/atomic-desktops/) originally followed a naming scheme based on [minerals.](https://fedoraproject.org/kinoite/) Bazzite is a mineral that is known for being strong, lightweight, and is [blue](https://universal-blue.org/).
 
 ## I have questions or concerns that cannot be answered in the documentation
 
