@@ -30,7 +30,7 @@ In addition, due to its development model, it usually contains packages that are
 
 ### Daily Driving
 
-- System packages are updated on a **weekly basis**.
+- System packages are updated frequently.
 - Wayland is used in desktop mode, ensuring correct scaling for high-DPI displays.
 - Most desktop packages follow the Fedora lifecycle, with exceptions where there is a bug, where the package is selectively withheld or fixed earlier than Fedora.
 
