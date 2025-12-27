@@ -60,7 +60,6 @@ Love Bazzite and want to help sustain its development?  Consider **sponsoring** 
 These are the people keeping the lights on and the project moving forward.
 <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
 {{ contributor("Kyle Gospodnetich", "KyleGospo", "Founder, Image & CI/CD Lead", "https://github.com/sponsors/KyleGospo") }}
-{{ contributor("Antheas Kapenekakis", "antheas", "Software Lead (kernel, handhelds)", "https://github.com/sponsors/antheas") }}
 {{ contributor("HikariKnight", "HikariKnight", "Virtualization, Scripting, User Support", "https://github.com/sponsors/HikariKnight") }}
 {{ contributor("Noel Miller", "noelmiller", "Community Manager, Installer Enhancements, Custom Image Tooling", "https://github.com/sponsors/noelmiller") }}
 </div>
