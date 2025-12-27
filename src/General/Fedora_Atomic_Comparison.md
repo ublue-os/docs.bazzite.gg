@@ -16,4 +16,4 @@ Bazzite is a custom image of [**Fedora Kinoite (KDE Plasma images)**](https://fe
 - Tweaks to desktop environments including pre-installed GNOME extensions and KDE Plasma themes.
 - Steam Gaming Mode is setup out of the box and auto-starts (for [**Bazzite-Deck images**](/Handheld_and_HTPC_edition/Steam_Gaming_Mode/) only).
 - [**Rollback to older Bazzite builds within the last 90 days**](/Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/bazzite_rollback_helper.md).
-- Tons of minor gaming enhancements included.
+- Tons of gaming enhancements included.
