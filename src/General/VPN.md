@@ -21,7 +21,7 @@ VPN clients are usually not offered on Flathub as the Flatpak sandbox is too str
 - Good VPNs provide Wireguard configuration files that can be imported directly into NetworkManager, check your VPN providers documentation for more information
 - Only as a last resort [layer the VPN with rpm-ostree](/Installing_and_Managing_Software/rpm-ostree/)
 
-## Import VPN configuration files through GUI (desktop environment)
+## Import VPN configuration files through Desktop Environment
 
 This option may be good enough for you if you don't need special features provided by your VPN client, like kill-switches, split tunneling and other custom features not built-in to the VPN protocol. VPNs imported in this way can be toggled on and off at will.
 
