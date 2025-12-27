@@ -47,7 +47,9 @@ Reboot, and run this at the terminal:
 sudo rm -fv /etc/yum.repos.d/zerotier.repo
 ```
 
-## Fix not seeing your teammates in games (set routing through the ZeroTier network interface)
+## Fix not seeing your teammates in games
+
+_(Set routing through the ZeroTier network interface)_
 
 Get your ZeroTier network interface name by running: `ifconfig -a` (compare the IP address to one in your ZeroTier web dashboard)
 
