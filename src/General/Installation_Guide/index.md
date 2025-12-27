@@ -53,7 +53,3 @@ Secure Boot is supported on most hardware, but you must [**enroll our key**](./s
 ## Alternative Bazzite Installation Guide
 
 Read the [**Alternative Troubleshooting Guide**](./alternate-install-guide.md) if you are having issues booting the Bazzite installer.
-
-<hr>
-
-<-- [**View all Bazzite documentation**](../../index.md)
