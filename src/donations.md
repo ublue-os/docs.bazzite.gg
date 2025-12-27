@@ -49,16 +49,12 @@ title: Credits and Donating
     </div>
 {%- endmacro %}
 
-Love Bazzite and want to help sustain its development?  Consider **sponsoring** the maintainers and contributors of the project.
+Love Bazzite and want to help sustain its development?
 
 <div class="button-container">
     <a href="https://opencollective.com/bazzite-us" target="_blank" class="sponsor-button">Sponsor Bazzite ($ USA)</a>
     <a href="https://opencollective.com/bazzite-eu" target="_blank" class="sponsor-button">Sponsor Bazzite (€ Europe)</a>
 </div>
-
-## Maintainers
-
->[**View the full list of Bazzite contributors in the Gitub repository**](https://github.com/ublue-os/bazzite/graphs/contributors) ([**Contribute**](/CONTRIBUTE.md))
 
 
 ## Projects Included in Bazzite
