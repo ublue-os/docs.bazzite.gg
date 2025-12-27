@@ -210,8 +210,3 @@ nmcli connection modify eduroam 802-1x.phase1-auth-flags 32
 ```
 
 and then try to connect again.
-
-
-<hr>
-
-**See also**: [Steam Gaming Mode Quirks](/Handheld_and_HTPC_edition/quirks.md)
