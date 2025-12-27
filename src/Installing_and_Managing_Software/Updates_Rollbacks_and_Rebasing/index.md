@@ -63,5 +63,9 @@ Swap back to a previous system update if there are major issues after updating v
 Rebase to Bazzite builds from the last 90 days
 
 ### Bazzite Rollback Helper
+
+<this needs to be in src>
+<img width="919" height="606" alt="image" src="https://github.com/user-attachments/assets/fa57e61b-87b0-40cc-a6bd-e79e47481e94" />
+
     
 > [**Rebase Guide**](./rebase_guide.md)
