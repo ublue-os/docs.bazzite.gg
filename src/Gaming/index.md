@@ -20,9 +20,11 @@ Steam is the recommended way to play PC games on the Linux desktop as it ships w
 
 Proton Plus...
 
-### Modding
+### Additional Compatibility Layers & Managing Games Running Through Proton
 
 ### Non-Steam Games
+
+Non-Steam games can run on Bazzite...
 
 #### Lutris
 
@@ -31,6 +33,8 @@ Proton Plus...
 #### Gamepass Games
 
 #### Console Emulation
+
+### Modding
 
 ### Common Gaming Issues
 
@@ -46,7 +50,3 @@ Games that use Denuvo Anti-Tamper DRM consider changing Proton versions as activ
 - [**General Emulation Wiki**](https://emulation.gametechwiki.com/index.php/Main_Page) - Emulation resources
 - [**Linux VR Adventures Wiki**](https://lvra.gitlab.io/) - General information for running VR games on Linux
 - [**Linux VR Adventure Database**](https://db.vronlinux.org/) - User reports for Virtual Reality (VR) game compatibility on Linux
-
-<hr>
-
-**See also**: [Steam Gaming Mode Overview](../Handheld_and_HTPC_edition/Steam_Gaming_Mode.md)
