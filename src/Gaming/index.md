@@ -10,36 +10,33 @@ title: Bazzite's Gaming Guide
 
 Linux gaming being a viable competitor to Windows is a relatively new paradigm. Most Windows exclusive games can run on Bazzite using modern hardware. There are still some rough edges, but gaming on Linux does offer advantages on the appropriate hardware such as better frame-times than on Windows.
 
-### - [**Game Launchers**](Game_Launchers.md)
+## Steam
 
-- [Setting Up Steam](/Gaming/Game_Launchers.md#steam-setup)
-- [Steam Launch Options & Shortcuts](/Gaming/Game_Launchers.md#steam-launch-options-and-shortcuts)
-- [Non-Steam Games](/Gaming/Game_Launchers.md#non-steam-games)
-  - [Lutris](/Gaming/Game_Launchers.md#lutris)
-  - [Epic Games, GOG, and Amazon Games](/Gaming/Game_Launchers.md#epic-games-gog-and-amazon-games-launcher)
-  - [Gamepass Using Xbox Cloud Gaming](/Gaming/Game_Launchers.md#game-pass-and-microsoft-store-games-xbox-cloud-gaming)
+Steam is the recommended way to play PC games on the Linux desktop as it ships with a compatability layer known as [Proton](https://steamcommunity.com/games/221410/announcements/detail/1696055855739350561).  If a game has a Linux port that isn't well maintained then it is recommended to try running the game through Proton in its Steam game properties.
 
-### - [**Managing & Modding Games**](Managing_and_modding_games.md)
+<show screenshot>
 
-- [Compatibility Layers](/Gaming/Managing_and_modding_games.md#compatibility-layers)
-- [Protontricks / Winetricks](/Gaming/Managing_and_modding_games.md#protontricks-winetricks)
-- [Proton Prefix Information](/Gaming/Managing_and_modding_games.md#what-is-a-protonwine-prefix)
-- [Hidden Files in File Manager](/Gaming/Managing_and_modding_games.md#hidden-files-in-file-manager)
-- [Modding Quick-Start](/Gaming/Managing_and_modding_games.md#modding-quick-start)
-- [Pre-Installed Enhancements](/Gaming/Managing_and_modding_games.md#enhancements-pre-installed-on-bazzite)
+### Using Different Compatibility layers
 
-### - [**Common Gaming Issues**](Common_gaming_issues.md)
+Proton Plus...
 
-- [Proton Logs](/Gaming/Common_gaming_issues.md#steam-logs)
-- [Native Linux Builds vs. Proton](/Gaming/Common_gaming_issues.md#native-linux-port-versus-windows-version)
-- [Issues with Valve/Source Games](/Gaming/Common_gaming_issues.md#valve-source-engine-game-problems)
-- [Frame Rate Limiting Issues and Inconsistency](/Gaming/Common_gaming_issues.md#frame-rate-limiting-issues-and-inconsistency)
+### Modding
 
-### - [**Hardware Compatibility for Gaming**](Hardware_compatibility_for_gaming.md)
+### Non-Steam Games
 
-- [Compatible Hardware / Handhelds](/Gaming/Hardware_compatibility_for_gaming.md#minimum-system-requirements)
-- [Vulkan Capable GPU for Desktop/HTPC Hardware](/Gaming/Hardware_compatibility_for_gaming.md#vulkan-compatible-gpu)
-- [Information Regarding Unsupported Filesystems](/Gaming/Hardware_compatibility_for_gaming.md#unsupported-filesystems-for-secondary-drives)
+#### Lutris
+
+#### Heroic Games Launcher
+
+#### Gamepass Games
+
+#### Console Emulation
+
+### Common Gaming Issues
+
+#### Denuvo Anti-Tamper DRM Locking Games
+
+Games that use Denuvo Anti-Tamper DRM consider changing Proton versions as activiating the game on different hardware which may cause you to get locked out of the game if you change the Proton version more than 5 times within a 24 hour period.
 
 ### - Useful External Resources
 
