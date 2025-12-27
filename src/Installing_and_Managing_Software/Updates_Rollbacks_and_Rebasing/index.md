@@ -44,29 +44,24 @@ Changelogs for each Bazzite can be found on [Github](https://github.com/ublue-os
 
 Bazzite should automatically update when our new builds based on that new major release is ready.
 
-## Rollbacks
+### How do I change the Bazzite's update branch? (Stable, Testing, and Unstable)
 
-Swap back to a previous system update if there are major issues after updating via the GRUB menu or the `rpm-ostree rollback` command.
+There are 3 branches you can switch to:
 
-> [**Rollbacks Guide**](./rolling_back_system_updates.md)
+- Stable (`:stable`)
+  - Default branch that's used in normal Bazzite installations
+- [Testing (`:testing`)](https://github.com/ublue-os/bazzite/compare/main...testing)
+  - Get a sneak peak of future Bazzite builds before release
+  - Bugs may frequently appear
+  - Encouraged to rebase back to `:stable` after testing a major release
+    - It can be behind on certain updates for a long time
 
+## Rolling Back System Updates
 
-### Bazzite Rollback Helper Tool
+Swap back to a previous system update if there are major issues after updating via the GRUB menu or the `rpm-ostree rollback` command or using the Bazzite Rollback Helper.
 
-Utility to assist with rolling back to older Bazzite images, changing update branches, or swapping to a different Bazzite image.
+Rebase to Bazzite builds from the last 90 days
 
-> [**Bazzite's Rollback Helper Utility Guide**](./bazzite_rollback_helper.md)
-
-## Rebasing
-
-!!! important
-
-    Do **not** rebase to a different desktop environment than the one you are currently using, please backup and reinstall instead.
-
-Rebase to Bazzite builds from the last 90 days, change Bazzite update channels, swap between the Desktop and Bazzite-Deck images, or move completely to a different Fedora Atomic Desktop image.
-
+### Bazzite Rollback Helper
+    
 > [**Rebase Guide**](./rebase_guide.md)
-
-<hr>
-
-← [**View all Bazzite documentation**](../../index.md)
