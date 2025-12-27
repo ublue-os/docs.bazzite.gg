@@ -3,7 +3,7 @@ title: "ZeroTier setup"
 ---
 
 !!! warning
-    Setup requires **layering** and is [not recommended](/Installing_and_Managing_Software/rpm-ostree/#major-caveats-using-rpm-ostree).
+    Setup requires package layering and is **not recommended**.
 
 ## Installing
 
