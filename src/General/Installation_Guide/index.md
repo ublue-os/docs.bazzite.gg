@@ -14,6 +14,7 @@ title: Bazzite Installation Guide
 - **System Memory (RAM)**: 4GB
 - **Graphics**: A graphics card that can utilize Vulkan 1.3 or higher, modern AMD GPUs work the best
 - **Storage**: 64GB free on an internal solid-state drive
+  - **External Storage and Secondary Drive**: All drives must be formatted as BTRFS or Ext4, please backup the files and reformat them post-installation. 
 - **Network**: Stable internet connection with no bandwidth caps
 - **Additional Notes**: Certain peripherals are **not** compatible with Bazzite:
   - **Wi-Fi Adapter Example** - [a list of **known compatible** USB Wi-Fi adapters](https://github.com/morrownr/USB-WiFi/blob/main/home/USB_WiFi_Adapters_that_are_supported_with_Linux_in-kernel_drivers.md)
@@ -44,12 +45,16 @@ title: Bazzite Installation Guide
 
 Secure Boot is supported on most hardware, but you must [**enroll our key**](./secure_boot.md).
 
+## Installing Bazzite
+
+
+
 ## **Troubleshooting Installation**:
 
 - Use a download manager (like [**Motrix**](https://motrix.app/)) if the direct download fails or is downloading too slow.
 
 - Make sure to only select the appropriate drives to avoid losing data on others, and it is best practice to safely remove any external drives before proceeding.
 
-## Alternative Bazzite Installation Guide
+### Alternative Bazzite Installation Guide
 
 Read the [**Alternative Troubleshooting Guide**](./alternate-install-guide.md) if you are having issues booting the Bazzite installer.
