@@ -6,25 +6,24 @@ title: Installing and Managing Applications
 <!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=35", "fetched_at": "2024-09-03 16:43:05.697052+00:00"}-->
 <!-- ANCHOR_END: METADATA -->
 
-## Linux Package Formats
+## Bazaar App Store (Flatpak) [Recommended for Most Apps]
 
-Fedora Atomic Desktops have read-only root files to prioritize stability.  Therefore, containerized applications that do not interfere with your host system will work best.
+## Homebrew (Command-Line Utilites)
 
->Check out the [**Frequently Asked Questions**](../General/FAQ/#what-are-the-advantages-to-using-fedora-atomic-desktop) page for why this priority exists.
+## Bazzite Portal (`ujust` Commands)
 
-### **Package formats ranked from most recommended to least recommended for daily usage**:
+## Containers (Distrobox/Quadlet)
 
-1. [**`ujust`**](./ujust.md) (_Convenience Commands_) - Custom scripts maintained by Bazzite & Universal Blue contributors that can also install a small subset of applications.
-2. [**Flatpak**](./Flatpak.md) (_Graphical Applications_) - Universal package format using a permissions-based model and should be used for most graphical applications.
-3. [**Homebrew**](./Homebrew.md) (_Command-Line Tools_) - Install applications intended to run inside of the terminal (CLI/TUI).
-4. [**Quadlet**](./Quadlet.md)  (_Services_) - Run containerized applications as a [systemd service](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/system_administrators_guide/chap-managing_services_with_systemd#sect-Managing_Services_with_systemd-Services).
-5. [**Distrobox Containers**](./Distrobox.md) (_Linux Packages & Development Workflows_) - Access to most Linux package managers for software that do not support Flatpak and Homebrew and for use as development boxes.
-6. [**AppImage**](./AppImage.md) (_Portable Graphical Applications_) - Portable universal package format that relies on specific host libraries at a system-level, usually obtained from a project's website.
-7. [**`rpm-ostree`**](./rpm-ostree.md) (_System-Level Packages_) - Layer Fedora packages at a system-level (**not recommended, use as a last resort**)
+## AppImage (Portable Applications Downloaded from Trusted Source)
 
-## How do I run Windows applications?
+## System-Level Package Layering (`rpm-ostree` Commands) [_**Not Recommended**_]
+
+## Other
+
+### Windows Executables
 
 **Use a [WINE](https://www.winehq.org/) front-end**:
+
 
 - [**Steam**](https://store.steampowered.com/) (_pre-installed_) has a Windows compatibility layer built-in.
 - [**Lutris**](https://lutris.net/about) (_pre-installed_) for non-Steam video games.
@@ -34,23 +33,6 @@ Fedora Atomic Desktops have read-only root files to prioritize stability.  There
 
 >Read the [**Bazzite Gaming Guide**](/Gaming/index.md) for more information on running Windows games on Linux.
 
-## How do I install Android applications?
+### Android Apps
 
 Follow the [**Waydroid Setup Guide**](./Waydroid_Setup_Guide.md) to install Android applications on Bazzite.
-
-!!! note
-    Waydroid is **not supported** on other Universal Blue images like [Aurora](https://getaurora.dev/) and [Bluefin](https://projectbluefin.io/).
-
-### Video Showcase of Installing Software
-
-!!! note
-
-    This video is missing a Homebrew and Quadlet walkthrough.
-
-https://www.youtube.com/watch?v=ITuT23YrgPs
-
-<hr>
-
-**See also**: [Updates, Rollbacks, & Rebasing](../Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/index.md)
-
-<-- [**View all Bazzite documentation**](../index.md)
