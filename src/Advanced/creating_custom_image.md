@@ -28,7 +28,3 @@ Sometimes you don't want to make a whole new image from scratch, you just want t
 ### Option C - Using BlueBuild
 
 [**BlueBuild**](https://blue-build.org/learn/universal-blue/) is a project that orginally started as a starting point for Universal Blue custom image building and eventually became its own separate project.  All support for Blue-Build images should be directed to the appropriate [communication channels](https://blue-build.org/community/) outside of Universal Blue.
-
-## Custom Image Showcase
-
-The [**Community Created Custom Images**](https://universal-blue.discourse.group/t/list-of-community-created-custom-images/340) thread showcases custom [Fedora Atomic Desktop](https://fedoraproject.org/atomic-desktops/) images.  Show off your own!
