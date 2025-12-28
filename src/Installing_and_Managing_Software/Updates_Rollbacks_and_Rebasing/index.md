@@ -110,8 +110,9 @@ Get back to normal OS updates later after the bug has been squashed that prevent
 
 https://www.youtube.com/watch?v=XvljabnzgVo
 
-## How do I save my **current** deployment?
+## Other Update Topics
 
+### How do I save my **current** deployment?
 
 You can pin your **current** deployment with this **command**:
 
