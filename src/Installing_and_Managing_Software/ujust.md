@@ -1,28 +1,25 @@
-<!-- ANCHOR: METADATA -->
-<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=2638", "fetched_at": "2024-09-03 16:43:04.643633+00:00"}-->
-<!-- ANCHOR_END: METADATA -->
-
-## What is `ujust`?
+---
+title: ujust Commands
+---
 
 ![Shell Scripts (.sh)|96x96, 100%](../img/Shell_Scripts__sh.png)
-
-Technically `ujust` is **not** a package format, but are convenience commands that automate tasks using scripts which can be utilized to install specific software. There are also commands for system configuration and maintenance included here, so run `ujust` commands **at your own risk.**  If an application is available to install via a `ujust` command but can also be obtained as a [Flatpak](/Installing_and_Managing_Software/Flatpak/), then it is recommended to use `ujust` command over installing the Flatpak version on Bazzite.
-
-### Using `ujust`
-
-![ujust command list|690x411](../img/ujust_command_list.png)
 
 !!! note
 
     Use the Bazzite Portal application as a graphical interface for popular `ujust` commands.
 
-Open a host terminal and **enter**:
+`ujust` commands that automate tasks using scripts which can be utilized to install specific specialized software, system configuration, and maintenance.
+
+Open a host terminal and **enter this command**:
 
 ```
 ujust
 ```
 
 <sub>This will output a list of available commands.</sub>
+
+![ujust command list|690x411](../img/ujust_command_list.png)
+
 
 ![ujust TUI|690x403](../img/ujust_TUI.png)
 
@@ -63,7 +60,7 @@ ujust | grep "<search keyword(s)>"
   - These are shortcuts that we have deemed necessary to not have a verb
     - **Examples**: `ujust update` and `ujust enroll-secureboot-key`
 
-### View each `ujust` script's source code
+## View each `ujust` script's source code
 
 If you would like to see what each script does for each command then open a host terminal and **enter**:
 
@@ -78,21 +75,11 @@ Alternatively, you can find the `ujust` commands locally in:
 
     This directory also shows **hidden** `ujust` commands.
 
-### Uninstalling applications installed through `ujust`
+## `ujust` script overview
 
-Most applications installed via a `ujust` script would have to be uninstalled manually. Follow the instructions found on the project's website or README file in the source code to uninstall it properly.
+These are just some of the common Bazzite `ujust` script examples, there are much more available which are viewable with `ujust --choose` as mentioned above.
 
-This **command** Shows layered packages that may be installed from `ujust`:
-
-```
-rpm-ostree status
-```
-
-### `ujust` script overview
-
-These are just some of the common Bazzite ujust scripts, there are much more available which are viewable with `ujust --choose` as mentioned above
-
-#### Maintenance Scripts
+### Maintenance Scripts
 
 - **ujust update** - updates system, flatpaks, and containers all at once
 - **ujust configure-grub** - Configures GRUB boot menu visibility
@@ -103,7 +90,7 @@ These are just some of the common Bazzite ujust scripts, there are much more ava
 - **ujust enroll-secure-boot-key** - Enrolls the Nvidia driver & KMOD signing key for secure boot. You'll need this if you want to use Bazzite with Secure Boot enabled
 - **ujust clean-system** - Cleans up old unused podman images, volumes, flatpak packages and rpm-ostree content
 
-#### Configuration/Enabling Scripts
+### Configuration/Enabling Scripts
 
 - **ujust setup-waydroid** - a configuration helper for Waydroid. More information in [Waydroid Setup Guide](../Installing_and_Managing_Software/Waydroid_Setup_Guide.md)
 - **ujust setup-virtualization** - setup and configure virtualization and vfio
@@ -115,17 +102,8 @@ These are just some of the common Bazzite ujust scripts, there are much more ava
 - **ujust enable-supergfxctl** - Enable Supergfxctl, a GPU switcher for hybrid laptops
 - **ujust bazzite-cli** - Bazzite CLI mod for Bluefin styled cli enhancements. More information in [Bazzite Command Line Tools](../Advanced/bazzite-cli.md)
 
-#### Troubleshooting Scripts
+### Troubleshooting Scripts
 
 - **ujust logs-last-boot** - Shows all messages from last boot
 - **ujust logs-this-boot** - Shows all messages from this boot
 - **ujust device-info** - Gathers useful device information to a pastebin. This is very useful for providing information when creating support tickets in the #Bazzite-Help section in Discord
-
-## Project Website
-
-https://just.systems/
-
-<hr>
-
-
-[**<-- Back to Installing and Managing Software on Bazzite**](./index.md)
