@@ -121,11 +121,11 @@ https://youtu.be/5m0YfIiypwA
 
 ![podman|385x358, 50%](../img/podman.png)
 
-Quadlet is a feature of [podman](https://podman.io/) that allows a user to run a container as [systemd](https://systemd.io/) units. It works by using a declarative syntax like [docker compose](https://docs.docker.com/compose/) but integrates to systemd and use podman as a backend.
+Quadlet is a feature of [podman](https://podman.io/) that allows a user to run a container as [systemd](https://systemd.io/) units. It works by using a declarative syntax like [docker compose](https://docs.docker.com/compose/) but integrates to systemd and uses podman as a backend.
 
 #### Use Cases
 
-Quadlet can be used for application packaged as container such as server application. You can find a lot of example of containerized application from [Linux Server](https://docs.linuxserver.io/images/).
+Quadlet can be used for application packaged as a container such as a server application. You can find a lot of examples of containerized applications from [Linux Server](https://docs.linuxserver.io/images/).
 
 #### Managing Quadlet
 
@@ -141,7 +141,7 @@ Stopping quadlet
 systemctl --user stop nginx
 ```
 
-You can see more command in [man systemctl](https://man.archlinux.org/man/systemctl.1) or [tldr systemctl](https://tldr.inbrowser.app/pages/linux/systemctl).
+You can see more commands in [man systemctl](https://man.archlinux.org/man/systemctl.1) or [tldr systemctl](https://tldr.inbrowser.app/pages/linux/systemctl).
 
 !!! note
 
@@ -161,7 +161,8 @@ You can put your quadlet in these location sorted by priority.
 
 #### Running Quadlet on Startup
 
-You may want to run your quadlet automatically on startup, just add an install section to the quadlet file if you want it to autostart. Most of the time `default.target` is what you want but if you need other target you can read on systemd docs.
+You may want to run your quadlet automatically on startup, just add an install section to the quadlet file if you want it to autostart. Most of the time `default.target` is what you want but if you need other target you can read about that on systemd docs.
+
 ```
 [Install]
 WantedBy=default.target
@@ -185,15 +186,15 @@ WantedBy=default.target
 
 #### Converting Docker Compose to Quadlet Unit
 
-You will find that most of containerized app in the web are built using docker compose. Even the Linux Server that is linked above have all container documented using compose file. So you will need to convert it first before running it as quadlet, fortunately you can use [podlet](https://github.com/containers/podlet) to help converting it.
+You will find that most of containerized apps in the web are built using docker compose. Even the Linux Server that is linked above has all containers documented using a compose file. So you will need to convert it first, before running it as quadlet, fortunately you can use [podlet](https://github.com/containers/podlet) to help you converting it.
 
 !!! note
 
-    By default quadlet require full repository name. Most image are in docker hub so you can just add `docker.io/` (e.g "nginxinc/nginx-unprivileged" become "docker.io/nginxinc/nginx-unprivileged")
+    By default quadlet require full repository name. Most images are in docker hub so you can just add `docker.io/` (e.g "nginxinc/nginx-unprivileged" become "docker.io/nginxinc/nginx-unprivileged")
 
 #### Running Rootful Container as Quadlet
 
-While ideally you would run all container using rootless podman, sadly not all container will work with it. If you noticed in the beginning, this guide used nginx-unprivileged rather than the normal nginx, this because it needs root to function. To use rootful podman, you will need to use different quadlet path and run using root systemctl (without `--user`).
+While ideally you would run all containers using rootless podman, sadly not all containers will work with it. If you noticed in the beginning, this guide used nginx-unprivileged rather than the normal nginx, this is because it needs root to function. To use rootful podman, you will need to use different quadlet path and run using root systemctl (without `--user`).
 
 Rootful Quadlet Path
 - `/run/containers/systemd/` - Temporary quadlet
@@ -216,9 +217,10 @@ Rootful Quadlet Path
 
 #### Troubleshooting
 
-If your quadlet for some reason isn't found or starting you can debug the container unit using `/usr/libexec/podman/quadlet -dryrun` for system quadlet or `/usr/libexec/podman/quadlet -user -dryrun` for user quadlet.
+If your quadlet for some reason isn't found or starting, you can debug the container unit using `/usr/libexec/podman/quadlet -dryrun` for system quadlet or `/usr/libexec/podman/quadlet -user -dryrun` for user quadlet.
 
 #### Useful Links
+
 - https://podman.io/=
 - https://docs.podman.io/en/stable/markdown/podman-systemd.unit.5.html
 - https://www.redhat.com/en/blog/quadlet-podman
