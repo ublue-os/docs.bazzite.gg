@@ -16,12 +16,6 @@ Steam is the recommended way to play PC games on the Linux desktop as it ships w
 
 <show screenshot>
 
-### Using Different Compatibility layers
-
-Proton Plus...
-
-### Additional Compatibility Layers & Managing Games Running Through Proton
-
 ### Non-Steam Games
 
 Non-Steam games can run on Bazzite...
@@ -34,7 +28,7 @@ Non-Steam games can run on Bazzite...
 
 #### Console Emulation
 
-## Compatibility Layers
+## Compatibility Layers & Managing Windows Games
 
 Windows games need to run through a **compatibility layer** (like Proton) on Bazzite. KDE Plasma and GNOME images pre-install different, but similar compatibility layer managers.
 
@@ -56,7 +50,7 @@ Adding and replacing game files is still viable in both the game directory and p
 
     **DirectInput8 DLL Override**: `WINEDLLOVERRIDES="dinput8=n,b" %command%`
 
-#### What is a Proton/WINE Prefix?
+#### What is a Prefix?
 
 It's the glue that holds everything together when you run a game through Proton and also is responsible for containing any of the files the game would drop outside of the installation folder.
 
