@@ -168,40 +168,25 @@ You may want to run your quadlet automatically on startup, just add an install s
 WantedBy=default.target
 ```
 
-For example:
-```
-[Container]
-ContainerName=nginx
-Image=docker.io/nginxinc/nginx-unprivileged
-AutoUpdate=registry
-PublishPort=8080:8080
-
-[Install]
-WantedBy=default.target
-```
-
-!!! note
-
-    You don't need to run `systemctl enable` as the service file are generated. You also cannot run it anyway.
-
 #### Converting Docker Compose to Quadlet Unit
 
 You will find that most of containerized apps in the web are built using docker compose. Even the Linux Server that is linked above has all containers documented using a compose file. So you will need to convert it first, before running it as quadlet, fortunately you can use [podlet](https://github.com/containers/podlet) to help you converting it.
 
 !!! note
 
-    By default quadlet require full repository name. Most images are in docker hub so you can just add `docker.io/` (e.g "nginxinc/nginx-unprivileged" become "docker.io/nginxinc/nginx-unprivileged")
+    By default quadlet require full repository name. Most images are in docker hub so add `docker.io/` (e.g "nginxinc/nginx-unprivileged" becomes "docker.io/nginxinc/nginx-unprivileged") to it.
 
 #### Running Rootful Container as Quadlet
 
-While ideally you would run all containers using rootless podman, sadly not all containers will work with it. If you noticed in the beginning, this guide used nginx-unprivileged rather than the normal nginx, this is because it needs root to function. To use rootful podman, you will need to use different quadlet path and run using root systemctl (without `--user`).
+While ideally you would run all containers using rootless podman, sadly not all containers will work with it.  Use rootful podman by using a different quadlet path and run using root systemctl (without `--user`).
 
-Rootful Quadlet Path
+Rootful Quadlet Paths
 - `/run/containers/systemd/` - Temporary quadlet
 - `/etc/containers/systemd/` - Recommended location
 - `/usr/share/containers/systemd/` - Image defined
 
 ### Common Quadlet Key Description
+
 | Option        | Example                                     | Description                                                                              |
 | ------------- | ------------------------------------------- | ---------------------------------------------------------------------------------------- |
 | ContainerName | ContainerName=nginx                         | Name of the container.                                                                   |
