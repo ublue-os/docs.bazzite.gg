@@ -24,13 +24,13 @@ WantedBy=default.target
 ```
 !!! note
 
-    You can find list of timezone [here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
+    You can find list of timezones [here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
 !!! note
 
     Use absolute path for volume, e.g `/home/username/plex/config`.
 !!! note
 
-    You can mount multiple volume for your media, e.g `Volume=/path/to/media:/tv:z` and `Volume=/path/to/another/media:/movie:z`. Consult the documentation for more info.
+    You can mount multiple volumes for your media, e.g `Volume=/path/to/media:/tv:z` and `Volume=/path/to/another/media:/movie:z`. Consult the documentation for more info.
 
 
 ## Video Tutorial
