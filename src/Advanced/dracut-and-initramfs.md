@@ -18,5 +18,3 @@ To add this to grub we issue the command.
 rpm-ostree kargs --append-if-missing="hid_apple.fnmode=2"
 ```
 This lets you change the module option without editing the initramfs system and is a lot faster whenever you update the system as the kernel arguments are not regenerated on each update.
-
-However if you __want__ to or must use modprobe files instead at the sacrifice of slowing down your update speed a lot, then proceed with the reading.
