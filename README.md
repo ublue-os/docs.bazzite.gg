@@ -1,3 +1,5 @@
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/bazzite-org/docs.bazzite.gg)
+
 # Contributing to Bazzite MkDocs documentation
 
 - [Contributing to Bazzite MkDocs documentation](#contributing-to-bazzite-mkdocs-documentation)
