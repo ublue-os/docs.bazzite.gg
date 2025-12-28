@@ -60,7 +60,3 @@ Rescue mode provides a convenient single-user environment and allows you to repa
 This improvement is implemented such that a user must have the ability to edit the kernel command line. If your bootloader (eg, GRUB) is configured with a password preventing users from modifying the kernel command line, bypassing the password for a locked root account will not be enabled. This is especially important since `emergency` mode can be reached when a filesystem check fails at boot time, not just when specified on the kernel command line.
 
 Given this safeguard, this improved rescue & emergency method is just as secure as setting `init=/bin/bash`, etc. Plus, it is less likely a user will damage SELinux labels using this method.
-
----
-
-Thanks to [Colin Walters](https://github.com/cgwalters) and [ Timothée Ravier](https://github.com/travier) for [inspiring this solution](https://github.com/ublue-os/main/issues/470).
