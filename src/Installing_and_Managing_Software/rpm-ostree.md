@@ -18,7 +18,11 @@ Install [Fedora Linux packages](https://packages.fedoraproject.org/) by installi
 - Layering packages will **require** a system reboot when it finishes creating the new deployment with the package(s) added to your image.
 - Use this method as a **last resort** and for anything at a "system-level" only.
 
-## Common `rpm-ostree` Terminal Commands:
+## Terminal Commands Related to Package Layering
+
+Use these commands at your own risk.
+
+### Layer Package(s)
 
 ```
 rpm-ostree install <package>
@@ -26,17 +30,29 @@ rpm-ostree install <package>
 
 Installs Fedora package(s) to the system that stay between updates, reboot to apply the installation.
 
+### Uninstall Layered Package(s)
+
 ```
 rpm-ostree uninstall <package>
 ```
 
 Uninstalls any layered packages added to the system, reboot to apply the uninstallation.
 
+### Search for a Package
+
 ```
 rpm-ostree search <package>
 ```
 
 Searches for Fedora packages that can be installed.
+
+### View Currently Layered Packages
+
+```
+rpm-ostree status
+```
+
+This will output the layered packages in your Bazzite installation.
 
 ## Installing RPM Files
 
