@@ -108,10 +108,6 @@ After completing all of the above, then your next boot will be in Steam Gaming M
 
 > [Read further information about Steam Gaming Mode][Steam_Gaming_Mode]
 
-### Alternative Bazzite Installation Guide
-
-Read the [**Alternative Troubleshooting Guide**](./alternate-install-guide.md) if you are having issues booting the Bazzite installer.
-
 ## Post-Installation
 
 ![Rollbacks|690x402, 50%](../../img/GRUB_Menu.png)
@@ -169,6 +165,5 @@ Change it in the settings of Desktop Mode under the "User" category.
 
 ## **Troubleshooting Installation**:
 
-- Use a download manager (like [**Motrix**](https://motrix.app/)) if the direct download fails or is downloading too slow.
+<link guide here>
 
-- Make sure to only select the appropriate drives to avoid losing data on others, and it is best practice to safely remove any external drives before proceeding.
