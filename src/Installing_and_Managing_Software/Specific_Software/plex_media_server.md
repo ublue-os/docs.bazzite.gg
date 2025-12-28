@@ -31,3 +31,7 @@ WantedBy=default.target
 !!! note
 
     You can mount multiple volume for your media, e.g `Volume=/path/to/media:/tv:z` and `Volume=/path/to/another/media:/movie:z`. Consult the documentation for more info.
+
+
+## Video Tutorial
+https://www.youtube.com/watch?v=xTVFmvyZGpg
