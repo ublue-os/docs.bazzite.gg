@@ -45,9 +45,10 @@ brew install <package>
 ## Bazzite Portal (`ujust` Commands)
 
 <show screenshot of bazzite portal>
-<talk about ujust commands that can install certain software>
 
-<ujust might just be its own page and linked here>
+The Bazzite Portal application can install specialized software that ships with Bazzite as an installation script by the maintainers and contributors of the project.  Please note that _some_ of the software that can be installed from the Bazzite Portal can add layered packages to your installation which is generally not recommended.
+
+Read the ujust page <link this>
 
 ## Containers (Distrobox/Quadlet)
 
@@ -123,7 +124,7 @@ https://youtu.be/5m0YfIiypwA
 
 Quadlet is a feature of [podman](https://podman.io/) that allows a user to run a container as [systemd](https://systemd.io/) units. It works by using a declarative syntax like [docker compose](https://docs.docker.com/compose/) but integrates to systemd and uses podman as a backend.
 
-#### Use Cases
+#### Quadlet Usecases
 
 Quadlet can be used for application packaged as a container such as a server application. You can find a lot of examples of containerized applications from [Linux Server](https://docs.linuxserver.io/images/).
 
@@ -147,9 +148,10 @@ You can see more commands in [man systemctl](https://man.archlinux.org/man/syste
 
     Do not add the `.container` suffix when you interact with systemctl or it will gives unit not found error
 
-#### Quadlet file location
+#### Quadlet File Locations
 
-You can put your quadlet in these location sorted by priority.
+You can put your quadlet in these locations sorted by priority:
+
 - `$XDG_RUNTIME_DIR/containers/systemd/` - Usually used for temporary quadlet
 - `~/.config/containers/systemd/` - Recommended location
 - `/etc/containers/systemd/users/$(UID)`
@@ -219,6 +221,8 @@ AppImage is a universal package format that attempts to bundle every dependency 
 
 ## System-Level Package Layering (`rpm-ostree` Commands) [_**Not Recommended**_]
 
+Add software on top of the Bazzite image.
+
 <link to rpm-ostree guide>
 
 ## Other
@@ -232,7 +236,7 @@ Bazzite can also run Windows and Android applications too!
 - [**Steam**](https://store.steampowered.com/) (_pre-installed_) has a Windows compatibility layer built-in.
 - [**Lutris**](https://lutris.net/about) (_pre-installed_) for non-Steam PC games and non-gaming software.
 - [**Faugus Launcher**](https://github.com/Faugus/faugus-launcher) (_Available in Bazaar_) as an alternative to Lutris.
-- [**Heroic**](https://heroicgameslauncher.com/) (_Available in Bazaar_) for Epic Games, GOG, and Amazon Games integration.
+- [**Heroic**](https://heroicgameslauncher.com/) (_Available in Bazaar_) for proper Epic Games, GOG, and Amazon Games integration.
 - [**WineZGUI**](https://github.com/fastrizwaan/WineZGUI) (_Available in Bazaar_) for less complicated Windows applications that don’t require special considerations.
 
 >Read the [**Bazzite Gaming Guide**](/Gaming/index.md) for more information on running Windows games on Linux.
