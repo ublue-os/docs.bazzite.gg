@@ -14,12 +14,12 @@ VPN clients are usually not offered on Flathub as the Flatpak sandbox is too str
 
 [Tailscale](https://tailscale.com) is included by default to provide VPN services for both desktop and development use cases. [Tailscale is pretty useful](https://blog.6nok.org/tailscale-is-pretty-useful/).
 
-- [Using Tailscale with Mullvad](https://tailscale.com/kb/1258/mullvad-exit-nodes) - provides the best out of the box experience
-  - [Using Tailscale with Docker](https://tailscale.com/kb/1282/docker) - for development
-  - `ujust toggle-tailscale` will remove the built in desktop integration if you prefer to use something else
-  - Tailscale's [YouTube channel](https://www.youtube.com/@Tailscale) has lots of great tips and tricks
-- Good VPNs provide Wireguard configuration files that can be imported directly into NetworkManager, check your VPN providers documentation for more information
-- Only as a last resort [layer the VPN with rpm-ostree](/Installing_and_Managing_Software/rpm-ostree/)
+- [Using Tailscale with Mullvad](https://tailscale.com/kb/1258/mullvad-exit-nodes) - Provides the best out of the box experience.
+  - [Using Tailscale with Docker](https://tailscale.com/kb/1282/docker) - For development purposes.
+  - `ujust toggle-tailscale` will remove the built in desktop integration if you prefer to use something else.
+  - Tailscale's [YouTube channel](https://www.youtube.com/@Tailscale) has lots of great tips and tricks.
+- Good VPNs provide Wireguard configuration files that can be imported directly into NetworkManager, check your VPN providers documentation for more information.
+- Only as a last resort [layer the VPN with rpm-ostree](/Installing_and_Managing_Software/rpm-ostree/).
 
 ## Import VPN configuration files through Desktop Environment
 
