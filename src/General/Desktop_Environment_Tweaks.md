@@ -2,13 +2,13 @@
 <!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=574", "fetched_at": "2024-09-03 16:43:19.212243+00:00"}-->
 <!-- ANCHOR_END: METADATA -->
 
-## Customizing KDE Plasma
+## Customizing KDE Plasma with Themes
 
 KDE Plasma is the default Bazzite desktop environment and is highly customizable. One of the various customization that can be done is installing custom styles, cursors, and icons to your system with custom themes made by the community.  Themes installed through the **System Settings** are installed into `~/.local/share/plasma`; to uninstall them, you may need to manually delete the folders associated with the installed themes manually.
 
 ![Directory|401x207, 75%](../img/Directory.png)
 
-## Manually Installing Themes (_Recommended_)
+## Manually Installing Themes
 
 Step-by-step instructions to install custom themes on KDE Plasma.
 
@@ -16,27 +16,27 @@ Step-by-step instructions to install custom themes on KDE Plasma.
 2. Extracting the contents to `~/.local/share/plasma/` (you may need to make this directory)
 3. Open the system settings and select your theme, style, cursor etc. as it now should appear
 
-### Theme Extraction Locations
+## Theme Extraction Locations
 
 The location where specific KDE Plasma components will be extracted on the desktop.
 
-#### Global Themes
+### Global Themes
 
 Global themes are placed in `~/.local/share/plasma/look-and-feel/` (_you may need to make this directory_).
 
-#### Plasma Themes
+### Plasma Themes
 
 "Plasma themes" are placed in `~/.local/share/plasma/desktoptheme/` (_you may need to make this directory_).
 
-#### Plasma Window Decorations
+### Plasma Window Decorations
 
 "Window decoration themes" are placed in `~/.local/share/aurorae/themes/` (_you may need to make this directory_).
 
-#### SDDM (Login Manager) Themes
+### SDDM (Login Manager) Themes
 
 SDDM themes can be layered **at your own risk** if they are available as RPM packages using [`rpm-ostree`](/Installing_and_Managing_Software/rpm-ostree.md).
 
-#### Icon / Cursor Themes
+### Icon / Cursor Themes
 
 "Icon/Cursor themes" are placed in `~/.local/share/icons`
 
@@ -45,17 +45,6 @@ SDDM themes can be layered **at your own risk** if they are available as RPM pac
 Some Flatpaks need filesystem permissions for applications that have issues with cursor themes.
 
 **Example**: (`~/.local/share/icons/:ro` in "Filesystem" in each problematic application or globally in Flatseal).
-
-#### Themes that require `kvantum`
-
-Some themes require [`kvantum`](https://github.com/tsujan/Kvantum/blob/master/Kvantum/README.md) to be installed on the host system.
-
-Install it with this **command**:
-
-```
-rpm-ostree install kvantum
-```
-> [**Check out this external resource on KDE themes for more information**](https://itsfoss.com/properly-theme-kde-plasma/).
 
 ## Customizing Other Desktops and Sessions
 
