@@ -88,7 +88,7 @@ You will need other tools as well, like:
 
 > ⚠️ WARNING
 >
-> Just remember, ⚠️**DO NOT USE SPACES IN THE FILE NAME**⚠️. Is really important, spaces in filenames is going to bit us later in a future.
+> Just remember, ⚠️**DO NOT USE SPACES IN THE FILE NAME**⚠️. Spaces in filenames are going to bite us later in a future.
 > Instead, use underscores `_`
 
 ### 2. Set a proper page name
@@ -142,23 +142,10 @@ plugins:
       use_image_from_page: true # Use first image found in a page as fallback
 ```
 
-## Credit Yourself!
-
-While it is **not required**, you could add your Github username to the top of the page like this:
-
-```
----
-authors:
-  - "@yournamehere"
----
-```
-
-Some pages already include an authors section already.  **Do not add credits to the main index pages!**
-
 ## Translate documentation
 
 Translating documentation is as straightfoward as can be.
-Lets say we want to translate `Homebrew.md` to Spanish. All what you would have to do is make a copy of the file with the name `Homebrew.es.md` and start translating.
+Lets say we want to translate `index.md` to Spanish. All what you would have to do is make a copy of the file with the name `index.es.md` and start translating.
 
 Perhaps you can't see your translation with `just mkdocs serve`.
 Chances are we need to configure MkDocs to do so.
