@@ -2,6 +2,15 @@
 <!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=2495", "fetched_at": "2024-09-03 16:43:22.238775+00:00"}-->
 <!-- ANCHOR_END: METADATA -->
 
+## Downloading the ISO
+
+Use a download manager (like [**Motrix**](https://motrix.app/)) if the direct download fails or is downloading too slow.
+
+
+## Drives
+
+Make sure to only select the appropriate drives to avoid losing data on others, and it is best practice to safely remove any external drives before proceeding.
+
 ## Error Code 1
 
 The "code 1" error is a generic error code that appears during installation when a more specific error message isn't available. This error can occur in several scenarios that we have identified so far but there may be more scenarios:
