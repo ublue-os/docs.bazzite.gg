@@ -38,9 +38,9 @@ Intended specifically for desktops and laptops with a focus on gaming which is i
 
 "**Steam Gaming Mode**" is pre-installed and its features fully functional for supported hardware. This version of Bazzite boots directly into the Steam Gaming Mode session and is intended for handhelds and couch-gaming scenarios. It also includes a Desktop Mode session. System and application updates are manually upgraded in Steam Gaming Mode and applied on a reboot.
 
-#### Full Bazzite Image Chart
+#### Bazzite Image Chart Example
 
-Verify your image by entering this **commmand** in the termi:
+Verify your Bazzite image by entering this **commmand** in the termi:
 
 ```
 rpm-ostree status
