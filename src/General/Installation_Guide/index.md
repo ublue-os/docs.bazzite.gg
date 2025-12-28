@@ -100,14 +100,6 @@ Hold the 'Volume Down' (<kbd>-</kbd>) button and click the Power Button, and whe
 - Begin the installation.
 - Reboot device after it has finished installing.
 
-#### Setting Up Steam Gaming Mode
-
-![Gaming Mode Setup|690x442, 50%](../../img/pLvHB1NAMlb3ghsR72q7l9Auj8B.jpeg)
-
-After completing all of the above, then your next boot will be in Steam Gaming Mode which requires additional setup for Steam.
-
-> [Read further information about Steam Gaming Mode][Steam_Gaming_Mode]
-
 ## Post-Installation
 
 ![Rollbacks|690x402, 50%](../../img/GRUB_Menu.png)
@@ -115,6 +107,14 @@ After completing all of the above, then your next boot will be in Steam Gaming M
 The first boot will show a screen showing your current and last deployment. It is important to note that the GRUB menu can be used to rollback Bazzite deployments if you encounter issues.
 
 Read more about this in the [Updates, Rollback, and Rebasing documentation](../../Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/index.md).
+
+### Setting Up Steam Gaming Mode (Bazzite-Deck Only)
+
+![Gaming Mode Setup|690x442, 50%](../../img/pLvHB1NAMlb3ghsR72q7l9Auj8B.jpeg)
+
+After completing all of the above, then your next boot will be in Steam Gaming Mode which requires additional setup for Steam.
+
+> [Read further information about Steam Gaming Mode][Steam_Gaming_Mode]
 
 ### Configuring System Settings for KDE Plasma and GNOME
 
