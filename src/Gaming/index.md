@@ -22,11 +22,39 @@ Non-Steam games can run on Bazzite...
 
 #### Lutris
 
+Lutris offers two methods to play Windows games on Bazzite.  Community-driven scripts or manually adding the executable.  It is **highly recommended to use the manual method** as some scripts are poorly maintained.
+
+#### Lutris Installer Scripts
+
+![Example of Lutris installers|623x500, 75%](../img/Lutris_Setup_Installers.png)
+
+Lutris is game management software that doubles as a WINE front-end for Windows games. Several games and launchers can be installed by searching for the title and using one of the installer scripts for it.  [Faugus Launcher](https://flathub.org/en/apps/io.github.Faugus.faugus-launcher) is an alternative to Lutris available in the Bazaar app store.
+
+#### Manually adding a Windows game to Lutris
+
+![Add Locally Installed Game|632x496, 75%](../img/Lutris_Setup_Add_Local_Game.png)
+
+![Lutris manually adding games example 1|690x213](../img/Lutris_Setup_Add_Local_Game_1.png)
+
+However if your game is not listed or doesn't work with the provided script, then manually add the executable. It will need a [**prefix directory**](/Gaming/Managing_and_modding_games.md#non-steam-games-prefix-management) created somewhere, but by default it will use the `~/Games` directory for each game.
+
+#### Lutris Shortcuts
+
+![Lutris_Right_Click_Menu|421x447, 75%](../img/Lutris_Setup_Shortcut.png)
+
+Right clicking a game on Lutris gives the option to add it as a non-Steam game (useful for Steam Gaming Mode), create a desktop shortcut, or an application menu shortcut.
+
 #### Heroic Games Launcher
+
+<show screenshot of Heroic here>
+
+[**Heroic Games Launcher**](https://flathub.org/apps/com.heroicgameslauncher.hgl) is recommended for games that were purchased from Epic Games Launcher, GOG, and Amazon Games Launcher.
 
 #### Gamepass Games
 
 #### Console Emulation
+
+Install emulators from the Bazaar app store.
 
 ## Compatibility Layers & Managing Windows Games
 
@@ -83,6 +111,8 @@ Non-Steam games can have the prefix folder anywhere you specify:
 Bazzite users can use templates for some of the pre-installed tools which can be accessed by right clicking anywhere in the file manager.
 
 ### Common Linux Gaming Issues
+
+Issues that happen specifically in Linux gaming outside of Bazzite.  See also: <link to common issues and resolutions> and <gaming mode quirks>
 
 #### Native Linux Port Versus Windows Version
 
