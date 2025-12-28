@@ -18,20 +18,6 @@ Note: This fix also fixes the lag in Game Mode on Nvidia GPUs, however, this com
 
 **Resolution:** There are two audio devices that appear on the Rog Ally **Family 17h/19h/1ah HD Audio Controller** and **ROG Ally** that affect each other's audio volume.
 
-## Discord screen-sharing is not working
-
-**Issue:** When you try to share your screen in Discord, it simply closes the dialogue box or does not work, as Discord might have broken the screen sharing feature in Linux again.
-
-**Resolution:** You can install Discord's official **Discord Canary** client, which is their alpha/test version of Discord and it might have been fixed there. You can install **Discord Canary** by opening the terminal and running:
-
-```bash
-flatpak remote-add --if-not-exists flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
-flatpak install flathub-beta com.discordapp.DiscordCanary
-flatpak override --user --socket=wayland com.discordapp.DiscordCanary
-```
-
-Then run **Discord Canary** instead of regular Discord when you want to share your screen. Alternative Discord clients such as **Vesktop** are also a possible solution, but they do violate Discord's [terms of service](https://discord.com/terms#6). There are currently no known cases of users being banned for using client mods or alternative Discord clients, but this may change in the future.
-
 ## Gamepads and handheld joysticks don't work in Desktop Mode
 
 **Issue:** Gamepads and handheld device joysticks don't work in desktop mode, so you have to use the touchscreen or connect an external mouse.
@@ -210,3 +196,14 @@ nmcli connection modify eduroam 802-1x.phase1-auth-flags 32
 ```
 
 and then try to connect again.
+
+<hr>
+
+## Waking from sleep doesn't work with a Gigabyte b550 motherboard
+
+**Issue:** Once a Gigabyte b550 motherboard suspends, it does not properly resume, and the display remains black until a reboot.
+
+**Resolution:** This can be fixed by disabling GPP0 and GPP8 wakeup. A hidden ujust is provided to toggle this fix:
+```bash
+ujust _toggle-gigabyte-wake-fix
+```
