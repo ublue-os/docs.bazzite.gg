@@ -68,13 +68,13 @@ Selecting `Configure Waydroid` will allow users to install additional Android tw
 
 - ARM Translation (_libndk_ or _libhoudini_. _libhoudini_ offers better overall compatibility compared to _libndk_. Some games may run on only one of _libhoudini_ or _libndk_.  On Android 11, _libhoudini_ will run significantly slower than _libndk_ if you have AMD CPU. **Do not install both of them at the same time. If you need to switch, uninstall your current translation layer before installing new one.**)
 
-- [Magisk](https://github.com/topjohnwu/Magisk) (Android power user suite)
+- [**Magisk**](https://github.com/topjohnwu/Magisk) (Android power user suite)
 
-- [Logitech Smartdock Support](https://support.logi.com/hc/en-us/articles/360023201574-What-is-SmartDock) (SmartDock hardware support)
+- [**Logitech Smartdock Support**](https://support.logi.com/hc/en-us/articles/360023201574-What-is-SmartDock) (SmartDock hardware support)
 
-- [F-Droid Privileged Extension](https://f-droid.org/packages/org.fdroid.fdroid.privileged/) (Proper [F-Droid](https://f-droid.org/en/packages/) support)
+- [**F-Droid Privileged Extension**](https://f-droid.org/packages/org.fdroid.fdroid.privileged/) (Proper [F-Droid](https://f-droid.org/en/packages/) support)
 
-- [`widevine`](https://widevine.com/) (Support for video streaming DRM)
+- [**`widevine`**](https://widevine.com/) (Support for video streaming DRM)
 
 ### Get Google Device ID to Get Certified (**GApps**)
 
@@ -204,13 +204,3 @@ If you experience issues or want a fresh Waydroid container, then select `Reset 
 ```
 ujust setup-waydroid
 ```
-
-### Project Website
-
-https://waydro.id/
-
-<hr>
-
-**See also**: [Upstream documentation](https://docs.waydro.id/)
-
-<-- [**View all Bazzite documentation**](../index.md)
