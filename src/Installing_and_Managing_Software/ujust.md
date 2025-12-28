@@ -10,15 +10,14 @@ title: ujust Commands
 
 `ujust` commands that automate tasks using scripts which can be utilized to install specific specialized software, system configuration, and maintenance.
 
+![ujust command list|690x411](../img/ujust_command_list.png)
+<sub>This will output a list of available commands.</sub>
+
 Open a host terminal and **enter this command**:
 
 ```
 ujust
 ```
-
-<sub>This will output a list of available commands.</sub>
-
-![ujust command list|690x411](../img/ujust_command_list.png)
 
 
 ![ujust TUI|690x403](../img/ujust_TUI.png)
@@ -47,18 +46,19 @@ You can search for specific commands by **entering**:
 ujust | grep "<search keyword(s)>"
 ```
 
-- `install-`: Install program, there is no configuration or uninstall commands at this time
-- `get-`: Install an "extension" like Decky plugins, and if it is an extension then it can use `get-` too
-- `setup-`: Install program, provides uninstall and configuration options for after install
-- `configure-`: Configure something that came by default on the image
-  - If it must be installed first, then it will be in `setup-`
-- `toggle-`: Turns something on/off
-  - Selection might be automatic or manual depending on implementation
-- `fix-`: Fixes, patches or works around an issue
-- `distrobox-`: Distrobox exclusive verb for useful Distrobox stuff
-- `foo`: Replace this with whatever the command is called
-  - These are shortcuts that we have deemed necessary to not have a verb
-    - **Examples**: `ujust update` and `ujust enroll-secureboot-key`
+- `install-`: Install program, there is no configuration or uninstall commands at this time.
+    - **Warning**: Some of the applications avaliable to install as a `ujust` command can end up [layering packages](./rpm-ostree.md) to your system. 
+- `get-`: Install an "extension" like Decky plugins, and if it is an extension then it can use `get-` too.
+- `setup-`: Install program, provides uninstall and configuration options for after install.
+- `configure-`: Configure something that came by default on the image.
+  - If it must be installed first, then it will be in `setup-`.
+- `toggle-`: Enables or disables a feature ore setting.
+  - Selection might be automatic or manual depending on implementation.
+- `fix-`: Fixes, patches or works around an issue.
+- `distrobox-`: Distrobox exclusive verb intended to make container usage easier.
+- `foo`: Replace this with whatever the command is called.
+  - These are shortcuts that we have deemed necessary to not have a verb.
+    - **Examples**: `ujust update` & `ujust enroll-secureboot-key`
 
 ## View each `ujust` script's source code
 
@@ -75,7 +75,7 @@ Alternatively, you can find the `ujust` commands locally in:
 
     This directory also shows **hidden** `ujust` commands.
 
-## `ujust` script overview
+## `ujust` Script Overview
 
 These are just some of the common Bazzite `ujust` script examples, there are much more available which are viewable with `ujust --choose` as mentioned above.
 
@@ -106,4 +106,4 @@ These are just some of the common Bazzite `ujust` script examples, there are muc
 
 - **ujust logs-last-boot** - Shows all messages from last boot
 - **ujust logs-this-boot** - Shows all messages from this boot
-- **ujust device-info** - Gathers useful device information to a pastebin. This is very useful for providing information when creating support tickets in the #Bazzite-Help section in Discord
+- **ujust device-info** - Gathers useful device information to a pastebin. This is very useful for providing information when creating support tickets.
