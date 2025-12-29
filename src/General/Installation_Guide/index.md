@@ -50,6 +50,8 @@ Secure Boot is supported on most hardware, but you must [**enroll our key**](./s
 
 ## Installing Bazzite
 
+https://www.youtube.com/watch?v=KAt49B6rSFI
+
 1. Download and Flash Bazzite
 
 - Download [Bazzite](https://download.bazzite.gg) after choosing the correct ISO for your hardware with our Image Picker tool.
