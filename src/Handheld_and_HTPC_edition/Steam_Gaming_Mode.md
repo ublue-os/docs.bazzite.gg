@@ -46,6 +46,8 @@ This documentation may not cover specific areas with the assumption that the use
 
 Valve wrote a [**guide**](https://help.steampowered.com/en/faqs/view/7DD4-C618-182E-0E49) for the Steam Deck which may have some relevant information in regards to Bazzite.
 
+<hr>
+
 ## Steam Gaming Mode Quirks and Workarounds
 
 ### How do I use my microSD card that I used on my Steam Deck running SteamOS?
