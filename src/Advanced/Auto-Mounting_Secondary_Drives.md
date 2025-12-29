@@ -1,8 +1,16 @@
+---
+title: Auto-Mounting Secondary Drives
+---
+
 <!-- ANCHOR: METADATA -->
 <!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=970", "fetched_at": "2024-09-03 16:43:14.005694+00:00"}-->
 <!-- ANCHOR_END: METADATA -->
 
 !!! info "MicroSD cards automatically mount without any manual intervention required on Bazzite."
+
+## Video Guide
+
+https://www.youtube.com/watch?v=fN9lvkkrExI&list=PLuiT7cNvThNC956b5rtSPCjwcHe2tKBmY&index=30
 
 ## Setup an auto-mounting partition
 
