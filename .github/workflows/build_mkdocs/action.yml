@@ -86,7 +86,6 @@ runs:
         args: >-
           --root-dir ${{ inputs.output_dir }}
           --exclude 'https://github.com/[^/]+/docs.bazzite.gg/(raw|blob)/[^/]+/src/'
-          --method HEAD
           ${{ inputs.output_dir }}
         jobSummary: true
         fail: false
