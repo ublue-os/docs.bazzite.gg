@@ -113,7 +113,7 @@ Flash the Bazzite Live ISO to a thumb drive, and run the **Bazzite Bootloader Re
 
 <sub> (Example: Swapping from KDE Plasma to GNOME or vice-versa) </sub>
 
-It is **not recommended to rebase between desktop environments** due to configuration files having different standards which usually lead to broken installations after rebasing between two different DEs.
+It is **not recommended to switch between desktop environments** due to configuration files having different standards **which usually lead to broken installations after rebasing to a different Bazzite image with a different desktop environment installed**.
 
 ## Am I able to install _this_ desktop environment or _that_ window manager?
 
