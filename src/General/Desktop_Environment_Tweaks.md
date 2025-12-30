@@ -8,7 +8,7 @@ title: Desktop Environment Customization, Themes, and Tweaks
 
 !!! warning
     
-    Install community software **at your own risk**!
+    Install desktop customization software **at your own risk**!
 
 ## Customizing KDE Plasma with Themes
 
@@ -20,9 +20,9 @@ KDE Plasma is the default Bazzite desktop environment and is highly customizable
 
 Step-by-step instructions to install custom themes on KDE Plasma.
 
-1. Download the theme manually from the [KDE Store](https://store.kde.org/browse/)
-2. Extracting the contents to `~/.local/share/plasma/` (you may need to make this directory)
-3. Open the system settings and select your theme, style, cursor etc. as it now should appear
+1. Download the theme manually from the [**KDE Store**](https://store.kde.org/browse/).
+2. Extracting the contents to `~/.local/share/plasma/` (_you may need to make this directory_).
+3. Open the system settings and select your theme, style, cursor etc. as it now should appear.
 
 ## Theme Extraction Locations
 
@@ -56,12 +56,8 @@ Some Flatpaks need filesystem permissions for applications that have issues with
 
 ## Customizing Other Desktops and Sessions
 
+The default desktop environment for Bazzite is KDE Plasma which also happens to offer the most in-depth customization for a modern Linux desktop environment to date.
+
 ### Manage GNOME Extensions (`-gnome` Images)
 
 The "Extension Manager" applicaton alllows for installing new extensions to GNOME and managing currently pre-installed extensions.  Proceed with caution as extensions can make your system unstable and if your desktop crashes then GNOME will disable all of the extensions on the next boot.
-
-### Steam Gaming Mode Tweaks (`-deck` Images)
-!!! warning
-    Decky Loader will sometimes have issues with new Steam updates and may need to be uninstalled temporarily.
-
-Install [Decky Loader](https://decky.xyz/) then install [CSS Loader](https://docs.deckthemes.com/) to customize how Steam Gaming Mode looks. Be aware that third-party plugins may cause issues.
