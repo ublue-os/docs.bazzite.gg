@@ -2,7 +2,7 @@
 title: Custom Resolutions
 ---
 
-# `custom-resolution-helper`
+## `custom-resolution-helper`
 
 ![Custom Resolution Helper Preview|570x500](../img/Custom_Resolution_Helper_Preview.png)
 
@@ -12,7 +12,7 @@ title: Custom Resolutions
 
 A command-line utility that assists with **creating** and **managing** custom resolutions for your Bazzite installation.
 
-## Using `custom-resolution-helper`
+### Using `custom-resolution-helper`
 
 ![Custom Resolution Helper Command|686x500](../img/Custom_Resolution_Helper_Command.png)
 
@@ -56,14 +56,12 @@ crh
 
 - **Margins**: This is useful when the margins of the picture are hidden beyond the borders of the screen, as if the picture is zoomed in. Most of the time you would want this to be adjusted in the Monitor/TV instead.
 
-
-
 ### Guide for creating a custom resolution for Sunshine Game Streaming
 
-Let's say you are streaming from your host PC (running Bazzite) to your Laptop:
+Let's say you are streaming from your host PC (running Bazzite) to your laptop:
 
-- Your host PC has a resolution of `1920x1080@144Hz`,
-- but your Laptop has a resolution of `2560x1600@120Hz`.
+- Your host desktop PC has a resolution of `1920x1080@144Hz`,
+- but your laptop has a resolution of `2560x1600@120Hz`.
 
 ...and text in the stream looks blurry because of resolution scaling.
 
