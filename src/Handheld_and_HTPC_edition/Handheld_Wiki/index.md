@@ -25,9 +25,7 @@ Virtual keyboard is Steam's keyboard, but needs to be setup in Steam's settings 
 
 ![desktop_controls_step_1|588x500, 75%](../../img/handheld_desktop_controls_1.png)
 
-![desktop_controls_step_2|690x431, 75%](../../img/handheld_desktop_controls_2.png)
-
-![desktop_controls_step_3|690x431, 75%](../../img/handheld_desktop_controls_3.jpeg)
+<retake this pic>
 
 Make sure to **apply** the desktop controls when you select them.
 
