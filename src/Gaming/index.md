@@ -113,7 +113,7 @@ Bazzite users can use templates for some of the pre-installed tools which can be
 
 ### Common Linux Gaming Issues
 
-Issues that happen specifically in Linux gaming outside of Bazzite.  See also: <link to common issues and resolutions> and <gaming mode quirks>
+Issues that happen specifically in Linux gaming outside of Bazzite.
 
 #### Native Linux Port Versus Windows Version
 
@@ -133,6 +133,8 @@ If you encounter issues with a game launching on Steam:
 2. Launch the game
 
 A log file should appear in your Home directory named after the game's application ID number.
+
+> **See also**: <link to common issues and resolutions and gaming mode quirks>
 
 <hr>
 
