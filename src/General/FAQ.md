@@ -38,7 +38,15 @@ Intended specifically for desktops and laptops with a focus on gaming which is i
 
 "**Steam Gaming Mode**" is pre-installed and its features fully functional for supported hardware. This version of Bazzite boots directly into the Steam Gaming Mode session and is intended for handhelds and couch-gaming scenarios. It also includes a Desktop Mode session. System and application updates are manually upgraded in Steam Gaming Mode and applied on a reboot.
 
+#### What about Bazzite-DX (Developer eXperience Edition)
+
+[**Bazzite-DX**](https://dev.bazzite.gg/) is a version of Bazzite that specifically caters to software development.  There is no ISO to install from, but is something that can be switched to by rebasing from your current image to a Bazzite-DX image.
+
 #### Bazzite Image Chart Example
+
+!!! not
+
+    This does not include all of the Bazzite images.
 
 Verify your Bazzite image by entering this **commmand** in the termi:
 
