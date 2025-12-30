@@ -1,6 +1,14 @@
+---
+title: Desktop Environment Customization, Themes, and Tweaks
+---
+
 <!-- ANCHOR: METADATA -->
 <!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=574", "fetched_at": "2024-09-03 16:43:19.212243+00:00"}-->
 <!-- ANCHOR_END: METADATA -->
+
+!!! warning
+    
+    Install community software **at your own risk**!
 
 ## Customizing KDE Plasma with Themes
 
