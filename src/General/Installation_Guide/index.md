@@ -84,8 +84,6 @@ Hold the 'Volume Down' (<kbd>-</kbd>) button and click the Power Button, and whe
     **default user**: `bazzite`
     **default password**: `bazzite`
 
-![Installer](../../img/anaconda_installer.png)
-
 ![Automatic drive configuration|690x497, 75%](../../img/anaconda_drive_configuration.png)
 
 ![User setup example|690x359, 75%](../../img/anaconda_user_setup.png)
