@@ -51,7 +51,14 @@ Right clicking a game on Lutris gives the option to add it as a non-Steam game (
 
 [**Heroic Games Launcher**](https://flathub.org/apps/com.heroicgameslauncher.hgl) is recommended for games that were purchased from Epic Games Launcher, GOG, and Amazon Games Launcher.
 
-#### Gamepass Games
+
+### Game Pass and Microsoft Store Games (Xbox Cloud Gaming)
+
+!!! note
+
+    A Game Pass Ultimate subscription is required to use [Xbox Cloud Gaming](https://www.xbox.com/en-us/play) except for select games like Fortnite.
+
+Games installed from the Microsoft Store do **not** run unless you use a Xbox Cloud Gaming client like [**Greenlight**](https://github.com/unknownskl/greenlight). Fortnite can also be played via this method **without** a Game Pass subscription.  There are also [**select titles available on Battle.net**](https://us.support.blizzard.com/en/article/000357106) which can be ran through Proton using Lutris.
 
 #### Console Emulation
 
@@ -79,15 +86,13 @@ Adding and replacing game files is still viable in both the game directory and p
 
     **DirectInput8 DLL Override**: `WINEDLLOVERRIDES="dinput8=n,b" %command%`
 
-#### What is a Prefix?
+#### What is a Proton (or Wine) Prefix?
 
 It's the glue that holds everything together when you run a game through Proton and also is responsible for containing any of the files the game would drop outside of the installation folder.
 
 !!! important
 
     This installation folder for **Steam games** is usually in: `.../steamapps/common/<game>`
-
-#### Equivalent Windows Folders
 
 Many PC games drop files in Windows folders like "My Documents" or "AppData" and both can be found in your prefix directory. This prefix directory may be useful for modding your games, backing up your saves, or configuration files.
 
@@ -98,18 +103,7 @@ For games on Steam, they are located in your `~/.steam/root/steamapps/compatdata
 - This ID by going into the game's properties on Steam in the games `Properties > Updates > App ID`
 - Continue to `.../pfx/drive_c/` and wherever the game drops the file on Windows.
 
-### Non-Steam Games Prefix Management
-
-Non-Steam games can have the prefix folder anywhere you specify:
-
-- By default Lutris uses `~/Games` as the main folder.
-- WineZGUI creates a prefix in `~/.var/app/io.github.fastrizwaan.WineZGUI/data/winezgui/Prefixes`.
-
-### Configuration Templates for DXVK, MangoHud, & vkBasalt
-
-![Template|690x334, 50%](../img/DXVK_Mango_VkBasalt_templ.png)
-
-Bazzite users can use templates for some of the pre-installed tools which can be accessed by right clicking anywhere in the file manager.
+Non-Steam games can have the prefix folder anywhere you specify.  By default Lutris uses `~/Games` as the main folder.
 
 ### Common Linux Gaming Issues
 
