@@ -14,7 +14,8 @@ Linux gaming being a viable competitor to Windows is a relatively new paradigm. 
 
 Steam is the recommended way to play PC games on the Linux desktop as it ships with a compatability layer known as [Proton](https://steamcommunity.com/games/221410/announcements/detail/1696055855739350561).  If a game has a Linux port that isn't well maintained then it is recommended to try running the game through Proton in its Steam game properties.
 
-<show screenshot>
+![Cog Icon > Properties|690x284, 75%](../img/Steam_Setup_Cog.png)
+![Compatibility tab|690x492, 75%](../img/Steam_Setup_Compat_Tab.png)
 
 ### Non-Steam Games
 
@@ -132,6 +133,8 @@ If you encounter issues with a game launching on Steam:
 2. Launch the game
 
 A log file should appear in your Home directory named after the game's application ID number.
+
+<hr>
 
 ### Useful External Resources
 
