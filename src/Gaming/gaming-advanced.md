@@ -2,6 +2,8 @@
 title: Advanced Gaming Tweaks
 ---
 
+# Advanced Gaming Tweaks
+
 ## Enhancements Pre-Installed on Bazzite
 
 - [vkBasalt](https://github.com/DadSchoorse/vkBasalt) - Vulkan post-processing layer with ReShade FX support.
