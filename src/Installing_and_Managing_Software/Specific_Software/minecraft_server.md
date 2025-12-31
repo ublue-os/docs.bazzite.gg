@@ -2,6 +2,10 @@
 title: Minecraft Server Hosting Guide
 ---
 
+# Minecraft Server Hosting Guide
+
+## Preface
+
 Using a Quadlet service...
 
 !!! note
