@@ -2,9 +2,7 @@
 title: Bazzite's Gaming Guide
 ---
 
-<!-- ANCHOR: METADATA -->
-<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=31", "fetched_at": "2024-09-03 16:43:06.311188+00:00"}-->
-<!-- ANCHOR_END: METADATA -->
+# Bazzite's Gaming Guide
 
 ## Linux Gaming Introduction
 
