@@ -4,7 +4,7 @@ title: ujust Commands
 
 # `ujust` Commands
 
-## Using `ujust`
+## Usage
 
 ![Shell Scripts (.sh)|96x96, 100%](../img/Shell_Scripts__sh.png)
 
