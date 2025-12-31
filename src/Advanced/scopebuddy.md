@@ -2,6 +2,8 @@
 title: ScopeBuddy
 ---
 
+# ScopeBuddy
+
 ## What is it?
 
 - A small script that works as a gamescope bridge to avoid having to copy paste long launch options for many games.
