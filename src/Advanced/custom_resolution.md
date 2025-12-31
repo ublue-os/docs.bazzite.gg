@@ -2,6 +2,8 @@
 title: Custom Resolutions
 ---
 
+# Custom Resolutions
+
 ## `custom-resolution-helper`
 
 ![Custom Resolution Helper Preview|570x500](../img/Custom_Resolution_Helper_Preview.png)
