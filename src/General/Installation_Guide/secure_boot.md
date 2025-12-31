@@ -1,10 +1,12 @@
-<!-- ANCHOR: METADATA -->
-<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=2742", "fetched_at": "2024-09-03 16:43:23.922705+00:00"}-->
-<!-- ANCHOR_END: METADATA -->
+---
+title: Secure Boot Guide
+---
 
-![Secure Boot menu: Continue boot / Enroll MOK / Enroll key from disk / Enroll hash from disk|690x378, 50%](../../img/Secure_Boot.jpeg 'Secure Boot')
+# Secure Boot Guide
 
 ## Secure Boot Notes and Gotchas
+
+![Secure Boot menu: Continue boot / Enroll MOK / Enroll key from disk / Enroll hash from disk|690x378, 50%](../../img/Secure_Boot.jpeg 'Secure Boot')
 
 !!! note
 
