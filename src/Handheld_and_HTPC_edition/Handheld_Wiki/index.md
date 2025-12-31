@@ -1,8 +1,9 @@
-<!-- ANCHOR: METADATA -->
-<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=1038", "fetched_at": "2024-09-03 16:43:15.186486+00:00"}-->
-<!-- ANCHOR_END: METADATA -->
+---
+title: Handheld Compatibility
 
-## Handheld Compatibility
+# Handheld Compatibility
+
+## SteamOS-like Functionality
 
 ...
 
