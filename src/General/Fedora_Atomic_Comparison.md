@@ -2,11 +2,15 @@
 title: Differences Between Bazzite & Upstream Fedora Atomic Desktop Operating Systems
 ---
 
+# Differences Between Bazzite & Upstream Fedora Atomic Desktop Operating Systems
+
+## What is Bazzite?
+
 Bazzite is a custom image of [**Fedora Kinoite (KDE Plasma images)**](https://fedoraproject.org/atomic-desktops/kinoite/) or [**Fedora Silverblue (GNOME images)**](https://fedoraproject.org/atomic-desktops/silverblue/) with modifications made to try and provide a user friendly experience out of the box with a focus on PC gaming.
 
 ## Key Differences
 
-The following is a list of differences between the Fedora Atomic Desktop images and Bazzite:
+The following is a list of differences between the Fedora Atomic Desktop family and Bazzite:
 
 ### Less Post-Installation Setup
 
