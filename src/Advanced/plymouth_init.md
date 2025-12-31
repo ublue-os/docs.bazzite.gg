@@ -2,6 +2,10 @@
 title: Show Detailed Init Logs During Boot
 ---
 
+# Show Detailed Init Logs During Boot
+
+## Purpose
+
 See the init log show if services are functional when your device boots:
 
 ![Plymouth](../img/plymouth.png)
