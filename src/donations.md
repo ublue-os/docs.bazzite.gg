@@ -2,6 +2,8 @@
 title: Credits and Donating
 ---
 
+# Credits and Donating
+
 {% macro contributor(real_name, github, description, sponsor) -%}
     <div style="
     display: inline-flex;
