@@ -4,7 +4,7 @@ title: Bazzite-Deck General Overiew
 
 # Bazzite-Deck General Overiew
 
-### What is Steam Gaming Mode?
+## What is Steam Gaming Mode?
 
 >View the [**Handheld Documentation**](../Handheld_and_HTPC_edition/Handheld_Wiki/index.md) for post-installation setup and common issues on **handheld hardware**.
 
@@ -21,7 +21,7 @@ https://www.youtube.com/watch?v=zXK1CXUyzXQ
 
 Bazzite utilizes Steam Gaming Mode to fill the niche of handheld and couch gaming setups. Steam Gaming Mode is what SteamOS on the Steam Deck is built around. A simple interface that is controller-friendly built around Steam's "Big Picture Mode" UI/UX. The minimal session only runs the bare minimum in the background, so most of the hardware resources is going towards the game being played. [**Gamescope**](https://github.com/ValveSoftware/gamescope) is the main ingredient in Steam Gaming Mode which gives options to set a framerate cap, resolution scaling options, etc. Steam Gaming Mode is also referred to as "gamepadUI" and "gamescope-session" but Bazzite documentation will usually refer to it as "Steam Gaming Mode" for consistency.
 
-### What is Bazzite-Deck?
+## What is Bazzite-Deck?
 
 Bazzite for Steam Deck hardware, Home Theater PC setups, and other Handheld PCs like the Lenovo Legion Go and Asus ROG Ally.  It is intended to be a controller-friendly environment and give users a "console-like" experience similar to SteamOS for the Steam Deck. It is intended for both handhelds and home theatre PC setups. Bazzite is similar to SteamOS by sharing many packages that SteamOS includes, so it is ready to game as soon the installation process is finished.
 
@@ -37,7 +37,7 @@ This documentation may not cover specific areas with the assumption that the use
 **Steam Home Menu**: <kbd>Ctrl</kbd>/<kbd>Win</kbd>+<kbd>1</kbd>
 **Quick Access Menu (QAM)**: <kbd>Ctrl</kbd>/<kbd>Win</kbd>+<kbd>2</kbd>
 
-### Valve's Official SteamOS Guide
+## Valve's Official SteamOS Guide
 
 !!! important
 
