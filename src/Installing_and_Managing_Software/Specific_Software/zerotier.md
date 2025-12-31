@@ -4,11 +4,11 @@ title: "ZeroTier"
 
 # ZeroTier Setup
 
-!!! warning
-    Setup requires package layering and is **not recommended**.
-
 ## Installing
 
+!!! warning
+    Setup requires package layering and is **not recommended**.
+    
 Add ZeroTier repository to yum by copying the following to the terminal (pasting is <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd>)
 
 ```sh
