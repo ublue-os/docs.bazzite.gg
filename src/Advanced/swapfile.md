@@ -2,6 +2,10 @@
 title: Using Swap for Additional Memory or Hibernation
 ---
 
+# Using Swap for Additional Memory or Hibernation
+
+## Purpose
+
 This guide will walk you through the steps to create a swapfile on a BTRFS filesystem, which can be used for additional memory or hibernation.
 
 Deck images already support hibernation via Handheld Daemon using a dynamic swap file (`General -> Hibernate`). In addition, all Bazzite images use zram by default to provide additional memory.
@@ -9,6 +13,7 @@ Deck images already support hibernation via Handheld Daemon using a dynamic swap
 Use this guide if you want to create a persistent swapfile instead of zram for more uncompressed memory, or if you want to use hibernation via the desktop environment. 
 
 ## Create the Swapfile
+
 First, create a subvolume for the swapfile. This ensures that if you decide to use snapshots, the swapfile will not be included in them. You should also fix the SELinux context of the swapfile directory.
 ```bash
 sudo btrfs subvolume create /var/swap
