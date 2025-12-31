@@ -2,9 +2,9 @@
 title: Bazzite-Deck General Overiew
 ---
 
-<!-- ANCHOR: METADATA -->
-<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=37", "fetched_at": "2024-09-03 16:43:12.251158+00:00"}-->
-<!-- ANCHOR_END: METADATA -->
+# Bazzite-Deck General Overiew
+
+### What is Steam Gaming Mode?
 
 >View the [**Handheld Documentation**](../Handheld_and_HTPC_edition/Handheld_Wiki/index.md) for post-installation setup and common issues on **handheld hardware**.
 
@@ -12,7 +12,6 @@ title: Bazzite-Deck General Overiew
 
 <sub>**Please note that Steam Gaming Mode has demanding GPU hardware requirements compared to traditional desktop environments.**</sub>
 
-### What is Steam Gaming Mode?
 !!! important
 
     The Steam beta client is **not** supported, please revert to the stable client before reporting issues.
