@@ -2,6 +2,10 @@
 title: Installing Arctis Manager
 ---
 
+# Installing Arctis Manager
+
+## Purpose
+
 This guide will walk you through the steps to install and run Arctis Manager in Distrobox then run it automatically at startup.
 This guide works with [Linux-Arctis-Manager](https://github.com/elegos/Linux-Arctis-Manager) v1.6.3.
 
