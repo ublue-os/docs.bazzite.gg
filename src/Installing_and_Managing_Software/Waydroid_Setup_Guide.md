@@ -1,6 +1,8 @@
-<!-- ANCHOR: METADATA -->
-<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=32", "fetched_at": "2024-09-03 16:43:06.740654+00:00"}-->
-<!-- ANCHOR_END: METADATA -->
+---
+title: Waydroid Setup Guide
+---
+
+# Waydroid Setup Guide
 
 ![Google Play Store|650x500](../img/Google_Play_Store.jpeg)
 
