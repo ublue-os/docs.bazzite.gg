@@ -1,6 +1,8 @@
 ---
-title: "ZeroTier setup"
+title: "ZeroTier"
 ---
+
+# ZeroTier Setup
 
 !!! warning
     Setup requires package layering and is **not recommended**.
