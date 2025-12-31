@@ -1,3 +1,7 @@
+---
+title: Comparison of Bazzite and SteamOS
+---
+
 # Comparison of Bazzite and SteamOS
 
 ## What is Bazzite?
