@@ -26,13 +26,13 @@ Sometimes a project's website or [Github repository](<https://github.com/flathub
 
 ## Homebrew (Command-Line Utilites)
 
-![Homebrew|332x500, 15%](../img/Homebrew.png)
-
+<pic of bold brew>
+    
 !!! note
 
     Any package that requires root privileges will either need a rootful Distrobox container or has to be layered with `rpm-ostree`.
 
-Homebrew is a package manager that installs packages into their own prefix. It is primarily used for command-line interface (CLI) and terminal user interface (TUI) applications. Homebrew can also install graphical applications using the `--cask` flag, but most are for macOS as support for casks on Linux is still developing.
+Homebrew is a package manager that installs packages into their own prefix. It is primarily used for command-line interface (CLI) and terminal user interface (TUI) applications. Homebrew can also install graphical applications using the `--cask` flag, but most are for macOS as support for casks on Linux is still developing. Use the Bold Brew application or the terminal using the command below to install packages.
 
 Install packages in a host terminal with this **terminal command**:
 
