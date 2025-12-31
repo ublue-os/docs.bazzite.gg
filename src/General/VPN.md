@@ -2,17 +2,18 @@
 title: "VPN Setup"
 ---
 
+# VPN Setup
+
 ## Using functional VPN Flatpaks
 
-
-VPN clients are usually not offered on Flathub as the Flatpak sandbox is too strict for most VPN clients to work as is which means they are not available in Bazaar to install.  However examples of good VPN clients in Bazaar:
+VPN clients are usually not offered on the Bazaar app store as the Flatpak sandbox is too strict for most VPN clients to work as is which means they are not available in Bazaar to install. However examples of good VPN clients that are available in Bazaar:
 
 - [Mozilla VPN](https://flathub.org/apps/org.mozilla.vpn)
 - [ProtonVPN](https://flathub.org/apps/com.protonvpn.www)
 
 ## Tailscale
 
-[Tailscale](https://tailscale.com) is included by default to provide VPN services for both desktop and development use cases. [Tailscale is pretty useful](https://blog.6nok.org/tailscale-is-pretty-useful/).
+[Tailscale](https://tailscale.com) is included by default to provide VPN services for both desktop and development use cases. Read this [Tailscale guide](https://blog.6nok.org/tailscale-is-pretty-useful/) for common usage before proceeding.
 
 - [Using Tailscale with Mullvad](https://tailscale.com/kb/1258/mullvad-exit-nodes) - Provides the best out of the box experience.
   - [Using Tailscale with Docker](https://tailscale.com/kb/1282/docker) - For development purposes.
