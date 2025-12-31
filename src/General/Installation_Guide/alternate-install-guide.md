@@ -2,6 +2,8 @@
 title: Alternative Installation Guide
 ---
 
+# Alternative Installation Guide
+
 !!! warning
 
     This method may have scaling issues with the installer depending on the hardware especially if it is a handheld PC.
