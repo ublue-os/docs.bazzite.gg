@@ -40,7 +40,7 @@ brh
 ### Rebasing to an older Bazzite image
 
 **Example**: `bazzite-rollback-helper rebase stable-40.20240930.0`
-<sub>This image is an example and no longer can be rolled back to as it is too old.</sub>
+<sub>(This image is an example and no longer can be rolled back to as it is too old.)</sub>
 
 Rebasing to an image will lock you to that OS image which means new features and security updates will no longer be applied until you rebase back to the Stable channel.
 
