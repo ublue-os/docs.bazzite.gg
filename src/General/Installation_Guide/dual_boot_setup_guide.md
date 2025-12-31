@@ -2,9 +2,7 @@
 title: Dual Boot Preliminary and Post-Installation Setup Guide
 ---
 
-<!-- ANCHOR: METADATA -->
-<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=2743", "fetched_at": "2024-09-03 16:43:23.309649+00:00"}-->
-<!-- ANCHOR_END: METADATA -->
+# Dual Boot Preliminary and Post-Installation Setup Guide
 
 !!! note
 
