@@ -2,6 +2,9 @@
 title: Samba Server
 ---
 
+# Setting Up A SAMBA Server
+
+## Preface
 Using a Quadlet service...
 
 Documentation: https://github.com/ServerContainers/samba
