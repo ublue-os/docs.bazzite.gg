@@ -4,13 +4,13 @@ title: Waydroid Setup Guide
 
 # Waydroid Setup Guide
 
+## What is Waydroid?
+
 ![Google Play Store|650x500](../img/Google_Play_Store.jpeg)
 
 !!! attention
 
     Waydroid does **not** work on Nvidia hardware.
-
-## What is Waydroid?
 
 ![Waydroid](../img/Waydroid.jpeg)
 
