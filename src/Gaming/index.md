@@ -8,7 +8,9 @@ title: Bazzite's Gaming Guide
 
 Linux gaming being a viable competitor to Windows is a relatively new paradigm. Most Windows exclusive games can run on Bazzite using modern hardware. There are still some rough edges, but gaming on Linux does offer advantages on the appropriate hardware such as better frame-times than on Windows.
 
-## Steam
+## Game Launchers
+
+### Steam
 
 Steam is the recommended way to play PC games on the Linux desktop as it ships with a compatability layer known as [Proton](https://steamcommunity.com/games/221410/announcements/detail/1696055855739350561).  If a game has a Linux port that isn't well maintained then it is recommended to try running the game through Proton in its Steam game properties.
 
@@ -62,6 +64,8 @@ Games installed from the Microsoft Store do **not** run unless you use a Xbox Cl
 
 Install emulators from the Bazaar app store.
 
+<hr>
+
 ## Compatibility Layers & Managing Windows Games
 
 Windows games need to run through a **compatibility layer** (like Proton) on Bazzite. KDE Plasma and GNOME images pre-install different, but similar compatibility layer managers.
@@ -103,19 +107,21 @@ For games on Steam, they are located in your `~/.steam/root/steamapps/compatdata
 
 Non-Steam games can have the prefix folder anywhere you specify.  By default Lutris uses `~/Games` as the main folder.
 
-### Common Linux Gaming Issues
+<hr>
+
+## Common Linux Gaming Issues
 
 Issues that happen specifically in Linux gaming outside of Bazzite.
 
-#### Native Linux Port Versus Windows Version
+### Native Linux Port Versus Windows Version
 
 Some Linux ports may have missing functionality or worse performance than on the Windows version running through Proton. However, there are scenarios where using the native port exclusively is your only option, and may even be desirable.  If a Linux native game does not launch, then force the Legacy Runtime compatibility layer by going into the **game's properties** and selecting "**Compatibility**" then checking "**Force the use of a specific Steam Play compatibility tool**".
 
-#### Denuvo Anti-Tamper DRM Locking Games
+### Denuvo Anti-Tamper DRM Locking Games
 
 Games that use Denuvo Anti-Tamper DRM consider changing Proton versions as activiating the game on different hardware which may cause you to get locked out of the game if you change the Proton version more than 5 times within a 24 hour period.
 
-#### Steam Logs
+### Steam Logs
 
 If you encounter issues with a game launching on Steam:
 
@@ -130,7 +136,7 @@ A log file should appear in your Home directory named after the game's applicati
 
 <hr>
 
-### Useful External Resources
+## Useful External Resources
 
 - [**ProtonDB**](https://www.protondb.com/explore) - User reports for game compatibility on Linux
 - [**Are We Anti-Cheat Yet?**](https://areweanticheatyet.com/) - List of popular games utilizing anti-cheat software and if the game supports Linux
