@@ -27,3 +27,4 @@ xdg-open localhost:8080
 ```
 
 ![nginx welcome page|1296x400](../img/nginx_welcome.png)
+<fix this>
