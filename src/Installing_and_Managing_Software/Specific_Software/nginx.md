@@ -6,7 +6,7 @@ title: NGINX Web Server
 
 ## Preface
 
-Using a Quadlet service...
+Using a [Quadlet service] <link to quadlet service subsection on installaing and managing apps doc>
 
 
 Create a file called `~/.config/containers/systemd/nginx.container` with content below.
