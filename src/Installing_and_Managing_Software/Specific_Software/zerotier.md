@@ -9,7 +9,7 @@ title: "ZeroTier"
 !!! warning
     Setup requires package layering and is **not recommended**.
     
-Add ZeroTier repository to yum by copying the following to the terminal (pasting is <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd>)
+Add ZeroTier repository to yum by copying the following to the terminal (to paste copied text in the terminal: <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd>)
 
 ```sh
 sudo tee >/dev/null /etc/yum.repos.d/zerotier.repo <<'EOF'
