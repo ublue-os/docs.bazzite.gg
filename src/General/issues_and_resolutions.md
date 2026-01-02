@@ -38,7 +38,7 @@ You'll often need to reduce the **Right Joystick Sensitivity** to somewhere betw
 
 <h3>KDE Plasma Resolution</h3>
 
-pen **System Settings >> Colors and Themes >> Login Screen (SDDM)** then on the right side of the screen there will be a button labelled **Behaviour**, click on it.
+Open **System Settings >> Colors and Themes >> Login Screen (SDDM)** then on the right side of the screen there will be a button labelled **Behaviour**, click on it.
 
 Now tick **"Automatically log in"**, select your user and for the session, select **"Plasma (Wayland)"** and don't forget to to click on the **"Apply"** button.
 
