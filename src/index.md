@@ -12,7 +12,7 @@ hide:
 
   Bazzite supports PC hardware from most modern desktop and laptops to specialized models like the Framework 13 and Framework 16. <br>
 
-  Bazzite also supports controller-friendly hardware like [home theater PC setups][htpc] and a [multitude of handhelds][install_handheld]:
+  Bazzite also supports controller-friendly hardware like [home theater PC setups][htpc] and a [multitude of handhelds][handheld]:
 
   - Lenovo Legion Go Handhelds
   - Asus ROG Ally Handhelds
@@ -51,37 +51,19 @@ hide:
 
 </div>
 
-[install_pc_laptop]: General/Installation_Guide/Installing_Bazzite_for_Desktop_or_Laptop_Hardware.md
-[install_handheld]: General/Installation_Guide/Installing_Bazzite_for_Handheld_PCs.md
-[deck]:  Handheld_and_HTPC_edition/Handheld_Wiki/Steam_Deck.md
-[frame_13]: General/Installation_Guide/Installing_Bazzite_Framework_Laptop_13.md
-[frame_16]: General/Installation_Guide/Installing_Bazzite_for_Framework_Laptop_16.md
-[htpc]: General/Installation_Guide/Installing_Bazzite_for_HTPC_Setups.md
+[handheld]: Handheld_and_HTPC_edition/Handheld_Wiki/index.md
+[htpc]: Handheld_and_HTPC_edition/Steam_Gaming_Mode.md
 [ally]: Handheld_and_HTPC_edition/Handheld_Wiki/ASUS_ROG_Ally.md
-[legion_go]: Handheld_and_HTPC_edition/Handheld_Wiki/Lenovo_Legion_Go.md
-[ayn]: Handheld_and_HTPC_edition/Handheld_Wiki/Ayn_Handhelds.md
-[onex]: Handheld_and_HTPC_edition/Handheld_Wiki/OneXPlayer_Handhelds.md
-[gpd]: Handheld_and_HTPC_edition/Handheld_Wiki/GPD_Handhelds.md
-[ayaneo]: Handheld_and_HTPC_edition/Handheld_Wiki/Ayaneo_Handhelds.md
 [run_win_game]: Installing_and_Managing_Software/index.md#how-do-i-run-windows-applications
-[enable_proton]: Gaming/Game_Launchers.md#enabling-proton-for-all-steam-games
 [flatpak]: https://flathub.org/en
 [ujust]: Installing_and_Managing_Software/ujust.md
 [rpm-ostree]: Installing_and_Managing_Software/rpm-ostree.md
-[distrobox]: Installing_and_Managing_Software/Distrobox.md
+[containers]: https://distrobox.it/
 [installing_software]: Installing_and_Managing_Software/index.md
-[contrib]: CONTRIBUTE.md
 [homebrew]: https://formulae.brew.sh/formula/
-[rpm-ostree_caveats]: Installing_and_Managing_Software/rpm-ostree.md#major-caveats-using-rpm-ostree
-[steam_game_mode]: Handheld_and_HTPC_edition/Steam_Gaming_Mode.md#what-is-steam-gaming-mode
-[appimage]: Installing_and_Managing_Software/AppImage.md
+[steam_game_mode]: Handheld_and_HTPC_edition/Steam_Gaming_Mode.md
+[appimage]: https://appimage.org/
 [updateindex]: Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/index.md/
-[updates]: Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/updating_guide.md/
-[rollbacks]: Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/rolling_back_system_updates.md/
-[rebasing]: Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/rebase_guide.md/
 [rollback-helper]: Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/bazzite_rollback_helper.md/
 [waydroid]: Installing_and_Managing_Software/Waydroid_Setup_Guide.md
 [gaming]: Gaming/index.md
-[quadlet]: Installing_and_Managing_Software/Quadlet.md
-[otherhand]: Handheld_and_HTPC_edition/Handheld_Wiki/Other_Handhelds.md
-[customimage]: Advanced/creating_custom_image.md
