@@ -8,7 +8,7 @@ title: Installing and Managing Applications
 
 ![Bazaar|2840x2038, 50%](../img/Bazaar.jpg)
 
-Flatpak is a universal containerized package format that tries to sandbox applications through flexible permissions that the application has access to on your system.  It is the **primary method of installing applications on Bazzite** is recommended to use Flatpak over other formats for most software when possible outside of the few exceptions of software available in the Bazzite Portal. Flatpaks can be installed, upgraded, and uninstalled via the Bazaar app store.  The applications that are in Bazaar are from [Flathub](https://flathub.org/).
+Flatpak is a universal containerized package format that tries to sandbox applications through flexible permissions that the application has access to on your system.  It is the **primary method of installing applications on Bazzite** and the most recommended way to install software over other formats outside of the few exceptions of software available in the Bazzite Portal which take priority. Flatpaks can be installed, upgraded, and uninstalled via the Bazaar app store.  The applications that are in Bazaar are from [Flathub](https://flathub.org/).
 
 ### Manage Flatpaks
 
