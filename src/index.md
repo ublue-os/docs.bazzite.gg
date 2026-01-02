@@ -19,13 +19,13 @@ hide:
   - GPD Handhelds
   - OneXPlayer Handhelds
   - Ayn Handhelds
-  - Steam Deck (LCD and OLED)
+  - Steam Deck
 
 - [:material-download-circle: **Installing Software**][installing_software]{ style="font-size: 1.1rem" }
 
-  <small>Order reflects the recommendation degree.</small>
+  <small>Order reflects the order of recommended method.</small>
 
-  1. [Bazaar App Store (**Flatpak**)][flatpak] for graphical apps.
+  1. [Bazaar App Store (**Flatpak**)][flatpak] for graphical apps, install most software this way.
      {style="list-style-type: decimal;"}
   2. [Homebrew][homebrew] for command-line apps.
      {style="list-style-type: decimal;"}
@@ -33,21 +33,18 @@ hide:
      {style="list-style-type: decimal;"}
   4. [Containers][distrobox] for access to most Linux package managers and as development toolboxes.
      {style="list-style-type: decimal;"}
-  5. [Appimage][appimage] for portable software found on the web.
+  5. [Appimage][appimage] for portable apps found on the web.
      {style="list-style-type: decimal;"}
 
-  There is also software available as [`ujust` commands][ujust] and [layering system-level packages*][rpm-ostree].
-
-  <sub>*Not recommended since it can break automatic updates until the package is removed from the image.</sub>
+  There is also software available as [`ujust` commands found in the Bazzite Portal application][ujust] which is the preferred way to obtain certain software and takes precedence over the list above. [Layering system-level packages*][rpm-ostree] is an option but is the **least recommended method of obtaining most software** since it can break automatic updates until the package is removed from the image.</sub>
   
 - [:fontawesome-solid-circle-arrow-down: **Updates & Rollbacks**][updateindex]{ style="font-size: 1.1rem" }
 
   Hassle-free updates with protections against regressions. Rollback to the previous deployment or rebase to an earlier Bazzite build within the last 90 days without losing your personal files.
 
-  - [Updating Guide][updates]
-  - [Rollback System Updates][rollbacks]
-    - [`bazzite-rollback-helper`][rollback-helper]
-  - [Rebasing to Other Images][rebasing]
+  - Updating Guide
+  - Rollback System Updates
+  - [`bazzite-rollback-helper`]rollback-helper
 
 </div>
 
