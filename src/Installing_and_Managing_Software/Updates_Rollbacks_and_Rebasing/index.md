@@ -54,6 +54,8 @@ There are two update branches:
   - Encouraged to rebase back to `:stable` after testing a major release.
     - It can be behind on certain updates for a long time.
 
+<hr>
+
 ## Rolling Back System Updates
 
 ![GRUB Menu|690x402](../../img/GRUB_Menu.png)
@@ -63,6 +65,8 @@ Swap back to a previous system update if there are major issues after updating v
 ### Using the Bazzite Rollback Helper (`brh) Utility
 
 <link to it here>
+
+<hr>
 
 ## Other Update Topics
 
