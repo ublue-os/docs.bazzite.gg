@@ -21,18 +21,6 @@ hide:
   - Ayn Handhelds
   - Steam Deck (LCD and OLED)
 
-- [:material-controller: **Playing Video Games**][gaming]{ style="font-size: 1.1rem" }
-
-  Bazzite comes bundled with :fontawesome-brands-steam: [Steam](https://store.steampowered.com) and [Lutris](Gaming/Game_Launchers.md#lutris) to run all of your PC games<sup>1</sup> on multiple hardware configurations!
-
-  It is also compatible with other tools like:
-
-  - [Heroic Games Launcher](https://heroicgameslauncher.com/) for seamless Epic Games, GOG, and Amazon Games integration.
-  - [Games and emulators from the built-in app store](https://flathub.org/apps/category/Game/1) that range from [osu!](https://flathub.org/apps/sh.ppy.osu) to [Minecraft](https://flathub.org/apps/org.prismlauncher.PrismLauncher).
-  - ...And [more][run_win_game]!
-
-  <small>\*<sup>1</sup> PC games that are known to work on the Linux desktop, visit [**ProtonDB**](https://protondb.com) and [**Are We Anti-Cheat Yet?**](https://areweanticheatyet.com) for more information</small>.
-
 - [:material-download-circle: **Installing Software**][installing_software]{ style="font-size: 1.1rem" }
 
   <small>Order reflects the recommendation degree.</small>
@@ -60,23 +48,6 @@ hide:
   - [Rollback System Updates][rollbacks]
     - [`bazzite-rollback-helper`][rollback-helper]
   - [Rebasing to Other Images][rebasing]
-
-- [:fontawesome-brands-android: **Android Applications**][waydroid]{ style="font-size: 1.1rem" }
-
-  Run Android applications in a container using [Waydroid](https://waydro.id/)!
-
-  - Launch anything from productivity software to games.
-  - ARM translation support for most applications.
-  - Use your favorite streaming service without the limitations of DRM.
-  - Install software through [Google Play Store](https://play.google.com/store/games) and [F-Droid](https://f-droid.org/).
-
-- [:fontawesome-solid-handshake: **Contributing**][contrib]{ style="font-size: 1.1rem" }
-
-  One of the strengths of Bazzite (inherited from [Universal Blue](https://universal-blue.org/)) is how easy it is to contribute.
-
-  - Something seems broken? You might want to [report a bug](General/reporting_bugs.md).
-  - Add new changes by testing them in a [custom image][customimage].
-  - Editing current documentation and [adding translations](https://github.com/KyleGospo/docs.bazzite.gg/blob/main/README.md#translate-documentation) are also appreciated.
 
 </div>
 
