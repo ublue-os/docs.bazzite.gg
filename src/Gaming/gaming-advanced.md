@@ -59,8 +59,6 @@ Bazzite includes several shortcuts to simplify common launch options:
 ![Cog Icon > Properties|690x284, 75%](../img/Steam_Setup_Cog.png)
 ![Launch Options view|833x594, 75%](../img/Steam_Launch_Options.png)
 
-#### Advanced Launch Option Management
+#### Advanced Launch Option Management for ScopeBuddy
 
-For users who need more complex launch option management, consider:
-
-- **[ScopeBuddy](../Advanced/scopebuddy.md)** - Advanced gamescope launch option management
+For users who need more complex launch option management, consider the **[ScopeBuddy documentation](../Advanced/scopebuddy.md)** for even more advanced Gamescope launch option management.
