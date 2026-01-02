@@ -24,6 +24,8 @@ Sometimes a project's website or [Github repository](<https://github.com/flathub
 
 **Warehouse** is a utility that gives users a graphical interface to **downgrade applications**, install remote Flatpak sources outside of Flathub at your own risk, and backup application user data.
 
+<hr>
+
 ## Homebrew (Command-Line Utilites)
 
 <pic of bold brew>
@@ -40,6 +42,8 @@ Install packages in a host terminal with this **terminal command**:
 brew install <package>
 ```
 
+<hr>
+
 ## Bazzite Portal (`ujust` Commands)
 
 <show screenshot of bazzite portal>
@@ -47,6 +51,8 @@ brew install <package>
 The Bazzite Portal application can install specialized software that ships with Bazzite as an installation script by the maintainers and contributors of the project.  Please note that _some_ of the software that can be installed from the Bazzite Portal can add layered packages to your installation which is generally not recommended.
 
 Read the ujust page <link this>
+
+<hr>
 
 ## Containers (Distrobox/Quadlet)
 
@@ -210,6 +216,7 @@ If your quadlet for some reason isn't found or starting, you can debug the conta
 - https://docs.podman.io/en/stable/markdown/podman-systemd.unit.5.html
 - https://www.redhat.com/en/blog/quadlet-podman
 
+<hr>
 
 ## AppImage (Portable Applications Downloaded from Trusted Source)
 
@@ -217,11 +224,15 @@ If your quadlet for some reason isn't found or starting, you can debug the conta
 
 AppImage is a universal package format that attempts to bundle every dependency that an application needs into one portable file. They can be installed by downloading any file with a `.AppImage` file extension and then giving it executable permissions in the file's properties so the application can run properly. Like Windows executable files, they are usually found on the project's website to download.
 
+<hr>
+
 ## System-Level Package Layering (`rpm-ostree` Commands) [_**Not Recommended**_]
 
 Add software on top of the Bazzite image.
 
 <link to rpm-ostree guide>
+
+<hr>
 
 ## Other
 
