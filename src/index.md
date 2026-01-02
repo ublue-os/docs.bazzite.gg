@@ -25,21 +25,21 @@ hide:
 
   <small>Order reflects the recommendation degree.</small>
 
-  1. [`ujust`][ujust] to use Bazzite tailored installers.
+  1. [Bazaar App Store (**Flatpak**)][flatpak] for graphical apps.
      {style="list-style-type: decimal;"}
-  2. [Flatpak][flatpak] for graphical apps.
+  2. [Homebrew][homebrew] for command-line apps.
      {style="list-style-type: decimal;"}
-  3. [Homebrew][homebrew] for command-line apps.
+  3. [Quadlet][quadlet] for hosting services.
      {style="list-style-type: decimal;"}
-  4. [Quadlet][quadlet] for hosting services.
+  4. [Containers][distrobox] for access to most Linux package managers and as development toolboxes.
      {style="list-style-type: decimal;"}
-  5. [Distrobox][distrobox] for access to most Linux package managers and as development toolboxes.
-     {style="list-style-type: decimal;"}
-  6. [Appimage][appimage] for portable apps found on the web.
+  5. [Appimage][appimage] for portable software found on the web.
      {style="list-style-type: decimal;"}
 
-  There is also [package layering with `rpm-ostree`][rpm-ostree], but it is [advised to avoid using it if possible][rpm-ostree_caveats] since layered packages can break future upgrades until packages are removed.
+  There is also software available as [`ujust` commands][ujust] and [layering system-level packages*][rpm-ostree].
 
+  <sub>*Not recommended since it can break automatic updates until the package is removed from the image.</sub>
+  
 - [:fontawesome-solid-circle-arrow-down: **Updates & Rollbacks**][updateindex]{ style="font-size: 1.1rem" }
 
   Hassle-free updates with protections against regressions. Rollback to the previous deployment or rebase to an earlier Bazzite build within the last 90 days without losing your personal files.
