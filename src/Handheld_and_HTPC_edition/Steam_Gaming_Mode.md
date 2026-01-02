@@ -96,7 +96,7 @@ Save with <kbd>CTRL</kbd> + <kbd>X</kbd> then pressing <kbd>Y</kbd> followed by 
 
 This issue happens usually with HDMI TV audio.  Go into Desktop Mode and into the system settings to adjust the sound settings. Disable devices that do not match the sound output that you're using. An example of this is disabling all the things that aren't HDMI for your TV audio.
 
-## Change physical keyboard layout for Steam Gaming Mode
+### Change physical keyboard layout for Steam Gaming Mode
 
 Steam Gaming Mode has no official way to change the physical keyboard layout and will always default to the US layout.  If you want to change the layout, then you can set the environment variable `XKB_DEFAULT_LAYOUT=no` replacing `no` with the correct layout for you.
 Add this environment variable to `~/.config/environment.d/10-gamescope-session.conf` Basically, make sure hidden files is turned on and move into the **Home** directory, then go into the .config directory and enter the environment.d directory.  Inside that directory, the file that should be edited with a text editor should be saved as "10-gamescope-session.conf" for it to work properly.
@@ -127,7 +127,7 @@ Some plugins are built specifically for SteamOS or the Steam Deck, and won’t n
 
 For example, the [DeckMTP plugin](https://github.com/dafta/DeckMTP) only works on the Steam Deck models and will not work on other hardware.
 
-## How do I use SteamDeckGyroDSU on hardware that isn't the Steam Deck?
+### How do I use SteamDeckGyroDSU on hardware that isn't the Steam Deck?
 
 You cannot use SteamDeckGyroDSU outside of the Steam Deck, but you can try disabling Steam Input and it _may_ work depending on your hardware and use case.
 
@@ -182,7 +182,7 @@ ujust fix-reset-steam
 
 This is most likely due to a broken Decky Loader plugin you have installed. Uninstall the broken plugin. Specific CSS Loader themes can also cause this issue.
 
-## Why is VRR not working on my VRR-compatible display?
+### Why is VRR not working on my VRR-compatible display?
 
 Most of the time this is because you're connecting the device via HDMI which does not support VRR on Linux. Here is the [source](https://www.phoronix.com/news/HDMI-2.1-OSS-Rejected) of that information.
 
