@@ -6,7 +6,7 @@ title: Minecraft Server Hosting Guide
 
 ## Preface
 
-Using a Quadlet service...
+Using a [Quadlet service] <link to quadlet service subsection on installaing and managing apps doc>
 
 !!! note
 
