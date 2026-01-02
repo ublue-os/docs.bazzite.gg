@@ -43,7 +43,7 @@ When you get to the part for running `cmake`, use the command:
 ```
 cmake -DENABLE_WAYLAND=1 -DENABLE_X11=0 -DENABLE_PULSEAUDIO=0 -DENABLE_PIPEWIRE=1 ..
 ```
-The above command will disable X11 support and Pulseaudio support, but enable Pipewire and Wayland support, this will avoid any issues as we do not ship the X11 dependencies for `looking-glass`.
+The above command will disable X11 support and Pulseaudio support, but enable Pipewire and Wayland support, this will avoid any issues as Bazzite does not ship the X11 dependencies for `looking-glass`.
 
 Copy the built `looking-glass-client` binary to `/run/host/home/$USER/.local/bin/`
 You can do that using the following commands if you followed the looking-glass documentation.
@@ -51,8 +51,9 @@ You can do that using the following commands if you followed the looking-glass d
 mkdir /run/host/home/$USER/.local/bin
 cp ./looking-glass-client /run/host/home/$USER/.local/bin/
 ```
-7. Test and see if `looking-glass-client` binary works for you on the host with your VM running.
-8. Exit the container and run the below command to remove the container we used to build the Looking-Glass client.
+Test and see if `looking-glass-client` binary works for you on the host with your VM running.
+
+Exit the container and run the below command to remove the container we used to build the Looking-Glass client.
 ```bash
 distrobox stop tmp_lookingglass ; distrobox rm tmp_lookingglass
 ```
