@@ -58,7 +58,7 @@ echo "" | sudo tee /etc/systemd/zram-generator.conf
 
 Finally, reboot your device to apply the changes made above.
 
-## Reverting changes and restoring zram
+## Reverting Changes and Restoring zram
 To revert the changes and restore zram, first remove the swapfile entry from `/etc/fstab`. Then, re-enable zram by copying the original configuration file back:
 ```
 sudo cp /usr/etc/systemd/zram-generator.conf /etc/systemd/zram-generator.conf
