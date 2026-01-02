@@ -5,7 +5,7 @@ title: Samba Server
 # Setting Up A SAMBA Server
 
 ## Preface
-Using a Quadlet service...
+Using a [Quadlet service] <link to quadlet service subsection on installaing and managing apps doc>
 
 Documentation: https://github.com/ServerContainers/samba
 Quadlet File:
