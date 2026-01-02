@@ -10,7 +10,7 @@ hide:
 
 - [:material-harddisk: **Installing Bazzite**](General/Installation_Guide/index.md){ style="font-size: 1.1rem" }
 
-  Bazzite supports PC hardware from [most desktop and laptops][install_pc_laptop] to specialized models like the [Framework 13][frame_13] and [Framework 16][frame_16]. <br>
+  Bazzite supports PC hardware from most modern desktop and laptops to specialized models like the Framework 13 and Framework 16. <br>
 
   Bazzite also supports controller-friendly hardware like [home theater PC setups][htpc] and a [multitude of handhelds][install_handheld]:
 
@@ -65,13 +65,13 @@ hide:
 [ayaneo]: Handheld_and_HTPC_edition/Handheld_Wiki/Ayaneo_Handhelds.md
 [run_win_game]: Installing_and_Managing_Software/index.md#how-do-i-run-windows-applications
 [enable_proton]: Gaming/Game_Launchers.md#enabling-proton-for-all-steam-games
-[flatpak]: Installing_and_Managing_Software/Flatpak.md
+[flatpak]: https://flathub.org/en
 [ujust]: Installing_and_Managing_Software/ujust.md
 [rpm-ostree]: Installing_and_Managing_Software/rpm-ostree.md
 [distrobox]: Installing_and_Managing_Software/Distrobox.md
 [installing_software]: Installing_and_Managing_Software/index.md
 [contrib]: CONTRIBUTE.md
-[homebrew]: Installing_and_Managing_Software/Homebrew.md
+[homebrew]: https://formulae.brew.sh/formula/
 [rpm-ostree_caveats]: Installing_and_Managing_Software/rpm-ostree.md#major-caveats-using-rpm-ostree
 [steam_game_mode]: Handheld_and_HTPC_edition/Steam_Gaming_Mode.md#what-is-steam-gaming-mode
 [appimage]: Installing_and_Managing_Software/AppImage.md
