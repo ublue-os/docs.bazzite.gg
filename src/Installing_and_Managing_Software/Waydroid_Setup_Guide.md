@@ -112,7 +112,11 @@ To use multi-touch gestures in Waydroid while running under Steam Gaming Mode, y
 
 <hr>
 
-## Disable Inputs to Waydroid When Unfocused
+## Waydroid Tips & Tricks
+
+This section is dedicated to more specific operations and issues within Waydroid running on Bazzite.
+
+### Disable Inputs to Waydroid When Unfocused
 
 Waydroid has an [issue](https://github.com/waydroid/waydroid/issues/135) where it will register inputs from controllers, keyboards, and other input devices even when the window is not focused.
 
@@ -130,7 +134,7 @@ waydroid prop set persist.waydroid.uevent false
 
 If you ever want to undo this change, run the same steps but set `true` instead of `false` with the same command.
 
-## Mouse Clicks to Touch Input
+### Mouse Clicks to Touch Input
 
 Some applications do not expect mouse clicks and only respond to touchscreen taps.
 
@@ -167,7 +171,7 @@ To revert these changes, use the following command in a host terminal:
 waydroid prop set persist.waydroid.fake_touch ""
 ```
 
-## Resolution & Density Options
+### Resolution & Density Options
 
 This is intended for users who have issues with Waydroid's resolution, scaling, or running Waydroid nested. This is **optional**.
 
@@ -183,7 +187,7 @@ sudoedit /etc/default/steamos-nested-desktop
 
 Save the text files when done.
 
-## Waydroid Hybrid Graphics Fix
+### Waydroid Hybrid Graphics Fix
 
 This is only intended for users who have multiple GPUs in their hardware who experience graphical corruptions in Waydroid.
 
@@ -195,7 +199,7 @@ ujust setup-waydroid
 
 Then `Select GPU for Waydroid` which will give the option on what GPU to utilize for Waydroid to fix graphical corruptions.
 
-## Reset Waydroid
+### Reset Waydroid
 
 !!! warning
 
