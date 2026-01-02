@@ -6,7 +6,7 @@ title: Plex Media Server Guide
 
 ## Preface
 
-Using a Quadlet service...
+Using a [Quadlet service] <link to quadlet service subsection on installaing and managing apps doc>
 
 Documentation: https://github.com/plexinc/pms-docker
 Quadlet File:
