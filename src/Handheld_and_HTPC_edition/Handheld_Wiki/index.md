@@ -6,6 +6,8 @@ title: Handheld Compatibility
 
 ## SteamOS-like Functionality
 
+>**Notice**: Bazzite uses [Handheld Daemon](https://github.com/hhd-dev/hhd/blob/master/readme.md) for proper handheld support currently. 
+
 ...
 
 Some games and emulators may need Steam Input **disabled** to work correctly with your controls.
