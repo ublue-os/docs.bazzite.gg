@@ -11,12 +11,13 @@ title: ScopeBuddy
 - Gives you the ability to automate running bash scripts before the game runs (this is a side effect of how the config files work)
 - You can bring your configurations with you between computers by just copying `~/.config/scopebuddy` to a new device
 - It also is used as a workaround to fix the Steam Overlay when using nested gamescope in desktop mode.
+- Fixes SteamInput when used in nested mode on Desktop.
 
 ## How to use it
 
 **As a `gamescope` replacement just to fix the Steam Overlay**:
 
-If you just want to fix the Steam Overlay (and Steam Input in some games), all you have to do is replace `gamescope` in your launch options for the game with `scb` or `scopebuddy`.
+If you just want to fix the Steam Overlay (and Steam Input in some games), all you have to do is replace `gamescope` in your launch options for the game with `scb` or `ScopeBuddy`.
 Essentially turning
 
 ```bash
@@ -48,7 +49,7 @@ Now your Steam Overlay will work when using gamescope for a game in desktop mode
 
 ### Setting global defaults
 
-If you ran your game once with the above launch options, scopebuddy will have created a default example config for you `~/.config/scopebuddy/scb.conf`
+If you ran your game once with the above launch options, ScopeBuddy will have created a default example config for you `~/.config/scopebuddy/scb.conf`
 
 !!! info "It might be possible that the file doesnt exists, in such case, create an empty one."
 
@@ -59,7 +60,7 @@ export XDG_DEFAULT_LAYOUT=no
 SCB_GAMESCOPE_ARGS="-f -w 2560 -h 1440 -W 2560 -H 1440 -r 180"
 ```
 
-The above `scb.conf` will make scopebuddy always set the keyboard layout in gamescope to norwegian and run gamescope with the arguments `-f -w 1920 -h 1080 -W 2560 -H 1440 -r 180`
+The above `scb.conf` will make ScopeBuddy always set the keyboard layout in gamescope to norwegian and run gamescope with the arguments `-f -w 1920 -h 1080 -W 2560 -H 1440 -r 180`
 
 This means we can now shorten our Launch Options for games we want to run in gamescope to just
 
@@ -67,11 +68,14 @@ This means we can now shorten our Launch Options for games we want to run in gam
 scb -- %command% --launcher-skip
 ```
 
+!! note
+    `--launcher-skip` is just an example launch option
+
 ### Auto Resolution/HDR/VRR
 
 For users that routinely change resolutions or use game streaming via Sunshine/Moonlight or Steam Remote Play, your display properties may change frequently.
 
-On KDE desktops (early Gnome support [added with caveats](https://github.com/HikariKnight/ScopeBuddy?tab=readme-ov-file#gnome-support)), scopebuddy accepts configuration to automatically inject the width and height, HDR state, or VRR state of your primary display.
+On KDE desktops (early Gnome support [added with caveats](https://github.com/HikariKnight/ScopeBuddy?tab=readme-ov-file#gnome-support)), ScopeBuddy accepts configuration to automatically inject the width and height, HDR state, or VRR state of your primary display.
 
 Add the following variables to the following to the config file at `~/config/scopebuddy/scb.conf`:
 
@@ -97,10 +101,10 @@ This will result in the following gamescope command output when your KDE display
 
 Later, if you switch your KDE display to 1920x1080 with HDR off and VRR on:  `gamescope -f --mangoapp -W 1920 -H 1080 --adaptive-sync`.
 
-All without changing a single line in your Steam launch options or scopebuddy config!
+All without changing a single line in your Steam launch options or ScopeBuddy config!
 
 ### Additional Config Files
-If you have a different set of defaults you use for a game, for example you want to upscale this game from 1080p to 1440p, then you can have a separate default config and tell scopebuddy to use that instead.
+If you have a different set of defaults you use for a game, for example you want to upscale this game from 1080p to 1440p, then you can have a separate default config and tell ScopeBuddy to use that instead.
 For this example, make the file `1080p.conf` inside `~/.config/scopebuddy/` and add defaults specific to what you want to use for upscaling from 1080p.
 
 ```bash
@@ -108,17 +112,17 @@ export XDG_DEFAULT_LAYOUT=no
 SCB_GAMESCOPE_ARGS="-f -w 1920 -h 1080 -W 2560 -H 1440 -r 180"
 ```
 
-To use this new config you can tell scopebuddy to use it by setting the `SCB_CONF` env var in the games Launch Option in steam
+To use this new config you can tell ScopeBuddy to use it by setting the `SCB_CONF` env var in the games Launch Option in steam
 
 ```bash
 SCB_CONF=1080p.conf scb -- %command% --launcher-skip
 ```
 
-scopebuddy will now use `1080p.conf` instead of `scb.conf` to set default options and environment variables.
+ScopeBuddy will now use `1080p.conf` instead of `scb.conf` to set default options and environment variables.
 
 !!! note
 
-    If you supply any argument to scopebuddy then `SCB_GAMESCOPE_ARGS` will be ignored entirely!
+    If you supply any argument to ScopeBuddy then `SCB_GAMESCOPE_ARGS` will be ignored entirely!
     This means using the launch option `scb -f -- %command%` will load the env vars from `scb.conf` however it will not use `SCB_GAMESCOPE_ARGS` from any config files.
 
 ### Setting specific options for a single Steam game
@@ -136,7 +140,7 @@ export SteamDeck=0
 SCB_GAMESCOPE_ARGS+=" --hdr-enabled"
 ```
 
-Now when steam runs `scb -- %command%`, scopebuddy will load the config from `scb.conf` then load `AppID/2694490.conf` afterwards to apply extra options on top of the defaults (or replace previous options from the default config if the same variables are exported or changed again)
+Now when steam runs `scb -- %command%`, ScopeBuddy will load the config from `scb.conf` then load `AppID/2694490.conf` afterwards to apply extra options on top of the defaults (or replace previous options from the default config if the same variables are exported or changed again)
 
 Notice how `SCB_GAMESCOPE_ARGS` uses `+=` instead of `=`.
 
@@ -151,7 +155,11 @@ This let's us re-use the `SCB_GAMESCOPE_ARGS` we set in our `scb.conf`
 
 ## Frequently asked questions (FAQ)
 
-### Can I use scopebuddys functions without using gamescope?
+### Is there a graphical application for making configurations?
+
+Yes! There is one on flathub: [ScopeBuddy Gui](https://flathub.org/en/apps/io.github.rfrench3.ScopeBuddy-gui)
+
+### Can I use ScopeBuddys functions without using gamescope?
 
 Yes, just use the env var `SCB_NOSCOPE=1` in the Launch Options like this
 
@@ -159,22 +167,22 @@ Yes, just use the env var `SCB_NOSCOPE=1` in the Launch Options like this
 SCB_NOSCOPE=1 scb -- %command% --launcher-skip
 ```
 
-This will tell scopebuddy to not launch gamescope and ignore `SCB_GAMESCOPE_ARGS` in all configs.
+This will tell ScopeBuddy to not launch gamescope and ignore `SCB_GAMESCOPE_ARGS` in all configs.
 The default config file will also be set to `noscope.conf` instead of `scb.conf` unless you also added the `SCB_CONF` env var to the launch options.
 
 !!! note
 
-    You can also export `SCB_NOSCOPE=1` inside an appid config if you never want to use gamescope for a game but still use scopebuddy for it. However `noscope.conf` will be ignored when used like this, due to it being applied after `scb.conf` has been loaded.
+    You can also export `SCB_NOSCOPE=1` inside an appid config if you never want to use gamescope for a game but still use ScopeBuddy for it. However `noscope.conf` will be ignored when used like this, due to it being applied after `scb.conf` has been loaded.
 
-### Does ScopeBuddy work inside Steam Gamemode?
+### Does ScopeBuddy work inside Steam Gaming Mode?
 
 Yes!
-When scopebuddy detects that steam is running in gamemode, it will force `SCB_NOSCOPE=1` and `SCB_CONF=gamemode.conf` this means that you can set custom options that will only be used in gamemode while keeping game specific options!
+When ScopeBuddy detects that steam is running in Steam Gaming Mode, it will force `SCB_NOSCOPE=1` and `SCB_CONF=gamemode.conf` so that you can set custom options that will only be used in Steam Gaming Mode while keeping game specific options!
 
-This means you can use scopebuddy to automatically handle using nested gamescope when in desktop mode and not utilizing gamescope when inside gamemode.
-No more manually adding and removing gamescope from launch options when you switch between gamemode and desktop mode! 🎉
+This means you can use ScopeBuddy to automatically handle using nested gamescope when in desktop mode and not utilizing gamescope when inside Steam Gaming Mode.
+No more manually adding and removing gamescope from launch options when you switch between Steam Gaming Mode and Desktop Mode! 🎉
 
-### Can I have scopebuddy handle the launch options for my games?
+### Can I have ScopeBuddy handle the launch options for my games?
 
 Of course! You will just use an AppID config for this and you can then append launch options by adding this to the AppID config for the game.
 
@@ -186,17 +194,39 @@ command+=" --launcher-skip --some-other-parameter"
 
     The `+=` is very important as you NEED to append launch options to the %command%, it is also vital that you start with a space after the first " otherwise the game will fail to launch.
 
+### Can I have ScopeBuddy not apply its fixes and only use it as a gamescope manager?
+
+Using the following environment variables will change ScopeBuddy's default behavior
+
+- `SCB_APPENDMODE=1` setting this in `scb.conf` will let you supply arguments to ScopeBuddy and they will be appended **after** the gamescope arguments in any config files.
+- `SCB_STEAMARGIGNORE=0` setting this in `scb.conf` will make ScopeBuddy no longer strip the `-e` or `--steam` arguments if it is supplied to gamescope, this is due to this specific flag currently crashing gamescope.
+- `SCB_NESTEDFIX=0` setting this in `scb.conf` will disable the Steam Overlay and SteamInput fix that ScopeBuddy applies (before you ask, they are the same fix)
+
+!!! note
+
+    See [XKCD 1172](https://xkcd.com/1172/) for context to why these environment variables exist
+
+### When should I use export for an environment variable?
+
+This depends if it is an internal variable for ScopeBuddy or a global variable for games.
+Rule of thumb is that you export every environment variable except in the situation of
+
+- It starts with `SCB_` as these are all internal ScopeBuddy variables
+- The variable is named `command` as this is the internal ScopeBuddy variable containing everything inside `%command%` from steam (or everything after the `--`)
+
 ### Wait... This is all just Bash!?
 
-Every config file for scopebuddy is a full bash script that is sourced before running gamescope and the game. This means if you are an advanced user you can do some really creative stuff!
+Every config file for ScopeBuddy is a full bash script that is sourced before running gamescope and the game. This means if you are an advanced user you can do some really creative stuff! You can also set `SCB_DEBUG=1` to have the final command written to `~/.config/scopebuddy/scopebuddy.log`
+
+
 !!! note
 
     Steam will mess with the launch environment, some tools like `curl` will have incompatible libraries in the environment while `wget` will work fine. Test your scripts properly and have them write to a log for easy debugging using `2>&1 1>/tmp/myscript.log` at the end of it in the config to write the output to a log file during testing.
 
 Some handy variables available to you are
 
-- `$SCB_NOSCOPE` will be set to 1 if scopebuddy was launched with `SCB_NOSCOPE=1`
-- `$SCB_GAMEMODE` will be set to 1 if scopebuddy is ran from within steam gamemode (this also implies `SCB_NOSCOPE=1`)
+- `$SCB_NOSCOPE` will be set to 1 if ScopeBuddy was launched with `SCB_NOSCOPE=1`
+- `$SCB_GAMEMODE` will be set to 1 if ScopeBuddy is ran from within steam Steam Gaming Mode (this also implies `SCB_NOSCOPE=1`)
 - `$SCB_CONFIGDIR` will be `$HOME/.config/scopebuddy` this means you can source other configs within your config (please do not make an infinite loop!)
 - `$command` will contain the expanded %command% variable from Steam and any launch options you added after it.
 
