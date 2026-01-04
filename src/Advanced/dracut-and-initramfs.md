@@ -7,7 +7,7 @@ title: How to Use Modprobe Options in Bazzite
 ## If you just plan to add options to a module, you should consider using a karg!
 Touching the initramfs system and modprobe will slow down your updates so all your updates will take several minutes longer. In most cases what you want to do in modprobe can be done with simple kernel arguments.
 
-In this example lets change the below modprobe options into a karg (kernel argument)
+In this example lets change the below modprobe options into a karg (kernel argument):
 ```
 options hid_apple fnmode=2
 ```
@@ -15,7 +15,7 @@ This would translate to the karg:
 ```
 hid_apple.fnmode=2
 ```
-To add this to grub we issue the command.
+To add this to grub we issue the command:
 ```
 rpm-ostree kargs --append-if-missing="hid_apple.fnmode=2"
 ```
