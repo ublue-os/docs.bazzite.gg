@@ -31,7 +31,6 @@ This documentation may not cover specific areas with the assumption that the use
 
 >A [Steam guide](https://steamcommunity.com/sharedfiles/filedetails/?id=2804823261) that goes over **tips and tricks for controls on the Steam Deck, but contains information that can still apply to all devices running Bazzite-Deck**.
 
-
 #### How do I open the side menus with a physical keyboard?
 
 **Steam Home Menu**: <kbd>Ctrl</kbd>/<kbd>Win</kbd>+<kbd>1</kbd>
@@ -99,6 +98,7 @@ This issue happens usually with HDMI TV audio.  Go into Desktop Mode and into th
 ### Change physical keyboard layout for Steam Gaming Mode
 
 Steam Gaming Mode has no official way to change the physical keyboard layout and will always default to the US layout.  If you want to change the layout, then you can set the environment variable `XKB_DEFAULT_LAYOUT=no` replacing `no` with the correct layout for you.
+
 Add this environment variable to `~/.config/environment.d/10-gamescope-session.conf` Basically, make sure hidden files is turned on and move into the **Home** directory, then go into the .config directory and enter the environment.d directory.  Inside that directory, the file that should be edited with a text editor should be saved as "10-gamescope-session.conf" for it to work properly.
 
 <sub>(Please note, if both the "10-gamescope-session.conf" file and/or "environment.d" folder does not exist already, then create it.)</sub>
@@ -212,9 +212,9 @@ Reboot the system.
 
 1.  Open a TTY session with an **external physical keyboard** using this **keyboard combination and entering this command**:
     <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F4</kbd> and `mv ~/.local/share/Steam ~/.local/share/Steam1`
-2.  This command will rename the `Steam` directory to `Steam1`, and it will force Steam to reinitialize and create a new directory
-3.  You can move your games from the renamed `Steam1` directory to the new `Steam` directory if you had any installed previously on your internal storage
-4.  Exit the TTY session by entering this **keyboard combination**: <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F2</kbd>
+2.  This command will rename the `Steam` directory to `Steam1`, and it will force Steam to reinitialize and create a new directory.
+3.  You can move your games from the renamed `Steam1` directory to the new `Steam` directory if you had any installed previously on your internal storage.
+4.  Exit the TTY session by entering this **keyboard combination**: <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F2</kbd>.
 
 #### Video Tutorial
 https://www.youtube.com/watch?v=gE1ff72g2Gk
