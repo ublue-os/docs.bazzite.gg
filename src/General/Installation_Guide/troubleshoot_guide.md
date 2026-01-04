@@ -20,7 +20,7 @@ The "code 1" error is a generic error code that appears during installation when
 - **Existing Fedora Installation:** If you've previously installed Nobara, Bazzite, or any Fedora-based OS on your drive, the installer might fail when writing the EFI entries because a "Fedora" folder already exists there.
   - **Fix 1:** The video below explains one way to resolve this. <br> https://www.youtube.com/watch?v=GRdz08hJByo <br> In summary, you'll need to access the terminal, identify and mount the EFI system partition, remove the existing "Fedora" folder.
   - **Fix2:** You can use manual partitioning as described in the [Dual Boot Setup Guide](./dual_boot_setup_guide.md#manual-partitioning-to-the-same-drive-for-dual-boot-setups) to create a new EFI partition.
-  - **Fix3:** If you are not dual-booting, follow the [Installing Bazzite for Desktop/Laptop Hardware guide](./Installing_Bazzite_for_Desktop_or_Laptop_Hardware.md) as removing everything on the drive will remove the EFI partition fixing the error
+  - **Fix3:** If you are not dual-booting, follow the [Installing Bazzite for Desktop/Laptop Hardware guide](./Installing_Bazzite_for_Desktop_or_Laptop_Hardware.md) as removing everything on the drive will remove the EFI partition fixing the error.
 - **Incorrect Filesystem:** Using the EXT4 or any other filesystem type for the root partition will cause this error. You must use BTRFS for the root partition.
 - **Corrupted ISO Image:** Ensure the ISO image isn't corrupted by calculating the checksums or using the official torrent when downloading Bazzite.
 - **Overheating USB Flash Drive:** Use a USB 3.0 or better flash drive and plug it into a USB 3.0 or better port to avoid overheating.
