@@ -228,7 +228,7 @@ AppImage is a universal package format that attempts to bundle every dependency 
 
 ## System-Level Package Layering (`rpm-ostree` Commands) [_**Not Recommended**_]
 
-Add software on top of the Bazzite image.
+Add software on top of the Bazzite image.  Use as a last resort and specifically for packages that cannot be installed from Homebrew or ran inside of a container.  Layered packages can break system upgrades until removed due to dependency issues since the package will have to be updated with the rest of the image.  It also causes upgrades to take longer to run.
 
 <link to rpm-ostree guide>
 
