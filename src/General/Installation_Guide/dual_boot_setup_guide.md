@@ -33,9 +33,9 @@ We might want to replace it with a mention of the Bootloader Restoration Tool an
 
     Install Bazzite on a separate internal or external drive.
 
-    1. Install the other operating system on a drive (like Windows)
-    2. Install Bazzite on a **second** drive
-    3. Set Bazzite as the **default** in your boot order (optional)
+    1. Install the other operating system on a drive (like Windows).
+    2. Install Bazzite on a **second** drive.
+    3. Set Bazzite as the **default** in your boot order (optional).
 
     If you install Windows second, you should disconnect the Bazzite drive to prevent using the Windows installer of using its EFI partition.
 
@@ -48,7 +48,7 @@ We might want to replace it with a mention of the Bootloader Restoration Tool an
     Usually should look something like this:
     ![](/img/dualbooting_partitions_windows.png)
     <i><small>Source: [diskpart.com](https://www.diskpart.com/windows-10/windows-10-disk-management-0528.html)</small></i>
-    2. Run the Bazzite installer with [manual partitioning](./manual_partitioning.md)
+    2. Run the Bazzite installer with [manual partitioning](./manual_partitioning.md).
     3. Reboot into Bazzite and run `ujust regenerate-grub` in the terminal to add Windows to the GRUB.
 
 
@@ -58,7 +58,7 @@ If you install Windows after Bazzite, you can restore Bazzite's bootloader with 
 
 !!! warning "Only users who are dual booting on the same drive should use these instructions. Automatic partitioning is preferred in other cases."
 
-!!! warning "Bazzite only supports the BTRFS filesystem for `/`"
+!!! warning "Bazzite only supports the BTRFS filesystem for `/`."
 
 If you need a tutorial video for manual partitioning, watch this [tutorial at timestamp 9:10](https://www.youtube.com/watch?v=JxPsKhJGTrs&t=550s).
 
@@ -143,7 +143,7 @@ Take note that the GRUB menu might not show up. In such case, spam the <kbd>↓<
 
 ### Boot into Windows from Steam
 
-Adds a script in Steam to boot into Windows
+Adds a script in Steam to boot into Windows.
 
 ```
 ujust setup-boot-windows-steam
