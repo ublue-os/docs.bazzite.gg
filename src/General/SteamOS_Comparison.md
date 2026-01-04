@@ -6,7 +6,7 @@ title: Comparison of Bazzite and SteamOS
 
 ## What is Bazzite?
 
-Bazzite is a community-driven Linux gaming operating system, featuring the latest Linux drivers and a variety of flavors (**Desktop**, **Handheld/HTPC (Bazzite-Deck)**, and [**Developer eXperience (Bazzite-DX)**](https://dev.bazzite.gg/)). It is based on **Fedora** and features an atomic update system ([bootc](https://github.com/bootc-dev/bootc)), ensuring the previous update is always available if something goes wrong. It is also designed for daily driving, with a focus on **gaming** and **development**.  In addition, since Bazzite ships the **latest drivers**, you can be sure that if your device **can work** on Linux, then **it will work in Bazzite**.  Bazzite has support for **AMD**, recent **Nvidia** and **Intel** GPUs. Bazzite also works well for **Lenovo**, **Asus**, **Ayn**, **GPD**, and **OneXPlayer** handheld devices.
+Bazzite is a community-driven Linux gaming operating system, featuring the latest Linux drivers and a variety of flavors (**Desktop**, **Handheld/HTPC (Bazzite-Deck)**, and [**Developer eXperience (Bazzite-DX)**](https://dev.bazzite.gg/)). It is based on **Fedora** and features an atomic update system ([bootc](https://github.com/bootc-dev/bootc)), ensuring the previous update is always available if something goes wrong. It is also designed for daily driving, with a focus on **gaming** and **development**.  In addition, since Bazzite ships the **latest drivers**, you can be sure that if your device **can work on Linux**, then **it will work in Bazzite**.  Bazzite has support for **AMD**, recent **Nvidia** and **Intel** GPUs. Bazzite also works well for **Lenovo**, **Asus**, **Ayn**, **GPD**, and **OneXPlayer** handheld devices.
 
 ## What is SteamOS?
 
@@ -38,11 +38,11 @@ Bazzite is a community-driven Linux gaming operating system, featuring the lates
 
 ### For Developers
 
-- Access to multiple package managers and repositories in [containers](/Installing_and_Managing_Software/Distrobox.md).
+- Access to multiple package managers and repositories in containers using [Distrobox](https://distrobox.it).
 - [Homebrew](https://brew.sh/) is pre-installed for command-line packages.
 - [Layer](/Installing_and_Managing_Software/rpm-ostree.md) Fedora packages to the system which survive between system updates.
-- Host software as services using [Quadlet](/Installing_and_Managing_Software/Quadlet.md).
-- Check out [Development](/Dev/index.md) for more information.
+- Host software as services using [Quadlet services]().
+- Check out [Development](gttps://dev.bazzite.gg) for more information.
 
 ### Security Improvements
 
