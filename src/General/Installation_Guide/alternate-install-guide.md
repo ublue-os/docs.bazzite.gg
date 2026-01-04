@@ -20,7 +20,7 @@ If you experience issues with installing our ISO or the bootable drive you have 
 
 4. Reboot when the rebase has finished, and Bazzite should be installed after rebooting and your username as well as the user password will carry over from the upstream Fedora Atomic Desktop to Bazzite.
 
-5. You will also be **missing the default applications**.
+5. You will also be **missing the default Flatpak applications unless you install them with the `ujust` command** below.
 
 ## Install Pre-Installed Flatpak Applications
 
@@ -30,7 +30,7 @@ Open the terminal and **enter this command**:
 ujust _install-system-flatpaks
 ```
 
-Choose the "Flathub" remote.  If it asks for "System" or "User" then choose "**System**" since that is the default remote for Bazzite.
+Choose the "**Flathub**" remote.  If it asks for "System" or "User" then choose "**System**" since that is the default remote for Bazzite.
 
 > **This command installs:**
 >
