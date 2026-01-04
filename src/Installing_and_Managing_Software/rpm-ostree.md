@@ -20,7 +20,7 @@ Install [Fedora Linux packages](https://packages.fedoraproject.org/) by installi
 
 ## Terminal Commands Related to Package Layering
 
-Use these commands at your own risk.
+**Use these commands at your own risk**.
 
 ### Layer Package(s)
 
@@ -100,11 +100,11 @@ You may need to copy the full path (`/path/to/rpmfile.rpm`) for it to install pr
 
         3. Reboot
 
-        If you experience issues updating your system due to GPG signature issues, then this can be fixed by either removing the COPR repository, or editing the file by changing `gpgcheck=1` to `gpgcheck=0` (or similar) and saving it **at your own risk**.
+        If you experience issues updating your system due to GPG signature issues, then this can be fixed by either removing the COPR repository, or editing the file by changing `gpgcheck=1` to `gpgcheck=0` (or similar) and saving it **at your own risk**
 
 === "Disable COPR"
 
-    !!! warning "Ensure to remove any package installed with the COPR beforehand"
+    !!! warning "Ensure to remove any package installed with the COPR beforehand."
 
     === "DNF5 (Fedora COPR)"
 
