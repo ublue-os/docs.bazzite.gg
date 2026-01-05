@@ -6,5 +6,4 @@
     <small>[Windows/Mac](https://github.com/FedoraQt/MediaWriter/releases/latest), [Linux flatpak](https://flathub.org/apps/org.fedoraproject.MediaWriter)</small>
   - [Rufus](https://rufus.ie/en/)
   - [Etcher](https://etcher.balena.io/)
-
-!!! warning "Ventoy is not supported."
+  - [Ventoy](https://www.ventoy.net/en/index.html) (_in GRUB2 mode_)
