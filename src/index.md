@@ -36,7 +36,7 @@ hide:
 
   There is also software available as [`ujust` commands found in the Bazzite Portal application][ujust] which is the preferred way to obtain certain software and takes precedence over the list above. [Layering system-level packages*][rpm-ostree] is an option but is the **least recommended method of obtaining most software** since it can break automatic updates until the package is removed from the image.</sub>
   
-- [:fontawesome-solid-circle-arrow-down: **Updates & Rollbacks**][updateindex]{ style="font-size: 1.1rem" }
+- [:material-update: **Updates & Rollbacks**][updateindex]{ style="font-size: 1.1rem" }
 
   Hassle-free updates with protections against regressions. Rollback to the previous deployment or rebase to an earlier Bazzite build within the last 90 days without losing your personal files.
 
