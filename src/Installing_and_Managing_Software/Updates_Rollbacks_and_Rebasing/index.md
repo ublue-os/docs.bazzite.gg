@@ -4,7 +4,7 @@ title: Updates, Rollbacks, and Rebasing
 
 # Updates, Rollbacks, and Rebasing
 
-## Updates
+## System & Application Updates
 
 ![System Updates|200x200, 100%](../../img/System_Updates.png)
 
@@ -14,7 +14,7 @@ title: Updates, Rollbacks, and Rebasing
 
 ### How do updates work?
 
-Bazzite updates all of the changes made specifically in Bazzite itself, updates from Fedora's base packages upstream, graphic drivers, and user software.
+Bazzite updates all of the changes made specifically in Bazzite itself, updates from Fedora's base packages upstream, graphic drivers, and user software installed from Bazaar.
 
 #### Desktop Images
 
