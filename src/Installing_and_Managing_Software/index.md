@@ -245,7 +245,8 @@ Bazzite can also run Windows and Android applications too!
 - [**Steam**](https://store.steampowered.com/) (_pre-installed_) has a Windows compatibility layer built-in.
 - [**Lutris**](https://lutris.net/about) (_pre-installed_) for non-Steam PC games and non-gaming software.
 - [**Faugus Launcher**](https://github.com/Faugus/faugus-launcher) (_Available in Bazaar_) as an alternative to Lutris.
-- [**Heroic**](https://heroicgameslauncher.com/) (_Available in Bazaar_) for proper Epic Games, GOG, and Amazon Games integration.
+- [**Heroic Games Launcher**](https://heroicgameslauncher.com/) (_Available in Bazaar_) for proper Epic Games, GOG, and Amazon Games integration.
+- [**Greenlight**](https://flathub.org/en/apps/io.github.unknownskl.greenlight) (_Available in Bazaar_) for streaming Windows store games and Gamepass. <small>(**Streaming only**)</small>
 - [**WineZGUI**](https://github.com/fastrizwaan/WineZGUI) (_Available in Bazaar_) for less complicated Windows applications that don’t require special considerations.
 
 >Read the [**Bazzite Gaming Guide**](/Gaming/index.md) for more information on running Windows games on Linux.
