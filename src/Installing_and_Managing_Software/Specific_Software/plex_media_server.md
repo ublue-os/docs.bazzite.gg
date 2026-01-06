@@ -6,7 +6,9 @@ title: Plex Media Server Guide
 
 ## Preface
 
-Using a [Quadlet service] <link to quadlet service subsection on installaing and managing apps doc>
+Use a [Quadlet service](<link to quadlet service subsection on installaing and managing apps doc>) to host a Plex server on Bazzite.
+
+## Setup
 
 Documentation: https://github.com/plexinc/pms-docker
 Quadlet File:
