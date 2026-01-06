@@ -29,11 +29,9 @@ hide:
      {style="list-style-type: decimal;"}
   2. [Homebrew][homebrew] for command-line apps.
      {style="list-style-type: decimal;"}
-  3. [Quadlet][quadlet] for hosting services.
-     {style="list-style-type: decimal;"}
-  4. [Containers][distrobox] for access to most Linux package managers and as development toolboxes.
-     {style="list-style-type: decimal;"}
-  5. [Appimage][appimage] for portable apps found on the web.
+  3. [Containers][containers] for access to most Linux package managers (`apt`, `dnf`, `pacman`, etc.), as development toolboxes, and for hosting services.
+     {style="list-style-type: decimal;"}   
+  4. [Appimage][appimage] for portable apps found on the web.
      {style="list-style-type: decimal;"}
 
   There is also software available as [`ujust` commands found in the Bazzite Portal application][ujust] which is the preferred way to obtain certain software and takes precedence over the list above. [Layering system-level packages*][rpm-ostree] is an option but is the **least recommended method of obtaining most software** since it can break automatic updates until the package is removed from the image.</sub>
@@ -42,9 +40,7 @@ hide:
 
   Hassle-free updates with protections against regressions. Rollback to the previous deployment or rebase to an earlier Bazzite build within the last 90 days without losing your personal files.
 
-  - Updating Guide
-  - Rollback System Updates
-  - [`bazzite-rollback-helper`]rollback-helper
+  Read about the [`bazzite-rollback-helper`][rollback-helper] tool for rolling back system upgrades or changning the update stream.
 
 </div>
 
