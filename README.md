@@ -53,7 +53,7 @@ The essential part that can't be missing in a mdBook is the `mkdocs.yml` file.
 
 > ⚠️ WARNING ⚠️
 >
-> This step is **required** in order to setup previews of the resulting MkDocs
+> This step is **required** in order to setup previews of the resulting MkDocs.
 
 To install our dependencies, run this:
 
@@ -83,7 +83,7 @@ You will need other tools as well, like:
 - A markdown compatible code editor (ex.: **Visual Studio Code**)
 - **git** (comes preinstalled in most Linux distributions)
 
-### 1. Create the markdown file where we will store our document.
+### 1. Create the markdown file where we will store our document
 
 > ⚠️ WARNING
 >
