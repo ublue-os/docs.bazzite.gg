@@ -6,8 +6,9 @@ title: NGINX Web Server
 
 ## Preface
 
-Using a [Quadlet service] <link to quadlet service subsection on installaing and managing apps doc>
+Use a [Quadlet service](<link to quadlet service subsection on installaing and managing apps doc>) to host a NGINX web server on Bazzite.
 
+## Setup
 
 Create a file called `~/.config/containers/systemd/nginx.container` with content below.
 ```
