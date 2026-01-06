@@ -10,7 +10,7 @@ Bazzite is a community-driven Linux gaming operating system, featuring the lates
 
 ## What is SteamOS?
 
-**SteamOS** is an operating system originally designed for the Steam Deck. SteamOS is an OS for the Steam client and also features a basic desktop environment with **KDE Plasma**, **X11** that allows users to e.g., install mods and emulators, but may be limiting for desktop use.
+**SteamOS** is an operating system originally designed for the Steam Deck. SteamOS is an OS for the Steam client and also features a basic desktop environment with **KDE Plasma** that allows users to e.g., install mods and emulators, but may be limiting for desktop use.
 
 ### Extra Enhancements on Bazzite Compared to SteamOS
 
