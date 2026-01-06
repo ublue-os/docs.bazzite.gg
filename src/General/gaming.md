@@ -19,19 +19,19 @@ Steam is the recommended way to play PC games on the Linux desktop as it ships w
 
 ### Non-Steam Games
 
-Non-Steam games can run on Bazzite...
+Non-Steam games can run on Bazzite. The most recommended method is Lutris for most non-Steam games. [Faugus Launcher](https://flathub.org/en/apps/io.github.Faugus.faugus-launcher) is an alternative to Lutris available in the Bazaar app store which may be favorable due to a simpler design. [**Heroic Games Launcher**](https://flathub.org/apps/com.heroicgameslauncher.hgl) is recommended over Lutris for games that were purchased from Epic Games Launcher, GOG, and Amazon Games Launcher.  Games installed from the Microsoft Store do **not** run unless you use a Xbox Cloud Gaming client like [**Greenlight**](https://github.com/unknownskl/greenlight). Fortnite can also be played via this method **without** a Game Pass subscription.  There are also [**select titles available on Battle.net**](https://us.support.blizzard.com/en/article/000357106) which can be ran through Proton using Lutris. Console emulators should be installed from the Bazaar app store or using a setup script like [Emudeck](https://www.emudeck.com/).
 
-#### Lutris
+### Lutris Setup
 
 Lutris offers two methods to play Windows games on Bazzite.  Community-driven scripts or manually adding the executable.  It is **highly recommended to use the manual method** as some scripts are poorly maintained.
 
-#### Lutris Installer Scripts
+### Lutris Install Scripts
 
 ![Example of Lutris installers|623x500, 75%](../img/Lutris_Setup_Installers.png)
 
-Lutris is game management software that doubles as a WINE front-end for Windows games. Several games and launchers can be installed by searching for the title and using one of the installer scripts for it.  [Faugus Launcher](https://flathub.org/en/apps/io.github.Faugus.faugus-launcher) is an alternative to Lutris available in the Bazaar app store.
+Lutris is game management software that doubles as a WINE front-end for Windows games. Several games and launchers can be installed by searching for the title and using one of the installer scripts for it. 
 
-#### Manually adding a Windows game to Lutris
+### Manually adding a Windows game to Lutris
 
 ![Add Locally Installed Game|632x496, 75%](../img/Lutris_Setup_Add_Local_Game.png)
 
@@ -44,25 +44,6 @@ However if your game is not listed or doesn't work with the provided script, the
 ![Lutris_Right_Click_Menu|421x447, 75%](../img/Lutris_Setup_Shortcut.png)
 
 Right clicking a game on Lutris gives the option to add it as a non-Steam game (useful for Steam Gaming Mode), create a desktop shortcut, or an application menu shortcut.
-
-#### Heroic Games Launcher
-
-<show screenshot of Heroic here>
-
-[**Heroic Games Launcher**](https://flathub.org/apps/com.heroicgameslauncher.hgl) is recommended for games that were purchased from Epic Games Launcher, GOG, and Amazon Games Launcher.
-
-
-### Game Pass and Microsoft Store Games (Xbox Cloud Gaming)
-
-!!! note
-
-    A Game Pass Ultimate subscription is required to use [Xbox Cloud Gaming](https://www.xbox.com/en-us/play) except for select games like Fortnite.
-
-Games installed from the Microsoft Store do **not** run unless you use a Xbox Cloud Gaming client like [**Greenlight**](https://github.com/unknownskl/greenlight). Fortnite can also be played via this method **without** a Game Pass subscription.  There are also [**select titles available on Battle.net**](https://us.support.blizzard.com/en/article/000357106) which can be ran through Proton using Lutris.
-
-#### Console Emulation
-
-Install emulators from the Bazaar app store.
 
 <hr>
 
