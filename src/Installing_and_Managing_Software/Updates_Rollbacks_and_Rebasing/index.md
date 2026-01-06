@@ -83,3 +83,7 @@ Unpin saved **current** deployment:
 ```command
 sudo ostree admin pin --unpin 0
 ```
+
+### How do I disable automatic updates?
+
+...
