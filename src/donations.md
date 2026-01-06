@@ -58,12 +58,6 @@ Love Bazzite and want to help sustain its development?
     <a href="https://opencollective.com/bazzite-eu" target="_blank" class="sponsor-button">Sponsor Bazzite (€ Europe)</a>
 </div>
 
-## Current Maintainers and Core Contributors
-
-<just use what i have now but even more up to date??? this is stupid>
-<link github repo contributors?>
-
-
 ## Bazzite Maintainers
 These are the people keeping the lights on and the project moving forward.
 <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
