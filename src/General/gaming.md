@@ -117,6 +117,12 @@ A log file should appear in your Home directory named after the game's applicati
 
 <hr>
 
+## Advanced Gaming Tweaks
+
+<link to guide>
+
+<hr>
+
 ## Useful External Resources
 
 - [**ProtonDB**](https://www.protondb.com/explore) - User reports for game compatibility on Linux
