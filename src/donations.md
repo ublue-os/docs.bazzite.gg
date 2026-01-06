@@ -96,7 +96,7 @@ These are the major contributors to Bazzite, with a variety of contributions tha
 ## Other Contributors
 These are contributors that made smaller contributions to Bazzite or are emeritus contributors that helped in the past.
 <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
-{{ contributor("RJ Trujillo", "EyeCantCU", "Early Maintainer of Bazzite. CI/CD Pipelines, Initial Alternate Desktop Environment Support. Emeritus.") }}
+{{ contributor("RJ Trujillo", "EyeCantCU", "Early Maintainer of Bazzite. CI/CD Pipelines, Initial Alternate Desktop Environment Support, and proper Steam Deck support. Emeritus.") }}
 {{ contributor("Pat Connors", "nicknamenamenick", "Bazzite documentation creator. Provided a lot of his time helping users. Emeritus.") }}
 {{ contributor("Aarron Lee", "aarron-lee", "Decky plugin creator for alternate handhelds. Provided a lot of early testing, especially with GPD and Legion Go devices. Emeritus.") }}
 {{ contributor("Jan", "Jan200101", "Early Kernel maintainer of Bazzite through the kernel-fsync project. Emeritus.") }}
