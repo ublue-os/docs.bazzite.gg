@@ -254,3 +254,7 @@ Bazzite can also run Windows and Android applications too!
 ### Android Apps
 
 Follow the [**Waydroid Setup Guide**](./Waydroid_Setup_Guide.md) to install Android applications on Bazzite.
+
+### Installing Specific Software
+
+Tutorials on installing software like setting up [ZeroTier](<link guide>) to [hosting a Minecraft server](<link guide>) can be found in the [**Installing Specific Software Guides**](<link to index>)
