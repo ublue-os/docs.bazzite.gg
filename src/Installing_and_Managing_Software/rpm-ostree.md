@@ -12,7 +12,9 @@ title: Package Layering
 
     Layering packages irresponsibly can be **destructive** and may prevent updates as well as other issues until the layered packages are removed.
 
-Install [Fedora Linux packages](https://packages.fedoraproject.org/) by installing them with `rpm-ostree`.
+Install [Fedora Linux packages](https://packages.fedoraproject.org/) by using the `rpm-ostree` terminal command.
+
+### Key Features
 
 - This is known as "layering packages" to the image.
 - Layering packages will **require** a system reboot when it finishes creating the new deployment with the package(s) added to your image.
