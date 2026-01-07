@@ -2,11 +2,11 @@
 title: Samba Server
 ---
 
-# Setting Up A SAMBA Server
+# Setting Up A Samba Server
 
 ## Preface
 
-Use a [Quadlet service](<link to quadlet service subsection on installaing and managing apps doc>) to host a SAMBA server on Bazzite.
+Use a [Quadlet service](<link to quadlet service subsection on installaing and managing apps doc>) to host a Samba server on Bazzite.
 
 ## Setup
 
