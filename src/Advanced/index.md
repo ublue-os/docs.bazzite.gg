@@ -5,6 +5,7 @@ title: Specialized Utilities and System Administration Guides
 # Advanced Guides
 
 - [**Auto-Mounting Secondary Drives**](/Advanced/Auto-Mounting_Secondary_Drives.md)
+- [**Advanced Gaming Tweaks**](/Advanced/gaming-advanced.md)
 - [**Managing Gamescope Using ScopeBuddy**](/Advanced/scopebuddy.md)
 - [**Custom Resolutions**](/Advanced/custom_resolution.md)
 - [**Bazzite Command-Line Tools**](/Advanced/bazzite-cli.md)
