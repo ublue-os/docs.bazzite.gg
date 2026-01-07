@@ -4,7 +4,7 @@ title: General Guides
 
 # General Guides
 
-- [**Upstream Fedora Atomic Desktop Comparison**](/General/Fedora_Atomic_Comparison.md)
+- [**Comparison of Bazzite and Fedora Atomic Desktop**](/General/Fedora_Atomic_Comparison.md)
 - [**SteamOS Comparison**](/General/SteamOS_Comparison.md)
 - [**Gaming Guide**]()
 - [**Desktop Environment Tweaks**](/General/Desktop_Environment_Tweaks.md)
