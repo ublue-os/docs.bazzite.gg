@@ -132,65 +132,37 @@ nav:
       - "Alternative Installation Method": General/Installation_Guide/alternate-install-guide.md
   - General:
       - "General Guides": General/index.md
-      - "Dictionary and Terminology": General/terms.md
       - "Upstream Fedora Atomic Desktop Comparison": General/Fedora_Atomic_Comparison.md
       - "SteamOS Comparison": "General/SteamOS_Comparison.md"
+      - "Gaming Guide": "General/gaming.md"
+      - "Desktop Environment Tweaks": General/Desktop_Environment_Tweaks.md      
+      - "VPN Setup": General/VPN.md
       - "Issues & Resolutions": "General/issues_and_resolutions.md"
       - "Reporting Bugs": General/reporting_bugs.md
-      - "Desktop Environment Tweaks": General/Desktop_Environment_Tweaks.md
-      - "VPN Setup": General/VPN.md
-      - "ZeroTier Setup": General/zerotier.md
-      - "Community Resources": General/community-links.md
-      - "Uninstalling Bazzite": General/uninstalling-bazzite.md
-      - "Repository Information (External)":
-          - "README": https://github.com/ublue-os/bazzite/blob/main/README.md
-          - "Security Policy": https://github.com/ublue-os/bazzite/blob/main/SECURITY.md
-          - "License": https://github.com/ublue-os/bazzite/blob/main/LICENSE
-          - "Bazzite-Specific Packages": https://github.com/orgs/bazzite-org/repositories
-          - "Press Kit": https://github.com/ublue-os/bazzite/tree/main/press_kit
   - Bazzite-Deck:
       - "Steam Gaming Mode": Handheld_and_HTPC_edition/Steam_Gaming_Mode.md
-      - "Quirks and Workarounds": Handheld_and_HTPC_edition/quirks.md
       - "Handheld Wiki":
           - Handheld_and_HTPC_edition/Handheld_Wiki/index.md
-          - "Steam Deck": Handheld_and_HTPC_edition/Handheld_Wiki/Steam_Deck.md
-          - "Lenovo Legion Go": Handheld_and_HTPC_edition/Handheld_Wiki/Lenovo_Legion_Go.md
-          - "ASUS ROG Ally": Handheld_and_HTPC_edition/Handheld_Wiki/ASUS_ROG_Ally.md
-          - "Ayn Handhelds": Handheld_and_HTPC_edition/Handheld_Wiki/Ayn_Handhelds.md
-          - "GPD Handhelds": Handheld_and_HTPC_edition/Handheld_Wiki/GPD_Handhelds.md
-          - "OneXPlayer Handhelds": Handheld_and_HTPC_edition/Handheld_Wiki/OneXPlayer_Handhelds.md
-          - "Ayaneo Handhelds": Handheld_and_HTPC_edition/Handheld_Wiki/Ayaneo_Handhelds.md
-          - "Other Handhelds": Handheld_and_HTPC_edition/Handheld_Wiki/Other_Handhelds.md
   - Software:
       - "Installing and Managing Software":
           - Installing_and_Managing_Software/index.md
-          - "Flatpak": Installing_and_Managing_Software/Flatpak.md
           - "ujust": Installing_and_Managing_Software/ujust.md
-          - "Homebrew": Installing_and_Managing_Software/Homebrew.md
-          - "Quadlet": Installing_and_Managing_Software/Quadlet.md
-          - "Distrobox": Installing_and_Managing_Software/Distrobox.md
-          - "Appimage": Installing_and_Managing_Software/AppImage.md
           - "rpm-ostree": Installing_and_Managing_Software/rpm-ostree.md
           - "Waydroid Setup Guide": Installing_and_Managing_Software/Waydroid_Setup_Guide.md
+      - "Installing Specific Software":
+          - <index here>
       - "Updates, Rollbacks, & Rebasing":
           - "Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/index.md"
-          - "Updating Guide": "Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/updating_guide.md"
-          - "Rolling Back System Updates": "Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/rolling_back_system_updates.md"
-          - "Rebase Guide": "Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/rebase_guide.md"
           - "Bazzite Rollback Helper": "Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/bazzite_rollback_helper.md"
   - Advanced:
       - "Advanced Guides": Advanced/index.md
-      - "Utilities":
+          - "Auto-Mounting Secondary Drives": Advanced/Auto-Mounting_Secondary_Drives.md      
           - "Managing Gamescope Using ScopeBuddy": Advanced/scopebuddy.md
-          - "Using Looking-Glass": Advanced/looking-glass.md
+          - "Custom Resolutions": Advanced/custom_resolution.md
           - "Bazzite Command Line Tools": Advanced/bazzite-cli.md
-          - "Best Shell Practices": Advanced/Best_Shell_Practices.md
-      - "System Administration":
-          - "Auto-Mounting Secondary Drives": Advanced/Auto-Mounting_Secondary_Drives.md
-          - "Booting to Rescue & Emergency Mode": Advanced/rescue-and-emergency-mode.md
-          - "Reset Forgotten User Password": Advanced/Reset_Forgotten_User_Password.md
+          - "Booting to Rescue Mode": Advanced/rescue-and-emergency-mode.md
+          - "Show Detailed Init Logs During Boot": Advanced/plymouth_init.md          
           - "Using Swap for Additional Memory or Hibernation": Advanced/swapfile.md
-          - "Show Detailed Init Logs During Boot": Advanced/plymouth_init.md
           - "How to Modify Initramfs and Dracut": Advanced/dracut-and-initramfs.md
           - "Creating A Custom Bazzite Image": Advanced/creating_custom_image.md
   - Bazzite-DX:
