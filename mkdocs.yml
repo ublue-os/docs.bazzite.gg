@@ -150,7 +150,7 @@ nav:
           - "rpm-ostree": Installing_and_Managing_Software/rpm-ostree.md
           - "Waydroid Setup Guide": Installing_and_Managing_Software/Waydroid_Setup_Guide.md
       - "Installing Specific Software":
-          - <index here>
+          - Installing_and_Managing_Software/Specific_Software/index.md
       - "Updates, Rollbacks, & Rebasing":
           - "Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/index.md"
           - "Bazzite Rollback Helper": "Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/bazzite_rollback_helper.md"
