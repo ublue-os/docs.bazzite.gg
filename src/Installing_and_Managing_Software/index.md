@@ -56,10 +56,6 @@ Read the ujust page <link this>
 
 ## Containers (Distrobox/Quadlet)
 
-<!-- ANCHOR: METADATA -->
-<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=2640", "fetched_at": "2024-09-03 16:43:09.168054+00:00"}-->
-<!-- ANCHOR_END: METADATA -->
-
 ### Distrobox Containers
 
 ![distrobox|510x413](../img/distrobox.png)
@@ -123,8 +119,6 @@ https://youtu.be/5m0YfIiypwA
 [alpine_pkgs]: https://pkgs.alpinelinux.org/packages
 
 ### Quadlet
-
-![podman|385x358, 50%](../img/podman.png)
 
 Quadlet is a feature of [podman](https://podman.io/) that allows a user to run a container as [systemd](https://systemd.io/) units. It works by using a declarative syntax like [docker compose](https://docs.docker.com/compose/) but integrates to systemd and uses podman as a backend.
 
