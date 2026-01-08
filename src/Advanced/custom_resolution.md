@@ -8,7 +8,7 @@ title: Custom Resolutions
 
 ![Custom Resolution Helper Preview|570x500](../img/Custom_Resolution_Helper_Preview.png)
 
-!!! warning "Remove any custom resolutions if you encounter an unexpected display issue with `crh rm all`. Any modifications to your device should be done appropriately **at your own risk**"
+!!! warning "Remove any custom resolutions if you encounter an unexpected display issue with `crh rm all`. Any modifications to your device should be done appropriately **at your own risk**".
 
 !!! info "Custom resolutions created with this method require a reboot to take effect."
 
