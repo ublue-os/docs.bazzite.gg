@@ -6,7 +6,7 @@ title: Alternative Installation Guide
 
 !!! warning
 
-    This method may have scaling issues with the installer depending on the hardware especially if it is a handheld PC.
+    This method may have scaling issues with the installer depending on the hardware especially if it is handheld PC hardware.
 
 ## Rebasing from a Fedora Atomic Desktop Image
 
@@ -47,6 +47,6 @@ rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/<IMAGE>
 
 Replace **`<IMAGE>`** with the image you're using.
 
-### Video Tutorial
+## Video Tutorial
 
 https://www.youtube.com/watch?v=0NKEfVvdiOs
