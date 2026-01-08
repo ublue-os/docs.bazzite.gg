@@ -141,7 +141,7 @@ Layering packages can cause **severe consequences** including:
 - Conflict with existing packages as part of the image leading to dependency issues.
 - Updates taking longer to download as you layer more packages to your system.
 
-Layering packages are mostly intended for **system-level applications, libraries, and other dependencies**. It is recommended to use Flatpak, Homebrew, containers, AppImage, etc. **before** installing software with `rpm-ostree`.  Layering packages for a temporary time period is the better alternative than keeping a package layered indefinitely.
+Layering packages are mostly intended for **system-level applications, libraries, and other dependencies**. It is recommended to use Flatpak, Homebrew, containers, AppImage, Waydroid, or running the Windows version through a compatibility layer **before** installing software with `rpm-ostree`.  Layering packages for a temporary time period is the better alternative than keeping a package layered indefinitely.
 
 ## How to remove **ALL** layered packages
 
