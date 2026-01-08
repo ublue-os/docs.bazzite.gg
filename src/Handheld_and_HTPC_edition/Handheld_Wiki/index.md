@@ -8,16 +8,12 @@ title: Handheld Compatibility
 
 >**Notice**: Bazzite uses [Handheld Daemon](https://github.com/hhd-dev/hhd/blob/master/readme.md) for proper handheld support currently. 
 
-...
-
-Some games and emulators may need Steam Input **disabled** to work correctly with your controls.
-
+Bazzite-Deck images ship with [Steam Gaming Mode](<link that here>) which is intended to mimic the experience of SteamOS.  The goal is to have earlier support for most x86_64 handheld PCs before SteamOS and with the same benefits of the desktop version of Bazzite.
 
 ### Tips and Tricks
 
 - [Lenovo Legion Go Linux Tips and Tricks](https://github.com/aarron-lee/legion-go-tricks)
 - [GPD Win Linux Tips and Tricks](https://github.com/aarron-lee/gpd-win-tricks)
-
 
 ### Steam Deck BIOS Updates
 
