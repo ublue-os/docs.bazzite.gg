@@ -4,6 +4,10 @@ title: Advanced Gaming Tweaks
 
 # Advanced Gaming Tweaks
 
+## Preface
+
+Linux gaming is far more intuitive today than it was years ago.  There are still advanced launch options and configurations that can be ran from Bazzite though.  This guide will show off examples of advanced gaming tweaks that can be done on a Bazzite installation.
+
 ## Enhancements Pre-Installed on Bazzite
 
 - [vkBasalt](https://github.com/DadSchoorse/vkBasalt) - Vulkan post-processing layer with ReShade FX support.
