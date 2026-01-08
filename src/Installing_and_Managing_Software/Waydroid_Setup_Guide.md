@@ -104,6 +104,20 @@ Selecting `Configure Waydroid` will allow users to install additional Android tw
 
 After verification has happened, it will usually take a while before your device is Google Play certified.
 
+## Waydroid Helper application
+
+![Waydroid_Helper|400x400](../img/Waydroid_Helper.png)
+
+[waydroid-helper](https://github.com/waydroid-helper/waydroid-helper) is a GUI app that enables more advanced configuration and control over your waydroid installations.
+
+To install it, run the following `ujust` command:
+
+```bash
+ujust setup-waydroid helper
+```
+
+You can alternatively go directly to their [releases](https://github.com/waydroid-helper/waydroid-helper/releases) and install the latest AppImage via GearLever.
+
 ## Add as a Non-Steam Shortcut
 
 > This is useful for [Bazzite images that use Steam Gaming Mode.](../Handheld_and_HTPC_edition/Steam_Gaming_Mode.md)
