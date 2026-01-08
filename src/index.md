@@ -34,7 +34,7 @@ hide:
   4. [Appimage][appimage] for portable apps found on the web.
      {style="list-style-type: decimal;"}
 
-  There is also software available as [`ujust` commands found in the Bazzite Portal application][ujust] which is the preferred way to obtain certain software and takes precedence over the list above. [Layering system-level packages*][rpm-ostree] is an option but is the **least recommended method of obtaining most software** since it can break automatic updates until the package is removed from the image.</sub>
+  There is also software available as [`ujust` commands found in the Bazzite Portal application][ujust] which is the preferred way to obtain certain software and takes precedence over the list above. Users can also [layer system-level packages][rpm-ostree] as the **least recommended method of obtaining most software** since it can break automatic updates until the package is removed from the image.</sub>
   
 - [:material-update: **Updates & Rollbacks**][updateindex]{ style="font-size: 1.1rem" }
 
