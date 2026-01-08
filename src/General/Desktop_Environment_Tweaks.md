@@ -19,7 +19,7 @@ KDE Plasma is the default Bazzite desktop environment and is highly customizable
 Step-by-step instructions to install custom themes on KDE Plasma.
 
 1. Download the theme manually from the [**KDE Store**](https://store.kde.org/browse/).
-2. Extracting the contents to `~/.local/share/plasma/` <sub>(_you may need to make this directory_).</sub>
+2. Extracting the contents to `~/.local/share/plasma/` <small>(_you may need to make this directory_)</small>
 3. Open the system settings and select your theme, style, cursor etc. as it now should appear.
 
 ## Theme Extraction Locations
@@ -28,15 +28,15 @@ The location where specific KDE Plasma components will be extracted on the deskt
 
 ### Global Themes
 
-Global themes are placed in `~/.local/share/plasma/look-and-feel/` <sub>(_you may need to make this directory_).</sub>
+Global themes are placed in `~/.local/share/plasma/look-and-feel/` <small>(_you may need to make this directory_)</small>
 
 ### Plasma Themes
 
-"Plasma themes" are placed in `~/.local/share/plasma/desktoptheme/` <sub>(_you may need to make this directory_).</sub>
+"Plasma themes" are placed in `~/.local/share/plasma/desktoptheme/` <small>(_you may need to make this directory_)</small>
 
 ### Plasma Window Decorations
 
-"Window decoration themes" are placed in `~/.local/share/aurorae/themes/` <sub>(_you may need to make this directory_).</sub>
+"Window decoration themes" are placed in `~/.local/share/aurorae/themes/` <small>(_you may need to make this directory_)</small>
 
 ### SDDM (Login Manager) Themes
 
