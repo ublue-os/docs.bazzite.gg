@@ -91,7 +91,7 @@ Since Bazzite is a custom Fedora Atomic Desktop image, it makes use of read-only
 
 ### What if I change hardware?
 
-Most hardware changes should **not** require any manual intervention outside of the expectations from that particular hardware which would be OS-agnostic.  However, if you swap from or to a Nvidia GPU, then [rebasing](../Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/rebase_guide.md) will be necessary as a manual intervention to get the appropriate graphics drivers.
+Most hardware changes should **not** require any manual intervention outside of the expectations from that particular hardware which would be OS-agnostic.  However, if you swap from or to a Nvidia GPU, then [rebasing](../Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/brh.md) will be necessary as a manual intervention to get the appropriate graphics drivers.
 
 ## Am I able to use AMD Fluid Motion Frames?
 
