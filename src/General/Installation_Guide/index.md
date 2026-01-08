@@ -215,5 +215,5 @@ Change it in the settings of Desktop Mode under the "User" category.
 
 ## **Troubleshooting Installation**:
 
-<link guide here>
+<link both troubleshooting and alternate install guide here>
 
