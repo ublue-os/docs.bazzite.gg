@@ -63,7 +63,7 @@ This error occurs when installing on drives larger than 2TB where the first 2TB 
 
 ![Unable to allocation requested partition scheme](../../img/unable-to-allocation-requested-partition-scheme.png)
 
-It seems like the Anaconda installer cannot create any paritions after the 2TB mark.
+It seems like the Anaconda installer cannot create any partitions after the 2TB mark.
 
 Here are some possible solutions on how you can address it:
 
