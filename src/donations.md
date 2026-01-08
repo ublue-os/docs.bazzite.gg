@@ -59,7 +59,7 @@ Love Bazzite and want to help sustain its development?
 </div>
 
 ## Bazzite Maintainers
-These are the people keeping the lights on and the project moving forward.
+
 <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
 {{ contributor("Kyle Gospodnetich", "KyleGospo", "Founder, Image & CI/CD Lead", "https://github.com/sponsors/KyleGospo") }}
 {{ contributor("HikariKnight", "HikariKnight", "Virtualization, Scripting, User Support", "https://github.com/sponsors/HikariKnight") }}
@@ -67,7 +67,6 @@ These are the people keeping the lights on and the project moving forward.
 </div>
 
 ## Bazzite Core Contributors
-These are the major contributors to Bazzite, with a variety of contributions that help keep the project alive.
 
 <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
 {{ contributor("Zeglius", "Zeglius", "Scripting, Documentation Maintenance, Live ISOs Maintainer", "https://github.com/sponsors/Zeglius") }}
@@ -82,7 +81,8 @@ These are the major contributors to Bazzite, with a variety of contributions tha
 </div>
 
 ## Universal Blue
-[**Universal Blue contributors**](https://github.com/ublue-os) who directly impact development of Bazzite. Special thanks to Universal Blue's [**Emeritus**](https://github.com/ublue-os/main/blob/main/emeritus.md) who helped in the beginning.
+
+>Special thanks to Universal Blue's [**Emeritus**](https://github.com/ublue-os/main/blob/main/emeritus.md) who has contributed in the early days of the project.
 
 <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
 {{ contributor("Jorge Castro", "castrojo", "Universal Blue founder, Bluefin Lead Maintainer, Co-creator of Bazzite DX edition", "https://github.com/sponsors/castrojo") }}
@@ -94,7 +94,7 @@ These are the major contributors to Bazzite, with a variety of contributions tha
 </div>
 
 ## Other Contributors
-These are contributors that made smaller contributions to Bazzite or are emeritus contributors that helped in the past.
+
 <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
 {{ contributor("RJ Trujillo", "EyeCantCU", "Early Maintainer of Bazzite. CI/CD Pipelines, Initial Alternate Desktop Environment Support, and proper Steam Deck support. Emeritus.") }}
 {{ contributor("Pat Connors", "nicknamenamenick", "Bazzite documentation creator. Provided a lot of his time helping users. Emeritus.") }}
@@ -120,9 +120,10 @@ These are contributors that made smaller contributions to Bazzite or are emeritu
 >[**View the full list of Bazzite contributors in the Gitub repository**](https://github.com/ublue-os/bazzite/graphs/contributors) ([**Contribute**](/CONTRIBUTE.md))
 
 ### Fedora Project
+
 Bazzite would not exist without [**Fedora Linux**](https://fedoraproject.org/) since it is built directly on top of it.
 
-The Fedora Project does not take monetary donations, but values hardware donations and contributions to the project.
+The Fedora Project does not take monetary donations, but values hardware donations and contributions to the project:
 
 - [**Donating Hardware**](https://fedoraproject.org/wiki/Donations)
 - [**Contributing**](https://fedoraproject.org/wiki/Contribute)
@@ -134,6 +135,7 @@ We also encourage you to donate to the projects that are used in Bazzite which h
 <sub>(*If we missed software that is part of Bazzite and can be donated to, then [**please let us know**](https://github.com/KyleGospo/docs.bazzite.gg/issues) or [**PR a fix**](https://github.com/KyleGospo/docs.bazzite.gg/blob/main/src/donations.md)!*)</sub>
 
 ### Included Software
-In addition, certain Bazzite images include the following software you can donate to:
+
+In addition, Bazzite images include the following software you can donate to:
 
 [**Atuin**](https://github.com/sponsors/atuinsh), [**Bazaar**](https://github.com/sponsors/kolunmi), [**Blur My Shell**](https://github.com/sponsors/aunetx), [**Clapper**](https://liberapay.com/Clapper), [**Davincibox**](https://ko-fi.com/akzel94), [**Deja Dup**](https://liberapay.com/DejaDup), [**Extensions Manager**](https://github.com/sponsors/mjakeman), [**eza**](https://github.com/sponsors/cafkafk), [**fastfetch**](https://github.com/sponsors/LinusDierheimer), **fd** ([David Peter](https://github.com/sponsors/sharkdp) and [Tavian Barnes](https://github.com/sponsors/tavianator)), **Flatpak**, [**fzf**](https://github.com/sponsors/junegunn), [**freedesktop.org**](https://www.freedesktop.org/wiki/#donations), [**Gear Lever**](https://ko-fi.com/mijorus), [**GNOME**](https://www.gnome.org/donate/), [**GNOME themes for Firefox and Thunderbird**](https://www.patreon.com/rafaelmardojai), [**Hanabi**](https://ko-fi.com/jeffshee), [**Handheld Daemon**](https://github.com/sponsors/antheas), [**Homebrew**](https://github.com/Homebrew/brew#donations), [**Just Perfection**](https://buymeacoffee.com/justperfection), [**KDE**](https://kde.org/donate/), [**Logo Menu**](https://github.com/sponsors/Aryan20), [**Mozilla**](https://foundation.mozilla.org/en/?form=donate&gad_source=1), [**Pika Backup**](https://opencollective.com/pika-backup), [**Terra**](https://github.com/sponsors/FyraLabs), [**Thunderbird**](https://www.thunderbird.net/en-US/donate/), [**Warehouse**](https://ko-fi.com/heliguy), [**Waydroid**](https://opencollective.com/waydroid/donate), [**xone**](https://www.paypal.com/donate?hosted_button_id=BWUECKFDNY446), [**yq**](https://github.com/sponsors/mikefarah)
