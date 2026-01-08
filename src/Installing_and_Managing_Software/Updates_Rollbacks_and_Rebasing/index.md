@@ -18,14 +18,18 @@ Bazzite updates all of the changes made specifically in Bazzite itself, updates 
 
 #### Desktop Images
 
-System updates happen **automatically daily** on a schedule and when the hardware is not under heavy use, like playing video games.  There is a check in-place to only update the image when your CPU, battery, and RAM usage meets certain requirements. Updates will be downloaded in the background and will **apply on the next reboot** and should contain the newest build of Bazzite.  An upgrade can be forced with the System Update tool at your own convenience.
+- System updates happen **automatically daily** on a schedule and when the hardware is not under heavy use, like playing video games.
+    - There is a check in-place to only update the image when your CPU, battery, and RAM usage meets certain requirements.
+- Updates will be downloaded in the background and will **apply on the next reboot** and should contain the newest build of Bazzite.
+    - An upgrade can be forced with the System Update tool at your own convenience.
+- Updates upgrade system packages, Steam, and installed applications when available. 
 
 #### Bazzite-Deck Images
 
 - Updates can be managed in Steam Gaming Mode **manually** by the user.
   - Open: **Steam Menu** > **Settings** > **System** > **Check for Updates** > **Apply**
     - **Reboot** to apply system upgrades.
-- Updates upgrade system packages, Steam, containers and installed applications when available.
+- Updates upgrade system packages, Steam, and installed applications when available.
 
 ### Do I have to reboot immediately after every system update?
 
