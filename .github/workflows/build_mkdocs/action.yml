@@ -73,6 +73,21 @@ runs:
         set -euo pipefail
         mkdocs build -d $_OUTPUT_DIR
 
+    - name: Restore lychee cache
+      uses: actions/cache@v4
+      with:
+        path: .lycheecache
+        key: cache-lychee-${{ github.sha }}
+        restore-keys: cache-lychee-
+
+    - name: Check links
+      uses: lycheeverse/lychee-action@v2.7.0
+      with:
+        args: --root-dir ${{ inputs.output_dir }} ${{ inputs.output_dir }}
+        jobSummary: true
+        fail: false
+        token: ${{ inputs.github_token }}
+
     - name: Setup Pages
       if: ${{ inputs.upload_github_page == 'true' }}
       uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5

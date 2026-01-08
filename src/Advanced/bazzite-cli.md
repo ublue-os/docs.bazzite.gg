@@ -6,7 +6,7 @@ title: bazzite-cli
 
 ## What is `bazzite-cli`?
 
-A collection of command-line tools and utilities that both powerusers and developers can utilize.
+A collection of command-line tools and utilities that both powerusers and developers can utilize. Run `ujust bazzite-cli` to use these tools.
 
 ### List of CLI Tools
 
@@ -33,13 +33,3 @@ Bazzite's opt-in command line experience. `bazzite-cli` comes with some fantasti
 - [**zoxide**](https://github.com/ajeetdsouza/zoxide) - A smarter `cd` command that learns your habits.
 
 The community may add new tools over time, re-running `ujust bazzite-cli` will install the new tools.
-
-
-### Enabling `bazzite-cli`
-
-Open the terminal and enter this command to enable these tools:
-
-
-```
-ujust bazzite-cli
-```
