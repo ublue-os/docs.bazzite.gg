@@ -8,7 +8,7 @@ title: Using Swap for Additional Memory or Hibernation
 
 This guide will walk you through the steps to create a swapfile on a BTRFS filesystem, which can be used for additional memory or hibernation.
 
-Deck images already support hibernation via Handheld Daemon using a dynamic swap file (`General -> Hibernate`). In addition, all Bazzite images use zram by default to provide additional memory.
+Bazzite-Deck images already support hibernation via Handheld Daemon using a dynamic swap file (`General -> Hibernate`). In addition, all Bazzite images use zram by default to provide additional memory.
 
 Use this guide if you want to create a persistent swapfile instead of zram for more uncompressed memory, or if you want to use hibernation via the desktop environment. 
 
