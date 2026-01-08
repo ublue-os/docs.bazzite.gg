@@ -31,6 +31,9 @@ Bazzite utilizes Steam Gaming Mode to fill the niche of handheld and couch gamin
 
 ### Steam Input
 
+!!! note
+    Some games and emulators may need Steam Input **disabled** to work correctly with your controls.
+
 >A [Steam guide](https://steamcommunity.com/sharedfiles/filedetails/?id=2804823261) that goes over **tips and tricks for controls on the Steam Deck, but contains information that can still apply to all devices running Bazzite-Deck**.
 
 #### How do I open the side menus with a physical keyboard?
