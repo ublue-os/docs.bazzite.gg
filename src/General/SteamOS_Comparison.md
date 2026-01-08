@@ -48,4 +48,4 @@ Bazzite is a community-driven Linux gaming operating system, featuring the lates
 
 Bazzite supports LUKS Disk Encryption, Secure Boot, and TPM unlock of the encrypted disk. Bazzite also has [SELinux (Security Enhanced Linux)](https://www.redhat.com/en/topics/linux/what-is-selinux) enabled and pre-configured by default.
 
-Secure Boot support is also useful for dual-booting with Windows, since it is required for certain anti-cheat software. Read more in [**Secure Boot**](/General/Installation_Guide/secure_boot.md).
+Secure Boot support is also useful for dual-booting with Windows, since it is required for certain anti-cheat software. Read more in the [**Secure Boot Guide**](/General/Installation_Guide/secure_boot.md).
