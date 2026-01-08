@@ -130,12 +130,12 @@ Quadlet can be used for application packaged as a container such as a server app
 
 Quadlet can be managed like any other systemd service using below command.
 
-Checking quadlet status
+**Checking quadlet status**
 ```sh
 systemctl --user status nginx
 ```
 
-Stopping quadlet
+**Stopping quadlet**
 ```sh
 systemctl --user stop nginx
 ```
@@ -144,7 +144,7 @@ You can see more commands in [man systemctl](https://man.archlinux.org/man/syste
 
 !!! note
 
-    Do not add the `.container` suffix when you interact with systemctl or it will gives unit not found error
+    Do not add the `.container` suffix when you interact with systemctl or an error will occur.
 
 #### Quadlet File Locations
 
@@ -178,7 +178,7 @@ You will find that most of containerized apps in the web are built using docker 
 
 #### Running Rootful Container as Quadlet
 
-While ideally you would run all containers using rootless podman, sadly not all containers will work with it.  Use rootful podman by using a different quadlet path and run using root systemctl (without `--user`).
+While ideally you would run all containers using rootless podman, unfortunately not all containers will work with it.  Use rootful podman by using a different quadlet path and run using root systemctl (without `--user`).
 
 Rootful Quadlet Paths
 - `/run/containers/systemd/` - Temporary quadlet
@@ -222,7 +222,7 @@ AppImage is a universal package format that attempts to bundle every dependency 
 
 ## System-Level Package Layering (`rpm-ostree` Commands) [_**Not Recommended**_]
 
-Add software on top of the Bazzite image.  Use as a last resort and specifically for packages that cannot be installed from Homebrew or ran inside of a container.  Layered packages can break system upgrades until removed due to dependency issues since the package will have to be updated with the rest of the image.  It also causes upgrades to take longer to run.
+Install Linux packages on top of the existing Bazzite image.  Use as a last resort and specifically for packages that cannot be installed from Homebrew or ran inside of a container.  Layered packages can break system upgrades until removed due to dependency issues since the package will have to be updated with the rest of the image.  It also causes upgrades to take longer to run.
 
 <link to rpm-ostree guide>
 
