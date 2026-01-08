@@ -91,4 +91,4 @@ After the reboot, the key is enrolled and Secure Boot can remain enabled. Your s
 
 Rebasing from Fedora Silverblue, Fedora Kinoite, etc. to Bazzite.
 
-If you're rebasing from a Fedora Atomic Desktop image and use Secure Boot, then follow our [README](https://github.com/ublue-os/bazzite/blob/main/README.md#secure-boot).
+If you're rebasing from a Fedora Atomic Desktop image and use Secure Boot, then follow the instructions found in [Bazzite's README](https://github.com/ublue-os/bazzite/blob/main/README.md#secure-boot).
