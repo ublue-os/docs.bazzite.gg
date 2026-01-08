@@ -2,10 +2,12 @@
 title: Bazzite Rollback Helper
 ---
 
-## Bazzite Rollback Helper (`brh`)
+# Bazzite Rollback Helper (`brh`)
 
 <this needs to be in src>
 <img width="919" height="606" alt="image" src="https://github.com/user-attachments/assets/fa57e61b-87b0-40cc-a6bd-e79e47481e94" />
+
+## Purpose
 
 Rollback to a Bazzite build within the last 90 days using a command-line utility that assists with **rollbacks**, **rebasing**, and **outputs information on your current Bazzite image**.
 
@@ -32,6 +34,8 @@ brh
 
 ## Examples
 
+### Common Commands
+
 `bazzite-rollback-helper list` will list available bazzite images.
 
 `bazzite-rollback-helper rebase <image-name:stable>` to rebase to an earlier image, update branch, or different Bazzite image (Desktop vs. Bazzite-Deck).  Find a version from the `list` command.
@@ -41,9 +45,9 @@ brh
 **Example**: `bazzite-rollback-helper rebase stable-40.20240930.0`
 <sub>(This image is an example and no longer can be rolled back to as it is too old.)</sub>
 
-Rebasing to an image will lock you to that OS image which means new features and security updates will no longer be applied until you rebase back to the Stable channel.
+Rebasing to an image will lock you to that OS image which means new features and security updates will no longer be applied until you rebase back to the Stable update channel.
 
-Get back to normal OS updates later after the bug has been squashed that prevents you from running the Stable branch:
+Get back to normal OS updates later after the bug has been squashed that prevents you from running the Stable update channel:
 `bazzite-rollback-helper rebase stable`
 
 ## Bazzite Rollback Helper Video Tutorial
