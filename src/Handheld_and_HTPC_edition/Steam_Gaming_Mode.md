@@ -6,7 +6,7 @@ title: Bazzite-Deck General Overiew
 
 ## What is Bazzite-Deck?
 
-Bazzite for Steam Deck hardware, Home Theater PC setups, and other Handheld PCs like the Lenovo Legion Go and Asus ROG Ally.  It is intended to be a controller-friendly environment and give users a "console-like" experience similar to SteamOS for the Steam Deck. It is intended for both handhelds and home theatre PC setups. Bazzite is similar to SteamOS by sharing many packages that SteamOS includes, so it is ready to game as soon the installation process is finished.
+**Bazzite for Home Theater PC setups and Handheld PCs**.  It is intended to be a controller-friendly environment and give users a "console-like" experience similar to SteamOS for the Steam Deck. It is intended for both handhelds and home theatre PC setups. Bazzite is similar to SteamOS by sharing many packages that SteamOS includes, so it is ready to game as soon the installation process is finished.
 
 This documentation may not cover specific areas with the assumption that the user is already aware of SteamOS and how it works. If you are unfamiliar with something that cannot be found in our documentation, then research your specific question with "SteamOS" or "Steam Deck" as keywords in your search. Otherwise, ask your question on our [**forums**](https://universal-blue.discourse.group/c/bazzite/5) or [**Discord**](https://discord.gg/f8MUghG5PB).
 
