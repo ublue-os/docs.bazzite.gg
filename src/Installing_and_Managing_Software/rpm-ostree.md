@@ -6,8 +6,6 @@ title: Package Layering
 
 ## Using `rpm-ostree`
 
-![rpm-ostree|500x500, 30%](../img/rpm-ostree.png)
-
 !!! attention
 
     Layering packages irresponsibly can be **destructive** and may prevent updates as well as other issues until the layered packages are removed.
