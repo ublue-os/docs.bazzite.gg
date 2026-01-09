@@ -6,5 +6,4 @@
     - Uses BTRFS/ext4
     - Has a label/name
 
-    In the scenario where the partition doesn't get mounted automatically under these conditions, then please follow the manual procedure,
-    using [KDE partition manager](/Advanced/KDE_Partition_Manager_Auto_Mount_Guide.md) or [GNOME Disks](/Advanced/GNOME_Disks_Auto-Mount_Guide.md)
+    In the scenario where the partition doesn't get mounted automatically under these conditions, please follow the manual procedure using [KDE partition manager](/Advanced/KDE_Partition_Manager_Auto_Mount_Guide.md) or [GNOME Disks](/Advanced/GNOME_Disks_Auto-Mount_Guide.md).
