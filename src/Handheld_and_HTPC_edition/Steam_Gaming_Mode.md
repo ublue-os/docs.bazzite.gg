@@ -128,7 +128,7 @@ SteamDeck=0 %command%
 
 ### Why do specific Decky Loader plugins not function on Bazzite?
 
-Some plugins are built specifically for SteamOS or the Steam Deck, and won’t necessarily work on Bazzite or non-Deck hardware.
+Some plugins are built specifically for SteamOS or the Steam Deck, and won’t necessarily work on Bazzite or non-Steam-Deck hardware.
 
 For example, the [DeckMTP plugin](https://github.com/dafta/DeckMTP) only works on the Steam Deck models and will not work on other hardware.
 
