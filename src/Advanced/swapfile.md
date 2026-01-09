@@ -1,18 +1,19 @@
 ---
 title: Using Swap for Additional Memory or Hibernation
-authors:
-  - "@antheas"
-tags:
-  -  Guide
 ---
+
+# Using Swap for Additional Memory or Hibernation
+
+## Purpose
 
 This guide will walk you through the steps to create a swapfile on a BTRFS filesystem, which can be used for additional memory or hibernation.
 
-Deck images already support hibernation via Handheld Daemon using a dynamic swap file (`General -> Hibernate`). In addition, all Bazzite images use zram by default to provide additional memory.
+Bazzite-Deck images already support hibernation via Handheld Daemon using a dynamic swap file (`General -> Hibernate`). In addition, all Bazzite images use zram by default to provide additional memory.
 
-Use this guide if you want to create a persistent swapfile instead of zram for more uncompressed memory, or if you want to use hibernation via e.g., KDE. 
+Use this guide if you want to create a persistent swapfile instead of zram for more uncompressed memory, or if you want to use hibernation via the desktop environment. 
 
 ## Create the Swapfile
+
 First, create a subvolume for the swapfile. This ensures that if you decide to use snapshots, the swapfile will not be included in them. You should also fix the SELinux context of the swapfile directory.
 ```bash
 sudo btrfs subvolume create /var/swap
@@ -57,7 +58,7 @@ echo "" | sudo tee /etc/systemd/zram-generator.conf
 
 Finally, reboot your device to apply the changes made above.
 
-## Reverting changes and restoring zram
+## Reverting Changes and Restoring zram
 To revert the changes and restore zram, first remove the swapfile entry from `/etc/fstab`. Then, re-enable zram by copying the original configuration file back:
 ```
 sudo cp /usr/etc/systemd/zram-generator.conf /etc/systemd/zram-generator.conf

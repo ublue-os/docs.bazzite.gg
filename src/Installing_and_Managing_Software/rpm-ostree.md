@@ -1,34 +1,28 @@
 ---
-authors:
-  - "@nicknamenamenick"
-  - "@Zeglius"
-tags:
-  -  Software
-preview:
-  src: "../img/rpm-ostree.png"
-  contain: true
-description: rpm-ostree is Fedora's enterprise tool for managing immutable operating system updates.
+title: Package Layering
 ---
 
-<!-- ANCHOR: METADATA -->
-<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=2642", "fetched_at": "2024-09-03 16:43:05.295995+00:00"}-->
-<!-- ANCHOR_END: METADATA -->
+# Package Layering
 
-![rpm-ostree|500x500, 30%](../img/rpm-ostree.png)
-
-# `rpm-ostree` Overview
+## Using `rpm-ostree`
 
 !!! attention
 
-    Layering packages irresponsibly can be **destructive** and may prevent updates as well as other issues until the layered packages are uninstalled.
+    Layering packages irresponsibly can be **destructive** and may prevent updates as well as other issues until the layered packages are removed.
 
-Install Fedora Linux packages by installing them with `rpm-ostree`.
+Install [Fedora Linux packages](https://packages.fedoraproject.org/) by using the `rpm-ostree` terminal command.
+
+### Key Features
 
 - This is known as "layering packages" to the image.
 - Layering packages will **require** a system reboot when it finishes creating the new deployment with the package(s) added to your image.
 - Use this method as a **last resort** and for anything at a "system-level" only.
 
-## Common `rpm-ostree` Terminal Commands:
+## Terminal Commands Related to Package Layering
+
+**Use these commands at your own risk**.
+
+### Layer Package(s)
 
 ```
 rpm-ostree install <package>
@@ -36,11 +30,15 @@ rpm-ostree install <package>
 
 Installs Fedora package(s) to the system that stay between updates, reboot to apply the installation.
 
+### Uninstall Layered Package(s)
+
 ```
 rpm-ostree uninstall <package>
 ```
 
 Uninstalls any layered packages added to the system, reboot to apply the uninstallation.
+
+### Search for a Package
 
 ```
 rpm-ostree search <package>
@@ -48,9 +46,17 @@ rpm-ostree search <package>
 
 Searches for Fedora packages that can be installed.
 
-## Installing RPM files
+### View Currently Layered Packages
 
-Fedora [Distrobox containers](/Installing_and_Managing_Software/Distrobox.md) should be used for most `.rpm` files, but sometimes they need to be installed to your host.
+```
+rpm-ostree status
+```
+
+This will output the layered packages in your Bazzite installation.
+
+## Installing RPM Files
+
+Fedora Distrobox containers should be used for most `.rpm` files, but sometimes they need to be installed to your host if it isn't working well with a container.
 
 You can install RPM binaries **to your host** with `rpm-ostree` by entering:
 
@@ -94,11 +100,11 @@ You may need to copy the full path (`/path/to/rpmfile.rpm`) for it to install pr
 
         3. Reboot
 
-        If you experience issues updating your system due to GPG signature issues, then this can be fixed by either removing the COPR repository, or editing the file by changing `gpgcheck=1` to `gpgcheck=0` (or similar) and saving it **at your own risk**.
+        If you experience issues updating your system due to GPG signature issues, then this can be fixed by either removing the COPR repository, or editing the file by changing `gpgcheck=1` to `gpgcheck=0` (or similar) and saving it **at your own risk**
 
 === "Disable COPR"
 
-    !!! warning "Ensure to remove any package installed with the COPR beforehand"
+    !!! warning "Ensure to remove any package installed with the COPR beforehand."
 
     === "DNF5 (Fedora COPR)"
 
@@ -133,7 +139,7 @@ Layering packages can cause **severe consequences** including:
 - Conflict with existing packages as part of the image leading to dependency issues.
 - Updates taking longer to download as you layer more packages to your system.
 
-Layering packages are mostly intended for system-level applications, libraries, and other dependencies. It is recommended to use Flatpak, Homebrew, Distrobox containers, AppImage, etc. **before** installing software with `rpm-ostree`. Typical users should **not** be using `rpm-ostree` to install end-user graphical applications at all to avoid problems in the future. It is **highly recommended** to only layer packages when absolutely necessary especially if the application can be obtained through other methods.
+Layering packages are mostly intended for **system-level applications, libraries, and other dependencies**. It is recommended to use Flatpak, Homebrew, containers, AppImage, Waydroid, or running the Windows version through a compatibility layer **before** installing software with `rpm-ostree`.  Layering packages for a temporary time period is the better alternative than keeping a package layered indefinitely.
 
 ## How to remove **ALL** layered packages
 
@@ -142,35 +148,3 @@ If you run into issues upgrading due to a layered package conflict, then either 
 ```bash
 rpm-ostree reset
 ```
-
-## Image Information
-
-See information about image build date, update channel, layered packages, etc. by **entering this command in a host terminal**:
-
-```command
-rpm-ostree status
-```
-
-## Additional Commmands
-
-!!! warning
-
-    Certain `rpm-ostree` and `ostree` commands can permanently remove deployments and cause other destructive behavior, so enter them at your own risk.
-
-View the full range of `rpm-ostree` and `ostree` commands with the following two commands:
-
-```
-rpm-ostree help
-```
-
-```
-ostree help
-```
-
-### Project Website
-
-https://coreos.github.io/rpm-ostree/
-
-<hr>
-
-[**<-- Back to Installing and Managing Software on Bazzite**](./index.md)

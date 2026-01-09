@@ -1,15 +1,17 @@
 ---
-authors:
-  - "@nicknamenamenick"
-
-tags:
-  - Installation
-  - Troubleshooting
+title: Bazzite Installation Troubleshooting Guide
 ---
 
-<!-- ANCHOR: METADATA -->
-<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=2495", "fetched_at": "2024-09-03 16:43:22.238775+00:00"}-->
-<!-- ANCHOR_END: METADATA -->
+# Bazzite Installation Troubleshooting Guide
+
+## Downloading the ISO
+
+Use a download manager (like [**Motrix**](https://motrix.app/)) if the direct download fails or is downloading too slow.
+
+
+## Drives
+
+Make sure to only select the appropriate drives to avoid losing data on others, and it is best practice to safely remove any external drives before proceeding.
 
 ## Error Code 1
 
@@ -18,9 +20,9 @@ The "code 1" error is a generic error code that appears during installation when
 - **Existing Fedora Installation:** If you've previously installed Nobara, Bazzite, or any Fedora-based OS on your drive, the installer might fail when writing the EFI entries because a "Fedora" folder already exists there.
   - **Fix 1:** The video below explains one way to resolve this. <br> https://www.youtube.com/watch?v=GRdz08hJByo <br> In summary, you'll need to access the terminal, identify and mount the EFI system partition, remove the existing "Fedora" folder.
   - **Fix2:** You can use manual partitioning as described in the [Dual Boot Setup Guide](./dual_boot_setup_guide.md#manual-partitioning-to-the-same-drive-for-dual-boot-setups) to create a new EFI partition.
-  - **Fix3:** If you are not dual-booting, follow the [Installing Bazzite for Desktop/Laptop Hardware guide](./Installing_Bazzite_for_Desktop_or_Laptop_Hardware.md) as removing everything on the drive will remove the EFI partition fixing the error
+  - **Fix3:** If you are not dual-booting, follow the [Installation Guide](./index.md) as removing everything on the drive will remove the EFI partition, fixing the error.
 - **Incorrect Filesystem:** Using the EXT4 or any other filesystem type for the root partition will cause this error. You must use BTRFS for the root partition.
-- **Corrupted ISO Image:** Ensure the ISO image isn't corrupted by calculating the checksums or using the official torrent when downloading Bazzite.
+- **Corrupted ISO Image:** Ensure the ISO image isn't corrupted by calculating the checksums.
 - **Overheating USB Flash Drive:** Use a USB 3.0 or better flash drive and plug it into a USB 3.0 or better port to avoid overheating.
 
 ## "Device is Active" Error
@@ -61,7 +63,7 @@ This error occurs when installing on drives larger than 2TB where the first 2TB 
 
 ![Unable to allocation requested partition scheme](../../img/unable-to-allocation-requested-partition-scheme.png)
 
-It seems like the Anaconda installer cannot create any paritions after the 2TB mark.
+It seems like the Anaconda installer cannot create any partitions after the 2TB mark.
 
 Here are some possible solutions on how you can address it:
 

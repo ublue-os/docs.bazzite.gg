@@ -1,42 +1,93 @@
 ---
-title: Updates, Rollbacks, and Rebasing
+title: Updates and Rollbacks
 ---
 
-<!-- ANCHOR: METADATA -->
-<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=36", "fetched_at": "2024-09-03 16:43:15.473615+00:00"}-->
-<!-- ANCHOR_END: METADATA -->
+# Updates & Rollbacks
 
-# Updates, Rollbacks, and Rebasing
+## System & Application Updates
 
-## Updates
+![System Updates|200x200, 100%](../../img/System_Updates.png)
 
-Updates are automatic on Desktop images and manually done on Bazzite-Deck images, and both Bazzite variants upgrade everything at both a system-level and user-installed applications during the updating process.
+!!! attention
 
-> [**Updating Guide**](./updating_guide.md)
+    It is required to have **3% free storage of your total drive that Bazzite is installed on** to update properly.
 
-## Rollbacks
+### How do updates work?
 
-Swap back to a previous system update if there are major issues after updating via the GRUB menu or the `rpm-ostree rollback` command.
+Bazzite updates all of the changes made specifically in Bazzite itself, updates from Fedora's base packages upstream, graphic drivers, and user software installed from Bazaar.
 
-> [**Rollbacks Guide**](./rolling_back_system_updates.md)
+#### Desktop Images
 
+- System updates happen **automatically daily** on a schedule and when the hardware is not under heavy use, like playing video games.
+    - There is a check in-place to only update the image when your CPU, battery, and RAM usage meets certain requirements.
+- Updates will be downloaded in the background and will **apply on the next reboot** and should contain the newest build of Bazzite.
+    - An upgrade can be forced with the System Update tool at your own convenience.
+- Updates upgrade system packages, Steam, and installed applications when available. 
 
-### Bazzite Rollback Helper Tool
+#### Bazzite-Deck Images
 
-Utility to assist with rolling back to older Bazzite images, changing update branches, or swapping to a different Bazzite image.
+- Updates can be managed in Steam Gaming Mode **manually** by the user.
+  - Open: **Steam Menu** > **Settings** > **System** > **Check for Updates** > **Apply**
+    - **Reboot** to apply system upgrades.
+- Updates upgrade system packages, Steam, and installed applications when available.
 
-> [**Bazzite's Rollback Helper Utility Guide**](./bazzite_rollback_helper.md)
+### Do I have to reboot immediately after every system update?
 
-## Rebasing
+**No**, but the **system upgrade will not apply until the next reboot**.  User-installed applications from Bazaar **will be upgraded without rebooting**.
 
-!!! important
+- **Desktop images**: While your device is running, newer updates will still download in the background once a day, and will be waiting to be applied until the device is rebooted.
+- **Bazzite-Deck images**: Updates will be checked daily and can be downloaded at your leisure.
+  
+### How do I view the changelog for each update?
 
-    Do **not** rebase to a different desktop environment than the one you are currently using, please backup and reinstall instead.
+Changelogs for each Bazzite can be found on [Github](https://github.com/ublue-os/bazzite/releases).
 
-Rebase to Bazzite builds from the last 90 days, change Bazzite update channels, swap between the Desktop and Bazzite-Deck images, or move completely to a different Fedora Atomic Desktop image.
+### How does upgrading to a new major version release work?
 
-> [**Rebase Guide**](./rebase_guide.md)
+Bazzite should automatically update when our new builds based on that new major release is ready.
+
+### How do I change the Bazzite's update branch? (Stable, Testing, and Unstable)
+
+There are two update branches:
+
+- Stable (`:stable`)
+  - Default branch that's used in normal Bazzite installations.
+- [Testing (`:testing`)](https://github.com/ublue-os/bazzite/compare/main...testing)
+  - Get a sneak peak of future Bazzite builds before release.
+  - Bugs may frequently appear.
+  - Encouraged to rebase back to `:stable` after testing a major release.
+    - It can be behind on certain updates for a long time.
 
 <hr>
 
-← [**View all Bazzite documentation**](../../index.md)
+## Rolling Back System Updates
+
+![GRUB Menu|690x402](../../img/GRUB_Menu.png)
+
+Swap back to a previous system update if there are major issues after updating via the GRUB menu or the `rpm-ostree rollback` command or using the Bazzite Rollback Helper.
+
+### Using the Bazzite Rollback Helper (`brh) Utility
+
+<link to it here>
+
+<hr>
+
+## Other Update Topics
+
+### How do I save my **current** deployment?
+
+You can pin your **current** deployment with this **command**:
+
+```command
+sudo ostree admin pin 0
+```
+
+Unpin saved **current** deployment:
+
+```command
+sudo ostree admin pin --unpin 0
+```
+
+### How do I disable automatic updates?
+
+...

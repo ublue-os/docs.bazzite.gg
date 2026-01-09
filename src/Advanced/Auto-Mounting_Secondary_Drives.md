@@ -1,19 +1,14 @@
 ---
-authors:
-  - "@nicknamenamenick"
-  - "@HikariKnight"
-  - "@asen23"
-  - "@TheScreechingBagel"
-  - "@Zeglius"
-tags:
-  - Guide
+title: Auto-Mounting Secondary Drives
 ---
 
-<!-- ANCHOR: METADATA -->
-<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=970", "fetched_at": "2024-09-03 16:43:14.005694+00:00"}-->
-<!-- ANCHOR_END: METADATA -->
+# Auto-Mounting Secondary Drives
 
-!!! info "MicroSD cards automatically mount without any manual intervention required on Bazzite."
+!!! info "MicroSD cards automatically mount without any manual intervention required."
+
+## Video Guide
+
+https://youtu.be/fN9lvkkrExI
 
 ## Setup an auto-mounting partition
 
@@ -23,9 +18,9 @@ tags:
 
    ![](../img/automount.1.png)
 
-3. Give it a name and a filesystem.
+3. Give the drive a name and a filesystem.
 
-!!! warning "We only support BTRFS/ext4 filesystems"
+!!! warning "Bazzite only supports BTRFS/Ext4 filesystems for reporting issues."
 
 ![](../img/automount.2_btrfs.1.png){data-gallery="step-2"}
 ![](../img/automount.2_btrfs.2.png){data-gallery="step-2"}
@@ -41,7 +36,7 @@ Now reboot, your partition should be mounted automatically. Should appear under 
 
 ![GNOME_Mount_Options|549x500, 75%](../img/GNOME_Mount_Options_new.png)
 
-Append `,user,exec` at the end if doesnt work properly
+Append `,user,exec` at the end if doesnt work properly.
 
 ![](../img/GNOME_Mount_Options_new.2.png)
 
@@ -61,8 +56,8 @@ https://www.youtube.com/watch?v=-2wca_0CpXY
 
 3. Click on Additional Partition Options > Edit Mount Options.
 
-4. Ensure "User Session Defaults" is FALSE and "Mount at system startup" is TRUE, then click "Ok"
+4. Ensure "User Session Defaults" is FALSE and "Mount at system startup" is TRUE, then click "Ok".
 
-5. Repeat for any additional disks. You can confirm this worked by checking your Fstab file and seeing that the appropriate UUIDs have been added. `sudo cat /etc/fstab`
+5. Repeat for any additional disks. You can confirm this worked by checking your Fstab file and seeing that the appropriate UUIDs have been added. `sudo cat /etc/fstab`.
 
 

@@ -1,19 +1,8 @@
 ---
 title: Dual Boot Preliminary and Post-Installation Setup Guide
-authors:
-  - "@nicknamenamenick"
-  - "@atimeofday"
-  - "@damiankorcz"
-  - "@aarron-lee"
-  - "@Zeglius"
-  - "@tired-runner"
-tags:
-  - Installation
 ---
 
-<!-- ANCHOR: METADATA -->
-<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=2743", "fetched_at": "2024-09-03 16:43:23.309649+00:00"}-->
-<!-- ANCHOR_END: METADATA -->
+# Dual Boot Preliminary and Post-Installation Setup Guide
 
 !!! note
 
@@ -27,7 +16,7 @@ We might want to replace it with a mention of the Bootloader Restoration Tool an
 1. Installing Bazzite with a shared drive.
 2. Installing Bazzite on a separate drive.
 
-=== "Shared drive"
+=== "Shared Drive (Automatic Partitioning)"
 
     1. (In Windows) Disable **Bitlocker encryption** and **fastboot**, and reboot.
     2. (In Windows) Resize the Windows partition with the Disk Management app to have enough space for Bazzite.
@@ -37,6 +26,15 @@ We might want to replace it with a mention of the Bootloader Restoration Tool an
     3. Run the Bazzite installer with the automatic partitioning option.
     4. Reboot into Bazzite and run `ujust regenerate-grub` in the terminal to add Windows to the GRUB.
 
+=== "Shared Drive (Manual Partitioning)"
+
+    1. (In Windows) Resize the Windows partition with the Disk Management app to have enough space for Bazzite.
+    Usually should look something like this:
+    ![](/img/dualbooting_partitions_windows.png)
+    <i><small>Source: [diskpart.com](https://www.diskpart.com/windows-10/windows-10-disk-management-0528.html)</small></i>
+    2. Run the Bazzite installer with [manual partitioning](./manual_partitioning.md).
+    3. Reboot into Bazzite and run `ujust regenerate-grub` in the terminal to add Windows to the GRUB.
+
 
 === "Separate Drive"
 
@@ -44,26 +42,70 @@ We might want to replace it with a mention of the Bootloader Restoration Tool an
 
     Install Bazzite on a separate internal or external drive.
 
-    1. Install the other operating system on a drive (like Windows)
-    2. Install Bazzite on a **second** drive
-    3. Set Bazzite as the **default** in your boot order (optional)
+    1. Install the other operating system on a drive (like Windows).
+    2. Install Bazzite on a **second** drive.
+    3. Set Bazzite as the **default** in your boot order (optional).
 
     If you install Windows second, you should disconnect the Bazzite drive to prevent using the Windows installer of using its EFI partition.
 
     You can also install Windows to an external drive with Windows-to-Go using [Rufus](https://rufus.ie/en/) to dual boot if you do not have an internal drive available.
 
-
-=== "Shared drive"
-
-    1. (In Windows) Resize the Windows partition with the Disk Management app to have enough space for Bazzite.
-    Usually should look something like this:
-    ![](/img/dualbooting_partitions_windows.png)
-    <i><small>Source: [diskpart.com](https://www.diskpart.com/windows-10/windows-10-disk-management-0528.html)</small></i>
-    2. Run the Bazzite installer with [manual partitioning](./manual_partitioning.md)
-    3. Reboot into Bazzite and run `ujust regenerate-grub` in the terminal to add Windows to the GRUB.
-
-
 If you install Windows after Bazzite, you can restore Bazzite's bootloader with the **Bootloader Restoring Tool** in the Live ISO.
+
+## Manual Partitioning Instructions
+
+!!! warning "Only users who are dual booting on the same drive should use these instructions. Automatic partitioning is preferred in other cases."
+
+!!! warning "Bazzite only supports the BTRFS filesystem for `/`."
+
+If you need a tutorial video for manual partitioning, watch this [tutorial at timestamp 9:10](https://www.youtube.com/watch?v=JxPsKhJGTrs&t=550s).
+
+1.  Select Installation Destination
+2.  Select `Advanced Custom(Blivet-GUI)` under Storage Configuration.
+![Selecting manual partitioning](../../img/select_manual_partitioning.png)
+3.  Create the following partitions and devices:
+  - **/boot/efi**
+    ![EFI partition](../../img/efi_partition.png)
+    ```
+    mount point: /boot/efi
+    format:      EFI system partition
+    size:        300MB
+    ```
+  - **/boot**
+    ![boot partition](../../img/boot_partition.png)
+    ```
+    mount point: /boot
+    format:      ext4
+    size:        2GB
+    ```
+  - **btrfs partition**
+    ![btrfs partition](../../img/btrfs_partition.png)
+    ```
+    mount point:
+    format: btrfs
+    size: [max]
+    ```
+  - **/**
+    ![/ subvolume](../../img/root_subvolume.png)
+    ```
+    mount point: /
+    format:      btrfs (subvolume)
+    ```
+  - **/var**
+    ![/var subvolume](../../img/var_subvolume.png)
+    ```
+    mount point: /var
+    format:      btrfs (subvolume)
+    ```
+  - **/var/home**
+    ![/var/home subvolume](../../img/var_home_subvolume.png)
+    ```
+    mount point: /var/home
+    format:      btrfs (subvolume)
+    ```
+4.  Select Done
+5.  Select Accept Changes
+6.  Continue with the installation.
 
 <hr/>
 
@@ -99,7 +141,7 @@ Take note that the GRUB menu might not show up. In such case, spam the <kbd>↓<
 
 ### Boot into Windows from Steam
 
-Adds a script in Steam to boot into Windows
+Adds a script in Steam to boot into Windows.
 
 ```
 ujust setup-boot-windows-steam

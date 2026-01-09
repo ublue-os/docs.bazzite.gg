@@ -7,3 +7,4 @@
   - [Rufus](https://rufus.ie/en/)
   - [Ventoy](https://www.ventoy.net/en/index.html) (in grub2 mode)
   - [Etcher](https://etcher.balena.io/)
+  - [Ventoy](https://www.ventoy.net/en/index.html) (_in GRUB2 mode_)

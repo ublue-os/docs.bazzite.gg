@@ -1,29 +1,16 @@
 ---
-authors:
-  - "@nicknamenamenick"
-  - "@Gecked-Deck"
-  - "@KyleGospo"
-  - "@storyaddict"
-  - "@castrojo"
-  - "@aarron-lee"
-  - "@wxllow"
-  - "@SuperRiderTH"
-tags:
-  - Guide
-  - Software
+title: Waydroid Setup Guide
 ---
 
-<!-- ANCHOR: METADATA -->
-<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=32", "fetched_at": "2024-09-03 16:43:06.740654+00:00"}-->
-<!-- ANCHOR_END: METADATA -->
+# Waydroid Setup Guide
+
+## What is Waydroid?
 
 ![Google Play Store|650x500](../img/Google_Play_Store.jpeg)
 
 !!! attention
 
     Waydroid does **not** work on Nvidia hardware.
-
-## What is Waydroid?
 
 ![Waydroid](../img/Waydroid.jpeg)
 
@@ -83,13 +70,13 @@ Selecting `Configure Waydroid` will allow users to install additional Android tw
 
 - ARM Translation (_libndk_ or _libhoudini_. _libhoudini_ offers better overall compatibility compared to _libndk_. Some games may run on only one of _libhoudini_ or _libndk_.  On Android 11, _libhoudini_ will run significantly slower than _libndk_ if you have AMD CPU. **Do not install both of them at the same time. If you need to switch, uninstall your current translation layer before installing new one.**)
 
-- [Magisk](https://github.com/topjohnwu/Magisk) (Android power user suite)
+- [**Magisk**](https://github.com/topjohnwu/Magisk) (Android power user suite)
 
-- [Logitech Smartdock Support](https://support.logi.com/hc/en-us/articles/360023201574-What-is-SmartDock) (SmartDock hardware support)
+- [**Logitech Smartdock Support**](https://support.logi.com/hc/en-us/articles/360023201574-What-is-SmartDock) (SmartDock hardware support)
 
-- [F-Droid Privileged Extension](https://f-droid.org/packages/org.fdroid.fdroid.privileged/) (Proper [F-Droid](https://f-droid.org/en/packages/) support)
+- [**F-Droid Privileged Extension**](https://f-droid.org/packages/org.fdroid.fdroid.privileged/) (Proper [F-Droid](https://f-droid.org/en/packages/) support)
 
-- [`widevine`](https://widevine.com/) (Support for video streaming DRM)
+- [**`widevine`**](https://widevine.com/) (Support for video streaming DRM)
 
 ### Get Google Device ID to Get Certified (**GApps**)
 
@@ -125,7 +112,11 @@ To use multi-touch gestures in Waydroid while running under Steam Gaming Mode, y
 
 <hr>
 
-## Disable Inputs to Waydroid When Unfocused
+## Waydroid Tips & Tricks
+
+This section is dedicated to more specific operations and issues within Waydroid running on Bazzite.
+
+### Disable Inputs to Waydroid When Unfocused
 
 Waydroid has an [issue](https://github.com/waydroid/waydroid/issues/135) where it will register inputs from controllers, keyboards, and other input devices even when the window is not focused.
 
@@ -143,7 +134,7 @@ waydroid prop set persist.waydroid.uevent false
 
 If you ever want to undo this change, run the same steps but set `true` instead of `false` with the same command.
 
-## Mouse Clicks to Touch Input
+### Mouse Clicks to Touch Input
 
 Some applications do not expect mouse clicks and only respond to touchscreen taps.
 
@@ -180,7 +171,7 @@ To revert these changes, use the following command in a host terminal:
 waydroid prop set persist.waydroid.fake_touch ""
 ```
 
-## Resolution & Density Options
+### Resolution & Density Options
 
 This is intended for users who have issues with Waydroid's resolution, scaling, or running Waydroid nested. This is **optional**.
 
@@ -196,7 +187,7 @@ sudoedit /etc/default/steamos-nested-desktop
 
 Save the text files when done.
 
-## Waydroid Hybrid Graphics Fix
+### Waydroid Hybrid Graphics Fix
 
 This is only intended for users who have multiple GPUs in their hardware who experience graphical corruptions in Waydroid.
 
@@ -208,7 +199,7 @@ ujust setup-waydroid
 
 Then `Select GPU for Waydroid` which will give the option on what GPU to utilize for Waydroid to fix graphical corruptions.
 
-## Reset Waydroid
+### Reset Waydroid
 
 !!! warning
 
@@ -219,13 +210,3 @@ If you experience issues or want a fresh Waydroid container, then select `Reset 
 ```
 ujust setup-waydroid
 ```
-
-### Project Website
-
-https://waydro.id/
-
-<hr>
-
-**See also**: [Upstream documentation](https://docs.waydro.id/)
-
-<-- [**View all Bazzite documentation**](../index.md)

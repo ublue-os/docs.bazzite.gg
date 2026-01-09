@@ -1,21 +1,20 @@
 ---
-authors:
-  - "@bsherman"
-tags:
-  -  Troubleshooting
+title: Booting Into Rescue and Emergency Modes
 ---
+
+# Booting Into Rescue and Emergency Modes
 
 ## Preface
 
-Fedora already has a built-in mechanism (provided by `systemd`) for booting into [rescue](https://docs.fedoraproject.org/en-US/fedora/latest/system-administrators-guide/kernel-module-driver-configuration/Working_with_the_GRUB_2_Boot_Loader/#sec-Booting_to_Rescue_Mode) and [emergency](https://docs.fedoraproject.org/en-US/fedora/latest/system-administrators-guide/kernel-module-driver-configuration/Working_with_the_GRUB_2_Boot_Loader/#sec-Booting_to_Emergency_Mode) modes.
+Fedora already has a built-in mechanism (provided by `systemd`) for booting into rescue/emergency modes.
 
-However, those documents have limitations as by default, Fedora (and thus Universal Blue systems), do not set a `root` password during install. Thus, when the emergency or rescue mode is reached, the user is shown the error:
+However, Fedora (and thus Universal Blue systems), do not set a `root` password during install. Thus, when the emergency or rescue mode is reached, the user is shown the error:
 
 ```
 Cannot open access to console, the root account is locked.
 ```
 
-??? note "We've improved the situation for all _Universal Blue_ derivatives (including _Bazzite_ and _Bluefin_) using inspiration from _Fedora CoreOS_."
+??? note "We've improved the situation for all _Universal Blue_ derivatives using inspiration from _Fedora CoreOS_."
 
     Now, when booting to [emergency](#booting-to-emergency-mode-2) or [rescue](#booting-to-rescue-mode-3) mode with a locked root account, the user is instead presented a more standard prompt:
 
@@ -70,4 +69,6 @@ Given this safeguard, this improved rescue & emergency method is just as secure 
 
 ---
 
-Thanks to [Colin Walters](https://github.com/cgwalters) and [ Timothée Ravier](https://github.com/travier) for [inspiring this solution](https://github.com/ublue-os/main/issues/470).
+## Reset Forgotten User Password
+
+Forgot the user password to login?  Read the [Fedora Documentation](https://docs.fedoraproject.org/en-US/fedora-silverblue/troubleshooting/#_resetting_passwords_in_rescue_mode) on this topic.  Please remember that the default password for all new Bazzite installations is "**bazzite**" if you did not set one during the installation setup.
