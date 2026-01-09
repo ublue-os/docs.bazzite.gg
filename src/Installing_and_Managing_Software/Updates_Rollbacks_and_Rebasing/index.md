@@ -1,8 +1,8 @@
 ---
-title: Updates, Rollbacks, and Rebasing
+title: Updates and Rollbacks
 ---
 
-# Updates, Rollbacks, and Rebasing
+# Updates & Rollbacks
 
 ## System & Application Updates
 
