@@ -10,7 +10,8 @@ A collection of command-line tools and utilities that both powerusers and develo
 
 ### List of CLI Tools
 
-Bazzite's opt-in command line experience. `bazzite-cli` comes with some fantastic command line tools such as:
+Bazzite's opt-in command line experience. `bazzite-cli` comes with command line tools such as:
+
 - [**atuin**](https://github.com/atuinsh/atuin) - A tool for syncing shell history across machines.
 - [**bash-preexec**](https://github.com/rcaloras/bash-preexec) - Pre-execution and pre-command hooks for Bash (required by atuin).
 - [**bat**](https://github.com/sharkdp/bat) - A `cat` clone with syntax highlighting and Git integration.
@@ -32,4 +33,4 @@ Bazzite's opt-in command line experience. `bazzite-cli` comes with some fantasti
 - [**yq**](https://github.com/mikefarah/yq) - A command-line processor for YAML, JSON, and XML data.
 - [**zoxide**](https://github.com/ajeetdsouza/zoxide) - A smarter `cd` command that learns your habits.
 
-The community may add new tools over time, re-running `ujust bazzite-cli` will install the new tools.
+The community may add new tools over time, re-running `ujust bazzite-cli` will install them.
