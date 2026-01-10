@@ -22,6 +22,36 @@ Fedora Atomic Desktops have read-only root files to prioritize stability.  There
 6. [**AppImage**](./AppImage.md) (_Portable Graphical Applications_) - Portable universal package format that relies on specific host libraries at a system-level, usually obtained from a project's website.
 7. [**`rpm-ostree`**](./rpm-ostree.md) (_System-Level Packages_) - Layer Fedora packages at a system-level (**not recommended, use as a last resort**)
 
+```mermaid
+---
+title: "Installing Applications on Bazzite: A Decision Tree"
+---
+flowchart TD
+    gui@{ shape: question, label: "Is it a GUI?" }
+    flatpak@{ shape: question, label: "Does it have a Flatpak?" }
+    brew@{ shape: question, label: "Does it have a brew formula?" }
+    distrobox@{ shape: question, label: "Can you install it in a distrobox?" }
+    appimage@{ shape: question, label: "Does it have an AppImage?" }
+    layerQ@{ shape: question, label: "Can you layer it?" }
+    inst[Install it]
+    export[Install and export it]
+    gearlever[Download it and put it in Gear Lever]
+    layer[Layer it, but here be dragons!]
+    custImg[Look into making a custom Bazzite image]
+    gui-->|No|brew
+    gui-->|Yes|flatpak
+    brew-->|Yes|inst
+    brew-->|No|distrobox
+    flatpak-->|Yes|inst
+    flatpak-->|No|distrobox
+    distrobox-->|Yes|export
+    distrobox-->|No|appimage
+    appimage-->|Yes|gearlever
+    appimage-->|No|layerQ
+    layerQ-->|Yes|layer
+    layerQ-->|No|custImg
+```
+
 ## How do I run Windows applications?
 
 **Use a [WINE](https://www.winehq.org/) front-end**:
