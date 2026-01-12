@@ -6,7 +6,7 @@ title: Updates and Rollbacks
 
 ## System & Application Updates
 
-![System Updates|200x200, 100%](../../img/System_Updates.png)
+![System Updates|200x200, 50%](../../img/System_Updates.png)
 
 !!! attention
 
@@ -68,7 +68,7 @@ Swap back to a previous system update if there are major issues after updating v
 
 ### Using the Bazzite Rollback Helper (`brh) Utility
 
-<link to it here>
+Rollback to an older Bazzite image from the last 90 days using the **[`brh` command](../Updates_Rollbacks_and_Rebasing/brh.md)**.
 
 <hr>
 
