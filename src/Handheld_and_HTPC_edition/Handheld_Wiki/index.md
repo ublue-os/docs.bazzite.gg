@@ -8,7 +8,7 @@ title: Handheld Compatibility
 
 >**Notice**: Bazzite uses [Handheld Daemon](https://github.com/hhd-dev/hhd/blob/master/readme.md) for proper handheld support currently. 
 
-Bazzite-Deck images ship with [Steam Gaming Mode](<link that here>) which is intended to mimic the experience of SteamOS.  The goal is to have earlier support for most x86_64 handheld PCs before SteamOS and with the same benefits of the desktop version of Bazzite.
+Bazzite-Deck images ship with [Steam Gaming Mode](../Steam_Gaming_Mode.md) which is intended to mimic the experience of SteamOS.  The goal is to have earlier support for most x86_64 handheld PCs before SteamOS and with the same benefits of the desktop version of Bazzite.
 
 ### Tips and Tricks
 
