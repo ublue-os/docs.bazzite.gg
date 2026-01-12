@@ -46,7 +46,7 @@ Intended specifically for desktops and laptops with a focus on gaming which is i
 
     This does not include all of the Bazzite images.
 
-Verify your Bazzite image by entering this **commmand** in the termi:
+Verify your Bazzite image by entering this **command** in the terminal:
 
 ```
 rpm-ostree status
