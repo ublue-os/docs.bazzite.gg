@@ -58,4 +58,4 @@ The default desktop environment for Bazzite is KDE Plasma which also happens to 
 
 ### Manage GNOME Extensions (`-gnome` Images)
 
-The "Extension Manager" applicaton alllows for installing new extensions to GNOME and managing currently pre-installed extensions.  Proceed with caution as extensions can make your system unstable and if your desktop crashes then GNOME will disable all of the extensions on the next boot.
+The "Extension Manager" application allows for installing new extensions to GNOME and managing currently pre-installed extensions.  Proceed with caution as extensions can make your system unstable and if your desktop crashes then GNOME will disable all of the extensions on the next boot.
