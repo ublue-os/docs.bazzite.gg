@@ -6,7 +6,7 @@ title: Installing and Managing Applications
 
 ## Bazaar App Store (Flatpak) [Recommended for Most Apps]
 
-![Bazaar|2840x2038, 50%](../img/Bazaar.jpg)
+![Bazaar|2840x2038, 30%](../img/Bazaar.jpg)
 
 Flatpak is a universal containerized package format that tries to sandbox applications through flexible permissions that the application has access to on your system.  It is the **primary method of installing applications on Bazzite** and the most recommended way to install software over other formats outside of the few exceptions of software available in the Bazzite Portal which take priority. Flatpaks can be installed, upgraded, and uninstalled via the Bazaar app store.  The applications that are in Bazaar are from [Flathub](https://flathub.org/).
 
@@ -27,8 +27,6 @@ Sometimes a project's website or [Github repository](<https://github.com/flathub
 <hr>
 
 ## Homebrew (Command-Line Utilites)
-
-<pic of bold brew>
     
 !!! note
 
@@ -44,13 +42,13 @@ brew install <package>
 
 <hr>
 
-## Bazzite Portal (`ujust` Commands)
+## `ujust` Commands
 
-<show screenshot of bazzite portal>
+`ujust` commands can install specialized software that ships with Bazzite as an installation script by the maintainers and contributors of the project.  Please note that _some_ of the software that can be installed from `ujust` commands can add **[layered packages]**(../rpm-ostree.md) to your installation which is generally not recommended.
 
-The Bazzite Portal application can install specialized software that ships with Bazzite as an installation script by the maintainers and contributors of the project.  Please note that _some_ of the software that can be installed from the Bazzite Portal can add layered packages to your installation which is generally not recommended.
+**The Bazzite Portal application provides a graphical interface for installing some of the `ujust` commands**.
 
-Read the ujust page <link this>
+Read more about `ujust` commands on the [**`ujust` Bazzite documentation page**](../ujust.md) since `ujust` commands can accomplish more than install software.
 
 <hr>
 
