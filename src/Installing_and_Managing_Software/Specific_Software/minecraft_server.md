@@ -6,7 +6,7 @@ title: Minecraft Server Hosting Guide
 
 ## Preface
 
-Use a [Quadlet service](<link to quadlet service subsection on installaing and managing apps doc>) to host a Minecraft server on Bazzite.
+Use a [Quadlet service](../index.md#quadlet) to host a Minecraft server on Bazzite.
 
 ## Setup
 
