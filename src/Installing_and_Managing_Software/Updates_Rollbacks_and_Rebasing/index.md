@@ -90,4 +90,11 @@ sudo ostree admin pin --unpin 0
 
 ### How do I disable automatic updates?
 
-...
+!!! note
+    This is an unsupported configuration since Bazzite is expected to automatically update daily.
+
+Open the terminal and enter this **command**:
+
+```
+ujust _toggle-updates
+```
