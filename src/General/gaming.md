@@ -119,7 +119,7 @@ A log file should appear in your Home directory named after the game's applicati
 
 ## Advanced Gaming Tweaks
 
-<link to guide>
+For those who like to tinker with specific environment variables, then please read the [**Advanced Gaming Guide**](/Advanced/gaming-advanced.md).
 
 <hr>
 
