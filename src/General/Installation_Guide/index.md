@@ -35,7 +35,7 @@ title: Bazzite Installation Guide
 
 ## Installer Requirements
 
-- Software to flash the ISO like [**Fedora Media Writer**]()
+- Software to flash the ISO like [**Fedora Media Writer**](https://fedoraproject.org/mediawriter)
 - A physical wired keyboard is **recommended** and **required for devices without a touchscreen**.
   - A User Account with a **username** and a **user password** if you have a keyboard if you want to setup a unique username and a password. 
 
