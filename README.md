@@ -105,7 +105,7 @@ title: "Hello world"
 ## Translate Documentation
 
 Translating documentation is as straightfoward as can be.
-Lets say we want to translate `index.md` to Spanish. All what you would have to do is make a copy of the file with the name `index.es.md` and start translating.
+Lets say we want to translate `index.md` to Spanish. All you would have to do is make a copy of the file with the name `index.es.md` and start translating.
 
 Perhaps you can't see your translation with `just mkdocs serve`.
 Chances are we need to configure MkDocs to do so.
