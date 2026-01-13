@@ -6,4 +6,5 @@
   - Fedora Media Writer (**Recommended**) ([Windows/macOS](https://github.com/FedoraQt/MediaWriter/releases/latest), [Linux](https://flathub.org/apps/org.fedoraproject.MediaWriter))
   - Rufus ([Windows](https://rufus.ie/en/))
   - Etcher ([Windows, macOS, Linux](https://etcher.balena.io/))
-  - Ventoy ([Windows, Linux, Live Environment](https://www.ventoy.net/en/index.html)) (_Results may vary in GRUB2 mode, but it's not recommended as it generally has issues with Bazzite's ISOs and may not support Secure Boot on the initial install._)
+
+### Ventoy is not recommended under any circumstance and no support will be provided for it.
