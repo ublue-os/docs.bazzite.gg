@@ -1,10 +1,9 @@
-- A USB flash drive with 10GB free space
-  - **Note**: All data on this drive will be wiped when flashed
+- A USB flash drive with at least **10GB of free space**.
+  - **Note #1**: All data on this drive will be wiped when flashed.
+  - **Note #2**: It should support at least USB 3.0 speed.
 - Software to flash the image:
-<small>Make sure to properly eject the drive after flashing the ISO to it</small>
-  - Fedora Media Writer
-    <small>[Windows/Mac](https://github.com/FedoraQt/MediaWriter/releases/latest), [Linux flatpak](https://flathub.org/apps/org.fedoraproject.MediaWriter)</small>
-  - [Rufus](https://rufus.ie/en/)
-  - [Ventoy](https://www.ventoy.net/en/index.html) (in grub2 mode)
-  - [Etcher](https://etcher.balena.io/)
-  - [Ventoy](https://www.ventoy.net/en/index.html) (_in GRUB2 mode_)
+  <small>**Make sure to properly eject the drive after flashing the ISO**.</small>
+  - Fedora Media Writer (**Recommended**) ([Windows/macOS](https://github.com/FedoraQt/MediaWriter/releases/latest), [Linux](https://flathub.org/apps/org.fedoraproject.MediaWriter))
+  - Rufus ([Windows](https://rufus.ie/en/))
+  - Etcher ([Windows, macOS, Linux](https://etcher.balena.io/))
+  - Ventoy ([Windows, Linux, Live Environment](https://www.ventoy.net/en/index.html)) (_Results may vary in GRUB2 mode, but it's not recommended as it generally has issues with Bazzite's ISOs and may not support Secure Boot on the initial install._)
