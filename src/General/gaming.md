@@ -23,8 +23,6 @@ Non-Steam games can run on Bazzite. The most recommended method is Lutris for mo
 
 Games installed from the Microsoft Store do **not** run unless you use a Xbox Cloud Gaming client like [**Greenlight**](https://github.com/unknownskl/greenlight). Fortnite can also be played via this method **without** a Game Pass subscription.  There are also [**select titles available on Battle.net**](https://us.support.blizzard.com/en/article/000357106) which can be ran through Proton using Lutris. 
 
-Console emulators should be installed from the Bazaar app store or using a setup script like [**Emudeck**](https://www.emudeck.com/).
-
 ### Lutris Setup
 
 Lutris offers two methods to play Windows games on Bazzite.  Community-driven scripts or manually adding the executable.  It is **highly recommended to use the manual method** as some scripts are poorly maintained.
