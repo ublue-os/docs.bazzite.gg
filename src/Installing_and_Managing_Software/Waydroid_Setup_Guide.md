@@ -116,6 +116,20 @@ To use multi-touch gestures in Waydroid while running under Steam Gaming Mode, y
 
 This section is dedicated to more specific operations and issues within Waydroid running on Bazzite.
 
+## Waydroid Helper application
+
+![Waydroid_Helper|400x400](../img/Waydroid_Helper.png)
+
+[waydroid-helper](https://github.com/waydroid-helper/waydroid-helper) is a GUI app that enables more advanced configuration and control over your waydroid installations.
+
+To install it, run the following `ujust` command:
+
+```bash
+ujust setup-waydroid helper
+```
+
+You can alternatively go directly to their [releases](https://github.com/waydroid-helper/waydroid-helper/releases) and install the latest AppImage via GearLever.
+
 ### Disable Inputs to Waydroid When Unfocused
 
 Waydroid has an [issue](https://github.com/waydroid/waydroid/issues/135) where it will register inputs from controllers, keyboards, and other input devices even when the window is not focused.
