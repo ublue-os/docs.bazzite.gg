@@ -22,13 +22,13 @@ The following is a list of features Bazzite ships with that differs from upstrea
 ### Ease of Use
 
 - Convenient [**`ujust`**](/Installing_and_Managing_Software/ujust/) scripts by maintainers and contributors of the project.
-- Steam Gaming Mode is setup out of the box and auto-starts on [Bazzite-Deck images]((/Handheld_and_HTPC_edition/Steam_Gaming_Mode/)) which are intended for handheld and couch gaming. 
+- Steam Gaming Mode is setup out of the box and auto-starts on [**Bazzite-Deck images**]((/Handheld_and_HTPC_edition/Steam_Gaming_Mode/)) which are intended for handheld and couch gaming. 
 
 ### Made with Developers in Mind
 
 - Homebrew is the intended package manager for command-line tools.
 - Distrobox containers grants access to other Linux desktop package managers for specific applications or development environments.
-- [Bazzite-DX variant](https://dev.bazzite.gg/) as the defacto Bazzite image for software development.
+- [**Bazzite-DX variant**](https://dev.bazzite.gg/) as the defacto Bazzite image for software development.
 
 ### Extra Enhancements
 
