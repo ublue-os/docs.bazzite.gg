@@ -54,11 +54,11 @@ Read more about `ujust` commands on the [**`ujust` Bazzite documentation page**]
 
 ## Containers (Distrobox/Quadlet)
 
-### Distrobox Containers
+### Distrobox Containers (Linux Package Formats)
 
 ![distrobox|510x413](../img/distrobox.png)
 
-Run other minimal variants of popular Linux distributions in Bazzite inside of a container, and access each distribution's packages without any of their dependencies and libraries affecting the host machine.
+Run other minimal variants of popular Linux distributions in Bazzite inside of a container and access each distribution's packages without any of their dependencies and libraries affecting the host machine.
 
 - Containers are **not** virtual machines.
 - Containers are intended to be **disposable** and may run into issues where they need to be recreated.
@@ -116,7 +116,7 @@ https://youtu.be/5m0YfIiypwA
 [apk]: https://wiki.alpinelinux.org/wiki/Alpine_Package_Keeper
 [alpine_pkgs]: https://pkgs.alpinelinux.org/packages
 
-### Quadlet
+### Quadlet (Services)
 
 Quadlet is a feature of [podman](https://podman.io/) that allows a user to run a container as [systemd](https://systemd.io/) units. It works by using a declarative syntax like [docker compose](https://docs.docker.com/compose/) but integrates to systemd and uses podman as a backend.
 
