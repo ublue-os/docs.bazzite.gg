@@ -6,7 +6,7 @@ title: Comparison of Bazzite and SteamOS
 
 ## What is Bazzite?
 
-Bazzite is a community-driven Linux gaming operating system, featuring the latest Linux drivers and a variety of flavors (**Desktop (Bazzite)**, **Handheld/HTPC (Bazzite-Deck)**, and **Developer eXperience (Bazzite-DX)**). It is based on **Fedora** and features an atomic update system ([bootc](https://github.com/bootc-dev/bootc)), ensuring the previous update is always available if something goes wrong. It is also designed for daily driving, with a focus on **gaming** and **development**.  In addition, since Bazzite ships the **latest drivers**, you can be sure that if your device **can work on Linux**, then **it will work in Bazzite**.  Bazzite has support for **AMD**, recent **Nvidia** and **Intel** GPUs. Bazzite also works well for **Lenovo**, **Asus**, **Ayn**, **GPD**, and **OneXPlayer** handheld devices.
+Bazzite is a community-driven Linux gaming operating system, featuring the latest Linux drivers and a variety of flavors (**Desktop (Bazzite)**, **Handheld/HTPC (Bazzite-Deck)**, and **Developer eXperience (Bazzite-DX)**). It is based on **Fedora** and features an [atomic update system](https://github.com/bootc-dev/bootc), ensuring the previous update is always available if something goes wrong. It is also designed for daily driving, with a focus on **gaming** and **development**.  In addition, since Bazzite ships the **latest drivers**, you can be sure that if your device **can work on Linux**, then **it will work in Bazzite**.  Bazzite has support for **AMD**, recent **Nvidia** and **Intel** GPUs. Bazzite also works well for **Lenovo**, **Asus**, **Ayn**, **GPD**, and **OneXPlayer** handheld devices.
 
 ## What is SteamOS?
 
