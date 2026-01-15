@@ -10,11 +10,6 @@ title: Handheld Compatibility
 
 Bazzite-Deck images ship with [Steam Gaming Mode](../Steam_Gaming_Mode.md) which is intended to mimic the experience of SteamOS.  The goal is to have earlier support for most x86_64 handheld PCs before SteamOS and with the same benefits of the desktop version of Bazzite.
 
-### Tips and Tricks
-
-- [Lenovo Legion Go Linux Tips and Tricks](https://github.com/aarron-lee/legion-go-tricks)
-- [GPD Win Linux Tips and Tricks](https://github.com/aarron-lee/gpd-win-tricks)
-
 ### Steam Deck BIOS Updates
 
 It is recommended to enter `ujust enable-deck-bios-firmware-updates` in the terminal to receive Steam Deck BIOS updates.
@@ -58,6 +53,12 @@ Install optional [Decky plugins](https://plugins.deckbrew.xyz/) for your handhel
 Unsupported handhelds _could work_ with Bazzite, but there may be major issues encountered that are undocumented. If your handheld hardware is not listed, then you can still give Bazzite a try with our Bazzite-Deck image.
 
 Your mileage may vary with untested hardware. Bazzite does **not** have the required setup for unsupported handheld, so setup will be manually done by the end-user for different functionality if it even works properly on the unsupported device.
+
+## Tips and Tricks (External Resources)
+
+- [Lenovo Legion Go Linux Tips and Tricks](https://github.com/aarron-lee/legion-go-tricks)
+- [GPD Win Linux Tips and Tricks](https://github.com/aarron-lee/gpd-win-tricks)
+- [General Linux e-GPU Guide + Script](https://github.com/ewagner12/all-ways-egpu)
 
 ## Bazzite's Steam Gaming Mode Documentation
 
