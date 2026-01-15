@@ -37,6 +37,10 @@ Choose the "**Flathub**" remote.  If it asks for "System" or "User" then choose 
 > - [Flatpak applications for **KDE Plasma** images](https://github.com/ublue-os/bazzite/blob/9f6f5e143b7545d06803e70e7723997400bd8b88/system_files/desktop/kinoite/usr/share/ublue-os/bazzite/flatpak/install)
 > - [Flatpak applications for **GNOME** images](https://github.com/ublue-os/bazzite/blob/9f6f5e143b7545d06803e70e7723997400bd8b88/system_files/desktop/silverblue/usr/share/ublue-os/bazzite/flatpak/install)
 
+### Remove Fedora Flatpak Remote
+
+Please remove the Fedora Flatpak remote using the Warehouse application.  This will **not** remove userdata.
+
 ## Rebasing to a signed image
 
 Once everything is setup properly, then you should rebase from the **unsigned image** to the **signed image** for security reasons, so **enter this command** in the host terminal:
