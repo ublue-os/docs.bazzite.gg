@@ -14,9 +14,6 @@ Linux gaming being a viable competitor to Windows is a relatively new paradigm. 
 
 Steam is the recommended way to play PC games on the Linux desktop as it ships with a compatability layer known as [Proton](https://steamcommunity.com/games/221410/announcements/detail/1696055855739350561).  If a game has a Linux port that isn't well maintained then it is recommended to try running the game through Proton in its Steam game properties.
 
-![Cog Icon > Properties|690x284, 75%](../img/Steam_Setup_Cog.png)
-![Compatibility tab|690x492, 75%](../img/Steam_Setup_Compat_Tab.png)
-
 ### Non-Steam Games
 
 Non-Steam games can run on Bazzite. The most recommended method is Lutris for most non-Steam games. [**Faugus Launcher**](https://flathub.org/en/apps/io.github.Faugus.faugus-launcher) is an alternative to Lutris available in the Bazaar app store which may be favorable due to a simpler design. [**Heroic Games Launcher**](https://flathub.org/apps/com.heroicgameslauncher.hgl) is recommended over Lutris for games that were purchased from Epic Games Launcher, GOG, and Amazon Games Launcher.  
@@ -51,9 +48,12 @@ Right clicking a game on Lutris gives the option to add it as a non-Steam game (
 
 ## Compatibility Layers & Managing Windows Games
 
+![Cog Icon > Properties|690x284, 75%](../img/Steam_Setup_Cog.png)
+![Compatibility tab|690x492, 75%](../img/Steam_Setup_Compat_Tab.png)
+
 Windows games need to run through a **compatibility layer** (like Proton) on Bazzite. KDE Plasma and GNOME images pre-install different, but similar compatibility layer managers.
 
-<ProtonPlus screenshot>
+<Add ProtonPlus screenshot>
 
 Install and update to the latest [GE-Proton](https://github.com/GloriousEggroll/proton-ge-custom), [Luxtorpeda](https://github.com/luxtorpeda-dev/luxtorpeda), and other tools using ProtonPlus.
 
