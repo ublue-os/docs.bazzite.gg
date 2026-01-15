@@ -40,7 +40,7 @@ hide:
 
   Hassle-free updates with protections against regressions. Rollback to the previous deployment or rebase to an earlier Bazzite build within the last 90 days without losing your personal files.
 
-  Read about the [`bazzite-rollback-helper`][rollback-helper] tool for rolling back system upgrades or changning the update stream.
+  Read about the [`bazzite-rollback-helper`][rollback-helper] tool for rolling back system upgrades or changing the update stream.
 
 </div>
 
