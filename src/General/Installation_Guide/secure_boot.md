@@ -31,8 +31,6 @@ error: ../../grub-core/loader/1389/efi/linux.c:256:you need to load the kernel f
 Press any key to continue...
 ```
 
-![error: ../../grub-core/kern/efi/sb.c:182:bad shim signature. / error: ../../grub-core/loader/1389/efi/linux.c:256:you need to load the kernel first. / Press any key to continue...|613x63](../../img/load_the_kernel_first_error.jpeg 'load the kernel first error')
-
 Follow **Method B** below to resolve this and move past the error message if you encounter it.
 
 ## **Method A**) During Installation Method (See Image Above)
