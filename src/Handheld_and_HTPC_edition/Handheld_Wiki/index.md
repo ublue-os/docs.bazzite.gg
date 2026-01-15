@@ -58,6 +58,7 @@ Your mileage may vary with untested hardware. Bazzite does **not** have the requ
 
 - [Lenovo Legion Go Linux Tips and Tricks](https://github.com/aarron-lee/legion-go-tricks)
 - [GPD Win Linux Tips and Tricks](https://github.com/aarron-lee/gpd-win-tricks)
+- [Ayaneo Geek 1S/2S Quirks](https://universal-blue.discourse.group/t/ayaneo-geek-1s-2s-linux-bazzite-support-is-already-almost-there-lets-add-them-to-the-officially-supported-devices/1046)
 - [General Linux e-GPU Guide + Script](https://github.com/ewagner12/all-ways-egpu)
 
 ## Bazzite's Steam Gaming Mode Documentation
