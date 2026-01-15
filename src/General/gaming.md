@@ -117,8 +117,6 @@ A log file should appear in your Home directory named after the game's applicati
 
 > **See also**: <link to common issues and resolutions and gaming mode quirks>
 
-<hr>
-
 ## Advanced Gaming Tweaks
 
 For those who like to tinker with specific environment variables, then please read the [**Advanced Gaming Guide**](/Advanced/gaming-advanced.md).
