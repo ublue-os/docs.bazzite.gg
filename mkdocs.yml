@@ -122,7 +122,7 @@ markdown_extensions:
 
 nav:
   - index.md
-  - FAQ: "General/FAQ.md"
+  - FAQ: FAQ.md
   - Installation:
       - "Setup Guide": General/Installation_Guide/index.md
       - "Dual Boot Preliminary and Post-Installation Setup Guide": General/Installation_Guide/dual_boot_setup_guide.md
@@ -133,15 +133,14 @@ nav:
   - General:
       - "General Guides": General/index.md
       - "Comparison of Bazzite and Fedora Atomic Desktop": General/Fedora_Atomic_Comparison.md
-      - "SteamOS Comparison": "General/SteamOS_Comparison.md"
-      - "Gaming Guide": "General/gaming.md"
+      - "SteamOS Comparison": General/SteamOS_Comparison.md
+      - "Gaming Guide": General/gaming.md
       - "Desktop Environment Tweaks": General/Desktop_Environment_Tweaks.md
       - "VPN Setup": General/VPN.md
-      - "Issues & Resolutions": "General/issues_and_resolutions.md"
+      - "Issues & Resolutions": General/issues_and_resolutions.md
   - Bazzite-Deck:
       - "Steam Gaming Mode": Handheld_and_HTPC_edition/Steam_Gaming_Mode.md
-      - "Handheld Wiki":
-          - Handheld_and_HTPC_edition/Handheld_Wiki/index.md
+      - "Handheld Wiki": Handheld_and_HTPC_edition/handheld_wiki.md
   - Software:
       - "Installing and Managing Software":
           - Installing_and_Managing_Software/index.md
@@ -151,8 +150,8 @@ nav:
       - "Installing Specific Software":
           - Installing_and_Managing_Software/Specific_Software/index.md
       - "Updates, Rollbacks, & Rebasing":
-          - "Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/index.md"
-          - "Bazzite Rollback Helper": "Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/bazzite_rollback_helper.md"
+          - Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/index.md
+          - "Bazzite Rollback Helper": Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/bazzite_rollback_helper.md
   - Advanced:
       - "Advanced Guides": Advanced/index.md
           - "Auto-Mounting Secondary Drives": Advanced/Auto-Mounting_Secondary_Drives.md
