@@ -83,7 +83,10 @@ runs:
     - name: Check links
       uses: lycheeverse/lychee-action@a8c4c7cb88f0c7386610c35eb25108e448569cb0 # v2.7.0
       with:
-        args: --root-dir ${{ inputs.output_dir }} ${{ inputs.output_dir }}
+        args: >-
+          --root-dir ${{ inputs.output_dir }}
+          --exclude 'https://github.com/[^/]+/docs.bazzite.gg/(raw|blob)/[^/]+/src/'
+          ${{ inputs.output_dir }}
         jobSummary: true
         fail: false
         token: ${{ inputs.github_token }}
