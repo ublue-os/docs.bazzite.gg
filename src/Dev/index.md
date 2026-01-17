@@ -27,7 +27,3 @@ This project is built upon [Amy OS](https://github.com/astrovm/amyos) and takes 
 This project is currently a work-in-progress but it is intended to be an out of the box experience for game developers specifically.
 
 > **Github Repo**: https://github.com/ublue-os/bazzite-gdx
-
-## Stay Tuned For Future Updates
-
-More specalized development documentation is planned as this part of the project grows in the future.  Contributions and feedback are welcome for these new editions of Bazzite on the appropriate Github repositories linked above or on our [social channels](../Resources.md).
