@@ -11,7 +11,7 @@ Bazzite is for those seeking an operating system that fits the following criteri
 - A desktop operating system designed for gaming with inspiration from SteamOS that has fairly low maintenance in comparison to other desktop Linux operating systems.
 - A controller-friendly experience for couch PC gaming.
 - An alternative to Windows-based handhelds where a SteamOS-like experience is preferable and SteamOS doesn't work well on the handheld hardware presently.
-- A SteamOS-like experience on SteamOS handhelds (like the Steam Deck) with newer system packages and alternate desktop enviornments with the same image-based OS approach for stability.
+- A SteamOS-like experience on SteamOS handhelds (like the Steam Deck) with newer system packages and alternate desktop environments with the same image-based OS approach for stability.
 
 ## What Bazzite image do I use?
 
