@@ -28,7 +28,7 @@ This option may be good enough for you if you don't need special features provid
 
 === "KDE Plasma"
 
-    1\. Open Systemsettings
+    1\. Open System Settings
     2\. Navigate to the Networking Section and go into the "Wi-Fi & Internet" settings
     3\. Click the "+" button at the bottom
 
