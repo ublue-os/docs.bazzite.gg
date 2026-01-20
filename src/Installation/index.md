@@ -192,7 +192,7 @@ It is important to configure the system settings on a first boot to personalize 
 
 ##### NTFS
 
-If you are coming from Windows and plan to game on a secondary drive with games already installed on it, then we regret to inform you that the NTFS filesystem is **unsupported** for PC gaming on Bazzite.
+If you are coming from Windows and plan to game on a secondary drive with games already installed on it, then we regret to inform you that the NTFS filesystem is **unsupported** for PC gaming on Bazzite.  Playing games off of a NTFS formatted drive can cause various issues, including but not limited to **games not launching at all**, and will eventually result in **data corruption** and **permanent data loss**!
 
 ##### exFAT and FAT32
 
