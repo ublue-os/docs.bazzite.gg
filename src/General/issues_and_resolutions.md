@@ -187,6 +187,18 @@ Try to connect again.
 
 <hr>
 
+## Nvidia Optimus GPU not detected on laptops
+
+**Issue:** If you are running Bazzite on a laptop with an Nvidia Optimus GPU, you might notice that games are running poorly and seem to be running on the integrated GPU.
+
+**Resolution:** You need to enable supergfxctl which will automatically switch to the discrete Nvidia GPU when launching your games. Open a terminal and run:
+
+```bash
+ujust enable-supergfxctl
+```
+
+<hr>
+
 ## Waking from sleep doesn't work with a Gigabyte b550 motherboard
 
 **Issue:** Once a Gigabyte b550 motherboard suspends, it does not properly resume, and the display remains black until a reboot.
