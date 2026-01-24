@@ -9,7 +9,7 @@ title: Bazzite Installation Guide
 - **Architecture**: x86_64
 - **Firmware**: UEFI (CSM Support should be **disabled** if available)
 - **Processor (CPU)** : 2GHz quad core processor or better
-- **System Memory (RAM)**: 4GB
+- **System Memory (RAM)**: 8GB
 - **Graphics**: A graphics card that can utilize Vulkan 1.3 or higher, modern AMD GPUs work the best
 - **Storage**: 64GB free on an internal **solid-state drive (SSD)**
   - **External Storage & Secondary Drives**: All drives must be formatted as **BTRFS (SSDs)** or **Ext4 (Hard Disk Drives [HDDs])**, please backup the files and reformat them post-installation. 
