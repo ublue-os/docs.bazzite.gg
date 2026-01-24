@@ -25,7 +25,7 @@ tags:
 - **Architecture**: x86_64
 - **Firmware**: UEFI (CSM Support should be **disabled** if available)
 - **Processor (CPU)** : 2GHz quad core processor or better
-- **System Memory (RAM)**: 4GB
+- **System Memory (RAM)**: 8GB
 - **Graphics**: A graphics card that can utilize Vulkan 1.3+
 - **Storage**: 64GB free on an internal solid-state drive
 - **Network**: Stable internet connection with no bandwidth caps
