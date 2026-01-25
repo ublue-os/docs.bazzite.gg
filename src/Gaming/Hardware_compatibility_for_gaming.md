@@ -90,6 +90,14 @@ This will use the OpenGL translation as opposed to Vulkan.
 
 ### Unsupported Filesystems for Secondary Drives
 
+
+!!! CRITICAL
+
+    NTFS and exFAT/FAT32 ARE NOT SUPPORTED. BOTH FILESYSTEMS CAN AND WILL LEAD TO DATA CORRUPTION UNDER LINUX. DO NOT USE THEM!
+    winBTRFS UNDER WINDOWS STILL HAS BUGS AND IS ALSO NOT A SOLUTION. 
+    
+    THERE IS CURRENTLY NO RELIABLE CROSS-PLATFORM FILESYSTEM THAT CAN BE SHARED WITH WINDOWS AND LINUX.
+
 !!! warning
 
     You will lose all of your data reformatting secondary internal/external drives.
@@ -106,7 +114,7 @@ FAT32 and exFAT are **unsupported**. Both filesystems **do not support symbolic 
 
 ### Sharing Games with a Windows Dual-Boot
 
-Install the unofficial [WinBtrfs](https://github.com/maharmstone/btrfs) driver on your Windows installation at your own risk. Please make sure to read any documentation associated with this project before installing the driver on Windows.
+Install the unofficial [WinBtrfs](https://github.com/maharmstone/btrfs) driver on your Windows installation **at your own risk**. Please make sure to read any documentation associated with this project before installing the driver on Windows.
 
 #### Video Tutorial
 
