@@ -89,7 +89,7 @@ These are just some of the common Bazzite `ujust` script examples, there are muc
 - **ujust configure-grub** - Configures GRUB boot menu visibility
 - **ujust fix-reset-steam** - Reset the Steam folder back to a fresh state without removing games, music, saves, etc. Very useful if Steam is giving trouble or if you are getting a blank screen in Game Mode
 - **ujust fix-proton-hang** - Force terminates all processes related to wine and proton. Useful if you can't launch games after a game fails to close properly
-- **ujust bios** - Reboots straight into this device's BIOS/EUFI screen
+- **ujust bios** - Reboots straight into this device's BIOS/UEFI screen
 - **ujust restart-pipewire** - Crackling audio? Restarting Pipewire sometimes fixes that
 - **ujust enroll-secure-boot-key** - Enrolls the Nvidia driver & KMOD signing key for secure boot. You'll need this if you want to use Bazzite with Secure Boot enabled
 - **ujust clean-system** - Cleans up old unused podman images, volumes, flatpak packages and rpm-ostree content
