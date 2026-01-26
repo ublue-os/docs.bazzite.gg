@@ -17,10 +17,11 @@ Bazzite is for those seeking an operating system that fits one of the following 
 
 Bazzite's [website](https://bazzite.gg/#image-picker) offers a streamlined way of selecting the correct image which will be chosen based on hardware, desktop environment, and to include Steam Gaming Mode if the hardware supports it.
 
-Bazzite offers multiple images, but most images will be following _one of these **two variants**_:
+Bazzite offers multiple images, but most images will be following _one of these **three variants**_:
 
 - **Variant 1**: Bazzite images that do **not** have Steam Gaming Mode and receive automatic updates daily with gaming packages pre-installed.
 - **Variant 2**: Bazzite images that automatically boot into Steam Gaming Mode (like SteamOS) and are intended for controller-oriented setups.
+- **Variant 3**: Bazzite images that are intended for software development.
 
 ### 1. Desktop Edition
 
@@ -36,9 +37,11 @@ Intended specifically for desktops and laptops with a focus on gaming which is i
 
 "**Steam Gaming Mode**" is pre-installed and its features fully functional for supported hardware. This version of Bazzite boots directly into the Steam Gaming Mode session and is intended for handhelds and couch-gaming scenarios. It also includes a Desktop Mode session. System and application updates are manually upgraded in Steam Gaming Mode and applied on a reboot.
 
-#### What about Bazzite-DX (Developer eXperience Edition)
+### [3. Bazzite-DX (Developer eXperience Edition)](https://dev.bazzite.gg/)
 
-[**Bazzite-DX**](https://dev.bazzite.gg/) is a version of Bazzite that specifically caters to software development.  There is no ISO to install from, but is something that can be switched to by rebasing from your current image to a Bazzite-DX image.
+<sub>(**Variant 3**)</sub>
+
+A version of Bazzite that specifically caters to software development.  There is no ISO to install it, but rather a version that can be switched to by rebasing from your current image to a Bazzite-DX image.
 
 #### Bazzite Image Chart Example
 
