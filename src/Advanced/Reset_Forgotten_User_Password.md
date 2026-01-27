@@ -1,15 +1,4 @@
----
-authors:
-  - "@nicknamenamenick"
-  - "@noelmiller"
-  - "@gesnaud"
-tags:
-  - Troubleshooting
----
-
-<!-- ANCHOR: METADATA -->
-<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=161", "fetched_at": "2024-09-03 16:43:11.636024+00:00"}-->
-<!-- ANCHOR_END: METADATA -->
+# Reset Forgotten User Password
 
 !!! important
 
@@ -63,9 +52,9 @@ Your user password should now be reset.
 
 > Thanks to [Colin Walters](https://github.com/cgwalters) for the [solution](https://github.com/ublue-os/main/issues/469#issuecomment-1885264886).
 
-## Not working?
+## Not Working?
 
-Many users forget steps regarding SELinux because of habits. If you've made everything but SELinux steps above, the file `/etc/shadow` will be unreadable or unreachable by any process.
+Many users forget steps regarding SELinux because of old habits. If you've created everything but the SELinux steps above, then the file `/etc/shadow` will be unreadable or unreachable by any process.
 
 The good way to check if `/etc/shadow` is in bad SELinux configuration is to execute following command:
 
