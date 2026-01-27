@@ -1,23 +1,18 @@
 ---
-authors:
-  - "@castrojo"
-  - "@nicknamenamenick"
-tags:
-  -  Guide
+title: Creating A Custom Bazzite Image
 ---
 
-<!-- ANCHOR: METADATA -->
-<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=43", "fetched_at": "2024-09-03 16:43:11.309087+00:00"}-->
-<!-- ANCHOR_END: METADATA -->
+# Creating A Custom Bazzite Image
 
 ## Use Cases
 
-- You want to help **development** by being able to test your contributions prior to submiting to the community.
-    - Hardware enablement, experimental features, confirming fixes ahead of merge.
-- You want to **swap out applications and other default choices but want to stick close to Bazzite** to get improvements automatically.
+- You want to swap out pre-installed system-level applications and other default choices, but want to stick close to Bazzite to get improvements automatically.
     - For example: Bazzite has Waydroid baked into the image, but not setup or running by default.  If you desire to have this package uninstalled, then you could replace it or remove it.
-    - You need to layer something like VPN software that has to be on an image but you don't want to maintain your own standalone image. (Deriving off of others is always easier)
+    - You need to layer something like VPN software that has to be on an image but you don't want to maintain your own standalone image. (_Deriving off of others is always easier_)
     - You want a personal-use image with config and software changes, but also want to benefit from work being completed upstream.
+    - Different desktop environments or window managers as opposed to what Bazzite offers.
+- You want to help the development of Bazzite by being able to test your contributions prior to submiting to the community.
+    - Hardware enablement, experimental features, confirming fixes ahead of merge.
 
 ## Recommended Methods
 
@@ -36,7 +31,3 @@ Sometimes you don't want to make a whole new image from scratch, you just want t
 ### Option C - Using BlueBuild
 
 [**BlueBuild**](https://blue-build.org/learn/universal-blue/) is a project that orginally started as a starting point for Universal Blue custom image building and eventually became its own separate project.  All support for Blue-Build images should be directed to the appropriate [communication channels](https://blue-build.org/community/) outside of Universal Blue.
-
-## Custom Image Showcase
-
-The [**Community Created Custom Images**](https://universal-blue.discourse.group/t/list-of-community-created-custom-images/340) thread showcases custom [Fedora Atomic Desktop](https://fedoraproject.org/atomic-desktops/) images.  Show off your own!
