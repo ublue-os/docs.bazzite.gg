@@ -16,6 +16,10 @@ tags:
 
 ![Desktop|690x448](../../img/Desktop.jpeg)
 
+!!! Note
+      
+      This installation guide is for the **legacy ISO** and an update for the new ISOs will be coming soon.
+
 ## Pre-Installation
 
 > Pre-requisites and steps before installing Bazzite.
