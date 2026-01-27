@@ -85,9 +85,22 @@ Since Bazzite is a custom Fedora Atomic Desktop image, it makes use of read-only
 
 > Check out the [**Universal Blue homepage**](https://universal-blue.org) for more information on what this project is capable of.
 
-## Are AMD, Intel, and Nvidia graphics card drivers pre-installed?
+## Are AMD and Intel graphics card drivers pre-installed?
 
 **Yes** and they are updated during a system upgrade when new drivers are available.
+
+### Are Nvidia graphics card drivers pre-installed?
+
+**Yes, on the Nvidia images** and they are updated during a system upgrade when new drivers are available.
+- The legacy (`-nvidia`) image supports Pascal, Maxwell, and Volta architectures (GTX 900, GTX 1000, Nvidia Titan V, GTX 750 (TI) and GTX 745).
+- The modern (`-nvidia-open`) image supports every Nvidia card from the Turing architecture and newer (GTX 16 and all RTX cards).
+
+## Will you add support for even older Nvidia Graphics Cards?
+There are currently no plans to support Kepler and older architectures (Most GTX 700 cards and older) since they are **no longer supported** by the upstream Nvidia drivers.
+- You can still install Bazzite, using the open-source nouveau driver.
+    - However, the performance and stability of this driver lags behind the official Nvidia drivers.
+- It is **not possible** to manually install the proprietary Nvidia drivers for your older card in Bazzite.
+-     You would need a different Linux distribution that allows for such, if you wish to use the proprietary Nvidia drivers for your GPU.
 
 ### What if I change hardware?
 
