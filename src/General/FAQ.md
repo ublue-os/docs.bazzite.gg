@@ -105,9 +105,14 @@ There are currently no plans to support Kepler and older architectures (Most GTX
 - It is **not possible** to manually install the proprietary Nvidia drivers for your older card in Bazzite.
 -     You would need a different Linux distribution that allows for such, if you wish to use the proprietary Nvidia drivers for your GPU.
 
+
 ### What if I change hardware?
 
 Most hardware changes should **not** require any manual intervention outside of the expectations from that particular hardware which would be OS-agnostic.  However, if you swap from or to a Nvidia GPU, then [rebasing](../Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/brh.md) will be necessary as a manual intervention to get the appropriate graphics drivers.
+
+## Does Bazzite support CSM/Legacy Boot?
+
+No. When the installer detects Legacy BIOS boot, you will receive a message with instructions on turning off CSM: ![CSM](../img/csm.webp)
 
 ## Am I able to use AMD Fluid Motion Frames?
 
