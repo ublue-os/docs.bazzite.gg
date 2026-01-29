@@ -11,6 +11,7 @@ title: Dictonary & Terminology
 - **[Fedora Linux](https://fedoraproject.org/)**: A leading edge Linux operating system that has a new major release every 6 months.
 - **[Fedora Atomic Desktop](https://fedoraproject.org/atomic-desktops/)**: An experimental version of Fedora Linux created to be as reliable and reproducible. Two of the most popular variants are known as [Fedora Silverblue](https://fedoraproject.org/atomic-desktops/silverblue/) and [Fedora Kinoite](https://fedoraproject.org/atomic-desktops/kinoite/) for the specific desktop environments that they use (GNOME and KDE Plasma respectively).
 - ["**Immutable**"](https://blog.verbum.org/2020/08/22/immutable-%E2%86%92-reprovisionable-anti-hysteresis/): A term to describe Linux operating systems that do not follow the traditional filesystem layout where every single file can be removed by the user with root privileges.  It is more [nuanced than this in the case of Bazzite](https://docs.fedoraproject.org/en-US/fedora-silverblue/technical-information/#filesystem-layout), but is still considered "immutable" from the point of view of the extended Linux community.  The Bazzite team would **not** describe Bazzite as an "immutable" operating system.
+- [**Open Gaming Collective (OGC)**](https://github.com/OpenGamingCollective): A working group for organizations and individuals interested in providing a collaborative framework for upstream changes to the various gaming components that will benefit all Linux gaming focused projects.
 
 ## Bazzite-Deck Images
 
