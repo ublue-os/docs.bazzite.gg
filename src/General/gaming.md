@@ -20,7 +20,7 @@ Steam is the recommended way to play PC games on the Linux desktop as it ships w
 
 Non-Steam games can run on Bazzite. The most recommended method is Lutris for most non-Steam games. [**Faugus Launcher**](https://flathub.org/en/apps/io.github.Faugus.faugus-launcher) is an alternative to Lutris available in the Bazaar app store which may be favorable due to a simpler design. [**Heroic Games Launcher**](https://flathub.org/apps/com.heroicgameslauncher.hgl) is recommended over Lutris for games that were purchased from Epic Games Launcher, GOG, and Amazon Games Launcher.  
 
-Games installed from the Microsoft Store do **not** run unless you use a Xbox Cloud Gaming client like [**Greenlight**](https://github.com/unknownskl/greenlight). Fortnite can also be played via this method **without** a Game Pass subscription.  There are also [**select titles available on Battle.net**](https://us.support.blizzard.com/en/article/000357106) which can be ran through Proton using Lutris. 
+Games installed from the Microsoft Store do **not** run unless you use a Xbox Cloud Gaming client like [**Greenlight**](https://github.com/unknownskl/greenlight) which requires a Gamepass Ultimate subscription for msot games. Fortnite can also be played via this method **without** a Game Pass subscription.  There are also [**select Gamepass titles available on Battle.net**](https://us.support.blizzard.com/en/article/000357106) which can be ran using Lutris. 
 
 ### Lutris Setup
 
@@ -38,7 +38,7 @@ Lutris is game management software that doubles as a WINE front-end for Windows 
 
 ![Lutris manually adding games example 1|690x213](../img/Lutris_Setup_Add_Local_Game_1.png)
 
-However if your game is not listed or doesn't work with the provided script, then manually add the executable. It will need a [**prefix directory**](/Gaming/Managing_and_modding_games.md#non-steam-games-prefix-management) created somewhere, but by default it will use the `~/Games` directory for each game.
+However if your game is not listed or doesn't work with the provided script, then manually add the executable. It will need a **prefix directory** created, but by default it will use the `~/Games` directory for each game.
 
 #### Lutris Shortcuts
 
