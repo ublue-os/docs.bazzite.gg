@@ -90,11 +90,11 @@ Since Bazzite is a custom Fedora Atomic Desktop image, it makes use of read-only
 
 ## Are AMD and Intel graphics card drivers pre-installed?
 
-**Yes** and they are updated during a system upgrade when new drivers are available.
+**Yes** and they are updated during a system upgrade when new drivers are available. It is not possible to manually update them.
 
 ### Are Nvidia graphics card drivers pre-installed?
 
-**Yes, on the Nvidia images** and they are updated during a system upgrade when new drivers are available.
+**Yes, on the Nvidia images** and they are updated during a system upgrade when new drivers are available. It is not possible to manually update them.
 - The legacy (`-nvidia`) image supports Pascal, Maxwell, and Volta architectures (GTX 900, GTX 1000, Nvidia Titan V, GTX 750 (TI) and GTX 745).
 - The modern (`-nvidia-open`) image supports every Nvidia card from the Turing architecture and newer (GTX 16 and all RTX cards).
 
@@ -105,10 +105,16 @@ There are currently no plans to support Kepler and older architectures (Most GTX
 - It is **not possible** to manually install the proprietary Nvidia drivers for your older card in Bazzite.
 -     You would need a different Linux distribution that allows for such, if you wish to use the proprietary Nvidia drivers for your GPU.
 
-
 ### What if I change hardware?
 
 Most hardware changes should **not** require any manual intervention outside of the expectations from that particular hardware which would be OS-agnostic.  However, if you swap from or to a Nvidia GPU, then [rebasing](../Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/brh.md) will be necessary as a manual intervention to get the appropriate graphics drivers.
+
+## Games are telling me to update my drivers. What should I do?
+![](/../img/gpu_driver_warning.png)
+Windows games cannot correctly detect Linux graphics drivers.
+- Because the version numbers are different between the Windows and Linux drivers, games will occasionally warn you about outdated drivers.
+- **You can safely ignore any such warning.**
+- [Please see here for more details.](#are-amd-and-intel-graphics-card-drivers-pre-installed)
 
 ## Does Bazzite support CSM/Legacy Boot?
 
