@@ -64,7 +64,7 @@ crh
     5. We can use the familiar CRU to edit it, however, this will require a wine/proton launcher. You can use Lutris, Faugus launcher, or even Steam to open this.
     6. Once you open CRU, click the import option in the lower lefthand corner. Make sure files of type is set to "all", and "Import complete EDID" is selected.
     ![CRU Preview|450x500](../img/CRU_Preview.png)
-    7. You can do your modifications to the edid, the same way as on windows.
+    7. You can do your modifications to the edid, the same way as on Windows.
     8. Once you finish, save it as a file using the export option.
     9. Move the edited edid file to `/tmp/crh/edited/`, and select it in `crh add-edid`. You will get a prompt to change the boot configuration. Simply authorize it with your password.
     10. Once the command finishes, you can reboot and select the new resolution in your **System Settings**.
@@ -115,5 +115,5 @@ You can also manipulate kernel arguments directly via
 rpm-ostree kargs --editor
 ```
 
-However, please note that any modifications to your device should always be done appropriately **at your own risk**."
+However, please note that any modifications to your device should always be done appropriately **at your own risk**.
 
