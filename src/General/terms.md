@@ -1,8 +1,8 @@
 ---
 title: Dictonary & Terminology
-tags:
-  - Knowledge Base
 ---
+
+# Dictonary & Terminology
 
 ## General
 
