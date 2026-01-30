@@ -52,6 +52,8 @@ lrwxrwxrwx. 1 USER2 USER2           53 Jan 29 15:12 workshop
 
 ```
 
+You might similarly have to copy or symlink the appmanifest files from each library for games to show up properly in each Steam library. 
+
 ## Native Linux Port Versus Windows Version
 
 Some Linux ports may have missing functionality or worse performance than on the Windows version running through Proton. However, there are scenarios where using the native port exclusively is your only option, and may even be desirable.  If a Linux native game does not launch, then force the Legacy Runtime compatibility layer by going into the **game's properties** and selecting "**Compatibility**" then checking "**Force the use of a specific Steam Play compatibility tool**".
