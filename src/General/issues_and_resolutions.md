@@ -218,7 +218,7 @@ ujust _toggle-gigabyte-wake-fix
 **Resolution:** You need to enable supergfxctl which will automatically switch to the discrete Nvidia GPU when launching your games. Open a terminal and run:
 
 ```bash
-ujust enable-supergfxctl
+systemctl enable --now supergfxd.service
 ```
 
 <hr>
