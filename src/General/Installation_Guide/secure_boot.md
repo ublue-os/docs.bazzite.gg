@@ -38,46 +38,51 @@ Press any key to continue...
 
 ![error: ../../grub-core/kern/efi/sb.c:182:bad shim signature. / error: ../../grub-core/loader/1389/efi/linux.c:256:you need to load the kernel first. / Press any key to continue...|613x63](../../img/load_the_kernel_first_error.jpeg 'load the kernel first error')
 
-Follow **Method B** below to resolve this and move past the error message if you encounter it.
+Select and follow **Method B** below to resolve this and move past the error message if you encounter it.
 
-## **Method A**) During Installation Method (See Image Above)
+=== "Method A: During Installation Method"
 
-!!! note
+    ![Secure Boot menu: Continue boot / Enroll MOK / Enroll key from disk / Enroll hash from disk|690x378, 50%](../../img/Secure_Boot.jpeg 'Secure Boot')
+    
+    !!! note
 
-    This screen will also appear on the next boot if you enable Secure Boot if it was disabled during installation.
+        This screen will also appear on the next boot if you enable Secure Boot if it was disabled during installation.
 
-A blue screen will appear giving the option to enroll the signed keys after leaving the Bazzite installer.
+    A blue screen will appear giving the option to enroll the signed keys after leaving the Bazzite installer.
 
-`Enroll MOK` if you have secure boot enabled. If prompted to enter a password, then **enter**:
+    `Enroll MOK` if you have secure boot enabled. If prompted to enter a password, then **enter**:
 
-```command
-universalblue
-```
+    ```command
+    universalblue
+    ```
 
-Otherwise `Continue boot` if you have Secure Boot disabled or if it is not supported with your hardware.
+    Otherwise `Continue boot` if you have Secure Boot disabled or if it is not supported with your hardware.
 
-## **Method B**) After Installation Method
+=== "Method B: After Installation Method"
 
-**Disable Secure Boot in the BIOS before proceeding**, and then re-enable it **after enrolling the key**.
+    **Disable Secure Boot in the BIOS before proceeding**, and then re-enable it **after enrolling the key**.
 
-If you have already installed Bazzite then **enter this command in a host terminal**:
+    If you have already installed Bazzite then **enter this command in a host terminal**:
 
-```
-ujust enroll-secure-boot-key
-```
+    ```
+    ujust enroll-secure-boot-key
+    ```
 
-If prompted to enroll the required key, then **enter the password in the host terminal**:
+    If prompted to enroll the required key, then **enter the password in the host terminal**:
 
-```command
-universalblue
-```
+    ```command
+    universalblue
+    ```
 
-**You can now turn Secure Boot back on in the BIOS.**
-Use the following command to boot straight into your system's BIOS (if supported):
+    **You can now turn Secure Boot back on in the BIOS.**
+    Use the following command to boot straight into your system's BIOS (if supported):
 
-```command
-ujust bios
-```
+    ```command
+    ujust bios
+    ```
+    ... or mash the BIOS key <kbd>F2</kbd>/<kbd>Delete</kbd>,
+    ... or mash the <kbd>↓</kbd> key and select **UEFI Firmware Settings** in grub.
+    
 ### Complete MOK enrollment at boot
 
 On the next boot, you will see the blue MokManager screen:
