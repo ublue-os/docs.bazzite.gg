@@ -1,8 +1,9 @@
 ---
 title: Community Resources
-tags:
-  -  Knowledge Base
 ---
+
+# Community Resources
+
 !!! note
 
     These are links to other sources that are not considered official documentation, but are good community-oriented resources, guides, and enhancements for Bazzite and the hardware that it is commonly installed on.
