@@ -90,7 +90,7 @@ Since Bazzite is a custom Fedora Atomic Desktop image, it makes use of read-only
 
 ## Are AMD and Intel graphics card drivers pre-installed?
 
-**Yes** and they are updated during a system upgrade when new drivers are available. It is not possible to manually update them.
+**Yes** and they are updated during a system upgrade when new drivers are available. It is not possible to manually update them separately as they are part of the image.
 
 ### Are Nvidia graphics card drivers pre-installed?
 
@@ -98,7 +98,8 @@ Since Bazzite is a custom Fedora Atomic Desktop image, it makes use of read-only
 - The legacy (`-nvidia`) image supports Pascal, Maxwell, and Volta architectures (GTX 900, GTX 1000, Nvidia Titan V, GTX 750 (TI) and GTX 745).
 - The modern (`-nvidia-open`) image supports every Nvidia card from the Turing architecture and newer (GTX 16 and all RTX cards).
 
-## Will you add support for even older Nvidia Graphics Cards?
+#### Will support for much older Nvidia graphics cards be added?
+
 There are currently no plans to support Kepler and older architectures (Most GTX 700 cards and older) since they are **no longer supported** by the upstream Nvidia drivers.
 - You can still install Bazzite, using the open-source nouveau driver.
     - However, the performance and stability of this driver lags behind the official Nvidia drivers.
@@ -109,7 +110,8 @@ There are currently no plans to support Kepler and older architectures (Most GTX
 
 Most hardware changes should **not** require any manual intervention outside of the expectations from that particular hardware which would be OS-agnostic.  However, if you swap from or to a Nvidia GPU, then [rebasing](../Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/brh.md) will be necessary as a manual intervention to get the appropriate graphics drivers.
 
-## Games are telling me to update my drivers. What should I do?
+## Windows games claim that my graphic drivers are outdated, but I am not sure how to update them.
+
 ![](/../img/gpu_driver_warning.png)
 Windows games cannot correctly detect Linux graphics drivers.
 - Because the version numbers are different between the Windows and Linux drivers, games will occasionally warn you about outdated drivers.
@@ -118,7 +120,7 @@ Windows games cannot correctly detect Linux graphics drivers.
 
 ## Does Bazzite support CSM/Legacy Boot?
 
-No. When the installer detects Legacy BIOS boot, you will receive a message with instructions on turning off CSM: ![CSM](../img/csm.webp)
+No. A notification with instructions on turning off CSM will occur when the installer detects Legacy BIOS boot: ![CSM](../img/csm.webp)
 
 ## Am I able to use AMD Fluid Motion Frames?
 
@@ -164,6 +166,8 @@ Deployments can also be pinned to rollback for future use, so `:2`, `:3`, etc. c
 ## Why is it called Bazzite?
 
 [Fedora Linux's Atomic Desktops](https://fedoraproject.org/atomic-desktops/) originally followed a naming scheme based on [minerals.](https://fedoraproject.org/kinoite/) Bazzite is a mineral that is known for being strong, lightweight, and is [blue](https://universal-blue.org/).
+
+<hr>
 
 ## I have questions or concerns that cannot be answered in the documentation
 

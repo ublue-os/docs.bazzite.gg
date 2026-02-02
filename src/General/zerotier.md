@@ -1,16 +1,15 @@
 ---
-title: "ZeroTier setup"
-authors:
-  - "@Zeglius"
-  - "@adokitkat"
+title: "ZeroTier Setup"
 ---
 
-!!! warning
-    Setup requires **layering** and is [not recommended](/Installing_and_Managing_Software/rpm-ostree/#major-caveats-using-rpm-ostree).
+# ZeroTier Setup
 
 ## Installing
 
-Add ZeroTier repository to yum by copying the following to the terminal (pasting is <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd>)
+!!! warning
+    Setup requires package layering and is **not recommended**.
+    
+Add ZeroTier repository to yum by copying the following to the terminal (to paste copied text in the terminal: <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd>)
 
 ```sh
 sudo tee >/dev/null /etc/yum.repos.d/zerotier.repo <<'EOF'
@@ -50,7 +49,9 @@ Reboot, and run this at the terminal:
 sudo rm -fv /etc/yum.repos.d/zerotier.repo
 ```
 
-## Fix not seeing your teammates in games (set routing through the ZeroTier network interface)
+## Fix not seeing your teammates in games
+
+_(Set routing through the ZeroTier network interface)_
 
 Get your ZeroTier network interface name by running: `ifconfig -a` (compare the IP address to one in your ZeroTier web dashboard)
 
