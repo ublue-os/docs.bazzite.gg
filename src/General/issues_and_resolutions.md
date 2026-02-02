@@ -137,7 +137,7 @@ There are different steps to resolve this depending on if you've disabled **iwd*
 
 === "wpa_supplicant (iwd is OFF)"
 
-    We are going to configure NetworkManager to not use the power save feature for all Wi-FI devices. Open a terminal and run
+    We are going to configure NetworkManager to not use the power save feature for all Wi-Fi devices. Open a terminal and run
 
     ```bash
     printf "[connection]\nwifi.powersave = 2" | sudo tee /etc/NetworkManager/conf.d/wifi-powersave-off.conf
