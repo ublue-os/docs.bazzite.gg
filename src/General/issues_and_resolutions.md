@@ -202,13 +202,13 @@ When using the `iwd` backend, NetworkManager may be unable to obtain a DHCP leas
 If you prefer to keep using the `iwd` backend, follow these steps:
 
 ```bash
-sudo mkdir /etc/iwd/
+sudo mkdir -p /etc/iwd/
 sudo nano /etc/iwd/main.conf
 ```
 
 Then add the following:
 
-```bash
+```ini
 [General]
 AddressRandomization=network
 ```
