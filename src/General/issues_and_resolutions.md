@@ -28,9 +28,7 @@ Both affect each other's audio volume so they must be at the same volume level.
 
 Open up **Steam Settings >> Controller >> Non-Game Controller Layouts >> Desktop Layout**. Click on **Edit** Then **Enable Steam Input** and configure how the controller needs to as a keyboard and mouse in Desktop Mode.
 
-!!! Tip
-
-You'll often need to reduce the **Right Joystick Sensitivity** to somewhere between 50-80%. Otherwise, the mouse cursor will be too fast and will not be reliable.
+!!! Tip "You'll often need to reduce the **Right Joystick Sensitivity** to somewhere between 50-80%. Otherwise, the mouse cursor will be too fast and will not be reliable."
 
 ## Setting Bazzite's Desktop Editions to automatically login
 
@@ -108,7 +106,7 @@ There are different steps to resolve this depending on if you've disabled **iwd*
 
     ```bash
     printf "[DriverQuirks]\nPowerSaveDisable = *" | sudo tee /etc/iwd/main.conf
-    sudo systemctl restart iwd
+    systemctl restart iwd
     ```
 
     Next, run `iw wlp6s0 get power_save` to confirm that power save is off:
@@ -119,7 +117,7 @@ There are different steps to resolve this depending on if you've disabled **iwd*
     Note that this fix may negatively affect the battery life of your laptop or handheld. If you do wish to reverse this change, just delete the config file:
     ```bash
     sudo rm /etc/iwd/main.conf
-    sudo systemctl restart iwd
+    systemctl restart iwd
     ```
 
 === "wpa_supplicant (iwd is OFF)"
@@ -128,7 +126,7 @@ There are different steps to resolve this depending on if you've disabled **iwd*
 
     ```bash
     printf "[connection]\nwifi.powersave = 2" | sudo tee /etc/NetworkManager/conf.d/wifi-powersave-off.conf
-    sudo systemctl restart NetworkManager
+    systemctl restart NetworkManager
     ```
 
     Next, run `iw wlp6s0 get power_save` to confirm that power save is off:
@@ -139,7 +137,7 @@ There are different steps to resolve this depending on if you've disabled **iwd*
     Note that this fix may negatively affect the battery life of your laptop or handheld. If you do wish to reverse this change, just delete the config file:
     ```bash
     sudo rm /etc/NetworkManager/conf.d/wifi-powersave-off.conf
-    sudo systemctl restart NetworkManager
+    systemctl restart NetworkManager
     ```
 
 <hr>
