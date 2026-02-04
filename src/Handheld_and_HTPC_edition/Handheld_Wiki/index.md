@@ -21,16 +21,15 @@ Bazzite-Deck images ship with [Steam Gaming Mode](../Steam_Gaming_Mode.md) which
 _Click the name of each hardware to view post-installation setup and known issues/workarounds._
 
 - [**Steam Deck**](./Steam_Deck.md)
-- [**Lenovo Legion Go**](./Lenovo_Legion_Go.md)
-- [**ASUS ROG Ally**](./ASUS_ROG_Ally.md)
+- [**Lenovo Handhelds**](./Lenovo_Legion_Go.md)
+- [**ASUS Handhelds**](./ASUS_ROG_Ally.md)
 - [**GPD Handhelds**](./GPD_Handhelds.md)
 - [**OneXPlayer Handhelds**](./OneXPlayer_Handhelds.md)
 - [**Ayn Handhelds**](./Ayn_Handhelds.md)
 - [**Ayaneo Handhelds**](./Ayaneo_Handhelds.md)
 - [**Other Handhelds**](./Other_Handhelds.md)
 
-Feel free to add new entries or update current wiki pages for your handheld following our [**documentation guidelines**](https://github.com/bazzite-org/docs.bazzite.gg/blob/main/README.md#documentation-guidelines).
-
+If your handheld isn't listed in the entries, then it does **not** necessarily mean that the device is unsupported. 
 
 ## HHD Setup
 
@@ -112,12 +111,6 @@ Your mileage may vary with untested hardware. Bazzite does **not** have the requ
 ## e-GPU Caveats:
 
 - The same [GPU hardware requirements](/Gaming/Hardware_compatibility_for_gaming.md#steam-gaming-mode-requirements) that apply for Steam Gaming Mode also apply for e-GPUs.
-  - Nvidia GPUs are **unsupported** but may work if rebasing to a beta Nvidia `-deck` image.
+  - Nvidia GPUs are **unsupported** but may work if rebasing to a Nvidia `-deck` image with a potential for outstanding bugs.
 
-
-## Tips and Tricks (External Resources)
-
-- [Lenovo Legion Go Linux Tips and Tricks](https://github.com/aarron-lee/legion-go-tricks)
-- [GPD Win Linux Tips and Tricks](https://github.com/aarron-lee/gpd-win-tricks)
-- [Ayaneo Geek 1S/2S Quirks](https://universal-blue.discourse.group/t/ayaneo-geek-1s-2s-linux-bazzite-support-is-already-almost-there-lets-add-them-to-the-officially-supported-devices/1046)
-- [General Linux e-GPU Guide + Script](https://github.com/ewagner12/all-ways-egpu)
+>[**General Linux e-GPU Guide + Script**](https://github.com/ewagner12/all-ways-egpu)
