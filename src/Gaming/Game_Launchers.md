@@ -10,11 +10,7 @@ Steam can run Windows games on Linux. It utilizes a wide range of projects and p
 
 ### Forcing A Specific Proton / Steam Play Tool Version
 
-!!! warning
-
-    Games that use Denuvo Anti-Tamper DRM consider changing Proton versions as activiating the game on different hardware which may cause you to get locked out of the game if you change the Proton version more than 5 times within a 24 hour period.
-
-### Important Notes
+#### Important Notes
 
 - Games with a Linux port will be used by default on Desktop images.
 - Valve selects the default runner on _Handheld/HTPC_ images. 
