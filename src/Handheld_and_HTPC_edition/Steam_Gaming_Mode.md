@@ -1,5 +1,5 @@
 ---
-title: Bazzite-Deck General Overiew
+title: Bazzite-Deck General Overview
 ---
 
 # Bazzite-Deck General Overiew
