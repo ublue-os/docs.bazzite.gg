@@ -1,33 +1,24 @@
 ---
-authors:
-  - "@nicknamenamenick"
-  - "@Zeglius"
-tags:
-  - Knowledge Base
+title: Hardware Compatibility for Linux Gaming
 ---
 
-<!-- ANCHOR: METADATA -->
-<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=2659", "fetched_at": "2024-09-03 16:43:08.896738+00:00"}-->
-<!-- ANCHOR_END: METADATA -->
+# Hardware Compatibility for Linux Gaming
 
-## General Hardware
-
-!!! note
-
-    Most x86_64 PCs from the last decade should run Bazzite.
+## Standard Hardware
 
 ### Minimum System Requirements
 
 - **Architecture**: x86_64
-- **Firmware**: UEFI (CSM Support should be **disabled** if available)
+- **Firmware**: UEFI (CSM/Legacy boot [**UNSUPPORTED**](../FAQ.md#does-bazzite-support-csmlegacy-boot))
 - **Processor (CPU)** : 2GHz quad core processor or better
 - **System Memory (RAM)**: 8GB
 - **Graphics**: A graphics card that can utilize Vulkan 1.3 or higher, modern AMD GPUs work the best
-- **Storage**: 64GB free on an internal solid-state drive
+- **Storage**: 50GB of free space on an internal **solid-state drive (SSD)**
+  - **Recommended Storage**: 120GB of free space on an internal **solid-state drive (SSD)**
+  - **External Storage & Secondary Drives**: All drives must be formatted as **BTRFS (SSDs)** or **Ext4 (Hard Disk Drives [HDDs])**, please backup the files and reformat them post-installation. 
 - **Network**: Stable internet connection with no bandwidth caps
-- **Additional Notes**: Certain drivers are **not** compatible with Bazzite
-  - For example: [A list of **compatible** USB Wi-Fi adapters](https://github.com/morrownr/USB-WiFi/blob/main/home/USB_WiFi_Adapters_that_are_supported_with_Linux_in-kernel_drivers.md)
-
+- **Additional Notes**: Certain peripherals are **not** compatible with Bazzite:
+  - **Wi-Fi Adapter Example** - [a list of **known compatible** USB Wi-Fi adapters](https://github.com/morrownr/USB-WiFi/blob/main/home/USB_WiFi_Adapters_that_are_supported_with_Linux_in-kernel_drivers.md)
 
 >[**The Hardware for Linux website**](https://linux-hardware.org/?view=computers) is a good indicator for how well OEM hardware is supported on the Linux desktop.
 
@@ -35,19 +26,24 @@ tags:
 
 !!! note
 
-    These specific requirements only apply to [Bazzite-Deck images](/Handheld_and_HTPC_edition/Steam_Gaming_Mode.md)
+    These specific requirements only apply to [Bazzite-Deck images](/Handheld_and_HTPC_edition/Steam_Gaming_Mode.md) which ships with all handheld Bazzite ISO downloads.
 
-- AMD GPU
-  - Modern AMD GPUs
-    - RX 4xx series and up
+- Modern AMD GPU
+  - RX 4xx series and up
     - 600M/700M integrated GPUs are also supported
 - Intel Arc GPUs are supported with **minor caveats** compared to AMD hardware
-- Nvidia GPU support is currently in beta with [**major caveats**](/Handheld_and_HTPC_edition/quirks/#nvidia-exclusive-issues) compared to AMD hardware
-- A [Steam](https://store.steampowered.com/) account
+- Nvidia GPU support is supported with [**major caveats**](/Handheld_and_HTPC_edition/quirks/#nvidia-exclusive-issues) compared to AMD hardware out of control of the Bazzite maintainers
+- Requires a [**Steam**](https://store.steampowered.com/) account
+  - Signing up for an account can be done post-installation if you don't have one already
+
+
+>[**The Hardware for Linux website**](https://linux-hardware.org/?view=computers) is a good indicator for how well OEM hardware is supported on the Linux desktop.
 
 ### Compatible Handhelds
 
 The [**Handheld Wiki**](../Handheld_and_HTPC_edition/Handheld_Wiki/index.md) lists tested handhelds with proper support for the Steam Deck, ASUS ROG Ally, Lenovo Legion Go, and a handful of other handhelds.
+
+<hr>
 
 ## Vulkan Compatible GPU
 
@@ -68,7 +64,7 @@ vulkaninfo | grep 'Instance Version'
 
 ![Vulkan Command](https://github.com/user-attachments/assets/ccca14ca-3001-4aa6-bf47-e0dcbdb73936)
 
->Try using [**Proton-Sarek**](https://github.com/pythonlover02/Proton-Sarek) if your have hardware that can utilize Vulkan 1.1, but not newer Vulkan versions. It can be installed using ProtonUp-Qt or ProtonPlus.
+>Try using [**Proton-Sarek**](https://github.com/pythonlover02/Proton-Sarek) if your have hardware that can utilize Vulkan 1.1, but not newer Vulkan versions. It can be installed using ProtonPlus.
 
 ### GPUs Without Vulkan Support
 
@@ -79,6 +75,8 @@ PROTON_USE_WINED3D=1 %command%
 ```
 
 This will use the OpenGL translation as opposed to Vulkan.
+
+<hr>
 
 ## Storage Filesystems
 
@@ -119,7 +117,3 @@ Install the unofficial [WinBtrfs](https://github.com/maharmstone/btrfs) driver o
 #### Video Tutorial
 
 https://www.youtube.com/watch?v=h6fc-3CCXbA
-
-<hr>
-
-[**<-- Back to Gaming Guide**](./index.md)

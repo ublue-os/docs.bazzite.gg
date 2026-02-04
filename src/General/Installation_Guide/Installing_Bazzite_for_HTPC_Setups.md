@@ -1,24 +1,14 @@
 ---
-authors:
-  - "@nicknamenamenick"
-  - "@KyleGospo"
-  - "@storyaddict"
-  - "@castrojo"
-  - "@noelmiller"
-  - "@rothgar"
-tags:
-  - Installation
+title: Installing Bazzite for HTPC Hardware
 ---
 
-<!-- ANCHOR: METADATA -->
-<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=1145", "fetched_at": "2024-09-03 16:43:24.537747+00:00"}-->
-<!-- ANCHOR_END: METADATA -->
+# Installing Bazzite for HTPC Hardware
 
 ![HTPC|609x371](../../img/HTPC.png)
 
 !!! Note
       
-      This installation guide is for the **legacy ISO** and an update for the new ISOs will be coming soon.
+      This installation guide is for the **legacy ISO** and an updated guide for the new ISOs will be coming soon.
 
 ## Pre-Installation
 

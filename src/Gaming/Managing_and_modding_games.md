@@ -1,55 +1,35 @@
 ---
-authors:
-  - "@nicknamenamenick"
-tags:
-  - Guide
+title: Managing and Modding Games
 ---
 
-<!-- ANCHOR: METADATA -->
-<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=2657", "fetched_at": "2024-09-03 16:43:07.954041+00:00"}-->
-<!-- ANCHOR_END: METADATA -->
+# Managing and Modding Games
 
-## Compatibility Layers
+## Compatibility Layers & Managing Windows Games
 
-Windows games need to run through a **compatibility layer** (like Proton) on Bazzite. KDE Plasma and GNOME images pre-install different, but similar compatibility layer managers.
+![Proton Plus|1797x1412, 43%](../img/proton-plus.png)
 
-### Using ProtonUp-Qt/ProtonPlus
+Windows games need to run through a **compatibility layer** (like Proton) on Bazzite. Install and update to the latest [GE-Proton](https://github.com/GloriousEggroll/proton-ge-custom), [Luxtorpeda](https://github.com/luxtorpeda-dev/luxtorpeda), and other tools using ProtonPlus.
 
-![ProtonUp-Qt Interface|690x388](../img/ProtonUp-Qt_Interface.png)
-
-> **KDE Plasma Images**: [**ProtonUp-Qt**](https://davidotek.github.io/protonup-qt/)
-
-
-> **GNOME Images**: [**ProtonPlus**](https://github.com/Vysp3r/protonplus)
-
-Install and update to the latest [GE-Proton](https://github.com/GloriousEggroll/proton-ge-custom), [Luxtorpeda](https://github.com/luxtorpeda-dev/luxtorpeda), and other useful [SteamPlay tools](https://steamcommunity.com/games/221410/announcements/detail/1696055855739350561).
-
-#### Steamplay Tools
-
-> [View the tested games with **GE-Proton**](https://github.com/GloriousEggroll/proton-ge-custom/blob/master/README.md#tested-games).
-
-
-> [View the compatible games with **Luxtorpeda**](https://luxtorpeda-dev.github.io/packages).
-
-### Protontricks / Winetricks
+## Protontricks
 
 ![Protontricks|660x500](../img/Protontricks.png)
 
-Some games require [Protontricks](https://github.com/Matoking/protontricks) (pre-installed) or [Winetricks](https://github.com/Winetricks/winetricks) (for non-Steam games, included with Lutris) to function properly.
+Some games require [Protontricks](https://github.com/Matoking/protontricks) (pre-installed) or [Winetricks](https://github.com/Winetricks/winetricks) (for non-Steam games, included with Lutris) to function properly by installing Windows DLLs into the prefix.
 
 ## Hidden Files in File Manager
-
-Desktop Linux contains hidden files and directories that may include important files related to gaming.
-
-**Show hidden files** by clicking the **hamburger menu** (_3 horizontal lines in the file manager_) and selecting "Show Hidden Files" to see every directory and file that is hidden by default
-
-These directories and files all start with a `.` before it
 
 !!! note
 
     Winecfg contains the option to show hidden files for Windows programs that require the filepicker.
 
-## What is a Proton/WINE Prefix?
+Desktop Linux contains hidden files and directories that may include important files related to gaming.
+
+**Show hidden files** by clicking the **hamburger menu** (_3 horizontal lines in the file manager_) and selecting "Show Hidden Files" to see every directory and file that is hidden by default.
+
+These directories and files all start with a `.` before it
+
+
+### What is a Proton (or Wine) Prefix?
 
 It's the glue that holds everything together when you run a game through Proton and also is responsible for containing any of the files the game would drop outside of the installation folder.
 
@@ -57,58 +37,32 @@ It's the glue that holds everything together when you run a game through Proton 
 
     This installation folder for **Steam games** is usually in: `.../steamapps/common/<game>`
 
-### Equivalent Windows Folders
-
 Many PC games drop files in Windows folders like "My Documents" or "AppData" and both can be found in your prefix directory. This prefix directory may be useful for modding your games, backing up your saves, or configuration files.
 
 ![AppID|690x482, 75%](../img/Steam_AppID.png)
 
 For games on Steam, they are located in your `~/.steam/root/steamapps/compatdata/` folder, and then the **AppID number of the game**:
 
-- This ID by going into the game's properties on Steam in the games `Properties > Updates > App ID`
+- This ID by going into the game's properties on Steam in the games **Properties** >> **Updates** >> **App ID**
 - Continue to `.../pfx/drive_c/` and wherever the game drops the file on Windows.
 
-### Broken Proton Prefix?
+Non-Steam games can have the prefix folder anywhere you specify.  By default Lutris uses `~/Games` as the main folder.
 
-![Delete Proton Prefix|382x341, 75%](../img/Steam_Delete_Prefix.png)
+#### Broken Proton Prefix?
 
-!!! attention
-    Save files are located in the prefix, so backup the save file in there before deleting especially if the game does not support cloud saving.
+!!! warning
 
-1. Steam allows users to delete and reset their prefix only in Big Picture Mode (and Gaming Mode) by going into the game's "Developer" settings (accessed with the 'cog' / game settings icon)
-2. Select **Delete Proton files**
+    Deleting a Proton prefix **_can_** delete saves and configuration files!
 
-### Non-Steam Games Prefix Management
+Open the prefix directory for the game and delete the data inside of it. Be careful not to delete the root `.../compatdata` directory (or `~/Games`, or the custom directory that you set, for non-Steam games) which would remove the prefix data for all of the games!
 
-Non-Steam games can have the prefix folder anywhere you specify:
+## Modding
 
-- By default Lutris uses `~/Games` as the main folder.
-- WineZGUI creates a prefix in `~/.var/app/io.github.fastrizwaan.WineZGUI/data/winezgui/Prefixes`.
+**Steam Workshop is the most straightforward method to obtain mods**, but is not supported for every title and requires you to own the game on Steam. Some mod managers have Linux ports like [r2modman](https://github.com/ebkr/r2modmanPlus).
 
-## Modding Quick-Start
+Adding and replacing game files is still viable in both the game directory and prefix, but there may be some extra steps involved.  Some mods require a "WINE DLL OVERRIDE" environment variable in the Steam launch options.  For non-Steam Games, use Lutris to open "Wine Configuration" and select the "Libraries" tab to add new overrides.
 
-Steam Workshop is the most straightforward method to obtain mods, but is not supported for every title and requires you to own the game on Steam. Some mod managers have Linux ports like [r2modman.](https://github.com/ebkr/r2modmanPlus)
+### Example of a DLL override launch option:
 
-[Steam Tinker Launch](https://github.com/sonic2kk/steamtinkerlaunch) may have useful settings for modding certain titles. It can be installed via ProtonUp-Qt (for KDE images) or ProtonPlus (for GNOME images).
-
-Replace files and directories is still supported in both the game directory and prefix, but there may be some extra steps involved.  Some mods require a "WINE DLL OVERRIDE" environment variable in the Steam launch options.  For non-Steam Games, use Lutris to open "Wine Configuration" and select the "Libraries" tab to add new overrides.
-
-!!! example
-
-    **DirectInput8 DLL Override**: `WINEDLLOVERRIDES="dinput8=n,b" %command%`
-
-## Enhancements Pre-Installed on Bazzite
-
-- [vkBasalt](https://github.com/DadSchoorse/vkBasalt) - Vulkan post-processing layer with ReShade FX support.
-- [Mangohud](https://github.com/flightlessmango/Mangohud) - Hardware and frame-rate monitoring overlay.
-- [ScopeBuddy](../Advanced/scopebuddy.md) - A manager script to make gamescope easier to use on desktop.
-
-### Configuration Templates for DXVK, MangoHud, & vkBasalt
-
-![Template|690x334, 50%](../img/DXVK_Mango_VkBasalt_templ.png)
-
-Bazzite users can use templates for some of the pre-installed tools which can be accessed by right clicking anywhere in the file manager.
-
-<hr>
-
-[**<-- Back to Gaming Guide**](./index.md)
+    **DirectInput8 DLL Override**: 
+    `WINEDLLOVERRIDES="dinput8=n,b" %command%`

@@ -1,26 +1,14 @@
 ---
-authors:
-  - "@nicknamenamenick"
-  - "@KyleGospo"
-  - "@storyaddict"
-  - "@castrojo"
-  - "@noelmiller"
-  - "@rothgar"
-  - "@HikariKnight"
-  - "@Zeglius"
-tags:
-  - Installation
+title: Installing Bazzite on Steam Deck Hardware
 ---
 
-<!-- ANCHOR: METADATA -->
-<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=1143", "fetched_at": "2024-09-03 16:43:25.151999+00:00"}-->
-<!-- ANCHOR_END: METADATA -->
+# Installing Bazzite on Steam Deck Hardware
 
 ![image|690x332](../../img/image.jpeg)
 
 !!! Note
       
-      This installation guide is for the **legacy ISO** and an update for the new ISOs will be coming soon.
+      This installation guide is for the **legacy ISO** and an updated guide for the new ISOs will be coming soon.
 
 ## Bazzite on the Steam Deck
 

@@ -1,16 +1,12 @@
 ---
 title: Manual Partitioning
-authors:
-  - "@nicknamenamenick"
-  - "@Zeglius"
-  - "@tired-runner"
-tags:
-  - Installation
 ---
 
-<!-- ANCHOR: METADATA -->
-<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=2495", "fetched_at": "2024-09-03 16:43:22.238775+00:00"}-->
-<!-- ANCHOR_END: METADATA -->
+# Manual Partitioning
+
+!!! Note
+      
+      This installation guide is for the **legacy ISO** and an updated guide for the new ISOs will be coming soon.
 
 !!! warning "Only users who are dual booting on the same drive should use these instructions. Automatic partitioning is preferred in other cases."
 

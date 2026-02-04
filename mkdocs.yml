@@ -152,11 +152,13 @@ nav:
       - "Press Kit": https://github.com/ublue-os/bazzite/tree/main/press_kit
       - "Uninstalling Bazzite": General/uninstalling-bazzite.md
   - Gaming:
-      - "Gaming Guide": Gaming/index.md
+      - "Gaming Guides": Gaming/index.md
+      - "Introduction to Gaming on Bazzite": Gaming/gaming-intro.md
+      - "Hardware Compatibility for Gaming": Gaming/Hardware_compatibility_for_gaming.md
       - "Game Launchers": Gaming/Game_Launchers.md
       - "Managing & Modding Games": Gaming/Managing_and_modding_games.md
+      - "Launch Options and Environment Variables": Gaming/launch-options-env-variables.md
       - "Common Gaming Issues": Gaming/Common_gaming_issues.md
-      - "Hardware Compatibility for Gaming": Gaming/Hardware_compatibility_for_gaming.md
   - Bazzite-Deck:
       - "Steam Gaming Mode": Handheld_and_HTPC_edition/Steam_Gaming_Mode.md
       - "Quirks and Workarounds": Handheld_and_HTPC_edition/quirks.md
