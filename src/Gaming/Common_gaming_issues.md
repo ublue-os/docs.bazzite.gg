@@ -4,8 +4,6 @@ title: Common Gaming Issues
 
 # Common Gaming Issues
 
-Issues that happen specifically in Linux gaming outside of Bazzite.
-
 ### Native Linux Port Versus Windows Version
 
 Some Linux ports may have missing functionality or worse performance than on the Windows version running through Proton. However, there are scenarios where using the native port exclusively is your only option, and may even be desirable.  
