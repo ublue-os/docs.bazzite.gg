@@ -2,7 +2,7 @@
 title: Bazzite-Deck General Overview
 ---
 
-# Bazzite-Deck General Overiew
+# Bazzite-Deck General Overview
 
 ## What is Bazzite-Deck?
 
