@@ -5,7 +5,7 @@ title: Gaming Guides
 # Gaming Guides
 
 
-- [**Introduction**](gaming-intro.md)
+- [**Introduction to Gaming on Bazzite**](gaming-intro.md)
 - [**Game Launchers**](Game_Launchers.md)
 - [**Managing & Modding Games**](Managing_and_modding_games.md)
 - [**Launch Options and Environment Variables**](launch-options-env-variables.md)
