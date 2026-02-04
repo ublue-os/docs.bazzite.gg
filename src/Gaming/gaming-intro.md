@@ -10,7 +10,7 @@ Linux gaming being a viable competitor to Windows is a relatively new paradigm. 
 
 ### Steam Games
 
-Steam is the recommended way to play PC games on Bazzite as it ships with a compatability layer known as [**Proton**](https://steamcommunity.com/games/221410/announcements/detail/1696055855739350561) (A fork of [**WINE**](https://www.winehq.org/) and other various projects merged into a convenient runner built into Steam for Linux). that is intended for gaming developed by Valve).  Most singleplayer PC games should be able to run without any tweaking necessary, but there are cases where a game purchased and installed through Steam will not run out of the box.  Some newer online multiplayer games require deeper access to your computer hardware and Windows drivers to run their anti-cheat software which may not run on Bazzite meaning these games will be unplayable unless Windows is running.
+Steam is the recommended way to play PC games on Bazzite as it ships with a compatibility layer known as [**Proton**](https://steamcommunity.com/games/221410/announcements/detail/1696055855739350561),  which is a fork of [**WINE**](https://www.winehq.org/) and other various projects merged into a convenient runner built into Steam for Linux. that is intended for gaming developed by Valve).  Most singleplayer PC games should be able to run without any tweaking necessary, but there are cases where a game purchased and installed through Steam will not run out of the box.  Some newer online multiplayer games require deeper access to your computer hardware and Windows drivers to run their anti-cheat software which may not run on Bazzite meaning these games will be unplayable unless Windows is running.
 
 ### Non-Steam Games
 
