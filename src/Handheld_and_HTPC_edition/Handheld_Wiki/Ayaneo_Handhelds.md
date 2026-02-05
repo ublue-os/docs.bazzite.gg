@@ -12,7 +12,7 @@ title: Ayaneo Handhelds
 
 ![photo_5875160389711413569_y|663x500, 100%](../../img/Ayaneo_Geek_1S.jpeg)
 
-### Workarounds / Known Issues
+### Known Issues
 
 - Suspending the device requires the latest BIOS update.
   - Reports of controller issues on wake have reported inconsistency. Enabling "full initial usb support" in Bios seems to have an impact on how frequent the issue is.
