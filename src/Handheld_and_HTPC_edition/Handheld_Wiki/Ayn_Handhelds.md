@@ -18,7 +18,7 @@ title: Ayn Handhelds
 - Adjust the scaling of the UI in the Display Settings
 - Set a charge limit in HHD with Handheld Daemon
 
-### Workarounds / Known Issues
+### Known Issues
 
 - Games can sometimes default to 800p resolution.
   - Manually change the resolution per game in the `Steam Settings > Properties > Game Resolution` to either "Native" or other higher resolutions.
