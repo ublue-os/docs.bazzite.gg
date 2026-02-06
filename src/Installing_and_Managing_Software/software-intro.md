@@ -222,7 +222,7 @@ If your quadlet for some reason isn't found or starting, you can debug the conta
 
 #### Useful Links
 
-- https://podman.io/=
+- https://podman.io/
 - https://docs.podman.io/en/stable/markdown/podman-systemd.unit.5.html
 - https://www.redhat.com/en/blog/quadlet-podman
 
