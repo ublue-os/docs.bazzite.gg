@@ -13,14 +13,14 @@ hide:
   Bazzite supports PC hardware from [most desktop and laptops][install_pc_laptop] to specialized models like the [Framework 13][frame_13] and [Framework 16][frame_16]. <br>
 
   Bazzite also supports controller-friendly hardware like [home theater PC setups][htpc] and a [multitude of handhelds][install_handheld]:
-
-  - [Steam Deck (LCD and OLED)][deck]
-  - [Lenovo Legion Go][legion_go]
-  - [Asus ROG Ally (And X)][ally]
+  
+  - [Asus Handhelds][ally]
+  - [Lenovo Handhelds][legion_go]
   - [GPD Handhelds][gpd]
   - [OneXPlayer Handhelds][onex]
   - [Ayn Handhelds][ayn]
   - [Ayaneo Handhelds][ayaneo]
+  - [Steam Deck][deck]
   - [Other PC Handhelds][otherhand]
 
 - [:material-controller: **Playing Video Games**][gaming]{ style="font-size: 1.1rem" }
