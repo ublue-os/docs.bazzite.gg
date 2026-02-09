@@ -1,5 +1,7 @@
 ---
 title: Installing Arctis Manager
+search:
+  exclude: true
 ---
 
 # Installing Arctis Manager
