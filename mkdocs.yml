@@ -143,7 +143,6 @@ nav:
       - "SteamOS Comparison": "General/SteamOS_Comparison.md"
       - "Desktop Environment Tweaks": General/Desktop_Environment_Tweaks.md
       - "VPN Setup": General/VPN.md
-      - "ZeroTier Setup": General/zerotier.md
       - "Issues & Resolutions": "General/issues_and_resolutions.md"
       - "Reporting Bugs": General/reporting_bugs.md
       - "Community Resources": General/community-links.md
@@ -198,7 +197,6 @@ nav:
       - "Bazzite Command Line Tools": Advanced/bazzite-cli.md
       - "Using Looking-Glass": Advanced/looking-glass.md
       - "Best Shell Practices": Advanced/Best_Shell_Practices.md
-      - "Installing Arctis Manager": Advanced/arctis-manager.md
       - "Booting to Rescue Mode": Advanced/rescue-and-emergency-mode.md
       - "Reset Forgotten User Password": Advanced/Reset_Forgotten_User_Password.md
       - "Using Swap for Additional Memory or Hibernation": Advanced/swapfile.md
