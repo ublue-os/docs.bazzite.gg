@@ -2,10 +2,6 @@
 title: Updates, Rollbacks, and Rebasing
 ---
 
-<!-- ANCHOR: METADATA -->
-<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=36", "fetched_at": "2024-09-03 16:43:15.473615+00:00"}-->
-<!-- ANCHOR_END: METADATA -->
-
 # Updates, Rollbacks, and Rebasing
 
 ## Updates
@@ -36,7 +32,3 @@ Utility to assist with rolling back to older Bazzite images, changing update bra
 Rebase to Bazzite builds from the last 90 days, change Bazzite update channels, swap between the Desktop and Bazzite-Deck images, or move completely to a different Fedora Atomic Desktop image.
 
 > [**Rebase Guide**](./rebase_guide.md)
-
-<hr>
-
-← [**View all Bazzite documentation**](../../index.md)
