@@ -3,8 +3,6 @@ title: Bazzite Rollback Helper
 ---
 
 # Bazzite Rollback Helper (`brh`)
-
-<this needs to be in /src/img/... !>
   
 <img width="919" height="606" alt="image" src="https://github.com/user-attachments/assets/fa57e61b-87b0-40cc-a6bd-e79e47481e94" />
 
