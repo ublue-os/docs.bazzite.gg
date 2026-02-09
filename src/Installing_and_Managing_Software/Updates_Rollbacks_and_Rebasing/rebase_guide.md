@@ -1,13 +1,8 @@
 ---
-authors:
-  - "@nicknamenamenick"
-tags:
-  -  Updates
+title: Rebase Guide
 ---
 
-<!-- ANCHOR: METADATA -->
-<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=2646", "fetched_at": "2024-09-03 16:43:14.912897+00:00"}-->
-<!-- ANCHOR_END: METADATA -->
+# Rebase Guide
 
 ![Docker's OCI Icon|200x200, 100%](../../img/Dockers_OCI_Icon.png)
 
@@ -62,21 +57,23 @@ For rebasing to the generic KDE Plasma version of the Handheld & HTPC image.
 
 ## How do I change the Bazzite's update branch? (Stable, Testing, and Unstable)
 
-There are 3 branches you can switch to:
+There are two update branches intended for end-users:
 
 - Stable (`:stable`)
-  - Default branch that's used in normal Bazzite installations
+  - Default branch that's used in normal Bazzite installations.
 - [Testing (`:testing`)](https://github.com/ublue-os/bazzite/compare/main...testing)
-  - Get a sneak peak of future Bazzite builds before release
-  - Bugs may frequently appear
-  - Encouraged to rebase back to `:stable` after testing a major release
-    - It can be behind on certain updates for a long time
-- Unstable (`:unstable`) **(DO NOT USE**)
-  - **Not recommended**
-  - Testing playground for developers/contributors
-  - Can be **several months behind** compared to both `:stable` and `:testing` updates when not in use
-  - Intended for testing desktop environments and other radically changed functionality to Bazzite for the future
+  - Get a sneak peak of future Bazzite builds before release.
+  - Bugs may frequently appear.
+  - Encouraged to rebase back to `:stable` after testing a major release.
 
+For Desktop images, replacing `:stable` with `:testing` to the end of the rebase command for your Bazzite image allows you to switch to the experimental branches (which may have frequent bugs.)
+
+### The Unstable Branch
+
+This is intended for Bazzite's core contributors and maintainers only and is used for major changes that need frequent testing. The unstable branch can fall behind updates even in the stable branch since it is testing specific major changes and is not something that is built on a schedule.
+
+## Switching Update Branches in Steam Gaming Mode
+  
 Bazzite-Deck images can switch branches in `Settings > System > OS Update Channel` in Steam Gaming Mode.
 
 If you enabled **advanced update channel**, then additional options will appear. The options map as the following:
@@ -88,8 +85,6 @@ Beta (:testing)
 Beta Candidate (:unstable)
 Main (:unstable)
 ```
-
-For Desktop images, replacing `:stable` with `:testing` or `:unstable` to the end of the rebase command for your Bazzite image allows you to switch to the experimental branches (which may have frequent bugs.)
 
 ###  **Example**:
 
@@ -144,7 +139,3 @@ rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bazzite-deck:39-
 For the _Jan. 13th 2024_ `bazzite-deck` (_Fedora 39_) build.
 
 <sub>_(Please note that this build is no longer available since it is past the 90 day limit and is only used as an example for this documentation.)_</sub>
-
-<hr>
-
-[**<-- Back to Updates, Rollback, and Rebasing Guide**](./index.md)
