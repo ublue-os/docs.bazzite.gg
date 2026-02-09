@@ -36,6 +36,8 @@ title: Community Resources
 - [**boxkit: Template to build your own OCI Distrobox container**](https://github.com/ublue-os/boxkit)
 - [**bazzite-arch: Gaming packages inside of a Distrobox container**](https://github.com/ublue-os/bazzite-arch)
 - [**DAWbox: An Ubuntu based OCI ready for music production, powered by Distrobox**](https://github.com/Messaiga/DAWbox)
+- [**ZeroTier Setup**](/General/zerotier.md)
+- [**Installing Arctis Manager**](/Advanced/arctis-manager.md)
 
 ## Bootable Container Topics
 
