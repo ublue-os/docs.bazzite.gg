@@ -1,5 +1,7 @@
 ---
 title: "ZeroTier Setup"
+search:
+  exclude: true
 ---
 
 # ZeroTier Setup
