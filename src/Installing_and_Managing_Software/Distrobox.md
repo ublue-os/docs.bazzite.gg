@@ -34,12 +34,6 @@ Distrobox containers run sub-systems of other popular [Linux distributions](http
 
 <small>_I use Arch (in a container) btw._</small>
 
-#### Distrobox Graphical Interface
-
-![Distroshelf|970x752, 75%](../img/distroshelf_fixedcrop.png)
-
-Distrobox containers can be created and managed graphically with [**DistroShelf**](https://github.com/ranfdev/DistroShelf) which is pre-installed.
-
 ## Use Cases
 
 Distrobox containers can be used for both **development environments** and **installing applications that are not available in any of the other installation methods** which can be exclusive to specific package managers.
