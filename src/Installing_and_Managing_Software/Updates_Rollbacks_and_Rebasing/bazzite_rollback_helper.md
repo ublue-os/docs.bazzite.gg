@@ -8,7 +8,7 @@ title: Bazzite Rollback Helper
 
 ## Purpose
 
-Rollback to a Bazzite build within the last 90 days using a command-line utility that assists with **rollbacks**, **rebasing**, and **outputs information on your current Bazzite image**.
+`bazzite-rollback-helper` is a command-line tool for rolling back system upgrades or changing the update stream.  Rollback to a Bazzite build within the last 90 days using a command-line utility that assists with **rollbacks**, **rebasing**, and **outputs information on your current Bazzite image**.
 
 ### Using `bazzite-rollback-helper`
 
