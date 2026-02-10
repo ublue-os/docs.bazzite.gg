@@ -31,7 +31,7 @@ title: Introduction to Installing Software on Bazzite
 
 <hr>
 
-## Other Softare
+## Other Software
 
 Bazzite can also run Windows and Android applications too!
 
