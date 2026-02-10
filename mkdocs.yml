@@ -175,11 +175,14 @@ nav:
   - Software:
       - "Installing and Managing Software":
           - Installing_and_Managing_Software/index.md
-          - "Flatpak": Installing_and_Managing_Software/Flatpak.md
-          - "ujust": Installing_and_Managing_Software/ujust.md
+          - "Introduction to Installing Software on Bazzite": Installing_and_Managing_Software/software-intro.md
+          - "Bazzite Portal": Installing_and_Managing_Software/ujust.md
+          - "Bazaar App Store": Installing_and_Managing_Software/Flatpak.md
           - "Homebrew": Installing_and_Managing_Software/Homebrew.md
-          - "Quadlet": Installing_and_Managing_Software/Quadlet.md
-          - "Distrobox": Installing_and_Managing_Software/Distrobox.md
+          - "Containers": 
+              - Installing_and_Managing_Software/Containers.md
+              - "Distrobox": Installing_and_Managing_Software/Distrobox.md
+              - "Quadlet": Installing_and_Managing_Software/Quadlet.md
           - "Appimage": Installing_and_Managing_Software/AppImage.md
           - "rpm-ostree": Installing_and_Managing_Software/rpm-ostree.md
           - "Waydroid Setup Guide": Installing_and_Managing_Software/Waydroid_Setup_Guide.md
