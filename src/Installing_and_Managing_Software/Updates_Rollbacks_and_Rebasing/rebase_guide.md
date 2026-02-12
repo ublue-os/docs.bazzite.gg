@@ -4,8 +4,6 @@ title: Rebase Guide
 
 # Rebase Guide
 
-![Docker's OCI Icon|200x200, 100%](../../img/Dockers_OCI_Icon.png)
-
 ## What is Rebasing?
 
 !!! warning
