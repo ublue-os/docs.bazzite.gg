@@ -11,17 +11,6 @@ title: Dual Boot Preliminary and Post-Installation Setup Guide
 1. Installing Bazzite with a shared drive.
 2. Installing Bazzite on a separate drive.
 
-=== "Shared Drive"
-
-    1. (In Windows) Disable **Bitlocker encryption** and **fastboot**, and reboot.
-    2. (In Windows) Resize the Windows partition with the Disk Management app to have enough space for Bazzite.
-    Usually should look something like this:
-    ![](/img/dualbooting_partitions_windows.png)]
-    <i><small>Source: [diskpart.com](https://www.diskpart.com/windows-10/windows-10-disk-management-0528.html)</small></i>
-    3. Run the Bazzite installer with the automatic partitioning option.
-    4. Reboot into Bazzite and run `ujust regenerate-grub` in the terminal to add Windows to the GRUB.
-
-
 === "Shared Drive (Automatic Partitioning)"
 
     1. (In Windows) Disable **Bitlocker encryption** and **fastboot**, and reboot.
@@ -32,7 +21,17 @@ title: Dual Boot Preliminary and Post-Installation Setup Guide
     3. Run the Bazzite installer with the automatic partitioning option.
     4. Reboot into Bazzite and run `ujust regenerate-grub` in the terminal to add Windows to the GRUB.
 
-=== "Separate Drive (Manual Partitioning) [Only Available on Legacy ISO]"
+
+=== "Shared Drive (Manual Partitioning) [Only Available on Legacy ISO]"
+
+    1. (In Windows) Resize the Windows partition with the Disk Management app to have enough space for Bazzite.
+    Usually should look something like this:
+    ![](/img/dualbooting_partitions_windows.png)
+    <i><small>Source: [diskpart.com](https://www.diskpart.com/windows-10/windows-10-disk-management-0528.html)</small></i>
+    2. Run the Bazzite installer with [manual partitioning](./manual_partitioning.md)
+    3. Reboot into Bazzite and run `ujust regenerate-grub` in the terminal to add Windows to the GRUB.
+
+=== "Separate Drive"
 
     **When a dedicated drive is feasible, this method is recommended.**
 
