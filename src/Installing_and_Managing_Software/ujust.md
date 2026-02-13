@@ -2,7 +2,7 @@
 title: ujust Commands
 ---
 
-# `ujust`
+# `ujust` Commands
 
 ## Usage
 
