@@ -26,11 +26,11 @@ title: Introduction to Installing Software on Bazzite
 | **Package Format** | **Graphical Application (GUI)** | **Command‑Line / System‑Level Package** |
 |--------------------|----------------------------------|------------------------------------------|
 | **Bazaar App Store (Flatpak)** | Primary method for obtaining graphical applications. | Not recommended for command‑line applications or utilities. |
-| **Homebrew** | Only a few apps (e.g., VSCode via ublue cask) are recommended to install graphically. | Highly recommended for command‑line tools. |
+| **Homebrew** | Only a few apps (e.g., VSCode via [Universal Blue cask](https://github.com/ublue-os/homebrew-tap)) are recommended to install graphically. | Highly recommended for command‑line tools. |
 | **Containers (Distrobox / Quadlet)** | If not available in Bazaar, install the generic Linux package inside a Distrobox container and export it. For services, create a Quadlet. | Recommended if a Homebrew package does not exist. |
 | **AppImage** | Find an AppImage online at your own risk from a trusted source. Use Gear Lever (available in Bazaar) for proper system integration. | — |
 | **Package Layering** | If none of the above options work, layer the package at your own risk. | Same as GUI: layer only if no other option works. |
-| **Other** | Some software ships as a `.tar.gz` with an executable. It *may* run on Bazzite after making it executable. Alternatively, use a Wine frontend (e.g., Lutris) for Windows versions. Waydroid may work if an Android port exists. | — |
+| **Other** | Some software ships as a `.tar.gz` with an executable. It *may* run on Bazzite after making it executable in the file properties. Alternatively, use a Wine frontend (e.g., Lutris) for Windows versions. Waydroid may work if an Android port exists. | — |
 | **[Custom Image](../Advanced/creating_custom_image.md)** | — | Intended for alternate desktop environments or software for unusual hardware; a custom Bazzite image may be required.  |
 
 <hr>
