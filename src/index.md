@@ -12,7 +12,7 @@ hide:
 
   Bazzite supports PC hardware from most modern desktop and laptops to specialized models like [Framework](https://frame.work/). <br>
 
-  Bazzite also supports controller-friendly hardware like [home theater PC setups][htpc] and a [multitude of handhelds][handheld]:
+  Bazzite also supports controller-friendly hardware like [home theater PC setups][htpc] and a multitude of handhelds:
   
   - [Asus Handhelds][ally]
   - [Lenovo Handhelds][legion_go]
