@@ -99,7 +99,7 @@ You may need to copy the full path (`/path/to/rpmfile.rpm`) for it to install pr
 
         3. Reboot
 
-        If you experience issues updating your system due to GPG signature issues, then this can be fixed by either removing the COPR repository, or editing the file by changing `gpgcheck=1` to `gpgcheck=0` (or similar) and saving it **at your own risk**
+        If you experience issues updating your system due to GPG signature issues, then this can be fixed by either removing the COPR repository, or editing the file by changing `gpgcheck=1` to `gpgcheck=0` (or similar) and saving it **at your own risk**.
 
 === "Disable COPR"
 
