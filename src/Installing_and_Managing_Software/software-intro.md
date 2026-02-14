@@ -17,8 +17,8 @@ title: Introduction to Installing Software on Bazzite
 6. [**`rpm-ostree`**](./rpm-ostree.md) (_System-Level Packages_) - Layer Fedora packages at a system-level (**not recommended, use as a last resort**)
 
 ### Package Format Recommendation Scenarios
-![](../img/software-install-decision-tree-light.svg#only-light)
-![](../img/software-install-decision-tree-dark.svg#only-dark)
+![Software Installation Decision Tree](../img/software-install-decision-tree-light.svg#only-light)
+![Software Installation Decision Tree](../img/software-install-decision-tree-dark.svg#only-dark)
 !!! note
         
         Please note that only a small selection of software are available to install in the Bazzite Portal so it is not listed in this table.
