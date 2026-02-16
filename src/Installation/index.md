@@ -1,3 +1,10 @@
 # Installing Bazzite
 
-- [Installation Guide]()
+- [**Preliminary Setup**]()
+- [**Installation Guide**]()
+- [**Dual-Boot Guide**]()
+- [**Secure Boot Guide**]()
+- [**Post-Installation Setup**]()
+- [**Legacy Installer Guide**]() 
+- [**Alternative Installation Guide**]()
+- [**Installation Troublehshooting**]()
