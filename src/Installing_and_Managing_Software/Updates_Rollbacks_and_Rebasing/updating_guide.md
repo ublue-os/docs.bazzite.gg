@@ -42,6 +42,10 @@ ujust update
 - **Desktop images**: While your device is running, newer updates will still download in the background once a day, and will be waiting to be applied until the device is rebooted.
 - **Bazzite-Deck images**: Updates will be checked daily and can be downloaded at your leisure similar to how SteamOS handles upgrades.
 
+## How do I view the changelog for each update?
+
+Changelogs for each Bazzite can be found on [Github](https://github.com/ublue-os/bazzite/releases).
+
 ## Metered / Limited Network Connections & Data Caps
 
 !!! note
