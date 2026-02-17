@@ -24,4 +24,13 @@ Read the [**Hardware Compatibility Guide**](<link doc>) for Bazzite's system req
 
 ### Installer Requirements
 
-## Installer
+## Walkthrough
+
+### Download Bazzite
+
+### Flash ISO
+
+### Booting The Installer
+
+#### Network 
+...
