@@ -1,5 +1,7 @@
 ---
 title: Installing Bazzite on Handheld Hardware
+search:
+  exclude: true
 ---
 
 # Installing Bazzite for Handheld Hardware
