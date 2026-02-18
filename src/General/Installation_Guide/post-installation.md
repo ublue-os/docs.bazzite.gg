@@ -10,12 +10,4 @@ title: Post-Installation Setup
 
 ### Bazzite-Deck Images
 
-## Recommended Next Steps
-
-### Pre-Installed Applications
-
-Take a look at the pre-installed applications Bazzite ships with like...
-
-### Bazzite Portal
-
-### Bazaar App Store
+>[Read the Bazzite-Deck documentation](<link>)
