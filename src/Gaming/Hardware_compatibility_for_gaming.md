@@ -4,9 +4,7 @@ title: Hardware Compatibility for Linux Gaming
 
 # Hardware Compatibility for Linux Gaming
 
-## Standard Hardware
-
-### Minimum System Requirements
+## Minimum System Requirements
 
 - **Architecture**: x86_64
 - **Firmware**: UEFI (CSM/Legacy boot [**UNSUPPORTED**](../FAQ.md#does-bazzite-support-csmlegacy-boot))
