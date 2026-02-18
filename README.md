@@ -87,7 +87,7 @@ You will need other tools as well, like:
 
 > ⚠️ WARNING
 >
-> Just remember, ⚠️**DO NOT USE SPACES IN THE FILE NAME**⚠️. Spaces in filenames are going to bite us later in the future.
+> Just remember, ⚠️**DO NOT USE SPACES IN THE FILE NAME!**⚠️ Spaces in filenames are going to bite us later in the future.
 > Instead, use underscores `_`
 
 ### 2. Set a proper page name
