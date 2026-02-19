@@ -124,11 +124,10 @@ nav:
   - index.md
   - FAQ: "General/FAQ.md"
   - Installation:
-      - "Setup Guide": General/Installation_Guide/index.md
-      - "Dual Boot Preliminary and Post-Installation Setup Guide": General/Installation_Guide/dual_boot_setup_guide.md
-      - "Secure Boot Instructions": General/Installation_Guide/secure_boot.md
-      - "Manual Partitioning": General/Installation_Guide/manual_partitioning.md
+      - "Installation Guide": General/Installation_Guide/index.md
+      - "Post-Installation Setup": General/Installation_Guide/post-installation.md
       - "Installation Troubleshoot Guide": General/Installation_Guide/troubleshoot_guide.md
+      - "Legacy Installer Guide": General/Installation_Guide/legacy-install.md
       - "Alternative Installation Method": General/Installation_Guide/alternate-install-guide.md
   - General:
       - "General Guides": General/index.md
