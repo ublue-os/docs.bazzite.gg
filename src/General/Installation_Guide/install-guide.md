@@ -109,6 +109,8 @@ Please note that an internet is not required to install Bazzite, but is useful i
 
 #### Select Language, Region, and Keyboard Layout
 
+![installer1|1295x1054, 62%](../../img/live-installer-language.png)
+
 ![installer1|1295x1054, 62%](../../img/live-installer-time-date.png)
 
 #### Partitioning Options
@@ -146,9 +148,17 @@ Please wait for Bazzite to install.  This may take a while.
 
 ![reboot|1288x1040, 62%](../../img/live-installer-installed.png)
 
-
 ## Secure Boot
 
 ## Post-Installation
 
 Bazzite is now installed. Read the [**Post-Installation Guide**](<link guide>) for recommended next steps or start gaming!
+
+--- other images (fix resolutions and scaling BEFORE moving them!)
+
+![installing|1282x1036, 63%](../../img/live-installer-partitions.png)
+![installing|1282x1036, 63%](../../img/live-installer-dualboot.png)
+![installing|1282x1036, 63%](../../img/live-installer-drive.png)
+![installing|1282x1036, 63%](../../img/live-installer-storage-encryption.png)
+
+
