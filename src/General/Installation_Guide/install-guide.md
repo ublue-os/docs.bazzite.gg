@@ -10,7 +10,7 @@ title: Bazzite Installation Guide
 
 ## System Requirements
 
-- Read the [**Hardware Compatibility Guide**](<link doc>) for Bazzite's system requirements.
+- Read the [**Hardware Compatibility Guide**](./Gaming/Hardware_compatibility_for_gaming.md) for Bazzite's system requirements.
 - Secure Boot and Trusted Platform Module (TPM) are supported on most hardware, but you must [**enroll our key during or after installation**](./secure_boot.md).
 
 ### Installer Requirements
@@ -24,12 +24,12 @@ title: Bazzite Installation Guide
 
 ### Desktop Environments
 
-All of the images come with the choice of [KDE Plasma](https://kde.org/plasma-desktop/) or
-[GNOME](https://www.gnome.org/) for their desktop environment.
+All of the images come with the choice of [**KDE Plasma**](https://kde.org/plasma-desktop/) or
+[**GNOME**](https://www.gnome.org/) for their desktop environment.
 
-[Steam Gaming Mode](https://github.com/KyleGospo/gamescope-session) is an option and is recommended for HTPC setups.
+[**Steam Gaming Mode**](https://github.com/KyleGospo/gamescope-session) is an option as an additional session to run on top of KDE Plasma or GNOME but is only recommended for Home Theatre PC (HTPC) and handheld setups.
 
-More information can be found on our [FAQ](https://faq.bazzite.gg) about the differences between the image variants.
+More information can be found on our [**FAQ**](https://faq.bazzite.gg) about the differences between the image variants.
 
 === "KDE Plasma"
 
@@ -79,25 +79,27 @@ More information can be found on our [FAQ](https://faq.bazzite.gg) about the dif
 
 ### Download Bazzite
 
-<screenshot of Bazzite's website on download page>
+![download|100%](../../img/live-installer-download.png)
 
 ### Flash ISO
 
-<screenshot of Fedora Media Writer settings>
+![flash|100%](../../img/live-installer-fedora-media-writer-1.png)
+![flash|100%](../../img/live-installer-fedora-media-writer-2.png)
+
 
 ### Booting The Installer
 
-<screenshot of Bazzite installer first-boot black screen in GRUB>
+![boot|100%](../../img/live-installer-grub.png)
 
 #### Network 
 
-<screenshot of live ISO connecting to Wi-Fi symbol on KDE image>
+![network|100%](../../img/live-installer-network.png)
 
 Please note that an internet is not required to install Bazzite, but is useful if you're testing Bazzite before testing in the live environment.
 
 #### Select Language, Region, and Keyboard Layout
 
-<screenshot installer>
+![installer1|100%](../../img/live-installer-time-date.png)
 
 #### Partitioning Options
 
@@ -111,12 +113,12 @@ If you are dual-booting with Windows then read the [dualbooting guide](<link gui
 
 !!! note
 
-     The :"format as efi" button when dual-booting says it will format the Windows EFI, but what it actually does is add itself to the EFI. This is an upstream bug with the installer.
+     The "format as efi" button when dual-booting says it will format the Windows EFI, but what it actually does is add itself to the EFI. This is an upstream bug with the installer.
 
 
 #### User Account Setup
 
-<screenshot of installer>
+![installer2|100%](../../img/live-installer-user-setup.png)
 
 !!! warning
 
