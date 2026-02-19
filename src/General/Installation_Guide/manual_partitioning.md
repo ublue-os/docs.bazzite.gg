@@ -1,5 +1,7 @@
 ---
 title: Manual Partitioning
+search:
+  exclude: true
 ---
 
 # Manual Partitioning
