@@ -79,35 +79,37 @@ More information can be found on our [**FAQ**](https://faq.bazzite.gg) about the
 
 ### Download Bazzite
 
-![download|100%](../../img/live-installer-download.png)
+![download|1871x856, 60%](../../img/live-installer-download.png)
+
+<explain what each of these buttons mean for more context>
 
 ### Flash ISO
 
-![flash|100%](../../img/live-installer-fedora-media-writer-1.png)
-![flash|100%](../../img/live-installer-fedora-media-writer-2.png)
+![flash|771x623, 70%](../../img/live-installer-fedora-media-writer-1.png)
+![flash|771x723, 70%](../../img/live-installer-fedora-media-writer-2.png)
 
 
 ### Booting The Installer
 
 #### GRUB Menu
 
-![boot|100%](../../img/live-installer-grub.png)
+![boot|1573x872, 50%](../../img/live-installer-grub.png)
 
 #### Live Installer
 
-![live|100%](../../img/live-installer-opening.png)
+![live|1431x897, 60%](../../img/live-installer-opening.png)
 
 
 
 #### Network 
 
-![network|100%](../../img/live-installer-network.png)
+![network|495x593, 100%](../../img/live-installer-network.png)
 
 Please note that an internet is not required to install Bazzite, but is useful if you're testing Bazzite before testing in the live environment.
 
 #### Select Language, Region, and Keyboard Layout
 
-![installer1|100%](../../img/live-installer-time-date.png)
+![installer1|1295x1054, 62%](../../img/live-installer-time-date.png)
 
 #### Partitioning Options
 
@@ -127,7 +129,7 @@ If you are dual-booting with Windows then read the [dualbooting guide](<link gui
 
 #### User Account Setup
 
-![installer2|100%](../../img/live-installer-user-setup.png)
+![installer2|1288x1050, 62%](../../img/live-installer-user-setup.png)
 
 !!! warning
 
@@ -137,12 +139,12 @@ If you are dual-booting with Windows then read the [dualbooting guide](<link gui
 
 Please wait for Bazzite to install.  This may take a while.
 
-![installing|100%](../../img/live-installer-installing.png)
+![installing|1282x1036, 63%](../../img/live-installer-installing.png)
 
 
 #### Reboot
 
-![reboot|100%](../../img/live-installer-installed.png)
+![reboot|1288x1040, 62%](../../img/live-installer-installed.png)
 
 
 ## Secure Boot
