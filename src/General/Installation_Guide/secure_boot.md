@@ -1,5 +1,7 @@
 ---
 title: Secure Boot Guide
+search:
+  exclude: true
 ---
 
 # Secure Boot Guide
