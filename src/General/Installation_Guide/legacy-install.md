@@ -129,6 +129,25 @@ Hold the 'Volume Down' (<kbd>-</kbd>) button and click the Power Button, and whe
 
 ## Dual Booting
 
+!!! note
+
+    Skip this section if you plan to install Bazzite without dual-booting Windows.
+
+### Note about dual booting other Linux operating systems
+
+For Fedora Atomic Desktop images on the **same** drive: to dual boot another **Fedora Atomic Desktop image** (like [Bluefin](https://projectbluefin.io/)) installed alongside Bazzite, you must make an additional EFI partition and switch between them through your motherboard's UEFI boot menu.
+
+For dual booting on **separate** drives:
+
+!!! note 
+
+    Dual booting with **other Linux distributions**, especially **non-atomic Fedora**, is not officially supported. It is recommended to use your motherboard's UEFI boot menu or to forgo dual booting entirely to avoid unexpected issues. If something does go wrong, restore Bazzite's bootloader using the **Bootloader Restoring Tool** in the Live ISO.
+
+Use your motherboard's UEFI boot menu as the GRUB bootloader may not recognize each boot entry correctly.
+
+
+### Dual-Booting Windows
+
 1. Installing Bazzite with a shared drive.
 2. Installing Bazzite on a separate drive.
 
@@ -223,47 +242,6 @@ If you need a tutorial video for manual partitioning, watch this [tutorial at ti
 5.  Select Accept Changes
 6.  Continue with the installation.
 
-#### Note about dual booting other distributions
-
-For Fedora Atomic Desktop images on the **same** drive:
-
-- To dual boot another **Fedora Atomic Desktop image** (like [Bluefin](https://projectbluefin.io/)) installed alongside Bazzite, you must make an additional EFI partition and switch between them through your motherboard's UEFI boot menu.
-
-For dual booting on **separate** drives:
-
-- Use your motherboard's UEFI boot menu as the GRUB bootloader may not recognize each boot entry correctly.
-
-!!! note 
-
-    Dual booting with **other distributions**, especially **non-atomic Fedora**, is not officially supported. It is recommended to use your motherboard's UEFI boot menu or to forgo dual booting entirely to avoid unexpected issues. If something does go wrong, restore Bazzite's bootloader using the **Bootloader Restoring Tool** in the Live ISO.
-
-#### Dual Boot Post-Configuration Setup
-
-Show both your Windows and Bazzite installations in the GRUB menu to select from at boot by entering this **command into the terminal**:
-
-```
-ujust regenerate-grub
-```
-
-#### Bazzite as Primary Boot
-
-If the `OS Boot Manager` has set `Windows Boot Manager` to be the first boot priority, then this may result in booting directly into Windows after the install instead of Bazzite. You may have to fix this in your BIOS settings.
-
-Take note that the GRUB menu might not show up. In such case, spam the <kbd>↓</kbd> key when booting up.
-
-#### Boot into Windows from Steam
-
-Adds a script in Steam to boot into Windows.
-
-```
-ujust setup-boot-windows-steam
-```
-
-#### Expanding storage size in a Windows dual-boot scenario
-
-!!! note
-
-    This is for future reference after dual-booting for a while.
 
 ## Secure Boot
 
@@ -279,15 +257,13 @@ ujust setup-boot-windows-steam
 
     The enrollment prompt uses a English QWERTY keyboard layout, indiscriminately of your actual hardware keyboard. Other layouts can therefore interfere with the characters of the password (i.e. `A` and `Q` are swapped on AZERTY layouts).
 
-## Gotchas
-
 - Entering the password will register invisible characters for security purposes, so you will not be able to see what you are typing!
 
 - Updating your BIOS may re-enable Secure Boot and you may have to follow **"Method B"** after updating it to resolve the black screen on boot complaining about loading the kernel first.
 
 - The Steam Deck does **not** come with secure boot enabled and does not ship with any keys enrolled by default, do not enable Secure Boot on your Steam Deck unless you absolutely know what you're doing.
 
-## Error Message (if key is **not** enrolled properly):
+### Error Message (if key is **not** enrolled properly):
 
 ```
 error: ../../grub-core/kern/efi/sb.c:182:bad shim signature.
@@ -298,7 +274,9 @@ Press any key to continue...
 
 Follow **Method B** below to resolve this and move past the error message if you encounter it.
 
-## **Method A**) During Installation Method (See Image Above)
+## Using Secure Boot with Bazzite
+
+### **Method A**) During Installation Method (See Image Above)
 
 !!! note
 
@@ -314,7 +292,7 @@ universalblue
 
 Otherwise `Continue boot` if you have Secure Boot disabled or if it is not supported with your hardware.
 
-## **Method B**) After Installation Method
+### **Method B**) After Installation Method
 
 **Disable Secure Boot in the BIOS before proceeding**, and then re-enable it **after enrolling the key**.
 
@@ -348,7 +326,7 @@ On the next boot, you will see the blue MokManager screen:
 
 After the reboot, the key is enrolled and Secure Boot can remain enabled. Your system should now boot normally under Secure Boot.
 
-## Rebasing From Upstream Fedora Atomic Desktop images
+### Rebasing From Upstream Fedora Atomic Desktop images
 
 Rebasing from Fedora Silverblue, Fedora Kinoite, etc. to Bazzite.
 
