@@ -334,10 +334,6 @@ If you're rebasing from a Fedora Atomic Desktop image and use Secure Boot, then 
 
 >[**Read more about rebasing from upstream Fedora Atomic Desktop images.**](/General/Installation_Guide/alternate-install-guide.md)
 
-**Watch this video tutorial on how to expand the storage**:
-
-https://www.youtube.com/watch?v=uy8mi1pAj8E
-
 ## **Troubleshooting Installation**:
 
 Read the [**Troubleshooting Guide**](./troubleshoot_guide.md) or the [**Alternative Installation Guide**](./alternate-install-guide.md) for installation workarounds.
