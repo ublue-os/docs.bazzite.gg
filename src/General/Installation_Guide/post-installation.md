@@ -107,3 +107,36 @@ https://www.youtube.com/watch?v=h6fc-3CCXbA
 ![KDE Plasma's Change Password|584x500, 75%](../../img/change-pass.png)
 
 Change it in the settings of Desktop Mode under the "User" category.
+
+
+#### Dual Boot Post-Configuration Setup
+
+Show both your Windows and Bazzite installations in the GRUB menu to select from at boot by entering this **command into the terminal**:
+
+```
+ujust regenerate-grub
+```
+
+#### Bazzite as Primary Boot
+
+If the `OS Boot Manager` has set `Windows Boot Manager` to be the first boot priority, then this may result in booting directly into Windows after the install instead of Bazzite. You may have to fix this in your BIOS settings.
+
+Take note that the GRUB menu might not show up. In such case, spam the <kbd>↓</kbd> key when booting up.
+
+#### Boot into Windows from Steam
+
+Adds a script in Steam to boot into Windows.
+
+```
+ujust setup-boot-windows-steam
+```
+
+#### Expanding storage size in a Windows dual-boot scenario
+
+!!! note
+
+    This is for future reference after dual-booting for a while.
+
+**Watch this video tutorial on how to expand the storage**:
+
+https://www.youtube.com/watch?v=uy8mi1pAj8E
