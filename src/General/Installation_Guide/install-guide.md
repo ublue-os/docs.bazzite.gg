@@ -115,6 +115,8 @@ Please note that an internet is not required to install Bazzite, but is useful i
 
     Make sure to only select the appropriate drives to avoid losing data on others, and it is best practice to safely remove any external drives before proceeding.
 
+##### Dual Booting
+
 !!! note
 
      The "format as efi" button when dual-booting says it will format the Windows EFI, but what it actually does is add itself to the EFI. This is an upstream bug with the installer.
@@ -142,6 +144,8 @@ Please wait for Bazzite to install.  This may take a while.
 
 ![reboot|100%](../../img/live-installer-installed.png)
 
+
+##### Secure Boot
 
 ## Post-Installation
 
