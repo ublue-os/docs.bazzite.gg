@@ -17,6 +17,7 @@ title: Post-Installation Setup
 ### Bazzite-Deck Images
 
 ![Gaming Mode Setup|690x442, 50%](../../img/pLvHB1NAMlb3ghsR72q7l9Auj8B.jpeg)
+^^^GET A NEW IMAGE THIS ONE IS BAD!
 
 >[Read the Bazzite-Deck documentation](<link>)
 
