@@ -28,7 +28,7 @@ title: Post-Installation Setup
 
 ### Install additional software with the Bazaar app store
 
-![Screenshot of the Bazaar app store|1649x1274, 50%](../img/Bazaar.png)
+![Screenshot of the Bazaar app store|1649x1274, 50%](../../img/Bazaar.png)
 
 ### Play video games
 
