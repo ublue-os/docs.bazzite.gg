@@ -11,7 +11,7 @@ title: Bazzite Installation Guide
 ## System Requirements
 
 - Read the [**Hardware Compatibility Guide**](./Gaming/Hardware_compatibility_for_gaming.md) for Bazzite's system requirements.
-- Secure Boot and Trusted Platform Module (TPM) are supported on most hardware, but you must [**enroll our key during or after installation**](./secure_boot.md).
+- **Secure Boot and Trusted Platform Module (TPM) are supported on most hardware**, but you must **enroll our key during or after installation**.
 
 ### Installer Requirements
 
