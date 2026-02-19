@@ -13,7 +13,18 @@ Use a download manager (like [**Motrix**](https://motrix.app/)) if the direct do
 
 Make sure to only select the appropriate drives to avoid losing data on others, and it is best practice to safely remove any external drives before proceeding.
 
-## Error Code 1
+## "Failed to open \EFI\BOOT\mmx64.efi - Not Found" error
+
+![Failed to open \EFI\BOOT\mmx64.efi - Not Found](../../img/efi-boot-fail.png)
+
+To work around this issue, boot from file. Go into your UEFI (BIOS), select your EFI partition with Bazzite installed, then select /EFI/fedora/grubx64.efi to boot from.
+After this, your boot manager should boot normally showing "FEDORA" as the option.
+
+## Legacy ISO Issues
+
+These issues are only present on the legacy ISO.
+
+### Error Code 1
 
 The "code 1" error is a generic error code that appears during installation when a more specific error message isn't available. This error can occur in several scenarios that we have identified so far but there may be more scenarios:
 
@@ -30,7 +41,7 @@ The "code 1" error is a generic error code that appears during installation when
 - **Corrupted ISO Image:** Ensure the ISO image isn't corrupted by calculating the checksums.
 - **Overheating USB Flash Drive:** Use a USB 3.0 or better flash drive and plug it into a USB 3.0 or better port to avoid overheating.
 
-## "Device is Active" Error
+### "Device is Active" Error
 
 This error occurs when the installer encounters a BitLocker encrypted partition. You have two possible options:
 
@@ -41,26 +52,17 @@ B. **Bazzite Only:** Delete the BitLocker partition using a tool like GParted be
 
 https://www.youtube.com/watch?v=FBGLLkIKp-w
 
-## "Error checking storage configuration"
+### "Error checking storage configuration"
 
 **Watch this video for a workaround**:
 
 https://www.youtube.com/watch?v=VTnm9EiBdPA
 
-## "Bad shim signature, you need to load the kernel first" error
+### "Bad shim signature, you need to load the kernel first" error
 
 **Watch this video for a workaround**:
 
 https://www.youtube.com/watch?v=Z_DsWqTuipU
-
-## "Failed to open \EFI\BOOT\mmx64.efi - Not Found" error
-
-![Failed to open \EFI\BOOT\mmx64.efi - Not Found](../../img/efi-boot-fail.png)
-
-To work around this issue, boot from file. Go into your UEFI (BIOS), select your EFI partition with Bazzite installed, then select /EFI/fedora/grubx64.efi to boot from.
-After this, your boot manager should boot normally showing "FEDORA" as the option.
-
->[**Secure Boot Guide**](/General/Installation_Guide/secure_boot.md)
 
 ## Unable to allocate requested partition scheme error
 
