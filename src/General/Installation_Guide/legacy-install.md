@@ -2,7 +2,7 @@
 title: Legacy Installation Guide
 ---
 
-# Legacy Installation Guide
+# Legacy ISO Installation Guide
 
 ## For Legacy ISOs Only
 
