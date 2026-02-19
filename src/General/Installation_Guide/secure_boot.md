@@ -4,7 +4,7 @@ title: Secure Boot Guide
 
 # Secure Boot Guide
 
-## Secure Boot Notes and Gotchas
+## Notes and Gotchas
 
 ![Secure Boot menu: Continue boot / Enroll MOK / Enroll key from disk / Enroll hash from disk|690x378, 50%](../../img/Secure_Boot.jpeg 'Secure Boot')
 
@@ -18,14 +18,13 @@ title: Secure Boot Guide
 
 ## Gotchas
 
-
 - Entering the password will register invisible characters for security purposes, so you will not be able to see what you are typing!
 
 - Updating your BIOS may re-enable Secure Boot and you may have to follow **"Method B"** after updating it to resolve the black screen on boot complaining about loading the kernel first.
 
 - The Steam Deck does **not** come with secure boot enabled and does not ship with any keys enrolled by default, do not enable Secure Boot on your Steam Deck unless you absolutely know what you're doing.
 
-## Error message if key is **not** enrolled properly:
+## Error Message (if key is **not** enrolled properly):
 
 ```
 error: ../../grub-core/kern/efi/sb.c:182:bad shim signature.
@@ -86,10 +85,10 @@ On the next boot, you will see the blue MokManager screen:
 
 After the reboot, the key is enrolled and Secure Boot can remain enabled. Your system should now boot normally under Secure Boot.
 
-## Secure Boot Instructions for Upstream Fedora Atomic Desktop Images
-
->[**Read more about rebasing from upstream Fedora Atomic Desktop images**](/General/Installation_Guide/alternate-install-guide.md)
+## Rebasing From Upstream Fedora Atomic Desktop images
 
 Rebasing from Fedora Silverblue, Fedora Kinoite, etc. to Bazzite.
 
 If you're rebasing from a Fedora Atomic Desktop image and use Secure Boot, then follow the instructions found in [**Bazzite's README**](https://github.com/ublue-os/bazzite/blob/main/README.md#secure-boot).
+
+>[**Read more about rebasing from upstream Fedora Atomic Desktop images.**](/General/Installation_Guide/alternate-install-guide.md)
