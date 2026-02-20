@@ -45,7 +45,7 @@ A version of Bazzite that specifically caters to software development. It is not
 
 #### Bazzite Image Chart Example
 
-!!! not
+!!! note
 
     This does not include all of the Bazzite images.
 
@@ -55,7 +55,7 @@ Verify your Bazzite image by entering this **command** in the terminal:
 rpm-ostree status
 ```
 
-!!! note
+!!! important
 
     Every Bazzite image should start with `ostree-image-signed:docker://ghcr.io/ublue-os/...`.
     <sub> The `...` is a placeholder for the actual image name which can be referenced in the chart below. </sub>
