@@ -46,6 +46,7 @@ title: Community Resources
 - [**secureblue**](https://secureblue.dev/)
 - [**Blue95**](https://github.com/winblues/blue95)
 - [**Wayblue**](https://github.com/wayblueorg/wayblue)
+- [**Pocketblue**](https://pocketblue.github.io/)
 - [**HeliumOS**](https://www.heliumos.org/)
 - [**List of Community Created Custom Images**](https://universal-blue.discourse.group/t/list-of-community-created-custom-images/340)
 - [**Installing Universal Blue's Base Images**](https://universal-blue.discourse.group/t/how-to-install-universal-blues-base-images/868)
