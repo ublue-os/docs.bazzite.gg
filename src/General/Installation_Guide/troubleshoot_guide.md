@@ -23,6 +23,8 @@ After this, your boot manager should boot normally showing "FEDORA" as the optio
 
 Use the [legacy ISO](<link this>) or try the [alternative method](<link this>) of installing Bazzite.
 
+<hr>
+
 ## Legacy ISO Issues
 
 These issues are only present on the legacy ISO.
