@@ -8,7 +8,6 @@ title: Installation Troubleshooting
 
 Use a download manager (like [**Motrix**](https://motrix.app/)) if the direct download fails or is downloading too slow.
 
-
 ## Drives
 
 Make sure to only select the appropriate drives to avoid losing data on others, and it is best practice to safely remove any external drives before proceeding.
@@ -19,6 +18,10 @@ Make sure to only select the appropriate drives to avoid losing data on others, 
 
 To work around this issue, boot from file. Go into your UEFI (BIOS), select your EFI partition with Bazzite installed, then select /EFI/fedora/grubx64.efi to boot from.
 After this, your boot manager should boot normally showing "FEDORA" as the option.
+
+## Installer Won't Boot
+
+Use the [legacy ISO](<link this>) or try the [alternative method](<link this>) of installing Bazzite.
 
 ## Legacy ISO Issues
 
