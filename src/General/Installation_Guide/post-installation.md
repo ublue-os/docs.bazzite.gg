@@ -86,4 +86,4 @@ https://www.youtube.com/watch?v=uy8mi1pAj8E
 
 ### Play video games
 
-<link gaming guide>
+Enjoy using Bazzite!
