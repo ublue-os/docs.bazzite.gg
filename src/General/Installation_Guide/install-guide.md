@@ -175,9 +175,9 @@ Bazzite is now installed. Read the [**Post-Installation Guide**](<link guide>) f
 
 --- other images (fix resolutions and scaling BEFORE moving them!)
 
-![installing|1282x1036, 63%](../../img/live-installer-partitions.png)
-![installing|1282x1036, 63%](../../img/live-installer-dualboot.png)
-![installing|1282x1036, 63%](../../img/live-installer-drive.png)
-![installing|1282x1036, 63%](../../img/live-installer-storage-encryption.png)
+![installing|1283x1042, 62%](../../img/live-installer-partitions.png)
+![installing|1773x1247, 52%](../../img/live-installer-dualboot.png)
+![installing|1273x1038, 63%](../../img/live-installer-drive.png)
+![installing|1284x1045, 62%](../../img/live-installer-storage-encryption.png)
 
 
