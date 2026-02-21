@@ -75,9 +75,7 @@ More information can be found on our [**FAQ**](https://faq.bazzite.gg) about the
     {% endblock %}
 
 
-## Legacy ISO Walkthrough
-
-https://www.youtube.com/watch?v=KAt49B6rSFI
+## Download Legacy ISO
 
 1. Download and Flash Bazzite
 
@@ -88,7 +86,7 @@ https://www.youtube.com/watch?v=KAt49B6rSFI
 
 https://www.youtube.com/watch?v=wUDbMJtR1sM
 
-### 2. Boot Bazzite
+## 2. Boot Bazzite
 
 - Connect your bootable medium to your device and boot into it.
 - After connecting the device, boot into the Bazzite installer.
@@ -97,11 +95,11 @@ https://www.youtube.com/watch?v=wUDbMJtR1sM
     - Alternatively change the BIOS settings to boot with your bootable device first before your current storage, but this is **not recommended** to keep enabled after installing Bazzite.
 - Verify the media correctly and proceed to the installer.
 
-#### Handheld Devices
+### Handheld Devices
 
 Hold the 'Volume Down' (<kbd>-</kbd>) button and click the Power Button, and when you hear the chime, let go of both buttons, and you'll be booted into the Boot Manager. When you get to the boot menu, select your bootable device to boot into the Bazzite installer.
 
-### 3. Inside the Installation Medium
+## 3. Inside the Installation Medium
 
 !!! note "Installing Bazzite without a physical keyboard connected to your device:"
 
@@ -132,15 +130,19 @@ Hold the 'Volume Down' (<kbd>-</kbd>) button and click the Power Button, and whe
 
     Skip this section if you plan to install Bazzite without dual-booting Windows.
 
-### Note about dual booting other Linux operating systems
+### Video Walkthrough
 
-For Fedora Atomic Desktop images on the **same** drive: to dual boot another **Fedora Atomic Desktop image** (like [Bluefin](https://projectbluefin.io/)) installed alongside Bazzite, you must make an additional EFI partition and switch between them through your motherboard's UEFI boot menu.
+https://www.youtube.com/watch?v=KAt49B6rSFI
 
-For dual booting on **separate** drives:
+### Dual booting other Linux operating systems
 
 !!! note 
 
     Dual booting with **other Linux distributions**, especially **non-atomic Fedora**, is not officially supported. It is recommended to use your motherboard's UEFI boot menu or to forgo dual booting entirely to avoid unexpected issues. If something does go wrong, restore Bazzite's bootloader using the **Bootloader Restoring Tool** in the Live ISO.
+
+For Fedora Atomic Desktop images on the **same** drive: to dual boot another **Fedora Atomic Desktop image** (like [Bluefin](https://projectbluefin.io/)) installed alongside Bazzite, you must make an additional EFI partition and switch between them through your motherboard's UEFI boot menu.
+
+For dual booting on **separate** drives:
 
 Use your motherboard's UEFI boot menu as the GRUB bootloader may not recognize each boot entry correctly.
 
@@ -243,10 +245,6 @@ If you need a tutorial video for manual partitioning, watch this [tutorial at ti
 
 ## Secure Boot
 
-Bazzite supports Secure Boot however Universal Blue's key must be enrolled to use it otherwise keeping Secure Boot on in your BIOS will result in Bazzite not booting.
-
-### Notes and Gotcha
-
 ![Secure Boot menu: Continue boot / Enroll MOK / Enroll key from disk / Enroll hash from disk|690x378, 50%](../../img/Secure_Boot.jpeg 'Secure Boot')
 
 !!! note
@@ -256,6 +254,8 @@ Bazzite supports Secure Boot however Universal Blue's key must be enrolled to us
 !!! important
 
     The enrollment prompt uses a English QWERTY keyboard layout, indiscriminately of your actual hardware keyboard. Other layouts can therefore interfere with the characters of the password (i.e. `A` and `Q` are swapped on AZERTY layouts).
+
+Bazzite supports Secure Boot however Universal Blue's key must be enrolled to use it otherwise keeping Secure Boot on in your BIOS will result in Bazzite not booting.
 
 - Entering the password will register invisible characters for security purposes, so you will not be able to see what you are typing!
 
