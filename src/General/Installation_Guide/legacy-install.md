@@ -276,7 +276,7 @@ Follow **Method B** below to resolve this and move past the error message if you
 
 ### Using Secure Boot with Bazzite
 
-#### **Method A**) During Installation Method (See Image Above)
+#### **Method A** - During Installation Method (See Image Above)
 
 !!! note
 
@@ -292,7 +292,7 @@ universalblue
 
 Otherwise `Continue boot` if you have Secure Boot disabled or if it is not supported with your hardware.
 
-#### **Method B**) After Installation Method
+#### **Method B** - After Installation Method
 
 **Disable Secure Boot in the BIOS before proceeding**, and then re-enable it **after enrolling the key**.
 
