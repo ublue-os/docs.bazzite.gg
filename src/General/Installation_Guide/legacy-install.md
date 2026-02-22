@@ -329,3 +329,7 @@ After the reboot, the key is enrolled and Secure Boot can remain enabled. Your s
 ## **Troubleshooting Installation**:
 
 Read the [**Troubleshooting Guide**](./troubleshoot_guide.md) or the [**Alternative Installation Guide**](./alternate-install-guide.md) for installation workarounds.
+
+## Post-Installation
+
+Bazzite is now installed. Read the [**Post-Installation Guide**](<link guide>) for recommended next steps or start gaming!
