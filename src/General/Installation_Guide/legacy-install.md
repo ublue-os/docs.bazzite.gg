@@ -81,6 +81,7 @@ More information can be found on our [**FAQ**](https://faq.bazzite.gg) about the
 
 - Download [Bazzite](https://download.bazzite.gg) after choosing the correct ISO for your hardware with our Image Picker tool.
 - Flash Bazzite to your bootable medium.
+- Eject the drive after flashing the ISO.
 
 ### Calculating ISO SHA256 Checksum Hash
 
