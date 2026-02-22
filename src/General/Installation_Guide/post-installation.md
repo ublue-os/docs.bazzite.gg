@@ -78,7 +78,7 @@ https://www.youtube.com/watch?v=uy8mi1pAj8E
 
 ### Configure your system with the Bazzite Portal application
 
-<screenshot the bazzite portal>
+![bazzite-portal|997x785, 50%](../../img/bazzite-portal.png)
 
 ### Install additional software with the Bazaar app store
 
