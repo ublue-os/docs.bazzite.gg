@@ -159,7 +159,7 @@ https://www.youtube.com/watch?v=KAt49B6rSFI
     Usually should look something like this:
     ![](/img/dualbooting_partitions_windows.png)
     <i><small>Source: [diskpart.com](https://www.diskpart.com/windows-10/windows-10-disk-management-0528.html)</small></i>
-    2. Run the Bazzite installer with [manual partitioning](./manual_partitioning.md)
+    2. Run the Bazzite installer with [manual partitioning](#manual-partitioning-instructions)
     3. Reboot into Bazzite and run `ujust regenerate-grub` in the terminal to add Windows to the GRUB.
 
 === "Separate Drive"
