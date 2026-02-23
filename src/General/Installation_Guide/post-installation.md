@@ -20,7 +20,7 @@ It is important to configure the system settings on a first boot to personalize 
 
 If you selected to use Steam Gaming Mode before downloading the ISO, then you will be on the Bazzite-Deck version.  After completing all of the above, then your next boot will be in Steam Gaming Mode which requires additional setup for Steam.
 
->[Read the **Bazzite-Deck documentation**](../../Handheld_and_HTPC_edition/index.md) for more information on the HTPC/Handheld images.
+Read the [**Bazzite-Deck documentation**](../../Handheld_and_HTPC_edition/index.md) for more information on the HTPC/Handheld images.
 
 ## Configure System Settings
 
@@ -43,7 +43,11 @@ Adjust the system settings to your preference.
 
 Change it in the settings of Desktop Mode under the "User" category.
 
-## Dual Boot Post-Configuration Setup
+## Dual-Boot Post-Configuration Setup
+
+!!! note
+
+        This only applies to Bazzite users who are dual-booting with Windows.
 
 Show both your Windows and Bazzite installations in the GRUB menu to select from at boot by entering this **command into the terminal**:
 
@@ -51,13 +55,13 @@ Show both your Windows and Bazzite installations in the GRUB menu to select from
 ujust regenerate-grub
 ```
 
-#### Bazzite as Primary Boot
+### Bazzite as Primary Boot
 
 If the `OS Boot Manager` has set `Windows Boot Manager` to be the first boot priority, then this may result in booting directly into Windows after the install instead of Bazzite. You may have to fix this in your BIOS settings.
 
 Take note that the GRUB menu might not show up. In such case, spam the <kbd>↓</kbd> key when booting up.
 
-#### Boot into Windows from Steam
+### Boot into Windows from Steam
 
 Adds a script in Steam to boot into Windows.
 
@@ -65,7 +69,7 @@ Adds a script in Steam to boot into Windows.
 ujust setup-boot-windows-steam
 ```
 
-#### Expanding storage size in a Windows dual-boot scenario
+### Expanding storage size in a Windows dual-boot scenario
 
 !!! note
 
@@ -87,7 +91,7 @@ Familiarize yourself with the Bazzite Portal which does system maintenance, inst
 
 ![Screenshot of the Bazaar app store|1649x1274, 50%](../../img/Bazaar.png)
 
-Install additional software for Bazzite in the Bazaar app store.  This is the place where you will be getting most of your applications, but if you require something that isn't found here then look into the [**Installing and Managing Applications**](../../Installing_and_Managing_Software/index.md)
+Install additional software for Bazzite in the Bazaar app store.  This is the place where you will be getting most of your applications, but if you require something that isn't found here then look into the [**Installing and Managing Applications**](../../Installing_and_Managing_Software/index.md).
 
 ### Ready to Game!
 
