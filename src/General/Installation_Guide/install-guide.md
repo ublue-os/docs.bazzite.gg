@@ -11,7 +11,7 @@ https://www.youtube.com/watch?v=lBqbk6Z8HrQ
 ## System Requirements
 
 - Read the [**Hardware Compatibility Guide**](./Gaming/Hardware_compatibility_for_gaming.md) for Bazzite's system requirements.
-- **Secure Boot and Trusted Platform Module (TPM) are supported on most hardware**, but you must **enroll our key during or after installation**.
+- Secure Boot and Trusted Platform Module (TPM) are supported on most hardware, but you must [**enroll our key during or after installation**](#Secure-Boot).
 
 ### Installer Requirements
 
@@ -124,7 +124,7 @@ Bazzite's live installer session lets you view the desktop applications pre-inst
 
 ![network|495x593, 100%](../../img/live-installer-network.png)
 
-Please note that an internet connection is not required to install Bazzite, but is useful if you're testing Bazzite before testing in the live environment.
+Please note that an internet connection is not required to install Bazzite, but is useful if you're testing Bazzite before testing in the live environment.  **Open the Bazzite installer when ready to proceed with installation.**
 
 ## Select Your Language, Region, and Keyboard Layout
 
@@ -134,16 +134,17 @@ Please note that an internet connection is not required to install Bazzite, but 
 
 The first steps to installing Bazzite is selecting the system language, region for your time zone, and the layout of your keyboard for the correct input mapping.
 
-#### Partitioning Options
+## Partitioning Setup
+
+![drive|1273x1038, 63%](../../img/live-installer-drive.png)
 
 !!! warning
 
     Make sure to only select the appropriate drives to avoid losing data on others, and it is best practice to safely remove any external drives before proceeding.
 
-![drive|1273x1038, 63%](../../img/live-installer-drive.png)
+Select the drive that you plan to install Bazzite on...
 
-
-## Dual Booting
+## Dual Booting Windows
 
 ![dualboot|1773x1247, 52%](../../img/live-installer-dualboot.png)
 
@@ -155,19 +156,11 @@ The first steps to installing Bazzite is selecting the system language, region f
 
      The "format as efi" button when dual-booting says it will format the Windows EFI, but what it actually does is add itself to the EFI. This is an upstream bug with the installer.
 
-### Dual-booting other Linux operating systems
-
-!!! note 
-
-    Dual booting with **other Linux distributions**, especially **non-atomic Fedora**, is not officially supported. It is recommended to use your motherboard's UEFI boot menu or to forgo dual booting entirely to avoid unexpected issues. If something does go wrong, restore Bazzite's bootloader using the **Bootloader Restoring Tool** in the Live ISO.
-
-For Fedora Atomic Desktop images on the **same** drive: to dual boot another **Fedora Atomic Desktop image** (like [Bluefin](https://projectbluefin.io/)) installed alongside Bazzite, you must make an additional EFI partition and switch between them through your motherboard's UEFI boot menu.
-
-For dual booting on **separate** drives:
+For dual booting Windows on **separate** drives:
 
 Use your motherboard's UEFI boot menu as the GRUB bootloader may not recognize each boot entry correctly.
 
-If you are dual-booting with Windows then use automatic partitioning as it is the only option available in the live ISO, but it should work for most people's dual-booting usecases.  If you require manual partitioning, then download the legacy ISO and follow the [legacy ISO installation guide](<link this>).
+If you are dual-booting with Windows then use automatic partitioning as it is the only option available in the live ISO, but it should work for most people's dual-booting usecases.  If you require manual partitioning, then download the legacy ISO and follow the [legacy ISO installation guide](./legacy-install.md).
 
 1. Installing Bazzite with a shared drive.
 2. Installing Bazzite on a separate drive.
@@ -196,6 +189,14 @@ If you are dual-booting with Windows then use automatic partitioning as it is th
 
     You can also install Windows to an external drive with Windows-to-Go using [Rufus](https://rufus.ie/en/) to dual boot if you do not have an internal drive available.
 
+### Dual-booting other Linux operating systems
+
+!!! note 
+
+    Dual booting with **other Linux distributions**, especially **non-atomic Fedora**, is not officially supported. It is recommended to use your motherboard's UEFI boot menu or to forgo dual booting entirely to avoid unexpected issues. If something does go wrong, restore Bazzite's bootloader using the **Bootloader Restoring Tool** in the Live ISO.
+
+For Fedora Atomic Desktop images on the **same** drive: to dual boot another **Fedora Atomic Desktop image** (like [Bluefin](https://projectbluefin.io/)) installed alongside Bazzite, you must make an additional EFI partition and switch between them through your motherboard's UEFI boot menu.
+
 ## Disk Encryption
 
 ![installing|1284x1045, 62%](../../img/live-installer-storage-encryption.png)
@@ -220,7 +221,7 @@ Create a username and a password to login to your Bazzite account.  This passwor
 
 ![installing|1282x1036, 63%](../../img/live-installer-installing.png)
 
-You will review the changes you are about to make.  Please read carefully before proceeding with the installation. Please wait for Bazzite to install.  This may take a while.
+Review the changes that you are about to make in the installer.  **Please read carefully before proceeding with the installation**. Please wait for Bazzite to install.  This may take a while.
 
 ## Reboot
 
