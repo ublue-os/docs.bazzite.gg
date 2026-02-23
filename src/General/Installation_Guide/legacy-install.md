@@ -12,6 +12,7 @@ This guide is only for the legacy ISOs which are still supported at this time du
 
 - Read the [**Hardware Compatibility Guide**](./Gaming/Hardware_compatibility_for_gaming.md) for Bazzite's system requirements.
 - Secure Boot and Trusted Platform Module (TPM) are supported on most hardware, but you must [**enroll our key during or after installation**](#Secure-Boot).
+- [Dual-booting with Windows is also supported](#dual-booting).
 
 ### Installer Requirements
 
@@ -74,7 +75,6 @@ More information can be found on our [**FAQ**](https://faq.bazzite.gg) about the
 
     {% endblock %}
 
-
 ## Download Legacy ISO
 
 1. Download and Flash Bazzite
@@ -131,23 +131,15 @@ Hold the 'Volume Down' (<kbd>-</kbd>) button and click the Power Button, and whe
 
     Skip this section if you plan to install Bazzite without dual-booting Windows.
 
+### Dual-Booting Windows
+
+For dual booting Windows on **separate** drives, use your motherboard's UEFI boot menu as the GRUB bootloader may not recognize each boot entry correctly.
+
 ### Video Walkthrough
 
 https://www.youtube.com/watch?v=KAt49B6rSFI
 
-### Dual booting other Linux operating systems
-
-!!! note 
-
-    Dual booting with **other Linux distributions**, especially **non-atomic Fedora**, is not officially supported. It is recommended to use your motherboard's UEFI boot menu or to forgo dual booting entirely to avoid unexpected issues. If something does go wrong, restore Bazzite's bootloader using the **Bootloader Restoring Tool** in the Live ISO.
-
-For Fedora Atomic Desktop images on the **same** drive: to dual boot another **Fedora Atomic Desktop image** (like [Bluefin](https://projectbluefin.io/)) installed alongside Bazzite, you must make an additional EFI partition and switch between them through your motherboard's UEFI boot menu.
-
-For dual booting on **separate** drives:
-
-Use your motherboard's UEFI boot menu as the GRUB bootloader may not recognize each boot entry correctly.
-
-### Dual-Booting Windows
+### Written Walkthrough
 
 1. Installing Bazzite with a shared drive.
 2. Installing Bazzite on a separate drive.
@@ -161,7 +153,6 @@ Use your motherboard's UEFI boot menu as the GRUB bootloader may not recognize e
     <i><small>Source: [diskpart.com](https://www.diskpart.com/windows-10/windows-10-disk-management-0528.html)</small></i>
     3. Run the Bazzite installer with the automatic partitioning option.
     4. Reboot into Bazzite and run `ujust regenerate-grub` in the terminal to add Windows to the GRUB.
-
 
 === "Shared Drive (Manual Partitioning) [Only Available on Legacy ISO]"
 
@@ -242,6 +233,18 @@ If you need a tutorial video for manual partitioning, watch this [tutorial at ti
 4.  Select Done
 5.  Select Accept Changes
 6.  Continue with the installation.
+
+### Dual booting other Linux operating systems
+
+!!! note 
+
+    Dual booting with **other Linux distributions**, especially **non-atomic Fedora**, is not officially supported. It is recommended to use your motherboard's UEFI boot menu or to forgo dual booting entirely to avoid unexpected issues. If something does go wrong, restore Bazzite's bootloader using the **Bootloader Restoring Tool** in the Live ISO.
+
+For Fedora Atomic Desktop images on the **same** drive: to dual boot another **Fedora Atomic Desktop image** (like [Bluefin](https://projectbluefin.io/)) installed alongside Bazzite, you must make an additional EFI partition and switch between them through your motherboard's UEFI boot menu.
+
+For dual booting on **separate** drives:
+
+Use your motherboard's UEFI boot menu as the GRUB bootloader may not recognize each boot entry correctly.
 
 ## Secure Boot
 
