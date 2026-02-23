@@ -12,7 +12,7 @@ https://www.youtube.com/watch?v=lBqbk6Z8HrQ
 
 - Read the [**Hardware Compatibility Guide**](./Gaming/Hardware_compatibility_for_gaming.md) for Bazzite's system requirements.
 - Secure Boot and Trusted Platform Module (TPM) are supported on most hardware, but you must [**enroll our key during or after installation**](#Secure-Boot).
-- [Dual-booting with Windows is also supported](#dual-booting).
+- [**Dual-booting with Windows is also supported**](#dual-booting).
 
 ### Installer Requirements
 
@@ -26,8 +26,7 @@ https://www.youtube.com/watch?v=lBqbk6Z8HrQ
 
 ### Desktop Environments
 
-All of the images come with the choice of [**KDE Plasma**](https://kde.org/plasma-desktop/) or
-[**GNOME**](https://www.gnome.org/) for their desktop environment.
+All of the images come with the choice of [**KDE Plasma**](https://kde.org/plasma-desktop/) or [**GNOME**](https://www.gnome.org/) for their desktop environment.
 
 [**Steam Gaming Mode**](https://github.com/KyleGospo/gamescope-session) is an option as an additional session to run on top of KDE Plasma or GNOME but is only recommended for Home Theatre PC (HTPC) and handheld setups.
 
