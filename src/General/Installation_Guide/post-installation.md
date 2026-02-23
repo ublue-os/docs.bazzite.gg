@@ -12,8 +12,6 @@ The first boot will show a screen showing your current and last deployment. It i
 
 Read more about this in the [**Updates, Rollback, and Rebasing documentation**](../../Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/index.md).
 
-It is important to configure the system settings on a first boot to personalize your desktop especially if you notice the scaling is incorrect on first-boot.
-
 ## Setting Up Steam Gaming Mode (Bazzite-Deck Images Only)
 
 ![Gaming Mode Setup|1920x1080, 50%](../../img/deck-edition.png)
@@ -24,7 +22,7 @@ Read the [**Bazzite-Deck documentation**](../../Handheld_and_HTPC_edition/index.
 
 ## Configure System Settings
 
-Open the system settings application in the desktop session to start configuring settings ranging from personalization like wallpapers to power management.
+It is important to configure the system settings on a first boot to personalize your desktop especially if you notice the scaling is incorrect on first-boot.  Open the system settings application in the desktop session to start configuring settings.
 
 ### Scaling Settings
 
