@@ -79,8 +79,6 @@ More information can be found on our [**FAQ**](https://faq.bazzite.gg) about the
 
 ![download|1871x856, 60%](../../img/live-installer-download.png)
 
-<explain what each of these buttons mean for more context>
-
 Download the Bazzite ISO of your choice. Choose the hardware you plan to install Bazzite on, the vendor of your primary GPU, the desktop environment of your choice, and if you want Steam Gaming Mode (Bazzite-Deck version of Bazzite intended for HTPC and handheld hardware).
 
 ### Calculating ISO SHA256 Checksum Hash
@@ -107,13 +105,9 @@ Flash Bazzite to your bootable device using Fedora Media Writer and eject the IS
 
 Hold the 'Volume Down' (<kbd>-</kbd>) button and click the Power Button, and when you hear the chime, let go of both buttons, and you'll be booted into the Boot Manager. When you get to the boot menu, select your bootable device to boot into the Bazzite installer.
 
-## GRUB Menu
+## Live Enviroment
 
 ![boot|1573x872, 50%](../../img/live-installer-grub.png)
-
-Upon booting for the first time...
-
-## Live Enviroment
 
 ![live|1431x897, 60%](../../img/live-installer-opening.png)
 
@@ -155,7 +149,7 @@ Select the drive that you plan to install Bazzite on...
 
      The "format as efi" button when dual-booting says it will format the Windows EFI, but what it actually does is add itself to the EFI. This is an upstream bug with the installer.
 
-If you are dual-booting with Windows then use automatic partitioning as it is the only option available in the live ISO, but it should work for most people's dual-booting usecases.  If you require manual partitioning, then download the legacy ISO and follow the [legacy ISO installation guide](./legacy-install.md). For dual booting Windows on **separate** drives, use your motherboard's UEFI boot menu as the GRUB bootloader may not recognize each boot entry correctly.
+If you are dual-booting with Windows then use automatic partitioning as it is the only option available in the live ISO, but it should work for most people's dual-booting usecases.  If you require manual partitioning, then download the legacy ISO and follow the [**legacy ISO installation guide**](./legacy-install.md). For dual booting Windows on **separate** drives, use your motherboard's UEFI boot menu as the GRUB bootloader may not recognize each boot entry correctly.
 
 ### Video Walkthrough
 
@@ -201,8 +195,6 @@ For Fedora Atomic Desktop images on the **same** drive: to dual boot another **F
 ## Disk Encryption
 
 ![installing|1284x1045, 62%](../../img/live-installer-storage-encryption.png)
-
-<!-- explain why disk encryption can be useful but also not required !-->
 
 Disk encryption is optional but is available via LUKS. **You will need a physical USB keyboard to decrypt the drive!** Skip this step if you do not require disk encryption on this device.
 
