@@ -226,8 +226,6 @@ You will review the changes you are about to make.  Please read carefully before
 
 ## Secure Boot
 
-![Secure Boot menu: Continue boot / Enroll MOK / Enroll key from disk / Enroll hash from disk|690x378, 50%](../../img/Secure_Boot.jpeg 'Secure Boot')
-
 !!! note
 
     Skip this section if Secure Boot is not enabled or unsupported with your hardware.
@@ -255,9 +253,9 @@ Press any key to continue...
 
 Follow **Method B** below to resolve this and move past the error message if you encounter it.
 
-### Using Secure Boot with Bazzite
+### **Method A** - During Installation Method
 
-#### **Method A** - During Installation Method (See Image Above)
+![Secure Boot menu: Continue boot / Enroll MOK / Enroll key from disk / Enroll hash from disk|690x378, 50%](../../img/Secure_Boot.jpeg 'Secure Boot')
 
 !!! note
 
@@ -273,7 +271,7 @@ universalblue
 
 Otherwise `Continue boot` if you have Secure Boot disabled or if it is not supported with your hardware.
 
-#### **Method B** - After Installation Method
+### **Method B** - After Installation Method
 
 **Disable Secure Boot in the BIOS before proceeding**, and then re-enable it **after enrolling the key**.
 
