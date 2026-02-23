@@ -25,6 +25,8 @@ If you selected to use Steam Gaming Mode before downloading the ISO, then you wi
 
 ## Configure System Settings
 
+Open the system settings application in the desktop session to start configuring settings ranging from personalization like wallpapers to power management.
+
 ### Scaling Settings
 
 ![Display Settings (KDE Plasma)|690x370, 75%](../../img/KDE_Display_Settings.png)
@@ -36,7 +38,7 @@ If you selected to use Steam Gaming Mode before downloading the ISO, then you wi
 Adjust the system settings to your preference.
 
 ### Changing Default Password
-<sub> (If it wasn't changed in the installer) </sub>
+<sub> (If it wasn't changed in the legacy ISO installer) </sub>
 
 ![KDE Plasma's Change Password|584x500, 75%](../../img/change-pass.png)
 
@@ -80,10 +82,14 @@ https://www.youtube.com/watch?v=uy8mi1pAj8E
 
 ![bazzite-portal|997x785, 50%](../../img/bazzite-portal.png)
 
+Familiarize yourself with the Bazzite Portal which does system maintenance, install a small subset of additional applications, and configure advanced system settings.
+
 ### Install additional software with the Bazaar app store
 
 ![Screenshot of the Bazaar app store|1649x1274, 50%](../../img/Bazaar.png)
 
+Install additional software for Bazzite... 
+
 ### Ready to Game!
 
-Enjoy using Bazzite!  Read the [**Gaming Guide**](../../Gaming/index.md) to learn your ways around Linux gaming.
+Enjoy using Bazzite!  Read the [**Gaming Guide**](../../Gaming/index.md) to learn the basics of Linux gaming.
