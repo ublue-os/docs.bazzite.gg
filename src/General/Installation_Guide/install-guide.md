@@ -311,6 +311,6 @@ Read the [**Troubleshooting Guide**](./troubleshoot_guide.md) or the [**Alternat
 
 ## Post-Installation
 
-Bazzite is now installed. Read the [**Post-Installation Guide**](<link guide>) for recommended next steps or start gaming!
+Bazzite is now installed. Read the [**Post-Installation Guide**](./post-installation.md) for recommended next steps or start gaming!
 
 
