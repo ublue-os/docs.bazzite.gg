@@ -255,10 +255,10 @@ If you need a tutorial video for manual partitioning, watch this [tutorial at ti
 
 Bazzite supports Secure Boot however Universal Blue's key must be enrolled to use it otherwise keeping Secure Boot on in your BIOS will result in Bazzite not booting.
 
+### Important Secure Boot Notes:
+
 - Entering the password will register invisible characters for security purposes, so you will not be able to see what you are typing!
-
 - Updating your BIOS may re-enable Secure Boot and you may have to follow **"Method B"** after updating it to resolve the black screen on boot complaining about loading the kernel first.
-
 - The Steam Deck does **not** come with secure boot enabled and does not ship with any keys enrolled by default, do not enable Secure Boot on your Steam Deck unless you absolutely know what you're doing.
 
 ### Error Message (if key is **not** enrolled properly):
