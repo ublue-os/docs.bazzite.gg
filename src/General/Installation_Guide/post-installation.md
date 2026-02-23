@@ -45,7 +45,7 @@ Change it in the settings of Desktop Mode under the "User" category.
 
 !!! note
 
-        This only applies to Bazzite users who are dual-booting with Windows.
+    This only applies to Bazzite users who are dual-booting with Windows.
 
 Show both your Windows and Bazzite installations in the GRUB menu to select from at boot by entering this **command into the terminal**:
 
