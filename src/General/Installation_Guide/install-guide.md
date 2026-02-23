@@ -105,7 +105,7 @@ Flash Bazzite to your bootable device using Fedora Media Writer and eject the IS
 
 Hold the 'Volume Down' (<kbd>-</kbd>) button and click the Power Button, and when you hear the chime, let go of both buttons, and you'll be booted into the Boot Manager. When you get to the boot menu, select your bootable device to boot into the Bazzite installer.
 
-## Live Enviroment
+## Live Environment
 
 ![boot|1573x872, 50%](../../img/live-installer-grub.png)
 
