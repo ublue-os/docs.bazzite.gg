@@ -12,6 +12,7 @@ https://www.youtube.com/watch?v=lBqbk6Z8HrQ
 
 - Read the [**Hardware Compatibility Guide**](./Gaming/Hardware_compatibility_for_gaming.md) for Bazzite's system requirements.
 - Secure Boot and Trusted Platform Module (TPM) are supported on most hardware, but you must [**enroll our key during or after installation**](#Secure-Boot).
+- [Dual-booting with Windows is also supported](#dual-booting).
 
 ### Installer Requirements
 
@@ -94,7 +95,6 @@ https://www.youtube.com/watch?v=wUDbMJtR1sM
 
 Flash Bazzite to your bootable device using Fedora Media Writer and eject the ISO afterwards.
 
-
 ## Booting The Installer
 
 - Connect your bootable medium to your device and boot into it.
@@ -156,11 +156,13 @@ Select the drive that you plan to install Bazzite on...
 
      The "format as efi" button when dual-booting says it will format the Windows EFI, but what it actually does is add itself to the EFI. This is an upstream bug with the installer.
 
-For dual booting Windows on **separate** drives:
+If you are dual-booting with Windows then use automatic partitioning as it is the only option available in the live ISO, but it should work for most people's dual-booting usecases.  If you require manual partitioning, then download the legacy ISO and follow the [legacy ISO installation guide](./legacy-install.md). For dual booting Windows on **separate** drives, use your motherboard's UEFI boot menu as the GRUB bootloader may not recognize each boot entry correctly.
 
-Use your motherboard's UEFI boot menu as the GRUB bootloader may not recognize each boot entry correctly.
+### Video Walkthrough
 
-If you are dual-booting with Windows then use automatic partitioning as it is the only option available in the live ISO, but it should work for most people's dual-booting usecases.  If you require manual partitioning, then download the legacy ISO and follow the [legacy ISO installation guide](./legacy-install.md).
+https://www.youtube.com/watch?v=KAt49B6rSFI
+
+### Written Walthrough
 
 1. Installing Bazzite with a shared drive.
 2. Installing Bazzite on a separate drive.
