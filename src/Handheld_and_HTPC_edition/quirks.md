@@ -115,8 +115,8 @@ You can restore this shortcut by opening terminal and running:
 
 ## Cannot progress past this screen
 ![If your controller supports Bluetooth, select Next to pair to your Steam Machine.](../img/connect_controller.jpg)
-1.  Open a TTY session with an **external physical keyboard** using this **keyboard combination and entering this command**:
-       <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F4</kbd>
+1.  Open a TTY session with an **external physical keyboard** using this **keyboard combination**:
+    <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F4</kbd>
 2.  Login to your user.
 3.  Enter this command:
 ```
