@@ -112,7 +112,20 @@ You can restore this shortcut by opening terminal and running:
  ```
  ujust restore-gamemode-shortcut
  ```
+## Cannot progress past this screen
+![If your controller supports Bluetooth, select Next to pair to your Steam Machine.](../img/connect_controller.jpg)
+1.  Open a TTY session with an **external physical keyboard** using this **keyboard combination and entering this command**:
+       <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F4</kbd>
+2.  Login to your user.
+3.  Enter this command:
+```
+steamos-session-select plasma
+```
+4. Log into Steam in Desktop mode, and reboot the device.
 
+## Stuck on 'Update calculating: Time Remaining'
+![Update time remaining](../img/update_calculating_time_remaining.jpg)
+Reboot the device.
 ## Steam broke and Gaming Mode is broken too
 
 In scenarios where Steam Gaming Mode refuses to start due to an issue with the Steam client.
