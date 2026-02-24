@@ -126,6 +126,7 @@ steamos-session-select plasma
 ## Stuck on 'Update calculating: Time Remaining'
 ![Update time remaining](../img/update_calculating_time_remaining.jpg)
 Reboot the device.
+
 ## Steam broke and Gaming Mode is broken too
 
 In scenarios where Steam Gaming Mode refuses to start due to an issue with the Steam client.
