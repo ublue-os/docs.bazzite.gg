@@ -45,7 +45,7 @@ A version of Bazzite that specifically caters to software development. It is not
 
 #### Bazzite Image Chart Example
 
-!!! not
+!!! note
 
     This does not include all of the Bazzite images.
 
