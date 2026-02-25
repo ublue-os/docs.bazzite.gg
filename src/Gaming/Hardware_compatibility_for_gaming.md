@@ -32,7 +32,7 @@ title: Hardware Compatibility for Linux Gaming
   - RX 4xx series and up
     - 600M/700M integrated GPUs are also supported
 - Intel Arc GPUs are supported with **minor caveats** compared to AMD hardware
-- Nvidia GPU support is supported with [**major caveats**](/Handheld_and_HTPC_edition/quirks/#nvidia-exclusive-issues) compared to AMD hardware out of control of the Bazzite maintainers
+- Nvidia GPU support is supported with [**major caveats**](/Handheld_and_HTPC_edition/quirks/#nvidia-gpu-exclusive-issues-with-steam-gaming-mode) compared to AMD hardware out of control of the Bazzite maintainers
 - Requires a [**Steam**](https://store.steampowered.com/) account
   - Signing up for an account can be done post-installation if you don't have one already
 
