@@ -26,7 +26,7 @@ Use the [legacy ISO](./legacy-install.md) or try the [alternative method](./alte
 ## "No Space left on Device" Error
 ![No Space left on Device](../../img/no_more_space_left.png)
 
-This error can misleadingly appear when the system does not have enough RAM for the installer to operate. [**You need at least 8GB of system memory to install Bazzite.**](/General/Installing_Bazzite_for_Desktop_or_Laptop_Hardware.md/#minimum-system-requirements)
+This error can misleadingly appear when the system does not have enough RAM for the installer to operate. [**You need at least 8GB of system memory to install Bazzite.**](../../Gaming/Hardware_compatibility_for_gaming.md#minimum-system-requirements)
 
 <hr>
 
