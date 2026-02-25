@@ -96,7 +96,7 @@ Flash Bazzite to your bootable device using Fedora Media Writer and eject the IS
 
 - Connect your bootable medium to your device and boot into it.
 - After connecting the device, boot into the Bazzite installer.
-- This depends on your motherboard hardware, but most of the time it could be a function keys like <kbd>F9</kbd> or similar.
+- This depends on your motherboard hardware, but most of the time it could be a function key like <kbd>F9</kbd> or similar.
   - Sometimes you need to consult the manual, look up your device online, or read any hotkeys that appear when you boot your PC.
     - Alternatively change the BIOS settings to boot with your bootable device first before your current storage, but this is **not recommended** to keep enabled after installing Bazzite.
 - Verify the media correctly and proceed to the installer.
