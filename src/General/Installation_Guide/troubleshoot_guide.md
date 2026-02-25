@@ -21,6 +21,12 @@ The "code 1" error is a generic error code that appears during installation when
 - **Corrupted ISO Image:** Ensure the ISO image isn't corrupted by calculating the checksums or using the official torrent when downloading Bazzite.
 - **Overheating USB Flash Drive:** Use a USB 3.0 or better flash drive and plug it into a USB 3.0 or better port to avoid overheating.
 
+
+## "No Space left on Device" Error
+![No Space left on Device](../../img/no_more_space_left.png)
+
+This error can misleadingly appear when the system does not have enough RAM for the installer to operate. [**You need at least 8GB of system memory to install Bazzite.**](/General/Installing_Bazzite_for_Desktop_or_Laptop_Hardware.md/#minimum-system-requirements)
+
 ## "Device is Active" Error
 
 This error occurs when the installer encounters a BitLocker encrypted partition. You have two possible options:
