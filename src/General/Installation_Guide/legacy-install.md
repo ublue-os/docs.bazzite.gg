@@ -30,7 +30,7 @@ All of the images come with the choice of [**KDE Plasma**](https://kde.org/plasm
 
 [**Steam Gaming Mode**](https://github.com/KyleGospo/gamescope-session) is an option as an additional session in addition to KDE Plasma or GNOME and is recommended for Home Theatre PC (HTPC) and handheld setups.
 
-More information can be found on the [**Bazzite FAQ**](https://faq.bazzite.gg) about the differences between the image variants.
+More information can be found on the [**Bazzite FAQ**](/General/FAQ.md) about the differences between the image variants.
 
 === "KDE Plasma"
 
