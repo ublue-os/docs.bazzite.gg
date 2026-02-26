@@ -29,9 +29,9 @@ https://www.youtube.com/watch?v=lBqbk6Z8HrQ
 
 All of the images come with the choice of [**KDE Plasma**](https://kde.org/plasma-desktop/) or [**GNOME**](https://www.gnome.org/) for their desktop environment.
 
-[**Steam Gaming Mode**](https://github.com/KyleGospo/gamescope-session) is an option as an additional session to run on top of KDE Plasma or GNOME but is only recommended for Home Theatre PC (HTPC) and handheld setups.
+[**Steam Gaming Mode**](https://github.com/KyleGospo/gamescope-session) is an option as an additional session to run in addition to KDE Plasma or GNOME.
 
-More information can be found on our [**FAQ**](https://faq.bazzite.gg) about the differences between the image variants.
+More information can be found on [**Bazzite's FAQ**](../../Handheld_and_HTPC_edition/index.md) about the differences between the image variants.
 
 === "KDE Plasma"
 
@@ -76,13 +76,19 @@ More information can be found on our [**FAQ**](https://faq.bazzite.gg) about the
 
     {% endblock %}
 
+## Backup Device
+
+...
+
 ## Download Bazzite
 
 ![download|1871x856, 60%](../../img/live-installer-download.png)
 
-Download the Bazzite ISO of your choice. Choose the hardware you plan to install Bazzite on, the vendor of your primary GPU, the desktop environment of your choice, and if you want Steam Gaming Mode (Bazzite-Deck version of Bazzite intended for HTPC and handheld hardware).
+Download the Bazzite ISO of your choice. Choose the hardware you plan to install Bazzite on, the vendor of your primary GPU, the desktop environment of your choice, and if you want Steam Gaming Mode which is the Bazzite-Deck variant intended for HTPC setups and handheld hardware.
 
 ### Calculating ISO SHA256 Checksum Hash
+
+**Video Tutorial**:
 
 https://www.youtube.com/watch?v=wUDbMJtR1sM
 
