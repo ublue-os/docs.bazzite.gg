@@ -91,7 +91,7 @@ https://www.youtube.com/watch?v=wUDbMJtR1sM
 ![flash|771x623, 70%](../../img/live-installer-fedora-media-writer-1.png)
 ![flash|771x723, 70%](../../img/live-installer-fedora-media-writer-2.png)
 
-Flash Bazzite to your bootable device using Fedora Media Writer and eject the ISO afterwards.
+Flash Bazzite to your bootable device using Fedora Media Writer and **eject the ISO afterwards**.
 
 ## Booting The Installer
 
