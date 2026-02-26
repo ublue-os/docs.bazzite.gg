@@ -28,13 +28,7 @@ Use the [legacy ISO](./legacy-install.md) or try the [alternative method](./alte
 
 This error can misleadingly appear when the system does not have enough RAM for the installer to operate. [**You need at least 8GB of system memory to install Bazzite.**](../../Gaming/Hardware_compatibility_for_gaming.md#minimum-system-requirements)
 
-<hr>
-
-## Legacy ISO Issues
-
-These issues are only present on the legacy ISO.
-
-### Error Code 1
+## Error Code 1
 
 The "code 1" error is a generic error code that appears during installation when a more specific error message isn't available. This error can occur in several scenarios that we have identified so far but there may be more scenarios:
 
