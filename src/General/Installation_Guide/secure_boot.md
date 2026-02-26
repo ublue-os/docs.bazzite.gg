@@ -1,16 +1,14 @@
 ---
 title: Secure Boot Guide
 tags:
-  -  Obsolete
+  -  QR
 search:
   exclude: true
 ---
 
 # Secure Boot Guide
 
-## Notes and Gotchas
-
-![Secure Boot menu: Continue boot / Enroll MOK / Enroll key from disk / Enroll hash from disk|690x378, 50%](../../img/Secure_Boot.jpeg 'Secure Boot')
+## Bazzite Supports Secure Boot
 
 !!! note
 
@@ -18,14 +16,14 @@ search:
 
 !!! important
 
-    The enrollment prompt uses a English QWERTY keyboard layout, indiscriminately of your actual hardware keyboard. Other layouts can therefore interfere with the characters of the password (i.e. `A` and `Q` are swapped on AZERTY layouts).
+    The enrollment prompt uses an English QWERTY keyboard layout, indiscriminately of your actual hardware keyboard. Other layouts can therefore interfere with the characters of the password (i.e. `A` and `Q` are swapped on AZERTY layouts).
 
-### Gotchas
+Bazzite supports Secure Boot however Universal Blue's key must be enrolled to use it otherwise keeping Secure Boot on in your BIOS will result in Bazzite not booting.
+
+## Important Secure Boot Notes:
 
 - Entering the password will register invisible characters for security purposes, so you will not be able to see what you are typing!
-
 - Updating your BIOS may re-enable Secure Boot and you may have to follow **"Method B"** after updating it to resolve the black screen on boot complaining about loading the kernel first.
-
 - The Steam Deck does **not** come with secure boot enabled and does not ship with any keys enrolled by default, do not enable Secure Boot on your Steam Deck unless you absolutely know what you're doing.
 
 ## Error Message (if key is **not** enrolled properly):
@@ -39,7 +37,9 @@ Press any key to continue...
 
 Follow **Method B** below to resolve this and move past the error message if you encounter it.
 
-## **Method A**) During Installation Method (See Image Above)
+### **Method A** - During Installation Method
+
+![Secure Boot menu: Continue boot / Enroll MOK / Enroll key from disk / Enroll hash from disk|690x378, 50%](../../img/Secure_Boot.jpeg 'Secure Boot')
 
 !!! note
 
@@ -55,7 +55,7 @@ universalblue
 
 Otherwise `Continue boot` if you have Secure Boot disabled or if it is not supported with your hardware.
 
-## **Method B**) After Installation Method
+## **Method B** - After Installation Method
 
 **Disable Secure Boot in the BIOS before proceeding**, and then re-enable it **after enrolling the key**.
 
@@ -77,7 +77,7 @@ Use the following command to boot straight into your system's BIOS (if supported
 ```command
 ujust bios
 ```
-### Complete MOK enrollment at boot
+## Complete MOK enrollment at boot
 
 On the next boot, you will see the blue MokManager screen:
 
@@ -88,11 +88,3 @@ On the next boot, you will see the blue MokManager screen:
     ```
 
 After the reboot, the key is enrolled and Secure Boot can remain enabled. Your system should now boot normally under Secure Boot.
-
-## Rebasing From Upstream Fedora Atomic Desktop images
-
-Rebasing from Fedora Silverblue, Fedora Kinoite, etc. to Bazzite.
-
-If you're rebasing from a Fedora Atomic Desktop image and use Secure Boot, then follow the instructions found in [**Bazzite's README**](https://github.com/ublue-os/bazzite/blob/main/README.md#secure-boot).
-
->[**Read more about rebasing from upstream Fedora Atomic Desktop images.**](/General/Installation_Guide/alternate-install-guide.md)
