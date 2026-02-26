@@ -1,9 +1,9 @@
 ---
 title: Installing Arctis Manager
 authors:
-  - "@rdamron"
+  - "@elegos, @aiyahhh"
 tags:
-  -  Community
+  - Community
 search:
   exclude: true
 ---
@@ -11,75 +11,38 @@ search:
 # Installing Arctis Manager
 
 ## Purpose
+This guide walks you through installing [Linux-Arctis-Manager](https://github.com/elegos/Linux-Arctis-Manager) (v2.0.4+) using Distrobox. This method keeps your host system immutable while providing the manager with necessary hardware access and background services. For a list of currently supported devices as well as advanced documentation, please check the linked repository.
 
-This guide will walk you through the steps to install and run Arctis Manager in Distrobox then run it automatically at startup.
-This guide works with [Linux-Arctis-Manager](https://github.com/elegos/Linux-Arctis-Manager) v1.6.3.
+## Run install script
+The following script will prepare the Distrobox container, build the app and set the necessary permissions on the host system. This Distrobox executes applications within containers, mounting `/var`, `/etc` and your `/home` directories in the container itself. Arctis Manager heavily relies on your `/home` directory, thus the container is not really used but for the installation process and is not as self-contained as other Distrobox apps.
 
-## Add udev Rules on Host:
-This will let arctis manager access the usb device without needing root.
-```
-cd /etc/udev/rules.d/
-sudo wget https://raw.githubusercontent.com/elegos/Linux-Arctis-Manager/refs/heads/main/udev/91-steelseries-arctis.rules
-sudo udevadm control --reload-rules
-sudo udevadm trigger
+```bash
+curl -LsSf https://raw.githubusercontent.com/elegos/Linux-Arctis-Manager/refs/heads/develop/scripts/distrobox.sh | sh
 ```
 
-## Create & Enter A Distrobox Container:
-```
-distrobox create arctis --additional-flags "--privileged" --additional-packages "pw-cli"
-distrobox enter arctis
-```
-
-## Install RPM (Inside A Distrobox Container):
-```
-wget https://github.com/elegos/Linux-Arctis-Manager/releases/download/v1.6.3/arctis-manager-1.6.3-1.fc42.x86_64.rpm
-sudo dnf install arctis-manager-1.6.3-1.fc42.x86_64.rpm
+### Verification (Optional)
+To verify the daemon is running and can see your device, run this on your host
+```bash
+lam-cli devices list
 ```
 
-## Export App (Inside A Distrobox Container):
+## Autostart the tray app (Optional)
+To have the tray icon appear automatically on login, create a manual autostart entry on the host.
+### Create the autostart folder and file
+```bash
+mkdir -p ~/.config/autostart/
+nano ~/.config/autostart/lam-gui-tray.desktop
 ```
-distrobox-export -b /usr/local/bin/arctis-manager -el "Arctis Manager"
+### Paste in configuration
+```ini, TOML
+[Desktop Entry]
+Categories=Utility;Application;
+Exec=/usr/bin/sh -c '$HOME/.local/bin/lam-gui --systray >/dev/null 2>&1'
+Icon=arctis-manager
+Name=Arctis Manager (system tray)
+StartupNotify=true
+Terminal=false
+Type=Application
 ```
-
-## Exit Distrobox Container & Run From Host:
-(Inside distrobox)
-```
-exit
-```
-
-### Test Arctis Manager(<kbd>CTRL</kbd>+<kbd>C</kbd> once it starts correctly).
-```
-arctis-manager
-```
-
-## Create A User SystemD Service & Find the Path to `arctis-manager`:
-```
-touch ~/.config/systemd/user/arctis-manager.service
-which arctis-manager
-```
-Copy the output from the last command and place in the ExecStart line in arctis-manager.service
-
-```
-nano ~/.config/systemd/user/arctis-manager.service
-```
-### `arctis-manager.service`
-```
-[Unit]
-Description=Arctis Manager
-After=graphical-session.target
-Wants=graphical-session.target
-
-[Service] 
-ExecStart=/home/<username>/.local/bin/arctis-manager
-Restart=always
-RestartSec=2
-
-[Install] 
-WantedBy=graphical-session.target
-```
-
-### Reload and Launch
-```
-systemctl --user daemon-reload
-systemctl --user enable --now arctis-manager.service
-```
+### Save and Exit
+Press <kbd>Ctrl</kbd>+<kbd>O</kbd> then <kbd>Enter</kbd> to save, and <kbd>Ctrl</kbd>+<kbd>X</kbd> to exit.
