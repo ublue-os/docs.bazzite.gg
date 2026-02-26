@@ -7,7 +7,7 @@ title: Hardware Compatibility for Linux Gaming
 ## Minimum System Requirements
 
 - **Architecture**: x86_64
-- **Firmware**: UEFI (CSM/Legacy boot [**UNSUPPORTED**](../FAQ.md#does-bazzite-support-csmlegacy-boot))
+- **Firmware**: UEFI (CSM/Legacy boot [**UNSUPPORTED**](../General/FAQ/#does-bazzite-support-csmlegacy-boot))
 - **Processor (CPU)** : 2GHz quad core processor or better
 - **System Memory (RAM)**: 8GB
 - **Graphics**: A graphics card that can utilize Vulkan 1.3 or higher, modern AMD GPUs work the best
