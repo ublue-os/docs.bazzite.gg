@@ -77,7 +77,9 @@ ujust setup-boot-windows-steam
 
 https://www.youtube.com/watch?v=uy8mi1pAj8E
 
-## Recommended Next Steps
+<hr>
+
+## Next Steps
 
 ### Configure your system with the Bazzite Portal application
 
@@ -91,6 +93,17 @@ Familiarize yourself with the Bazzite Portal which does system maintenance, inst
 
 Install additional software for Bazzite in the Bazaar app store.  This is the place where you will be getting most of your applications, but if you require something that isn't found here then look into the [**Installing and Managing Applications**](../../Installing_and_Managing_Software/index.md).
 
-### Ready to Game!
+<hr>
 
-Enjoy using Bazzite!  Read the [**Gaming Guide**](../../Gaming/index.md) to learn the basics of Linux gaming.
+## Ready to Game
+
+**You have now installed Bazzite!**
+
+Get started with gaming by reading our [**Gaming Guide**](../../Gaming/index.md) which covers:
+
+- Installing and configuring **Steam** and **Proton** for Windows game compatibility
+- Setting up **Lutris** and other game launchers (Epic Games, GOG, Amazon Games, etc.)
+- Managing and modding games
+- Troubleshooting common gaming issues
+
+Enjoy Bazzite and make sure to [**report any bugs**](../../General/reporting_bugs.md) you encounter so they can be fixed ASAP if possible.
