@@ -52,10 +52,9 @@ Please remove the Fedora Flatpak remote using the Warehouse application.  This w
 Once everything is setup properly, then you should rebase from the **unsigned image** to the **signed image** for security reasons, so **enter this command** in the host terminal:
 
 ```command
-rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/<IMAGE>
-```
-
-Replace **`<IMAGE>`** with the image you're using.
+ujust verify-image
+``` 
+After the command is completed, reboot your device.
 
 ## Video Tutorial
 
