@@ -12,7 +12,7 @@ hide:
 
   Bazzite supports PC hardware from most modern desktop and laptops to specialized models like [Framework](https://frame.work/). <br>
 
-  Bazzite also supports controller-friendly hardware like [home theater PC setups][htpc] and a [multitude of handhelds][install_handheld]:
+  Bazzite also supports controller-friendly hardware like home theater PC setups and a multitude of handhelds:
   
   - [Asus Handhelds][ally]
   - [Lenovo Handhelds][legion_go]
@@ -30,7 +30,7 @@ hide:
   It is also compatible with other tools like:
 
   - [Heroic Games Launcher](https://heroicgameslauncher.com/) for seamless Epic Games, GOG, and Amazon Games integration.
-  - [Games and emulators from the built-in app store](https://flathub.org/apps/category/Game/1) that range from [osu!](https://flathub.org/apps/sh.ppy.osu) to [Minecraft](https://flathub.org/apps/org.prismlauncher.PrismLauncher).
+  - Games and emulators from the built-in app store that range from [osu!](https://flathub.org/apps/sh.ppy.osu) to [Minecraft](https://flathub.org/apps/org.prismlauncher.PrismLauncher).
   - ...And [more!](https://flathub.org/en/apps/category/game/1)
 
   <small>\*<sup>1</sup> PC games that are known to work on the Linux desktop, visit [**ProtonDB**](https://protondb.com) and [**Are We Anti-Cheat Yet?**](https://areweanticheatyet.com) for more information</small>.
@@ -80,12 +80,7 @@ hide:
 
 </div>
 
-[install_pc_laptop]: General/Installation_Guide/Installing_Bazzite_for_Desktop_or_Laptop_Hardware.md
-[install_handheld]: General/Installation_Guide/Installing_Bazzite_for_Handheld_PCs.md
 [deck]:  Handheld_and_HTPC_edition/Handheld_Wiki/Steam_Deck.md
-[frame_13]: General/Installation_Guide/Installing_Bazzite_Framework_Laptop_13.md
-[frame_16]: General/Installation_Guide/Installing_Bazzite_for_Framework_Laptop_16.md
-[htpc]: General/Installation_Guide/Installing_Bazzite_for_HTPC_Setups.md
 [ally]: Handheld_and_HTPC_edition/Handheld_Wiki/ASUS_ROG_Ally.md
 [legion_go]: Handheld_and_HTPC_edition/Handheld_Wiki/Lenovo_Legion_Go.md
 [ayn]: Handheld_and_HTPC_edition/Handheld_Wiki/Ayn_Handhelds.md

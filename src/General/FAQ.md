@@ -55,7 +55,7 @@ Verify your Bazzite image by entering this **command** in the terminal:
 rpm-ostree status
 ```
 
-!!! note
+!!! important
 
     Every Bazzite image should start with `ostree-image-signed:docker://ghcr.io/ublue-os/...`.
     <sub> The `...` is a placeholder for the actual image name which can be referenced in the chart below. </sub>
@@ -110,7 +110,7 @@ There are currently no plans to support Kepler and older architectures (Most GTX
 
 Most hardware changes should **not** require any manual intervention outside of the expectations from that particular hardware which would be OS-agnostic.  However, if you swap from or to a Nvidia GPU, then [rebasing](../Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/brh.md) will be necessary as a manual intervention to get the appropriate graphics drivers.
 
-## Windows games claim that my graphic drivers are outdated, but I am not sure how to update them.
+## Windows games claim that my graphic drivers are outdated, how do I update them?
 
 ![](/../img/gpu_driver_warning.png)
 Windows games cannot correctly detect Linux graphics drivers.

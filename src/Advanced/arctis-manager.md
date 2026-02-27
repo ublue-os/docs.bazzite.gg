@@ -3,6 +3,7 @@ title: Installing Arctis Manager
 authors:
   - "@elegos"
   - "@ifeign"
+  - "@rdamron"
 tags:
   - Community
 search:
@@ -35,7 +36,8 @@ mkdir -p ~/.config/autostart/
 nano ~/.config/autostart/lam-gui-tray.desktop
 ```
 ### Paste in configuration
-```ini, TOML
+
+```
 [Desktop Entry]
 Categories=Utility;Application;
 Exec=/usr/bin/sh -c '$HOME/.local/bin/lam-gui --systray >/dev/null 2>&1'

@@ -1,5 +1,9 @@
 ---
 title: Manual Partitioning
+tags:
+  -  Obsolete
+search:
+  exclude: true
 ---
 
 # Manual Partitioning

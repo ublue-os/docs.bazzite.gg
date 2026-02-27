@@ -4,6 +4,29 @@ title: Installation Troubleshooting
 
 # Installation Troubleshooting
 
+## Downloading the ISO
+
+Use a download manager (like [**Motrix**](https://motrix.app/)) if the direct download fails or is downloading too slow.
+
+## Drives
+
+Make sure to only select the appropriate drives to avoid losing data on others, and it is best practice to safely remove any external drives before proceeding.
+
+## "Failed to open \EFI\BOOT\mmx64.efi - Not Found" error
+
+![Failed to open \EFI\BOOT\mmx64.efi - Not Found](../../img/efi-boot-fail.png)
+
+To work around this issue, boot from file. Go into your UEFI (BIOS), select your EFI partition with Bazzite installed, then select /EFI/fedora/grubx64.efi to boot from.
+After this, your boot manager should boot normally showing "FEDORA" as the option.
+
+## Installer Won't Boot
+
+!!! note
+
+The new installer may not boot if your BIOS is in CSM Legacy boot as opposed to UEFI. Read more in the [**Bazzite system requirements**](../../Gaming/Hardware_compatibility_for_gaming.md#minimum-system-requirements).
+
+Use the [legacy ISO](./legacy-install.md) or try the [alternative method](./alternate-install-guide.md) of installing Bazzite.
+
 ## Error Code 1
 
 The "code 1" error is a generic error code that appears during installation when a more specific error message isn't available. This error can occur in several scenarios that we have identified so far but there may be more scenarios:
@@ -18,14 +41,23 @@ The "code 1" error is a generic error code that appears during installation when
   - **Fix 4:** Create a new EFI partition: You can use manual partitioning as described in the [Manual Partitioning Guide](./manual_partitioning.md) to create a new EFI partition alongside the existing one to accomplish this.
     - Warning: some BIOSes cannot handle a second EFI partition on the drive.
 - **Incorrect Filesystem:** Using the EXT4 or any other filesystem type for the root partition will cause this error. You must use BTRFS for the root partition.
-- **Corrupted ISO Image:** Ensure the ISO image isn't corrupted by calculating the checksums or using the official torrent when downloading Bazzite.
+- **Corrupted ISO Image:** Ensure the ISO image isn't corrupted by calculating the checksums.
 - **Overheating USB Flash Drive:** Use a USB 3.0 or better flash drive and plug it into a USB 3.0 or better port to avoid overheating.
-
 
 ## "No Space left on Device" Error
 ![No Space left on Device](../../img/no_more_space_left.png)
 
 This error can misleadingly appear when the system does not have enough RAM for the installer to operate. [**You need at least 8GB of system memory to install Bazzite.**](/General/Installation_Guide/Installing_Bazzite_for_Desktop_or_Laptop_Hardware.md/#minimum-system-requirements)
+
+## "Bad shim signature, you need to load the kernel first" error
+
+![You need to load the kernel first](../../img/you-need-to-load-the-kernel-first.png)
+
+Disable Secure Boot in BIOS to get past this screen. If you wish to use Secure Boot, follow [the **Secure Boot Guide** using method B](/General/Installation_Guide/secure_boot.md).
+
+**Video Guide**:
+
+https://www.youtube.com/watch?v=Z_DsWqTuipU
 
 ## "Device is Active" Error
 
@@ -38,28 +70,12 @@ B. **Bazzite Only:** Delete the BitLocker partition using a tool like GParted be
 
 https://www.youtube.com/watch?v=FBGLLkIKp-w
 
-## "Error checking storage configuration"
+### "Error checking storage configuration"
 
 **Watch this video for a workaround**:
 
 https://www.youtube.com/watch?v=VTnm9EiBdPA
 
-## "Bad shim signature, you need to load the kernel first" error
-
-![You need to load the kernel first](../../img/you-need-to-load-the-kernel-first.png)
-
-Disable Secure Boot in BIOS to get past this screen. If you wish to use Secure Boot, follow [the **Secure Boot Guide** using method B](/General/Installation_Guide/secure_boot.md)
-
-Video walkthrough: https://www.youtube.com/watch?v=Z_DsWqTuipU
-
-## "Failed to open \EFI\BOOT\mmx64.efi - Not Found" error
-
-![Failed to open \EFI\BOOT\mmx64.efi - Not Found](../../img/efi-boot-fail.png)
-
-To work around this issue, boot from file. Go into your UEFI (BIOS), select your EFI partition with Bazzite installed, then select /EFI/fedora/grubx64.efi to boot from.
-After this, your boot manager should boot normally showing "FEDORA" as the option.
-
->[**Secure Boot Guide**](/General/Installation_Guide/secure_boot.md)
 
 ## Unable to allocate requested partition scheme error
 
@@ -67,7 +83,7 @@ This error occurs when installing on drives larger than 2TB where the first 2TB 
 
 ![Unable to allocation requested partition scheme](../../img/unable-to-allocation-requested-partition-scheme.png)
 
-It seems like the Anaconda installer cannot create any paritions after the 2TB mark.
+It seems like the Anaconda installer cannot create any partitions after the 2TB mark.
 
 Here are some possible solutions on how you can address it:
 
@@ -86,3 +102,4 @@ Here are some possible solutions on how you can address it:
 If none of the above errors are relevant to your issue, or you still have problems installing Bazzite, then try following our alternative installation method:
 
 [**Try installing Bazzite by rebasing from Fedora Kinoite (KDE Plasma) or Fedora Silverblue (GNOME)**](/General/Installation_Guide/alternate-install-guide.md).
+

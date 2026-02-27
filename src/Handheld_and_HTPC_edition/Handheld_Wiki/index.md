@@ -47,7 +47,7 @@ If your handheld isn't listed in the entries, then it does **not** necessarily m
 
     Gyro functionality **requires** DualSense emulation
 
- ## TDP Controls
+## TDP Controls
 
 ![TDP|690x431, 75%](../../img/TDP.jpeg)
 
