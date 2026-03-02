@@ -4,37 +4,7 @@ title: Custom Resolutions
 
 # Custom Resolutions
 
-## Kscreen-Doctor (KDE Images/Desktop Mode only)
-
-!!! info "Starting with Plasma 6.6, `kscreen-doctor` allows addition of a custom modeline. If you are on the KDE image, try to use that first!"
-
-### Guide to add a custom resolution using `kscreen-doctor`
-
-1. Run `kscreen-doctor -o` in the terminal.
-2. Find the ID of the monitor you want to add a mode for. You should see something similar to this:
-    ```bash
-    Output: 1 eDP-1 a17bb763-cbd3-4b3d-b7d3-7344112e71b7
-        enabled
-        connected
-        priority 1
-        Panel
-        replication source:0
-        Modes:  1:2880x1800@60.00!  2:2880x1800@120.00*  3:1600x1200@59.87...... # output omitted for brevity
-    ```
-    For example, if you want to add a custom mode to **eDP-1**, your ID will be **1**. Note this down.
-3. You can now construct the command to add your custom mode, following this format:
-    ```bash
-    kscreen-doctor output.<ID>.addCustomMode.<Width>.<Height>.<Refresh>.<Blanking>
-    ```
-    Replace each of the options with what you want to set. Note that refresh rate is in **mHz** (millihertz), so a **75Hz** refresh rate will correspond to `75000` in `<refresh>`.
-    `<Blanking>` will be either `full` or `reduced` depending on if you want the timing to be generated with [CVT-RB](../custom_resolution/#interactive-mode-option-explaination)
-    
-    For example, the command for adding a custom resolution of 1920x1080@75Hz for display ID 1 with reduced blanking would be:
-    ```bash
-    kscreen-doctor output.1.addCustomMode.1920.1080.75000.reduced
-    ```
-    
-## Custom-Resolution-Helper
+## `custom-resolution-helper`
 
 ![Custom Resolution Helper Preview|570x500](../img/Custom_Resolution_Helper_Preview.png)
 
@@ -45,6 +15,8 @@ title: Custom Resolutions
 A command-line utility that assists with **creating** and **managing** custom resolutions for your Bazzite installation.
 
 ### Using `custom-resolution-helper`
+
+![Custom Resolution Helper Command|686x500](../img/Custom_Resolution_Helper_Command.png)
 
 Open a host terminal and **enter**:
 
@@ -58,12 +30,20 @@ There is also an **alias** which is less typing for those on handhelds or HTPC s
 crh
 ```
 
-### Guide for creating a custom resolution using `custom-resolution-helper`
+### Options Available:
+
+- `current`: Show your current resolutions, if any.
+- `add`: Add a custom resolution.
+- `rm`: Remove a custom resolution.
+- `rm all`: Remove all custom resolutions.
+- `add-edid`: Add an edid for a selected display
+- `dump-edid`: Dump the edid for a selected display
+- Run without arguments for **Interactive Mode**
+
+### Guide for creating a custom resolution
 
 - ModeDB Method: easier to set up, will likely not work with HDMI.
 - EDID Method: more hassle to set up, only use this if ModeDB does not work.
-
-!!! info "Starting with Plasma 6.6, `kscreen-doctor` allows addition of a custom modeline. If you are on the KDE image and only need custom resolution in desktop mode, try to use [that](../custom_resolution/#guide-to-add-a-custom-resolution-using-kscreen-doctor) first!"
 
 === "Modedb method"
 
