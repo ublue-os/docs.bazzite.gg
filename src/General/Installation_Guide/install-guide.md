@@ -29,9 +29,9 @@ https://www.youtube.com/watch?v=lBqbk6Z8HrQ
 
 All of the images come with the choice of [**KDE Plasma**](https://kde.org/plasma-desktop/) or [**GNOME**](https://www.gnome.org/) for their desktop environment.
 
-[**Steam Gaming Mode**](https://github.com/KyleGospo/gamescope-session) is an option as an additional session to run in addition to KDE Plasma or GNOME.
+[**Steam Gaming Mode**](../../Handheld_and_HTPC_edition/index.md) is an option as an additional session to run in addition to KDE Plasma or GNOME.
 
-More information can be found on [**Bazzite's FAQ**](../../Handheld_and_HTPC_edition/index.md) about the differences between the image variants.
+More information can be found on [**Bazzite's FAQ**](/General/FAQ.md) about the differences between the image variants.
 
 === "KDE Plasma"
 
