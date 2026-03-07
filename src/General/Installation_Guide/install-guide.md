@@ -29,9 +29,9 @@ https://www.youtube.com/watch?v=lBqbk6Z8HrQ
 
 All of the images come with the choice of [**KDE Plasma**](https://kde.org/plasma-desktop/) or [**GNOME**](https://www.gnome.org/) for their desktop environment.
 
-[**Steam Gaming Mode**](https://github.com/KyleGospo/gamescope-session) is an option as an additional session to run in addition to KDE Plasma or GNOME.
+[**Steam Gaming Mode**](../../Handheld_and_HTPC_edition/index.md) is an option as an additional session to run in addition to KDE Plasma or GNOME.
 
-More information can be found on [**Bazzite's FAQ**](../../Handheld_and_HTPC_edition/index.md) about the differences between the image variants.
+More information can be found on [**Bazzite's FAQ**](/General/FAQ.md) about the differences between the image variants.
 
 === "KDE Plasma"
 
@@ -251,6 +251,7 @@ Bazzite supports Secure Boot however Universal Blue's key must be enrolled to us
 
 - Entering the password will register invisible characters for security purposes, so you will not be able to see what you are typing!
 - Updating your BIOS may re-enable Secure Boot and you may have to follow **"Method B"** after updating it to resolve the black screen on boot complaining about loading the kernel first.
+- Secure Boot is incompatible with [CSM (Compatibility Support Module) / legacy](../FAQ.md#does-bazzite-support-csmlegacy-boot) mode. Make sure it is **disabled** and not set to `enabled` or `auto`.
 - The Steam Deck does **not** come with secure boot enabled and does not ship with any keys enrolled by default, do not enable Secure Boot on your Steam Deck unless you absolutely know what you're doing.
 
 ### Error Message (if key is **not** enrolled properly):
