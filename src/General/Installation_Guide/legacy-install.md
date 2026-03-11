@@ -34,7 +34,7 @@ More information can be found on the [**Bazzite FAQ**](/General/FAQ.md) about th
 
 === "KDE Plasma"
 
-    #### [KDE Plasma (Default)](https://kde.org/plasma-desktop/)
+    #### KDE Plasma (Default)
 
     ![KDE Plasma|690x388, 75%](/img/KDE_Plasma_DE.jpeg)
 
@@ -45,7 +45,7 @@ More information can be found on the [**Bazzite FAQ**](/General/FAQ.md) about th
 
 === "GNOME"
 
-    #### [GNOME (`-gnome` images)](https://www.gnome.org/)
+    #### GNOME (`-gnome` images)
 
     ![GNOME|690x359, 75%](/img/GNOME_DE.png)
 
@@ -56,7 +56,7 @@ More information can be found on the [**Bazzite FAQ**](/General/FAQ.md) about th
 
 === "Steam Gaming Mode"
 
-    #### [Steam Gaming Mode (`-deck` images)](/Handheld_and_HTPC_edition/Steam_Gaming_Mode.md)
+    #### Steam Gaming Mode (`-deck` images)
 
     ![Gaming Mode|690x388, 75%](/img/Gaming_Mode.jpeg)
 
