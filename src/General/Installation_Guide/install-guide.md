@@ -57,7 +57,7 @@ More information can be found on [**Bazzite's FAQ**](/General/FAQ.md) about the 
 
 === "Steam Gaming Mode"
 
-    #### [Steam Gaming Mode (`-deck` images)](/Handheld_and_HTPC_edition/Steam_Gaming_Mode.md)
+    #### [Steam Gaming Mode (`-deck` images)](../Handheld_and_HTPC_edition/Handheld_Wiki/index.md)
 
     ![Gaming Mode|690x388, 75%](/img/Gaming_Mode.jpeg)
 
