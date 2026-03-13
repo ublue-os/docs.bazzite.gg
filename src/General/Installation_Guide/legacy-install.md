@@ -28,13 +28,13 @@ This guide is only for the legacy ISOs which are still supported at this time du
 
 All of the images come with the choice of [**KDE Plasma**](https://kde.org/plasma-desktop/) or [**GNOME**](https://www.gnome.org/) for their desktop environment.
 
-[**Steam Gaming Mode**](https://github.com/KyleGospo/gamescope-session) is an option as an additional session in addition to KDE Plasma or GNOME and is recommended for Home Theatre PC (HTPC) and handheld setups.
+[**Steam Gaming Mode**](/Handheld_and_HTPC_edition/Steam_Gaming_Mode.md) is an option as an additional session in addition to KDE Plasma or GNOME and is recommended for Home Theatre PC (HTPC) and handheld setups.
 
-More information can be found on the [**Bazzite FAQ**](/General/FAQ.md) about the differences between the image variants.
+More information can be found on the [**Bazzite FAQ**](../../General/FAQ.md) about the differences between the image variants.
 
 === "KDE Plasma"
 
-    #### [KDE Plasma (Default)](https://kde.org/plasma-desktop/)
+    #### KDE Plasma (Default)
 
     ![KDE Plasma|690x388, 75%](/img/KDE_Plasma_DE.jpeg)
 
@@ -45,7 +45,7 @@ More information can be found on the [**Bazzite FAQ**](/General/FAQ.md) about th
 
 === "GNOME"
 
-    #### [GNOME (`-gnome` images)](https://www.gnome.org/)
+    #### GNOME (`-gnome` images)
 
     ![GNOME|690x359, 75%](/img/GNOME_DE.png)
 
@@ -56,7 +56,7 @@ More information can be found on the [**Bazzite FAQ**](/General/FAQ.md) about th
 
 === "Steam Gaming Mode"
 
-    #### [Steam Gaming Mode (`-deck` images)](/Handheld_and_HTPC_edition/Steam_Gaming_Mode.md)
+    #### Steam Gaming Mode (`-deck` images)
 
     ![Gaming Mode|690x388, 75%](/img/Gaming_Mode.jpeg)
 
