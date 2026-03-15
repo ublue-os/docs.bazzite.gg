@@ -19,8 +19,9 @@ https://www.youtube.com/watch?v=lBqbk6Z8HrQ
 - A way to download the Bazzite ISO
   - A download manager (like [**Motrix**](https://motrix.app/)) if the direct download for the Bazzite ISO fails or is downloading too slow.
 - A 16GB+ bootable medium like a Flash Drive
-  - Software to flash the ISO like **Fedora Media Writer** ([**Windows/macOS**](https://github.com/FedoraQt/MediaWriter/releases) or [**Linux**](https://flathub.org/en/apps/org.fedoraproject.MediaWriter))
-    - Ventoy is **NOT** supported software for flashing the Bazzite ISO.
+- One of the following programs to flash/boot the ISO:
+  - **Ventoy** ([Windows, Linux](https://www.ventoy.net/))
+  - **Fedora Media Writer** ([**Windows/macOS**](https://github.com/FedoraQt/MediaWriter/releases), [**Linux**](https://flathub.org/en/apps/org.fedoraproject.MediaWriter))
 - A physical wired keyboard is **recommended** and **required for devices without a touchscreen**.
   - An on-screen keyboard exists for scenarios where you do not have a physical USB keyboard.
     - A touchscreen display or a mouse is required to navigate the installer properly.
