@@ -19,8 +19,10 @@ https://www.youtube.com/watch?v=lBqbk6Z8HrQ
 - A way to download the Bazzite ISO
   - A download manager (like [**Motrix**](https://motrix.app/)) if the direct download for the Bazzite ISO fails or is downloading too slow.
 - A 16GB+ bootable medium like a Flash Drive
-  - Software to flash the ISO like **Fedora Media Writer** ([**Windows/macOS**](https://github.com/FedoraQt/MediaWriter/releases) or [**Linux**](https://flathub.org/en/apps/org.fedoraproject.MediaWriter))
-    - Ventoy is **NOT** supported software for flashing the Bazzite ISO.
+- One of the following programs to flash/boot the ISO:
+  - **Ventoy** ([Windows, Linux](https://www.ventoy.net/))
+  - **Fedora Media Writer** ([Windows/macOS](https://github.com/FedoraQt/MediaWriter/releases), [Linux](https://flathub.org/en/apps/org.fedoraproject.MediaWriter))
+  - **Rufus** ([Windows](https://rufus.ie/)) (DD Image mode required)
 - A physical wired keyboard is **recommended** and **required for devices without a touchscreen**.
   - An on-screen keyboard exists for scenarios where you do not have a physical USB keyboard.
     - A touchscreen display or a mouse is required to navigate the installer properly.
@@ -37,7 +39,7 @@ More information can be found on [**Bazzite's FAQ**](../../General/FAQ.md) about
 
     #### KDE Plasma (Default)
 
-    ![KDE Plasma|690x388, 75%](/img/KDE_Plasma_DE.jpeg)
+    ![Screenshot of the Bazzite desktop running KDE Plasma|690x388, 75%](/img/KDE_Plasma_DE.png)
 
     - KDE Plasma's default interface has a traditional and familiar layout
     - Highly customizable with tons of settings
@@ -48,7 +50,7 @@ More information can be found on [**Bazzite's FAQ**](../../General/FAQ.md) about
 
     #### GNOME (`-gnome` images)
 
-    ![GNOME|690x359, 75%](/img/GNOME_DE.png)
+    ![Screenshot of the Bazzite desktop running GNOME|690x388, 75%](/img/GNOME_DE.png)
 
     - GNOME's default interface has an elegant and touch-friendly layout
     - Simple and concise
@@ -113,7 +115,7 @@ Hold the 'Volume Down' (<kbd>-</kbd>) button and click the Power Button, and whe
 
 ## Live Environment
 
-![boot|1573x872, 50%](../../img/live-installer-grub.png)
+![Screenshot of the Bazzite live installer GRUB boot menu|800x600, 70%](../../img/live-installer-grub.png)
 
 ![live|1431x897, 60%](../../img/live-installer-opening.png)
 
@@ -266,7 +268,7 @@ Follow **Method B** below to resolve this and move past the error message if you
 
 ### **Method A** - During Installation Method
 
-![Secure Boot menu: Continue boot / Enroll MOK / Enroll key from disk / Enroll hash from disk|690x378, 50%](../../img/Secure_Boot.jpeg 'Secure Boot')
+![Secure Boot menu: Continue boot / Enroll MOK / Enroll key from disk / Enroll hash from disk|200x102, 100%](../../img/Secure_Boot.png 'Secure Boot')
 
 !!! note
 

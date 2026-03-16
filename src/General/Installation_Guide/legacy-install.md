@@ -36,7 +36,7 @@ More information can be found on the [**Bazzite FAQ**](../../General/FAQ.md) abo
 
     #### KDE Plasma (Default)
 
-    ![KDE Plasma|690x388, 75%](/img/KDE_Plasma_DE.jpeg)
+    ![Screenshot of the Bazzite desktop running KDE Plasma|690x388, 75%](/img/KDE_Plasma_DE.png)
 
     - KDE Plasma's default interface has a traditional and familiar layout
     - Highly customizable with tons of settings
@@ -47,7 +47,7 @@ More information can be found on the [**Bazzite FAQ**](../../General/FAQ.md) abo
 
     #### GNOME (`-gnome` images)
 
-    ![GNOME|690x359, 75%](/img/GNOME_DE.png)
+    ![Screenshot of the Bazzite desktop running GNOME|690x388, 75%](/img/GNOME_DE.png)
 
     - GNOME's default interface has an elegant and touch-friendly layout
     - Simple and concise
@@ -281,7 +281,7 @@ Follow **Method B** below to resolve this and move past the error message if you
 
 ### **Method A** - During Installation Method
 
-![Secure Boot menu: Continue boot / Enroll MOK / Enroll key from disk / Enroll hash from disk|690x378, 50%](../../img/Secure_Boot.jpeg 'Secure Boot')
+![Secure Boot menu: Continue boot / Enroll MOK / Enroll key from disk / Enroll hash from disk|200x102, 100%](../../img/Secure_Boot.png 'Secure Boot')
 
 !!! note
 
