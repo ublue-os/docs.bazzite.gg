@@ -134,11 +134,14 @@ No. A notification with instructions on turning off CSM will occur when the inst
 
     Hostnames must be **under 20 characters** due to a limitation with Distrobox containers.
 
-Edit the `/etc/hostname` file with a new hostname, save it, and reboot.
+Open the terminal and enter the following **command**
 
 ```
 hostnamectl hostname <hostname>
 ```
+
+Specify a hostname where `<hostname>` is.
+
 
 ## I installed Windows but Bazzite won't boot { id="windows-bootloader-override" }
 
@@ -166,8 +169,6 @@ Deployments can also be pinned to rollback for future use, so `:2`, `:3`, etc. c
 ## Why is it called Bazzite?
 
 [Fedora Linux's Atomic Desktops](https://fedoraproject.org/atomic-desktops/) originally followed a naming scheme based on [minerals.](https://fedoraproject.org/kinoite/) Bazzite is a mineral that is known for being strong, lightweight, and is [blue](https://universal-blue.org/).
-
-<hr>
 
 ## I have questions or concerns that cannot be answered in the documentation
 
