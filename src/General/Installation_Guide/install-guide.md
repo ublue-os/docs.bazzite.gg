@@ -96,10 +96,55 @@ https://www.youtube.com/watch?v=wUDbMJtR1sM
 
 ## Flash ISO
 
+### Ventoy
+
+#### Installing/Updating
+
+!!! note
+
+    Skip this section if Ventoy was already installed before to your flash drive and only update it if necessary.
+
+![Ventoy Website|1264x681, 80%](../../img/ventoy-website.png)
+
+Download a version based on your current operating system: `ventoy-x.x.x-windows.zip` for **Windows** and `ventoy-x.x.x-linux.tar.gz` for **Linux** respectfully. Extract downloaded archive and double-click on `Ventoy2Disk.exe` or `VentoyGUI.x86_64` executable. Enter a password if prompted.
+
+![Ventoy Interface|530x457, 100%](../../img/ventoy-gui.png)
+
+By default Ventoy will enable Secure Boot support which will require picking a key manually from Ventoy disk partition. For simplicity it needs to be disabled by going to "Option" menu on top bar and turning off "Secure Boot Support".
+
+![Ventoy Secure Boot option|270x111, 100%](../../img/ventoy-gui-sb.png)
+
+!!! important
+
+    In order to boot into Ventoy boot menu, Secure Boot needs to be disabled temporary in BIOS. Skip this step if Secure Boot is not enabled or unsupported with your hardware (e.g. **Steam Deck**).
+
+Pick your device in "Device" menu and click on Install or Update button.
+
+![Ventoy Formatting popup|476x203, 100%](../../img/ventoy-popup.png)
+
+While installing for the first time Ventoy will ask to verify formatting the device twice **which will delete all data from it**. **Be sure to pick the right flash drive.**
+
+After installing or updating Ventoy a new disk partition labeled `Ventoy` should appear in your File Explorer. You might need to re-plug your flash drive if it didn't appear at first.
+
+#### Adding downloaded ISO
+
+![Ventoy Drag and Drop action|548x587, 90%](../../img/ventoy-dnd.png)
+
+Adding your dowloaded Bazzite ISO file is as simple as dragging your file to `Ventoy` disk parition in your File Explorer. Once the file is copied fully **eject your USB.**
+
+### Fedora Media Writer
+
 ![flash|771x623, 70%](../../img/live-installer-fedora-media-writer-1.png)
 ![flash|771x723, 70%](../../img/live-installer-fedora-media-writer-2.png)
 
-Flash Bazzite to your bootable device using Fedora Media Writer and **eject the ISO afterwards**.
+Flash Bazzite to your bootable device using Fedora Media Writer and **eject the USB afterwards**.
+
+### Rufus
+
+![Rufus|570x705, 90%](../../img/rufus-gui.png)
+![Rufus ISOHybrid popup|626x357, 80%](../../img/rufus-isohybrid.png)
+
+Flash Bazzite to your bootable device using Rufus picking **DD Image mode** in "ISOHybrid image detected" window and **eject the USB afterwards**.
 
 ## Booting The Installer
 
