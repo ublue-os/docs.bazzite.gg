@@ -106,7 +106,7 @@ https://www.youtube.com/watch?v=wUDbMJtR1sM
 
 ![Ventoy Website|1264x681, 80%](../../img/ventoy-website.png)
 
-Download a version based on your current operating system: `ventoy-x.x.x-windows.zip` for **Windows** and `ventoy-x.x.x-linux.tar.gz` for **Linux** respectfully. Extract downloaded archive and double-click on `Ventoy2Disk.exe` or `VentoyGUI.x86_64` executable. Enter a password if prompted.
+Download a version based on your current operating system: `ventoy-x.x.x-windows.zip` for **Windows** and `ventoy-x.x.x-linux.tar.gz` for **Linux** respectively. Extract downloaded archive and double-click on `Ventoy2Disk.exe` or `VentoyGUI.x86_64` executable. Enter a password if prompted.
 
 ![Ventoy Interface|530x457, 100%](../../img/ventoy-gui.png)
 
@@ -116,7 +116,7 @@ By default Ventoy will enable Secure Boot support which will require picking a k
 
 !!! important
 
-    In order to boot into Ventoy boot menu, Secure Boot needs to be disabled temporary in BIOS. Skip this step if Secure Boot is not enabled or unsupported with your hardware (e.g. **Steam Deck**).
+    In order to boot into Ventoy boot menu, Secure Boot needs to be disabled temporarily in BIOS. Skip this step if Secure Boot is not enabled or unsupported with your hardware (e.g. **Steam Deck**).
 
 Pick your device in "Device" menu and click on Install or Update button.
 
@@ -130,7 +130,7 @@ After installing or updating Ventoy a new disk partition labeled `Ventoy` should
 
 ![Ventoy Drag and Drop action|548x587, 90%](../../img/ventoy-dnd.png)
 
-Adding your dowloaded Bazzite ISO file is as simple as dragging your file to `Ventoy` disk parition in your File Explorer. Once the file is copied fully **eject your USB.**
+Adding your downloaded Bazzite ISO file is as simple as dragging your file to `Ventoy` disk partition in your File Explorer. Once the file is copied fully **eject your USB.**
 
 ### Fedora Media Writer
 
