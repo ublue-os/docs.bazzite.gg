@@ -97,6 +97,11 @@ This will use the OpenGL translation as opposed to Vulkan.
 !!! warning
 
     You will lose all of your data reformatting secondary internal/external drives.
+    
+!!! info
+    
+    To disable the NTFS nag, run `ujust _disable-ntfs-service`. **ONLY DO THIS IF YOU KNOW WHAT YOU ARE DOING. THIS WILL NOT PREVENT DATA LOSS, ONLY DISABLE THE WARNING.**
+
 
 #### NTFS
 
