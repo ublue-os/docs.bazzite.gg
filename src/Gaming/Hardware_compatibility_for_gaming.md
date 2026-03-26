@@ -111,9 +111,9 @@ Playing games off of NTFS causes various issues, including but not limited to **
 
 #### exFAT and FAT32
 
-FAT32 and exFAT are **unsupported**. Both filesystems **do not support symbolic links** which is required for Proton prefixes to work properly.  However, there are scenarios where a microSD card is formatted to exFAT _may work_ in some cases, but this method is unsupported as something the Bazzite maintainers do not plan to accommodate. 
+FAT32 and exFAT are **unsupported**. Both filesystems **do not support symbolic links** which is required for Proton prefixes to work properly.  However, there are scenarios where a microSD card is formatted to exFAT _may work_ in some cases, but this method is unsupported as something the Bazzite maintainers do not plan to accommodate.
 
-For general usage(e.g. pictures, videos, documents, etc), you may still use exFAT to share files.
+For general usage (e.g. pictures, videos, documents, etc), you may still use exFAT to share files.
 
 ### Sharing Games with a Windows Dual-Boot
 
