@@ -34,8 +34,7 @@ The "code 1" error is a generic error code that appears during installation when
 - **Existing Linux Installation:** If you've previously installed another Linux on the same drive, the installer might fail when installing the bootloader with a 'bootloader write config' error.
   - This can happen even if the previous Linux installation is no longer functional. It is known to occur with both **Fedora-based** (Fedora, Fedora Atomic, Bazzite, Nobara, etc.) and **Ubuntu-based** (Ubuntu, Mint, PopOS, etc.) distros.
   - **Fix 1:** Separate drive: If your hardware supports more than 1 SSD, install Bazzite on a different drive that has not seen Linux before.
-  - **Fix 2:** Manually remove the existing Linux from the EFI: The video below explains one way to resolve this for a previous Fedora installation. <br> https://www.youtube.com/watch?v=GRdz08hJByo <br> In summary, you'll need to access the terminal, identify and mount the EFI system partition, remove the existing "Fedora" folder.
-    - This can be adapted to work with Ubuntu-based OSes by removing the 'ubuntu' folder instead of the 'fedora' folder
+  - **Fix 2:** Manually remove the existing Linux from the EFI: The video below explains one way to resolve this for a previous Fedora or Ubuntu installation. [Please see below for instructions.](#how-to-remove-an-orphaned-copy-of-grub)
   - **Fix 3:** Delete the existing EFI partition on the drive: If you are NOT planning on dual-booting, use GParted or Disks to remove the existing EFI.
     - **Warning:** This is **irreversible** and will remove every other operating system on the drive, **including Windows**
   - **Fix 4:** Create a new EFI partition: You can use manual partitioning as described in the [Manual Partitioning Guide](./manual_partitioning.md) to create a new EFI partition alongside the existing one to accomplish this.
@@ -103,3 +102,24 @@ If none of the above errors are relevant to your issue, or you still have proble
 
 [**Try installing Bazzite by rebasing from Fedora Kinoite (KDE Plasma) or Fedora Silverblue (GNOME)**](/General/Installation_Guide/alternate-install-guide.md).
 
+## How to remove an orphaned copy of GRUB
+1. Boot into the Bazzite installer (the Legacy Installer will not work for this) and open the Application Menu
+   ![](../../img/remove_grub_1.png)
+2. Type 'disk' and open the Disks app
+   ![](../../img/remove_grub_2.png)
+3. Select the drive you want to install Bazzite on
+   ![](../../img/remove_grub_3.png)
+4. Identify your EFI partition, it will be of filesystem type FAT and typically very small
+   ![](../../img/remove_grub_5.png)
+5. Mount the EFI partition (if it's not already mounted) by clicking on the Play button
+   ![](../../img/remove_grub_6.png)
+6. Click on the blue writing next to 'mounted at'
+   ![](../../img/remove_grub_7.png)
+7. Double-click on the EFI folder
+   ![](../../img/remove_grub_8.png)
+8. Identify the 'Ubuntu' or 'Fedora' folder and move it to the trashcan
+   ![](../../img/remove_grub_9.png)
+!!! warning 
+    Do not remove any other folders, such as Boot, Dell, HP, or Microsoft, to prevent Windows from booting properly!
+9.Reboot, and run the installer again. You might want to delete the partitions that were created during the first install attempt.
+   ![](../../img/remove_grub_10.png)
