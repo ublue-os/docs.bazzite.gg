@@ -128,6 +128,9 @@ No. A notification with instructions on turning off CSM will occur when the inst
 * There may be individual game mods or [Decky plugins](https://github.com/xXJSONDeruloXx/Decky-Framegen) that mimic similar functionality.
 * If you own [Lossless Scaling](https://store.steampowered.com/app/993090/Lossless_Scaling/) on Steam, you can set up a LSFG Vulkan layer with the `ujust get-lsfg` terminal command.
 
+## Can I theme my GRUB/bootloader?
+Theming the bootloader (GRUB) is unsupported by Bazzite and can cause critical issues such as your system not booting. Please remove any GRUB themes before reporting issues.
+
 ## Can I change the hostname of my device?
 
 !!! note

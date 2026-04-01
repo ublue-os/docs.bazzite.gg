@@ -102,7 +102,7 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - nl2br
-  - mdx_truly_sane_lists
+  - mdx_better_lists
   - toc:
       permalink: true
   - pymdownx.emoji:
