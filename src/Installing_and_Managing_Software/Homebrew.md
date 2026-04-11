@@ -20,9 +20,9 @@ Install packages in a host terminal with this **terminal command**:
 brew install <package>
 ```
 
-!!! note 
+!!! note
 
-    To install packages with brew you need root privileges, because brew uses `linuxbrew` user to install packages.
+    To install packages with brew, you need root privileges because brew uses the `linuxbrew` user to install packages.
 
 ## Bold Brew
 
