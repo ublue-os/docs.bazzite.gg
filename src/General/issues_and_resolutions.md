@@ -230,7 +230,7 @@ If you still encounter Wi-Fi related issues, try reverting to the `wpa_supplican
 **Resolution:** You need to enable supergfxctl which will automatically switch to the discrete Nvidia GPU when launching your games. Open a terminal and run:
 
 ```bash
-ujust enable-supergfxctl
+sudo systemctl enable --now supergfxd.service
 ```
 
 <hr>
