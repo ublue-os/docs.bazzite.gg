@@ -249,4 +249,4 @@ ujust _toggle-gigabyte-wake-fix
 
 **Issue:** You controller is not on the latest firmware.
 
-**Resolution:** Easiest solution here is to connect the controller to a windows machine. Download the Xbox Accessories app and update the controller to the latest firmware. After that the controller should connect seamlessly. A more advanced user could spin a windows VM and passthrough the controller to do the firmware update there.
+**Resolution:** Easiest solution here is to connect the controller to a Windows machine. Download the Xbox Accessories app and update the controller to the latest firmware. After that, the controller should connect seamlessly. A more advanced user could spin a Windows VM and pass through the controller to do the firmware update there.
