@@ -173,6 +173,13 @@ Deployments can also be pinned to rollback for future use, so `:2`, `:3`, etc. c
 
 [Fedora Linux's Atomic Desktops](https://fedoraproject.org/atomic-desktops/) originally followed a naming scheme based on [minerals.](https://fedoraproject.org/kinoite/) Bazzite is a mineral that is known for being strong, lightweight, and is [blue](https://universal-blue.org/).
 
+## I want Bazzite on a device where video games are not a priority
+
+Universal Blue offers two other desktop operating systems similar to Bazzite but without the focus on PC gaming. While both can still run video games, they include less pre-installed gaming software and optimizations. All three projects share resources and development with each other, often involving the same contributors:
+
+- [**Aurora**](https://getaurora.dev/) if you want the **KDE Plasma** desktop environment
+- [**Bluefin**](https://projectbluefin.io/) if you want the **GNOME** desktop environment.
+
 ## I have questions or concerns that cannot be answered in the documentation
 
 !!! note
