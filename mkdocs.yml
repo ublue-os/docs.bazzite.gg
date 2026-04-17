@@ -78,6 +78,9 @@ plugins:
           default: true
           name: English
           build: true
+        - locale: fr
+          name: French
+          build: true
 
   - search
   - macros:
@@ -156,7 +159,7 @@ nav:
       - "Bazzite-Deck Guides": Handheld_and_HTPC_edition/index.md
       - "Bazzite-Deck General Overview": Handheld_and_HTPC_edition/Steam_Gaming_Mode.md
       - "Steam Gaming Mode Quirks and Workarounds": Handheld_and_HTPC_edition/quirks.md
-      - "Handheld Compatibility": 
+      - "Handheld Compatibility":
           - Handheld_and_HTPC_edition/Handheld_Wiki/index.md
           - "ASUS Handhelds": Handheld_and_HTPC_edition/Handheld_Wiki/ASUS_ROG_Ally.md
           - "Lenovo Handhelds": Handheld_and_HTPC_edition/Handheld_Wiki/Lenovo_Legion_Go.md
@@ -173,7 +176,7 @@ nav:
           - "ujust Commands": Installing_and_Managing_Software/ujust.md
           - "Bazaar App Store": Installing_and_Managing_Software/Flatpak.md
           - "Homebrew": Installing_and_Managing_Software/Homebrew.md
-          - "Containers": 
+          - "Containers":
               - Installing_and_Managing_Software/Containers.md
               - "Distrobox": Installing_and_Managing_Software/Distrobox.md
               - "Quadlet": Installing_and_Managing_Software/Quadlet.md
