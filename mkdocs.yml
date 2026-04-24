@@ -78,6 +78,9 @@ plugins:
           default: true
           name: English
           build: true
+        - locale: cs
+          name: Čeština
+          build: true
 
   - search
   - macros:
