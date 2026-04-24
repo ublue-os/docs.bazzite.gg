@@ -33,7 +33,7 @@ hide:
   - Hry a emulátory přímo z obchodu od [osu!](https://flathub.org/apps/sh.ppy.osu) po [Minecraft](https://flathub.org/apps/org.prismlauncher.PrismLauncher).
   - ...a [spoustu dalšího!](https://flathub.org/en/apps/category/game/1)
 
-  <small>\*<sup>1</sup> Hry, o kterých je známo, že na Linuxu běží jsou v přehledu na [**ProtonDB**](https://protondb.com) a [**Are We Anti-Cheat Yet?**](https://areweanticheatyet.com)</small>.
+  <small>\*<sup>1</sup> Hry, o kterých je známo, že na Linuxu běží, jsou v přehledu na [**ProtonDB**](https://protondb.com) a [**Are We Anti-Cheat Yet?**](https://areweanticheatyet.com)</small>.
 
 - [:material-download-circle: **Instalace softwaru**][installing_software]{ style="font-size: 1.1rem" }
 
