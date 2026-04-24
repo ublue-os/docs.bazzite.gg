@@ -245,6 +245,22 @@ ujust _toggle-gigabyte-wake-fix
 ```
 <hr>
 
+## Steam windows are always on top, missing from taskbar, or can't be dragged
+
+**Issue:** Steam windows stay on top of all other windows, do not appear in the taskbar (only in the system tray), and cannot be dragged by clicking on the window body.
+
+**Cause:** A KWin window rule called "Window settings for Steam Keyboard" is automatically created by Bazzite on every Steam launch. It matches `steamwebhelper steam` and forces:
+
+- Keep above other windows → Yes
+- Skip taskbar → Yes
+- Accept focus → No
+
+**Resolution:** Open **System Settings >> Window Management >> Window Rules** and disable the rule named "Window settings for Steam Keyboard".
+
+!!! warning "Deleting the rule will not work permanently, as Bazzite recreates it on every Steam launch. You must **disable** it instead."
+
+<hr>
+
 ## Xbox controller over Bluetooth is stuck on a connecting loop and the Xbox button keeps flashing
 
 **Issue:** Your controller is not on the latest firmware.
