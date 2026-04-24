@@ -100,7 +100,7 @@ NTFS a exFAT/FAT32 NEJSOU PODPOROVÁNY. OBA SOUBOROVÉ SYSTÉMY MOHOU A BUDE VÉ
     
 !!! info
     
-    Chcete-li zakázat NTFS kobylku, spusťte `ujust _disable-ntfs-service`. ** TOTO UDĚLEJTE POUZE V PŘÍPADĚ, ŽE VÍTE, CO DĚLÁTE. TOTO NEZABRÁNÍ ZTRÁTĚ DAT, POUZE VYPNĚTE VAROVÁNÍ.**
+    Chcete-li zakázat NTFS upozornění, spusťte ujust _disable-ntfs-service. ** TOTO UDĚLEJTE POUZE V PŘÍPADĚ, ŽE VÍTE, CO DĚLÁTE. TOTO NEZABRÁNÍ ZTRÁTĚ DAT, POUZE TO VYPNE VAROVÁNÍ.**
 
 
 #### NTFS
