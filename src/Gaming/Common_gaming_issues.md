@@ -79,11 +79,11 @@ Steam games might not launch for a variety of reasons.
 ### gamemoderun
 
 !!! note
-      Not to be confused with <b>Gaming Mode</b> on the Deck images. ((Feral) Gamemode) is a library that allows games to request optimizations from the OS.
+      Not to be confused with <b>Gaming Mode</b> on the Deck images. (Feral) GameMode is a library that allows games to request optimizations from the OS.
 
-Games will not launch if you add ``gamemoderun %command%`` to your launch options (commonly found on ProtonDB). Gamemode is not installed or supported in Bazzite and generally doesn't do anything useful on modern hardware, or in some cases can even hurt performance. Please remove it from your launch options. 
+Games will not launch if you add `gamemoderun %command%` to your launch options (commonly found on ProtonDB). GameMode is not installed or supported in Bazzite and generally doesn't do anything useful on modern hardware, or in some cases can even hurt performance. Please remove it from your launch options. 
 
-It might work if you layer the ``gamemode`` package, but this is <b>NOT</b> supported.
+It might work if you layer the `gamemode` package, but this is <b>NOT</b> supported.
 
 
 ### NTFS formatted drive permission issues:
