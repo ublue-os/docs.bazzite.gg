@@ -70,7 +70,7 @@ If the homebrew Sunshine package does not work well for you, or if you do not wa
     Layering the Sunshine Beta package from the [official Beta COPR](https://copr.fedorainfracloud.org/coprs/lizardbyte/beta/) by running
     ```bash
     sudo dnf5 copr enable lizardbyte/beta
-    rpm-ostree install sunshine
+    rpm-ostree install Sunshine
     ```
     This has the following downsides:
     
