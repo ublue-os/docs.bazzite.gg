@@ -19,8 +19,11 @@ This guide is only for the legacy ISOs which are still supported at this time du
 - A way to download the Bazzite ISO
   - A download manager (like [**Motrix**](https://motrix.app/)) if the direct download for the Bazzite ISO fails or is downloading too slow.
 - A 16GB+ bootable medium like a Flash Drive
-  - Software to flash the ISO like **Fedora Media Writer** ([**Windows/macOS**](https://github.com/FedoraQt/MediaWriter/releases) or [**Linux**](https://flathub.org/en/apps/org.fedoraproject.MediaWriter))
-    - Ventoy is **NOT** supported software for flashing the Bazzite ISO.
+  - Booting from a SD or microSD card may work, but not all firmware support this.
+- One of the following programs to flash/boot the ISO:
+  - **Fedora Media Writer (recommended)** ([Windows/macOS](https://github.com/FedoraQt/MediaWriter/releases), [Linux](https://flathub.org/en/apps/org.fedoraproject.MediaWriter))
+  - **Rufus** ([Windows](https://rufus.ie/))
+  - **Ventoy** ([Windows, Linux](https://www.ventoy.net/)) (note: Ventoy needs [**extra steps for Secure Boot Support to work**](https://www.ventoy.net/en/doc_secure.html))
 - A physical wired keyboard is **recommended** and **required for devices without a touchscreen**.
   - Otherwise, create a User Account with a **username** and a **user password** if you have a keyboard.
 
