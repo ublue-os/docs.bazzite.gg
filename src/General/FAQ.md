@@ -114,7 +114,7 @@ Most hardware changes should **not** require any manual intervention outside of 
 
 ![](/../img/system-transaction-in-progress.png)
 
-This warning occures on [Desktop Edition](#1-desktop-edition) which automatically downloads system and application updates in the background. **You can safely ignore it** as it shouldn't be treated as an error, the system is already doing an update for you.
+This warning occurs on the [Desktop Edition](#1-desktop-edition) because it automatically downloads system and application updates in the background. You can safely ignore it as the system is already performing an update for you.
 
 ## Windows games claim that my graphic drivers are outdated, how do I update them?
 
