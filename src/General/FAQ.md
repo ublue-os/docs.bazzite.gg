@@ -110,6 +110,12 @@ There are currently no plans to support Kepler and older architectures (Most GTX
 
 Most hardware changes should **not** require any manual intervention outside of the expectations from that particular hardware which would be OS-agnostic.  However, if you swap from or to a Nvidia GPU, then [rebasing](../Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/brh.md) will be necessary as a manual intervention to get the appropriate graphics drivers.
 
+## `error: System transaction in progress` shows up when updating the system manually
+
+![](/../img/system-transaction-in-progress.png)
+
+This warning occurs on the [Desktop Edition](#1-desktop-edition) because it automatically downloads system and application updates in the background. You can safely ignore it as the system is already performing an update for you.
+
 ## Windows games claim that my graphic drivers are outdated, how do I update them?
 
 ![](/../img/gpu_driver_warning.png)
