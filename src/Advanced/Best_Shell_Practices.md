@@ -12,8 +12,8 @@ title: "Best Shell Practices"
 
 Bazzite ships [Konsole](https://apps.kde.org/konsole/) as the default terminal. It shows up as Konsole in the menu. It is **strongly recommended** that you [change your shell via the terminal emulator instead of system-wide](https://tim.siosm.fr/blog/2023/12/22/dont-change-defaut-login-shell/). Click on the hamburger menu in the top right, then Settings -> Configure Konsole. Go to Profiles and edit your own profile:
 
-![image](https://github.com/user-attachments/assets/3c751d84-8209-43ec-a204-a429f1b4a814)
+![Konsole Edit Profile](../img/Konsole_Edit_Profile.png)
 
 Then use the "Command" box to add the shell you want to use. `/usr/bin/fish` is included on the image and other shells like ZSH may be installed with Homebrew:
 
-![image](https://github.com/user-attachments/assets/618f11f9-8f5f-4a8d-8ddf-c839caab05f2)
+![Konsole Fish Command](../img/Konsole_Fish_Command.png)
