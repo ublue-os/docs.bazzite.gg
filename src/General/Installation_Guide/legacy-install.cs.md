@@ -19,8 +19,11 @@ Tato příručka je pouze pro starší ISO, které jsou v současné době stál
 - Způsob, jak stáhnout Bazzite ISO
   - Správce stahování (jako [**Motrix**](https://motrix.app/)), pokud přímé stahování pro Bazzite ISO selže nebo se stahuje příliš pomalu.
 - 16GB+ spouštěcí médium, jako je flash disk
-  – Software pro flashování ISO, jako je **Fedora Media Writer** ([**Windows/macOS**](https://github.com/FedoraQt/MediaWriter/releases) nebo [**Linux**](https://flathub.org/en/apps/org.fedoraproject.MediaWriter))
-    - Ventoy **NENÍ** podporovaný software pro flashování Bazzite ISO.
+  - Bootování z SD nebo microSD karty může fungovat, ale ne všechny firmware to podporují.
+- Jeden z následujících programů pro flash/boot ISO:
+  - **Fedora Media Writer (doporučeno)** ([Windows/macOS](https://github.com/FedoraQt/MediaWriter/releases), [Linux](https://flathub.org/en/apps/org.fedoraproject.MediaWriter))
+  - **Rufus** ([Windows](https://rufus.ie/))
+  - **Ventoy** ([Windows, Linux](https://www.ventoy.net/)) (poznámka: Ventoy potřebuje [**další kroky, aby podpora zabezpečeného spouštění fungovala**](https://www.ventoy.net/en/doc_secure.html))
 - Fyzická kabelová klávesnice je **doporučena** a **vyžadována pro zařízení bez dotykové obrazovky**.
   - V opačném případě si vytvořte uživatelský účet s **uživatelským jménem** a **uživatelským heslem**, pokud máte klávesnici.
 
@@ -281,7 +284,7 @@ Chcete-li to vyřešit, postupujte podle **metody B** níže, a pokud na ni nara
 
 ### **Metoda A** - Během způsobu instalace
 
-![Nabídka bezpečného spouštění: Pokračovat ve spouštění / Zapsat MOK / Zapsat klíč z disku / Zapsat hash z disku|200x102, 100%](../../img/Secure_Boot.png 'Zabezpečené spouštění')
+![Nabídka bezpečného spouštění: Pokračovat ve spouštění / Zapsat MOK / Zapsat klíč z disku / Zapsat hash z disku](../../img/Secure_Boot.png 'Zabezpečené spouštění')
 
 !!! note
 

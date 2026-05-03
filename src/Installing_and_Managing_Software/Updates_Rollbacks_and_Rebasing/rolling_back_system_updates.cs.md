@@ -22,7 +22,7 @@ Vraťte se zpět ke staršímu obrazu Bazzite za posledních 90 dní pomocí **[
 
 ### Před spuštěním Bazzite (GRUB)
 
-![Nabídka GRUB|690x402](../../img/GRUB_Menu.png)
+![GRUB Menu with two deployments and UEFI Firmware Settings](../../img/GRUB_Menu.png)
 
 !!! note
 
