@@ -10,12 +10,12 @@ The Bazzite Portal is a configuration tool that uses [`ujust`](./ujust.md) comma
 
 - Installs useful tools like [Decky](https://github.com/SteamDeckHomebrew/decky-loader), [OpenRGB](https://github.com/calcprogrammer1/openrgb), and [Waydroid](https://github.com/waydroid/waydroid).
 - Uses [`topgrade`](https://github.com/topgrade-rs/topgrade) to install updates for multiple package managers, including Bazzite, Flatpak (Bazaar), firmware (`fwupdmgr`), and Brew.
-- Installs Homebrew apps from the [Universal Blue tap,](https://github.com/ublue-os/homebrew-tap) and adds web apps for various streaming services.
-- Gather system logs, rollback system updates, reset Bazzite to its default configuration, or rebase your system to a different version.
+- Installs Homebrew apps from the [Universal Blue tap](https://github.com/ublue-os/homebrew-tap), and adds web apps for various streaming services.
+- Gathers system logs, rolls back system updates, resets Bazzite to its default configuration, or rebases your system to a different version.
 
 !!! tip "Want to know more?"
 
-    To learn about the Bazzite Portal's internal workings, see [”How the Bazzite Portal works”](#how-the-bazzite-portal-works).
+    To learn about the Bazzite Portal's internal workings, see [How the Bazzite Portal works](#how-the-bazzite-portal-works).
   
 ## Launching Bazzite Portal
 
@@ -36,7 +36,7 @@ The Bazzite Portal is installed by default. To launch the app:
 
 ## Configuration settings
 
-The Bazzite Portal's features are organised into categories:
+The Bazzite Portal's features are organized into categories:
 
 ![Screenshot of the Bazzite Portal's categories|1358x208, 50%](../img/Bazzite_Portal_Categories.png)
 
