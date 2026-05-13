@@ -83,7 +83,7 @@ https://www.youtube.com/watch?v=uy8mi1pAj8E
 
 ### Configure your system with the Bazzite Portal application
 
-![bazzite-portal|997x785, 50%](../../img/bazzite-portal.png)
+![Screenshot of the Bazzite Portal|1364x1074, 50%](../../img/Bazzite_Portal.png)
 
 Familiarize yourself with the Bazzite Portal which does system maintenance, install a small subset of additional applications, and configure advanced system settings.
 
