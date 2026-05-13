@@ -18,9 +18,12 @@ Ce guide concerne uniquement les ISO "Legacy" qui sont encore prises en charge �
 
 - Un moyen de télécharger l'ISO de Bazzite
   - Un gestionnaire de téléchargement (comme [**Motrix**](https://motrix.app/)) si le téléchargement direct de l'ISO de Bazzite échoue ou est trop lent.
-- Un support de démarrage d'au moins 16 Go, tel qu'une clé USB
-  - Un logiciel pour flasher l'ISO, tel que **Fedora Media Writer** ([**Windows/macOS**](https://github.com/FedoraQt/MediaWriter/releases) ou [**Linux**](https://flathub.org/en/apps/org.fedoraproject.MediaWriter))
-    - Ventoy n'est **PAS** pris en charge pour flasher l'ISO Bazzite.
+- Un support de démarrage d'au moins 16 Go, comme un clef USB
+  - Le démarrage à partir d'une carte SD ou microSD peut fonctionner, mais tous les firmwares ne le prennent pas en charge.
+- L'un des programmes suivants pour flasher/démarrer l'ISO :
+  - **Fedora Media Writer (recommandé)** ([Windows/macOS](https://github.com/FedoraQt/MediaWriter/releases), [Linux](https://flathub.org/en/apps/org.fedoraproject.MediaWriter))
+  - **Rufus** ([Windows](https://rufus.ie/))
+  - **Ventoy** ([Windows, Linux](https://www.ventoy.net/)) (remarque : Ventoy nécessite [**des étapes supplémentaires pour que le Secure Boot fonctionne**](https://www.ventoy.net/en/doc_secure.html))
 - Un clavier physique filaire est **recommandé** et **requis pour les appareils sans écran tactile**.
   - Sinon, créez un compte utilisateur avec un **nom d'utilisateur** et un **mot de passe** si vous disposez d'un clavier.
 
@@ -279,7 +282,7 @@ Suivez la **méthode B** ci-dessous pour résoudre ce problème et ignorer le me
 
 ### **Méthode A** - Procédure pendant l'installation
 
-![Menu Secure Boot : Continue boot / Enroll MOK / Enroll key from disk / Enroll hash from disk|200x102, 100%](../../img/Secure_Boot.png)
+![Menu Secure Boot : Continue boot / Enroll MOK / Enroll key from disk / Enroll hash from disk](../../img/Secure_Boot.png)
 
 !!! note
 
