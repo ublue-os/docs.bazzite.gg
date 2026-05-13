@@ -265,7 +265,7 @@ Follow **Method B** below to resolve this and move past the error message if you
 
 ### **Method A** - During Installation Method
 
-![Secure Boot menu: Continue boot / Enroll MOK / Enroll key from disk / Enroll hash from disk|200x102, 100%](../../img/Secure_Boot.png 'Secure Boot')
+![Secure Boot menu: Continue boot / Enroll MOK / Enroll key from disk / Enroll hash from disk](../../img/Secure_Boot.png 'Secure Boot')
 
 !!! note
 

@@ -22,7 +22,7 @@ https://www.youtube.com/watch?v=lBqbk6Z8HrQ
   - Bootování z SD nebo microSD karty může fungovat, ale ne všechny firmware to podporují.
 - Jeden z následujících programů pro flash/boot ISO:
   - **Fedora Media Writer (doporučeno)** ([Windows/macOS](https://github.com/FedoraQt/MediaWriter/releases), [Linux](https://flathub.org/en/apps/org.fedoraproject.MediaWriter))
-  - **Rufus** ([Windows](https://rufus.ie/)) (režim DD Image **povinný**)
+  - **Rufus** ([Windows](https://rufus.ie/))
   - **Ventoy** ([Windows, Linux](https://www.ventoy.net/)) (poznámka: Ventoy potřebuje [**další kroky, aby podpora zabezpečeného spouštění fungovala**](https://www.ventoy.net/en/doc_secure.html))
 - Fyzická kabelová klávesnice je **doporučena** a **vyžadována pro zařízení bez dotykové obrazovky**.
   - Pro scénáře, kdy nemáte fyzickou klávesnici USB, existuje klávesnice na obrazovce.
@@ -265,7 +265,7 @@ Chcete-li to vyřešit, postupujte podle **metody B** níže, a pokud na ni nara
 
 ### **Metoda A** - Během způsobu instalace
 
-![Nabídka bezpečného spouštění: Pokračovat ve spouštění / Zapsat MOK / Zapsat klíč z disku / Zapsat hash z disku|200x102, 100%](../../img/Secure_Boot.png 'Zabezpečené spouštění')
+![Nabídka bezpečného spouštění: Pokračovat ve spouštění / Zapsat MOK / Zapsat klíč z disku / Zapsat hash z disku](../../img/Secure_Boot.png 'Zabezpečené spouštění')
 
 !!! note
 

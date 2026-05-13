@@ -22,7 +22,7 @@ https://www.youtube.com/watch?v=lBqbk6Z8HrQ
   - Le démarrage à partir d'une carte SD ou microSD peut fonctionner, mais tous les firmwares ne le prennent pas en charge.
 - L'un des programmes suivants pour flasher/démarrer l'ISO :
   - **Fedora Media Writer (recommandé)** ([Windows/macOS](https://github.com/FedoraQt/MediaWriter/releases), [Linux](https://flathub.org/en/apps/org.fedoraproject.MediaWriter))
-  - **Rufus** ([Windows](https://rufus.ie/)) (mode Image DD **requis**)
+  - **Rufus** ([Windows](https://rufus.ie/))
   - **Ventoy** ([Windows, Linux](https://www.ventoy.net/)) (remarque : Ventoy nécessite [**des étapes supplémentaires pour que le Secure Boot fonctionne**](https://www.ventoy.net/en/doc_secure.html))
 - Un clavier physique filaire est **recommandé** et **obligatoire pour les appareils sans écran tactile**.
   - Un clavier virtuel est disponible si vous ne disposez pas de clavier USB physique.
@@ -265,7 +265,7 @@ Suivez la **méthode B** ci-dessous pour résoudre ce problème et ignorer le me
 
 ### **Méthode A** - Procédure pendant l'installation
 
-![Menu Secure Boot : Continue boot / Enroll MOK / Enroll key from disk / Enroll hash from disk|200x102, 100%](../../img/Secure_Boot.png)
+![Menu Secure Boot : Continue boot / Enroll MOK / Enroll key from disk / Enroll hash from disk](../../img/Secure_Boot.png)
 
 !!! note
 

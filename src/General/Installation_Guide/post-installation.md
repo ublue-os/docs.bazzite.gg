@@ -6,7 +6,7 @@ title: Post-Installation Setup
 
 ## First Boot Setup
 
-![Rollbacks|690x402, 50%](../../img/GRUB_Menu.png)
+![GRUB Menu with two deployments and UEFI Firmware Settings](../../img/GRUB_Menu.png)
 
 The first boot will show a screen showing your current and last deployment. It is important to note that the GRUB menu can be used to rollback Bazzite deployments if you encounter issues.
 
