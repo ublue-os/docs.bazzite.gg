@@ -6,8 +6,6 @@ title: bazzite-cli
 
 ## What is `bazzite-cli`?
 
-A collection of command-line tools and utilities that both powerusers and developers can utilize. Run `ujust bazzite-cli` to use these tools.
-
 ### List of CLI Tools
 
 Bazzite's opt-in command line experience. `bazzite-cli` comes with command line tools such as:
@@ -34,3 +32,14 @@ Bazzite's opt-in command line experience. `bazzite-cli` comes with command line 
 - [**zoxide**](https://github.com/ajeetdsouza/zoxide) - A smarter `cd` command that learns your habits.
 
 The community may add new tools over time, re-running `ujust bazzite-cli` will install them.
+
+## Using `bazzite-cli` With Alternate Shells
+
+You can enable `bazzite-cli` for fish or zsh by pre-pending an override to the $SHELL variable to the command with:
+
+```
+SHELL=fish ujust bazzite-cli
+SHELL=zsh ujust bazzite-cli
+# Or do it all at once from bash with
+ujust bazzite-cli && SHELL=fish ujust bazzite-cli && SHELL=zsh ujust bazzite-cli
+```

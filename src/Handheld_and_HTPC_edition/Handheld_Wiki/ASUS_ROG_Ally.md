@@ -1,14 +1,8 @@
 ---
-authors:
-  - "@nicknamenamenick"
-tags:
-  -  Handhelds
+title: ASUS Handhelds
 ---
 
-<!-- ANCHOR: METADATA -->
-<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=2414", "fetched_at": "2024-09-03 16:43:21.670173+00:00"}-->
-<!-- ANCHOR_END: METADATA -->
-
+# ASUS Handhelds
 
 !!! disclaimer
 
@@ -28,7 +22,7 @@ tags:
 - Adjust settings in Handheld Daemon.
 - Adjust the scaling of the UI in the Display Settings.
 
-### Workarounds / Known Issues
+### Known Issues
 - Changing A/C power sometimes leads to a stuck TDP.
 - Some users report the mic sounding garbled
   - Solution to that is to set the mic/input volume to 10%-15% in settings
@@ -56,13 +50,3 @@ tags:
 Disabled by default to prevent excessive power draw to the device.
 
 More information can be found [**here**](https://github.com/aarron-lee/SimpleDeckyTDP/blob/main/README.md#are-there-cpu-boost-controls) about this.
-
-## Contributing
-
-This page and all of the links to each specific handheld are **wikis**, edit it to add any relevant information you may have regarding the handheld and your experience with Bazzite on it. Make sure to follow proper [contributing guidelines](https://universal-blue.org/contributing.html) before adding any edits.
-
-<hr>
-
-**See also**: [Steam Gaming Mode Overview](../Steam_Gaming_Mode.md)
-
-**<-- Back to [Handheld Wiki](./index.md)**

@@ -4,7 +4,7 @@ title: Community
 
 # Community
 
-## [:simple-discourse: Forums](https://universal-blue.discourse.group/tag/bazzite-news)
+## [:simple-discourse: Forums](https://universal-blue.discourse.group/c/bazzite/5)
 
 ## [:simple-discord: Discord](https://discord.gg/WEu6BdFEtp) <sup>([No Discord account?](https://www.answeroverflow.com/c/1072614816579063828/1143023993041993769))</sup>
 

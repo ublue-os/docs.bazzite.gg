@@ -1,27 +1,18 @@
 ---
-authors:
-  - "@nicknamenamenick"
-  - "@KyleGospo"
-  - "@storyaddict"
-  - "@castrojo"
-  - "@noelmiller"
-  - "@rothgar"
-  - "@aarron-lee"
-  - "@HikariKnight"
-  - "@ryanpolasky"
+title: Installing Bazzite on Handheld Hardware
 tags:
-  - Installation
+  -  Obsolete
+search:
+  exclude: true
 ---
 
-<!-- ANCHOR: METADATA -->
-<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=1144", "fetched_at": "2024-09-03 16:43:22.899176+00:00"}-->
-<!-- ANCHOR_END: METADATA -->
+# Installing Bazzite for Handheld Hardware
 
 ![ASUS ROG Ally|690x301](../../img/ASUS_ROG_Ally.jpeg)
 
 !!! Note
       
-      This installation guide is for the **legacy ISO** and an update for the new ISOs will be coming soon.
+      This installation guide is for the **legacy ISO** and an updated guide for the new ISOs will be coming soon.
 
 ## Important Notes on Handheld Hardware
 
@@ -119,7 +110,7 @@ Read the [Secure Boot Guide](https://universal-blue.discourse.group/docs?topic=2
 
 ### GRUB Menu
 
-![Rollbacks|690x402, 50%](../../img/GRUB_Menu.png)
+![GRUB Menu with two deployments and UEFI Firmware Settings](../../img/GRUB_Menu.png)
 
 The first boot will show a screen showing your current and last deployment. It is important to note that the GRUB menu can be used to rollback Bazzite deployments if you encounter issues.
 

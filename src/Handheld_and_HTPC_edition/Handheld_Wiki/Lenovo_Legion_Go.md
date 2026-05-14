@@ -1,14 +1,8 @@
 ---
-authors:
-  - "@nicknamenamenick"
-tags:
-  -  Handhelds
+title: Lenovo Handhelds
 ---
 
-<!-- ANCHOR: METADATA -->
-<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=2413", "fetched_at": "2024-09-03 16:43:19.836067+00:00"}-->
-<!-- ANCHOR_END: METADATA -->
-
+# Lenovo Handhelds
 
 !!! disclaimer
 
@@ -22,16 +16,12 @@ tags:
 - Configure the HHD Overlay by opening it with <kbd>Legion R</kbd>
 - Adjust the scaling of the UI in the Display Settings
 
-### Workarounds / Known Issues
+### Known Issues
 
 - Performance overlay might be reporting inaccurate power consumption.
 - Adaptive/auto display brightness is currently broken.
   - Manual brightness slider in Steam's UI works without issues.
 - BIOS and controller firmware is **recommended** to update in Windows.
-
-### Updating the BIOS without a Windows installation
-
-Read the [tutorial](/Handheld_and_HTPC_edition/update-bios-lenovo-legion-go.md) on how to update the BIOS for the Lenovo Legion Go without a Windows installation.
 
 ### BIOS update breaks Secure Boot key
 
@@ -67,13 +57,3 @@ mv ~/.config/kwinoutputconfig.json ~/.config/kwinoutputconfig.json.old
 ## External Resource
 
 For more information, check out the [Legion Go Tips and Tricks guide](https://github.com/aarron-lee/legion-go-tricks) which includes useful scripts for this handheld.
-
-## Contributing
-
-This page is a **wiki**, edit it to add any relevant information you may have regarding the handheld and your experience with Bazzite on it. Make sure to follow proper [contributing guidelines](https://universal-blue.org/contributing.html) before adding any edits.
-
-<hr>
-
-**See also**: [Steam Gaming Mode Overview](../Steam_Gaming_Mode.md)
-
-**<-- Back to [Handheld Wiki](./index.md)**

@@ -1,13 +1,8 @@
 ---
-authors:
-  - "@nicknamenamenick"
-tags:
-  -  Handhelds
+title: Steam Deck
 ---
 
-<!-- ANCHOR: METADATA -->
-<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=1849", "fetched_at": "2024-09-03 16:43:16.550432+00:00"}-->
-<!-- ANCHOR_END: METADATA -->
+# Steam Deck
 
 ## Steam Deck (LCD & OLED Models)
 
@@ -33,13 +28,7 @@ Both SteamOS and Bazzite use Steam Gaming Mode and share packages between each o
 
 >If you want to see a more in-depth comparison, read our [**SteamOS comparison guide**](/General/SteamOS_Comparison.md).
 
-### Workarounds / Known Issues
+### Known Issues
 
 - (Steam Deck OLED) The brightness is not properly restored when changing refresh rate.
 - (Steam Deck OLED) MangoHUD does not report GPU clocks.
-
-<hr>
-
-**See also**: [Steam Gaming Mode Overview](../Steam_Gaming_Mode.md)
-
-**<-- Back to [Handheld Wiki](./index.md)**

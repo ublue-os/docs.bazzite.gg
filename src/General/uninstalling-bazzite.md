@@ -1,12 +1,10 @@
 ---
 title: Uninstalling Bazzite and Returning to Windows
-authors:
-  - "@wolfyreload"
-tags:
-  - Guide
 ---
 
-# Removing Bazzite in a Windows Dual-Boot Scenario
+# Uninstalling Bazzite and Returning to Windows
+
+## Removing Bazzite in a Windows Dual-Boot Scenario
 
 Watch the video guide below:
 

@@ -1,15 +1,31 @@
 ---
-authors:
-  - "@nicknamenamenick"
-
-tags:
-  - Installation
-  - Troubleshooting
+title: Installation Troubleshooting
 ---
 
-<!-- ANCHOR: METADATA -->
-<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=2495", "fetched_at": "2024-09-03 16:43:22.238775+00:00"}-->
-<!-- ANCHOR_END: METADATA -->
+# Installation Troubleshooting
+
+## Downloading the ISO
+
+Use a download manager (like [**Motrix**](https://motrix.app/)) if the direct download fails or is downloading too slow.
+
+## Drives
+
+Make sure to only select the appropriate drives to avoid losing data on others, and it is best practice to safely remove any external drives before proceeding.
+
+## "Failed to open \EFI\BOOT\mmx64.efi - Not Found" error
+
+![Failed to open \EFI\BOOT\mmx64.efi - Not Found](../../img/efi-boot-fail.png)
+
+To work around this issue, boot from file. Go into your UEFI (BIOS), select your EFI partition with Bazzite installed, then select /EFI/fedora/grubx64.efi to boot from.
+After this, your boot manager should boot normally showing "FEDORA" as the option.
+
+## Installer Won't Boot
+
+!!! note
+
+The new installer may not boot if your BIOS is in CSM Legacy boot as opposed to UEFI. Read more in the [**Bazzite system requirements**](../../Gaming/Hardware_compatibility_for_gaming.md#minimum-system-requirements).
+
+Use the [legacy ISO](./legacy-install.md) or try the [alternative method](./alternate-install-guide.md) of installing Bazzite.
 
 ## Error Code 1
 
@@ -18,15 +34,29 @@ The "code 1" error is a generic error code that appears during installation when
 - **Existing Linux Installation:** If you've previously installed another Linux on the same drive, the installer might fail when installing the bootloader with a 'bootloader write config' error.
   - This can happen even if the previous Linux installation is no longer functional. It is known to occur with both **Fedora-based** (Fedora, Fedora Atomic, Bazzite, Nobara, etc.) and **Ubuntu-based** (Ubuntu, Mint, PopOS, etc.) distros.
   - **Fix 1:** Separate drive: If your hardware supports more than 1 SSD, install Bazzite on a different drive that has not seen Linux before.
-  - **Fix 2:** Manually remove the existing Linux from the EFI: The video below explains one way to resolve this for a previous Fedora installation. <br> https://www.youtube.com/watch?v=GRdz08hJByo <br> In summary, you'll need to access the terminal, identify and mount the EFI system partition, remove the existing "Fedora" folder.
-    - This can be adapted to work with Ubuntu-based OSes by removing the 'ubuntu' folder instead of the 'fedora' folder
+  - **Fix 2:** Manually remove the existing Linux from the EFI:  [Please see below for instructions.](#how-to-remove-an-orphaned-copy-of-grub)
   - **Fix 3:** Delete the existing EFI partition on the drive: If you are NOT planning on dual-booting, use GParted or Disks to remove the existing EFI.
     - **Warning:** This is **irreversible** and will remove every other operating system on the drive, **including Windows**
   - **Fix 4:** Create a new EFI partition: You can use manual partitioning as described in the [Manual Partitioning Guide](./manual_partitioning.md) to create a new EFI partition alongside the existing one to accomplish this.
     - Warning: some BIOSes cannot handle a second EFI partition on the drive.
 - **Incorrect Filesystem:** Using the EXT4 or any other filesystem type for the root partition will cause this error. You must use BTRFS for the root partition.
-- **Corrupted ISO Image:** Ensure the ISO image isn't corrupted by calculating the checksums or using the official torrent when downloading Bazzite.
+- **Corrupted ISO Image:** Ensure the ISO image isn't corrupted by calculating the checksums.
 - **Overheating USB Flash Drive:** Use a USB 3.0 or better flash drive and plug it into a USB 3.0 or better port to avoid overheating.
+
+## "No Space left on Device" Error
+![No Space left on Device](../../img/no_more_space_left.png)
+
+This error can misleadingly appear when the system does not have enough RAM for the installer to operate. [**You need at least 8GB of system memory to install Bazzite.**](/General/Installation_Guide/Installing_Bazzite_for_Desktop_or_Laptop_Hardware.md/#minimum-system-requirements)
+
+## "Bad shim signature, you need to load the kernel first" error
+
+![You need to load the kernel first](../../img/you-need-to-load-the-kernel-first.png)
+
+Disable Secure Boot in BIOS to get past this screen. If you wish to use Secure Boot, follow [the **Secure Boot Guide** using method B](/General/Installation_Guide/secure_boot.md).
+
+**Video Guide**:
+
+https://www.youtube.com/watch?v=Z_DsWqTuipU
 
 ## "Device is Active" Error
 
@@ -39,28 +69,12 @@ B. **Bazzite Only:** Delete the BitLocker partition using a tool like GParted be
 
 https://www.youtube.com/watch?v=FBGLLkIKp-w
 
-## "Error checking storage configuration"
+### "Error checking storage configuration"
 
 **Watch this video for a workaround**:
 
 https://www.youtube.com/watch?v=VTnm9EiBdPA
 
-## "Bad shim signature, you need to load the kernel first" error
-
-![You need to load the kernel first](../../img/you-need-to-load-the-kernel-first.png)
-
-Disable Secure Boot in BIOS to get past this screen. If you wish to use Secure Boot, follow [the **Secure Boot Guide** using method B](/General/Installation_Guide/secure_boot.md)
-
-Video walkthrough: https://www.youtube.com/watch?v=Z_DsWqTuipU
-
-## "Failed to open \EFI\BOOT\mmx64.efi - Not Found" error
-
-![Failed to open \EFI\BOOT\mmx64.efi - Not Found](../../img/efi-boot-fail.png)
-
-To work around this issue, boot from file. Go into your UEFI (BIOS), select your EFI partition with Bazzite installed, then select /EFI/fedora/grubx64.efi to boot from.
-After this, your boot manager should boot normally showing "FEDORA" as the option.
-
->[**Secure Boot Guide**](/General/Installation_Guide/secure_boot.md)
 
 ## Unable to allocate requested partition scheme error
 
@@ -68,7 +82,7 @@ This error occurs when installing on drives larger than 2TB where the first 2TB 
 
 ![Unable to allocation requested partition scheme](../../img/unable-to-allocation-requested-partition-scheme.png)
 
-It seems like the Anaconda installer cannot create any paritions after the 2TB mark.
+It seems like the Anaconda installer cannot create any partitions after the 2TB mark.
 
 Here are some possible solutions on how you can address it:
 
@@ -87,3 +101,25 @@ Here are some possible solutions on how you can address it:
 If none of the above errors are relevant to your issue, or you still have problems installing Bazzite, then try following our alternative installation method:
 
 [**Try installing Bazzite by rebasing from Fedora Kinoite (KDE Plasma) or Fedora Silverblue (GNOME)**](/General/Installation_Guide/alternate-install-guide.md).
+
+## How to remove an orphaned copy of GRUB
+1. Boot into the Bazzite installer (the Legacy Installer will not work for this) and open the Application Menu
+   ![](../../img/remove_grub_1.png)
+2. Type 'disk' and open the Disks app
+   ![](../../img/remove_grub_2.png)
+3. Select the drive you want to install Bazzite on
+   ![](../../img/remove_grub_3.png)
+4. Identify your EFI partition, it will be of filesystem type FAT and typically very small
+   ![](../../img/remove_grub_5.png)
+5. Mount the EFI partition (if it's not already mounted) by clicking on the Play button
+   ![](../../img/remove_grub_6.png)
+6. Click on the blue writing next to 'mounted at'
+   ![](../../img/remove_grub_7.png)
+7. Double-click on the EFI folder
+   ![](../../img/remove_grub_8.png)
+8. Identify the 'Ubuntu' or 'Fedora' folder and move it to the trashcan
+   ![](../../img/remove_grub_9.png)
+!!! warning 
+    Do not remove any other folders, such as Boot, Dell, HP, or Microsoft, or Windows may fail to boot properly!
+9. Reboot, and run the installer again. You might want to delete the partitions that were created during the first install attempt.
+   ![](../../img/remove_grub_10.png)

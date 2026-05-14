@@ -1,33 +1,32 @@
 ---
-authors:
-  - "@nicknamenamenick"
+title: Secure Boot Guide
 tags:
-  - Installation
+  -  QR
+search:
+  exclude: true
 ---
 
-<!-- ANCHOR: METADATA -->
-<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=2742", "fetched_at": "2024-09-03 16:43:23.922705+00:00"}-->
-<!-- ANCHOR_END: METADATA -->
+# Secure Boot Guide
 
-![Secure Boot menu: Continue boot / Enroll MOK / Enroll key from disk / Enroll hash from disk|690x378, 50%](../../img/Secure_Boot.jpeg 'Secure Boot')
-
-## Secure Boot Notes and Gotchas
+## Bazzite Supports Secure Boot
 
 !!! note
 
-    Skip this section if Secure Boot is not enabled or unsupported with your hardware.
+    Click "Continue boot" if your device doesn't support Secure Boot or you don't want to enable it.
 
 !!! important
 
-    The enrollment prompt uses a English QWERTY keyboard layout, indiscriminately of your actual hardware keyboard. Other layouts can therefore interfere with the characters of the password (i.e. `A` and `Q` are swapped on AZERTY layouts).
+    The enrollment prompt uses an English QWERTY keyboard layout, indiscriminately of your actual hardware keyboard. Other layouts can therefore interfere with the characters of the password (i.e. `A` and `Q` are swapped on AZERTY layouts).
+
+Bazzite supports Secure Boot however Universal Blue's key must be enrolled to use it otherwise keeping Secure Boot on in your BIOS will result in Bazzite not booting.
+
+## Important Secure Boot Notes:
 
 - Entering the password will register invisible characters for security purposes, so you will not be able to see what you are typing!
-
 - Updating your BIOS may re-enable Secure Boot and you may have to follow **"Method B"** after updating it to resolve the black screen on boot complaining about loading the kernel first.
-
 - The Steam Deck does **not** come with secure boot enabled and does not ship with any keys enrolled by default, do not enable Secure Boot on your Steam Deck unless you absolutely know what you're doing.
 
-### Error message if key is **not** enrolled properly:
+## Error Message (if key is **not** enrolled properly):
 
 ```
 error: ../../grub-core/kern/efi/sb.c:182:bad shim signature.
@@ -36,11 +35,11 @@ error: ../../grub-core/loader/1389/efi/linux.c:256:you need to load the kernel f
 Press any key to continue...
 ```
 
-![error: ../../grub-core/kern/efi/sb.c:182:bad shim signature. / error: ../../grub-core/loader/1389/efi/linux.c:256:you need to load the kernel first. / Press any key to continue...|613x63](../../img/load_the_kernel_first_error.jpeg 'load the kernel first error')
-
 Follow **Method B** below to resolve this and move past the error message if you encounter it.
 
-## **Method A**) During Installation Method (See Image Above)
+### **Method A** - During Installation Method
+
+![Secure Boot menu: Continue boot / Enroll MOK / Enroll key from disk / Enroll hash from disk](../../img/Secure_Boot.png 'Secure Boot')
 
 !!! note
 
@@ -56,7 +55,7 @@ universalblue
 
 Otherwise `Continue boot` if you have Secure Boot disabled or if it is not supported with your hardware.
 
-## **Method B**) After Installation Method
+## **Method B** - After Installation Method
 
 **Disable Secure Boot in the BIOS before proceeding**, and then re-enable it **after enrolling the key**.
 
@@ -78,7 +77,7 @@ Use the following command to boot straight into your system's BIOS (if supported
 ```command
 ujust bios
 ```
-### Complete MOK enrollment at boot
+## Complete MOK enrollment at boot
 
 On the next boot, you will see the blue MokManager screen:
 
@@ -89,11 +88,3 @@ On the next boot, you will see the blue MokManager screen:
     ```
 
 After the reboot, the key is enrolled and Secure Boot can remain enabled. Your system should now boot normally under Secure Boot.
-
-## Secure Boot Instructions for Upstream Fedora Atomic Desktop Images
-
->[**Read more about rebasing from upstream Fedora Atomic Desktop images**](/General/Installation_Guide/alternate-install-guide.md)
-
-Rebasing from Fedora Silverblue, Fedora Kinoite, etc. to Bazzite.
-
-If you're rebasing from a Fedora Atomic Desktop image and use Secure Boot, then follow our [README](https://github.com/ublue-os/bazzite/blob/main/README.md#secure-boot).

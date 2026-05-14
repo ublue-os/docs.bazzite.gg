@@ -1,41 +1,23 @@
 ---
-authors:
-  - "@nicknamenamenick"
-tags:
-  -  Software
-# preview: "../img/distrobox.png"
-preview:
-  alpha: 150
-  image: "../img/distrobox.png"
-description: ""
+title: Distrobox Containers
 ---
 
-<!-- ANCHOR: METADATA -->
-<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=2640", "fetched_at": "2024-09-03 16:43:09.168054+00:00"}-->
-<!-- ANCHOR_END: METADATA -->
-
-## What is Distrobox?
+# Distrobox Containers
 
 ![distrobox|510x413](../img/distrobox.png)
 
-Run other minimal variants of popular Linux distributions in Bazzite inside of a container, and access each distribution's packages without any of their dependencies and libraries affecting the host machine.
+## Basic Usage
 
-## **Important Information**:
+Run other minimal variants of popular Linux distributions in Bazzite inside of a container and access each distribution's packages without any of their dependencies and libraries affecting the host machine.
 
 - Containers are **not** virtual machines.
 - Containers are intended to be **disposable** and may run into issues where they need to be recreated.
 - Using this method to obtain software **requires knowledge of how traditional Linux operating systems install packages**.
   - Create a test container to familiarize yourself with basic Linux commands before diving in further.
 
-Distrobox containers run sub-systems of other popular [Linux distributions](https://distrobox.it/compatibility/#containers-distros) with access to their package managers (`apt`, `dnf`, `pacman`, etc.) and their package formats (`.deb`/`.rpm`) and any additional repositories like the [AUR](https://aur.archlinux.org/).
+Distrobox containers run sub-systems of other popular [Linux distributions](https://distrobox.it/compatibility/#containers-distros) with access to their package managers (`apt`, `dnf`, `pacman`, etc.) and their package formats (`.deb`/`.rpm`) and any additional repositories like the [AUR](https://aur.archlinux.org/). Distrobox containers can be used for both **development environments** and **installing applications that are not available in any of the other installation methods** which can be exclusive to specific package managers.
 
-### Arch Linux Distrobox Container Example:
-
-![i use arch btw|1022x822, 75%](../img/i_use_arch_btw.png)
-
-<sub><sup>i use arch (in a container) btw.</sup></sub>
-
-**Linux Distribution Examples**:
+### **Linux Distribution Examples**:
 
 | OS                                  | Package Manager    | Search for Packages                                                       |
 | ----------------------------------- | ------------------ | ------------------------------------------------------------------------- |
@@ -45,6 +27,12 @@ Distrobox containers run sub-systems of other popular [Linux distributions](http
 | [openSUSE][osuse]                   | [`zypper`][zypper] | [openSUSE Packages][osuse_pkgs]                                           |
 | [Void][void]                  | [`xbps`][xbps]     | [Void Linux Packages][void_pkgs]                                          |
 | [Alpine][alpine]              | [`apk`][apk]       | [Alpine Linux Packages][alpine_pkgs]                                      |
+
+#### Arch Linux Distrobox Container Example:
+
+![i use arch btw|1022x822, 75%](../img/i_use_arch_btw.png)
+
+<small>_I use Arch (in a container) btw._</small>
 
 ## Use Cases
 
@@ -68,8 +56,6 @@ To "un-export" the app, enter the command below in the container terminal window
 ```bash
 distrobox-export --delete --app <package>
 ```
-
-> [Read Bluefin's documentation on how containers integrate with your system](https://docs.projectbluefin.io/bluefin-dx#pet-containers).
 
 ## Manually Create Pre-Configured Distrobox Containers
 
@@ -107,13 +93,9 @@ distrobox rm -f <container_name>
 
 https://youtu.be/5m0YfIiypwA
 
-### Project Website
+## Project Website
 
 https://distrobox.it/
-
-<hr>
-
-[**<-- Back to Installing and Managing Software on Bazzite**](./index.md)
 
 [fedora]: https://fedoraproject.org/
 [dnf]: https://docs.fedoraproject.org/en-US/quick-docs/dnf/

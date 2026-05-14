@@ -1,3 +1,5 @@
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/bazzite-org/docs.bazzite.gg)
+
 # Contributing to Bazzite MkDocs documentation
 
 - [Contributing to Bazzite MkDocs documentation](#contributing-to-bazzite-mkdocs-documentation)
@@ -87,7 +89,7 @@ You will need other tools as well, like:
 
 > ⚠️ WARNING
 >
-> Just remember, ⚠️**DO NOT USE SPACES IN THE FILE NAME**⚠️. Spaces in filenames are going to bite us later in the future.
+> Just remember, ⚠️**DO NOT USE SPACES IN THE FILE NAME!**⚠️ Spaces in filenames are going to bite us later in the future.
 > Instead, use underscores `_`
 
 ### 2. Set a proper page name

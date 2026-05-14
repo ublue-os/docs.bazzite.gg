@@ -4,34 +4,34 @@ hide:
   - navigation
 ---
 
-# Introduction to Bazzite
+# Getting Started
 
 <div class="grid cards _bz" markdown>
 
 - [:material-harddisk: **Installing Bazzite**](General/Installation_Guide/index.md){ style="font-size: 1.1rem" }
 
-  Bazzite supports PC hardware from [most desktop and laptops][install_pc_laptop] to specialized models like the [Framework 13][frame_13] and [Framework 16][frame_16]. <br>
+  Bazzite supports PC hardware from most modern desktop and laptops to specialized models like [Framework](https://frame.work/). <br>
 
-  Bazzite also supports controller-friendly hardware like [home theater PC setups][htpc] and a [multitude of handhelds][install_handheld]:
-
-  - [Steam Deck (LCD and OLED)][deck]
-  - [Lenovo Legion Go][legion_go]
-  - [Asus ROG Ally (And X)][ally]
+  Bazzite also supports controller-friendly hardware like home theater PC setups and a multitude of handhelds:
+  
+  - [Asus Handhelds][ally]
+  - [Lenovo Handhelds][legion_go]
   - [GPD Handhelds][gpd]
   - [OneXPlayer Handhelds][onex]
   - [Ayn Handhelds][ayn]
   - [Ayaneo Handhelds][ayaneo]
+  - [Steam Deck][deck]
   - [Other PC Handhelds][otherhand]
 
 - [:material-controller: **Playing Video Games**][gaming]{ style="font-size: 1.1rem" }
 
-  Bazzite comes bundled with :fontawesome-brands-steam: [Steam](https://store.steampowered.com) and [Lutris](Gaming/Game_Launchers.md#lutris) to run all of your PC games<sup>1</sup> on multiple hardware configurations!
+  Bazzite comes bundled with :fontawesome-brands-steam: [Steam](https://store.steampowered.com) and [Lutris](Gaming/Game_Launchers.md#non-steam-games) to run all of your PC games<sup>1</sup> on multiple hardware configurations!
 
   It is also compatible with other tools like:
 
   - [Heroic Games Launcher](https://heroicgameslauncher.com/) for seamless Epic Games, GOG, and Amazon Games integration.
-  - [Games and emulators from the built-in app store](https://flathub.org/apps/category/Game/1) that range from [osu!](https://flathub.org/apps/sh.ppy.osu) to [Minecraft](https://flathub.org/apps/org.prismlauncher.PrismLauncher).
-  - ...And [more][run_win_game]!
+  - Games and emulators from the built-in app store that range from [osu!](https://flathub.org/apps/sh.ppy.osu) to [Minecraft](https://flathub.org/apps/org.prismlauncher.PrismLauncher).
+  - ...And [more!](https://flathub.org/en/apps/category/game/1)
 
   <small>\*<sup>1</sup> PC games that are known to work on the Linux desktop, visit [**ProtonDB**](https://protondb.com) and [**Are We Anti-Cheat Yet?**](https://areweanticheatyet.com) for more information</small>.
 
@@ -39,17 +39,15 @@ hide:
 
   <small>Order reflects the recommendation degree.</small>
 
-  1. [`ujust`][ujust] to use Bazzite tailored installers.
+  1. [Bazzite Portal][ujust] to use Bazzite tailored installers.
      {style="list-style-type: decimal;"}
-  2. [Flatpak][flatpak] for graphical apps.
+  2. [Bazaar App Store (Flatpak)][flatpak] for most apps.
      {style="list-style-type: decimal;"}
-  3. [Homebrew][homebrew] for command-line apps.
+  3. [Homebrew][homebrew] for command-line apps and tools.
      {style="list-style-type: decimal;"}
-  4. [Quadlet][quadlet] for hosting services.
+  4. [Containers][containers] for access to most Linux package managers (`apt`, `dnf`, `pacman`, etc.), as development toolboxes, and for hosting services.
      {style="list-style-type: decimal;"}
-  5. [Distrobox][distrobox] for access to most Linux package managers and as development toolboxes.
-     {style="list-style-type: decimal;"}
-  6. [Appimage][appimage] for portable apps found on the web.
+  5. [Appimage][appimage] for portable apps found on the web.
      {style="list-style-type: decimal;"}
 
   There is also [package layering with `rpm-ostree`][rpm-ostree], but it is [advised to avoid using it if possible][rpm-ostree_caveats] since layered packages can break future upgrades until packages are removed.
@@ -60,8 +58,8 @@ hide:
 
   - [Updating Guide][updates]
   - [Rollback System Updates][rollbacks]
-    - [`bazzite-rollback-helper`][rollback-helper]
   - [Rebasing to Other Images][rebasing]
+  - [`bazzite-rollback-helper`][rollback-helper]
 
 - [:fontawesome-brands-android: **Android Applications**][waydroid]{ style="font-size: 1.1rem" }
 
@@ -82,12 +80,7 @@ hide:
 
 </div>
 
-[install_pc_laptop]: General/Installation_Guide/Installing_Bazzite_for_Desktop_or_Laptop_Hardware.md
-[install_handheld]: General/Installation_Guide/Installing_Bazzite_for_Handheld_PCs.md
 [deck]:  Handheld_and_HTPC_edition/Handheld_Wiki/Steam_Deck.md
-[frame_13]: General/Installation_Guide/Installing_Bazzite_Framework_Laptop_13.md
-[frame_16]: General/Installation_Guide/Installing_Bazzite_for_Framework_Laptop_16.md
-[htpc]: General/Installation_Guide/Installing_Bazzite_for_HTPC_Setups.md
 [ally]: Handheld_and_HTPC_edition/Handheld_Wiki/ASUS_ROG_Ally.md
 [legion_go]: Handheld_and_HTPC_edition/Handheld_Wiki/Lenovo_Legion_Go.md
 [ayn]: Handheld_and_HTPC_edition/Handheld_Wiki/Ayn_Handhelds.md
@@ -116,3 +109,4 @@ hide:
 [quadlet]: Installing_and_Managing_Software/Quadlet.md
 [otherhand]: Handheld_and_HTPC_edition/Handheld_Wiki/Other_Handhelds.md
 [customimage]: Advanced/creating_custom_image.md
+[containers]: Installing_and_Managing_Software/Containers.md
