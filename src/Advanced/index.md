@@ -16,3 +16,4 @@ title: Advanced Guides
 - [**Show Detailed Init Logs During Boot**](/Advanced/plymouth_init.md)
 - [**How to Modify Initramfs and Dracut**](/Advanced/dracut-and-initramfs.md)
 - [**Creating A Custom Bazzite Image**](/Advanced/creating_custom_image.md)
+- [**Changes to Sunshine on Bazzite**](/Advanced/sunshine-brew.md)

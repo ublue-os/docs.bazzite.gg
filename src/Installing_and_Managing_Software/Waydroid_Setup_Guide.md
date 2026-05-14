@@ -21,7 +21,7 @@ title: Waydroid Setup Guide
 Open a host terminal and **enter this command to setup Waydroid**:
 
 ```bash
-ujust setup-waydroid
+ujust configure-waydroid
 ```
 
 ### Initialize Waydroid
@@ -56,7 +56,7 @@ waydroid session stop
 Open a host terminal and enter this **command**:
 
 ```
-ujust setup-waydroid
+ujust configure-waydroid
 ```
 
 Selecting `Configure Waydroid` will allow users to install additional Android tweaks with the [Waydroid Extras Scripts.](https://github.com/casualsnek/waydroid_script#waydroid-extras-script)
@@ -128,7 +128,7 @@ This section is dedicated to more specific operations and issues within Waydroid
 To install it, run the following `ujust` command:
 
 ```bash
-ujust setup-waydroid helper
+ujust configure-waydroid helper
 ```
 
 You can alternatively go directly to their [releases](https://github.com/waydroid-helper/waydroid-helper/releases) and install the latest AppImage via GearLever.
@@ -211,7 +211,7 @@ This is only intended for users who have multiple GPUs in their hardware who exp
 **Enter in a host terminal**:
 
 ```
-ujust setup-waydroid
+ujust configure-waydroid
 ```
 
 Then `Select GPU for Waydroid` which will give the option on what GPU to utilize for Waydroid to fix graphical corruptions.
@@ -225,5 +225,5 @@ Then `Select GPU for Waydroid` which will give the option on what GPU to utilize
 If you experience issues or want a fresh Waydroid container, then select `Reset Waydroid` after **entering**:
 
 ```
-ujust setup-waydroid
+ujust configure-waydroid
 ```

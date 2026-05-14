@@ -13,6 +13,8 @@ title: Hardware Compatibility for Linux Gaming
 - **Graphics**: A graphics card that can utilize Vulkan 1.3 or higher, modern AMD GPUs work the best
 - **Storage**: 50GB of free space on an internal **solid-state drive (SSD)**
   - **Recommended Storage**: 120GB of free space on an internal **solid-state drive (SSD)**
+  - Existing disks **must** be **GPT**. Attempting to install Bazzite to an MBR (Master Boot Record) partitioned disk will fail.
+    - Microsoft provides a [tool to convert existing Windows installations to GPT](https://learn.microsoft.com/en-us/windows/deployment/mbr-to-gpt).
   - **External Storage & Secondary Drives**: All drives must be formatted as **BTRFS (SSDs)** or **Ext4 (Hard Disk Drives [HDDs])** (_please backup the files and reformat them post-installation_)
 - **Network**: Stable internet connection with no bandwidth caps (_not required for installation_)
 - **Additional Notes**: Certain peripherals are **not** compatible with Bazzite:
