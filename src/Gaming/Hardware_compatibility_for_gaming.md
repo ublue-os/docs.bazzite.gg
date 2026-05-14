@@ -68,7 +68,7 @@ vulkaninfo | grep 'Instance Version'
 
 ### GPUs Without Vulkan Support
 
-However if your GPU does not support Vulkan at all then you must use an older Proton version (Proton 3, 4, or 5) and use this **launch option for most Steam games**:
+If your GPU does not support Vulkan at all then you need to use this **launch option for all games running through Proton:**:
 
 ```command
 PROTON_USE_WINED3D=1 %command%
