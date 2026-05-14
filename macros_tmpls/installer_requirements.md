@@ -1,3 +1,4 @@
+<!-- TODO: Delete this file alongside leftover installation guides that use it -->
 - A USB flash drive with at least 10GB free space
   - **Note**: All data on this drive will be wiped when flashed
   - **Note 2**: It should support at least USB 3.0 speed

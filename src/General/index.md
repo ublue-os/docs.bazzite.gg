@@ -9,7 +9,6 @@ title: General Guides
 - [**SteamOS Comparison**](/General/SteamOS_Comparison.md)
 - [**Desktop Environment Tweaks**](/General/Desktop_Environment_Tweaks.md)
 - [**VPN Setup**](/General/VPN.md)
-- [**ZeroTier Setup**](/General/zerotier.md)
 - [**Issues & Resolution**](/General/issues_and_resolutions.md)
 - [**Reporting Bugs**](/General/reporting_bugs.md)
 - [**Community Resources**](/General/community-links.md)

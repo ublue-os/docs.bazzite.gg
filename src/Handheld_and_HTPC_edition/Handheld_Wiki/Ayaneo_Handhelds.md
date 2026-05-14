@@ -1,16 +1,8 @@
 ---
-authors:
-  - "@zetarancio"
-  - "@nicknamenamenick"
-  - "@aarron-lee"
-tags:
-  -  Handhelds
+title: Ayaneo Handhelds
 ---
 
-<!-- ANCHOR: METADATA -->
-<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=2417", "fetched_at": "2024-09-03 16:43:20.646543+00:00"}-->
-<!-- ANCHOR_END: METADATA -->
-
+# Ayaneo Handhelds
 
 !!! disclaimer
 
@@ -20,7 +12,7 @@ tags:
 
 ![photo_5875160389711413569_y|663x500, 100%](../../img/Ayaneo_Geek_1S.jpeg)
 
-### Workarounds / Known Issues
+### Known Issues
 
 - Suspending the device requires the latest BIOS update.
   - Reports of controller issues on wake have reported inconsistency. Enabling "full initial usb support" in Bios seems to have an impact on how frequent the issue is.
@@ -48,13 +40,3 @@ sudo systemctl enable --now hhd@$(whoami)
 Check out the [original thread](https://universal-blue.discourse.group/t/ayaneo-geek-1s-2s-linux-bazzite-support-is-already-almost-there-lets-add-them-to-the-officially-supported-devices/1046) for more information and updates on this device.
 
 Ayaneo Geek 1s is (as of April 2025) the only Ryzen 7000 handheld which is yet to receive the EC update that increase battery life. You can follow and report [on this discord thread](https://discord.com/channels/717181357109018694/1301507866754289745).
-
-### Contributing
-
-This page is a **wiki**, edit it to add any relevant information you may have regarding the handheld and your experience with Bazzite on it. Make sure to follow proper [contributing guidelines](https://universal-blue.org/contributing.html) before adding any edits.
-
-<hr>
-
-**See also**: [Steam Gaming Mode Overview](../Steam_Gaming_Mode.md)
-
-**<-- Back to [Handheld Wiki](./index.md)**

@@ -78,6 +78,12 @@ plugins:
           default: true
           name: English
           build: true
+        - locale: fr
+          name: French
+          build: true
+        - locale: cs
+          name: Čeština
+          build: true          
 
   - search
   - macros:
@@ -102,7 +108,7 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - nl2br
-  - mdx_truly_sane_lists
+  - mdx_better_lists
   - toc:
       permalink: true
   - pymdownx.emoji:
@@ -124,17 +130,11 @@ nav:
   - index.md
   - FAQ: "General/FAQ.md"
   - Installation:
-      - "Setup Guide": General/Installation_Guide/index.md
-      - "Installing Bazzite for Desktop/Laptop Hardware": General/Installation_Guide/Installing_Bazzite_for_Desktop_or_Laptop_Hardware.md
-      - "Installing Bazzite for Framework Laptop 16": https://guides.frame.work/Guide/Bazzite+Installation+on+the+Framework+Laptop+16/407
-      - "Installing Bazzite for Framework Laptop 13": https://guides.frame.work/Guide/Bazzite+Installation+on+the+Framework+Laptop+13/405
-      - "Installing Bazzite for Home Theater PC (HTPC) Setups": General/Installation_Guide/Installing_Bazzite_for_HTPC_Setups.md
-      - "Installing Bazzite on the Steam Deck": General/Installation_Guide/Installing_Bazzite_for_Steam_Deck.md
-      - "Installing Bazzite on Handheld PCs": General/Installation_Guide/Installing_Bazzite_for_Handheld_PCs.md
-      - "Dual Boot Preliminary and Post-Installation Setup Guide": General/Installation_Guide/dual_boot_setup_guide.md
-      - "Secure Boot Instructions": General/Installation_Guide/secure_boot.md
-      - "Manual Partitioning": General/Installation_Guide/manual_partitioning.md
+      - "Installing Bazzite": General/Installation_Guide/index.md
+      - "Installation Guide": General/Installation_Guide/install-guide.md
+      - "Post-Installation Setup": General/Installation_Guide/post-installation.md
       - "Installation Troubleshoot Guide": General/Installation_Guide/troubleshoot_guide.md
+      - "Legacy ISO Installation Guide": General/Installation_Guide/legacy-install.md
       - "Alternative Installation Method": General/Installation_Guide/alternate-install-guide.md
   - General:
       - "General Guides": General/index.md
@@ -143,7 +143,6 @@ nav:
       - "SteamOS Comparison": "General/SteamOS_Comparison.md"
       - "Desktop Environment Tweaks": General/Desktop_Environment_Tweaks.md
       - "VPN Setup": General/VPN.md
-      - "ZeroTier Setup": General/zerotier.md
       - "Issues & Resolutions": "General/issues_and_resolutions.md"
       - "Reporting Bugs": General/reporting_bugs.md
       - "Community Resources": General/community-links.md
@@ -152,32 +151,38 @@ nav:
       - "Press Kit": https://github.com/ublue-os/bazzite/tree/main/press_kit
       - "Uninstalling Bazzite": General/uninstalling-bazzite.md
   - Gaming:
-      - "Gaming Guide": Gaming/index.md
+      - "Gaming Guides": Gaming/index.md
+      - "Introduction to Gaming on Bazzite": Gaming/gaming-intro.md
+      - "Hardware Compatibility for Gaming": Gaming/Hardware_compatibility_for_gaming.md
       - "Game Launchers": Gaming/Game_Launchers.md
       - "Managing & Modding Games": Gaming/Managing_and_modding_games.md
+      - "Launch Options and Environment Variables": Gaming/launch-options-env-variables.md
       - "Common Gaming Issues": Gaming/Common_gaming_issues.md
-      - "Hardware Compatibility for Gaming": Gaming/Hardware_compatibility_for_gaming.md
   - Bazzite-Deck:
-      - "Steam Gaming Mode": Handheld_and_HTPC_edition/Steam_Gaming_Mode.md
-      - "Quirks and Workarounds": Handheld_and_HTPC_edition/quirks.md
-      - "Handheld Wiki":
+      - "Bazzite-Deck Guides": Handheld_and_HTPC_edition/index.md
+      - "Bazzite-Deck General Overview": Handheld_and_HTPC_edition/Steam_Gaming_Mode.md
+      - "Steam Gaming Mode Quirks and Workarounds": Handheld_and_HTPC_edition/quirks.md
+      - "Handheld Compatibility":
           - Handheld_and_HTPC_edition/Handheld_Wiki/index.md
-          - "Steam Deck": Handheld_and_HTPC_edition/Handheld_Wiki/Steam_Deck.md
-          - "Lenovo Legion Go": Handheld_and_HTPC_edition/Handheld_Wiki/Lenovo_Legion_Go.md
-          - "ASUS ROG Ally": Handheld_and_HTPC_edition/Handheld_Wiki/ASUS_ROG_Ally.md
-          - "Ayn Handhelds": Handheld_and_HTPC_edition/Handheld_Wiki/Ayn_Handhelds.md
+          - "ASUS Handhelds": Handheld_and_HTPC_edition/Handheld_Wiki/ASUS_ROG_Ally.md
+          - "Lenovo Handhelds": Handheld_and_HTPC_edition/Handheld_Wiki/Lenovo_Legion_Go.md
           - "GPD Handhelds": Handheld_and_HTPC_edition/Handheld_Wiki/GPD_Handhelds.md
           - "OneXPlayer Handhelds": Handheld_and_HTPC_edition/Handheld_Wiki/OneXPlayer_Handhelds.md
+          - "Ayn Handhelds": Handheld_and_HTPC_edition/Handheld_Wiki/Ayn_Handhelds.md
           - "Ayaneo Handhelds": Handheld_and_HTPC_edition/Handheld_Wiki/Ayaneo_Handhelds.md
+          - "Steam Deck": Handheld_and_HTPC_edition/Handheld_Wiki/Steam_Deck.md
           - "Other Handhelds": Handheld_and_HTPC_edition/Handheld_Wiki/Other_Handhelds.md
   - Software:
       - "Installing and Managing Software":
           - Installing_and_Managing_Software/index.md
-          - "Flatpak": Installing_and_Managing_Software/Flatpak.md
-          - "ujust": Installing_and_Managing_Software/ujust.md
+          - "Introduction to Installing Software on Bazzite": Installing_and_Managing_Software/software-intro.md
+          - "ujust Commands": Installing_and_Managing_Software/ujust.md
+          - "Bazaar App Store": Installing_and_Managing_Software/Flatpak.md
           - "Homebrew": Installing_and_Managing_Software/Homebrew.md
-          - "Quadlet": Installing_and_Managing_Software/Quadlet.md
-          - "Distrobox": Installing_and_Managing_Software/Distrobox.md
+          - "Containers":
+              - Installing_and_Managing_Software/Containers.md
+              - "Distrobox": Installing_and_Managing_Software/Distrobox.md
+              - "Quadlet": Installing_and_Managing_Software/Quadlet.md
           - "Appimage": Installing_and_Managing_Software/AppImage.md
           - "rpm-ostree": Installing_and_Managing_Software/rpm-ostree.md
           - "Waydroid Setup Guide": Installing_and_Managing_Software/Waydroid_Setup_Guide.md
@@ -195,7 +200,6 @@ nav:
       - "Bazzite Command Line Tools": Advanced/bazzite-cli.md
       - "Using Looking-Glass": Advanced/looking-glass.md
       - "Best Shell Practices": Advanced/Best_Shell_Practices.md
-      - "Installing Arctis Manager": Advanced/arctis-manager.md
       - "Booting to Rescue Mode": Advanced/rescue-and-emergency-mode.md
       - "Reset Forgotten User Password": Advanced/Reset_Forgotten_User_Password.md
       - "Using Swap for Additional Memory or Hibernation": Advanced/swapfile.md
@@ -207,3 +211,4 @@ nav:
   - Community: community.md
   - Videos: https://www.youtube.com/playlist?list=PLuiT7cNvThNC956b5rtSPCjwcHe2tKBmY
   - Donate: donations.md
+  - Download: https://bazzite.gg/#image-picker

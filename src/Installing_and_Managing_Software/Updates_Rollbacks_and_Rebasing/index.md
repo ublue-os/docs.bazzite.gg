@@ -2,10 +2,6 @@
 title: Updates, Rollbacks, and Rebasing
 ---
 
-<!-- ANCHOR: METADATA -->
-<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=36", "fetched_at": "2024-09-03 16:43:15.473615+00:00"}-->
-<!-- ANCHOR_END: METADATA -->
-
 # Updates, Rollbacks, and Rebasing
 
 ## Updates
@@ -20,13 +16,6 @@ Swap back to a previous system update if there are major issues after updating v
 
 > [**Rollbacks Guide**](./rolling_back_system_updates.md)
 
-
-### Bazzite Rollback Helper Tool
-
-Utility to assist with rolling back to older Bazzite images, changing update branches, or swapping to a different Bazzite image.
-
-> [**Bazzite's Rollback Helper Utility Guide**](./bazzite_rollback_helper.md)
-
 ## Rebasing
 
 !!! important
@@ -37,6 +26,8 @@ Rebase to Bazzite builds from the last 90 days, change Bazzite update channels, 
 
 > [**Rebase Guide**](./rebase_guide.md)
 
-<hr>
+## Bazzite Rollback Helper Tool
 
-← [**View all Bazzite documentation**](../../index.md)
+Utility to assist with rolling back to older Bazzite images, changing update branches, or swapping to a different Bazzite image.
+
+> [**Bazzite's Rollback Helper Utility Guide**](./bazzite_rollback_helper.md)

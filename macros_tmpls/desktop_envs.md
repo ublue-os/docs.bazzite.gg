@@ -11,7 +11,7 @@ More information can be found on our [FAQ](https://faq.bazzite.gg) about the dif
 
     #### [KDE Plasma (Default)](https://kde.org/plasma-desktop/)
 
-    ![KDE Plasma|690x388, 75%](/img/KDE_Plasma_DE.jpeg)
+    ![Screenshot of the Bazzite desktop running KDE Plasma|690x388, 75%](/img/KDE_Plasma_DE.png)
 
     - KDE Plasma's default interface has a traditional and familiar layout
     - Highly customizable with tons of settings
@@ -22,7 +22,7 @@ More information can be found on our [FAQ](https://faq.bazzite.gg) about the dif
 
     #### [GNOME (`-gnome` images)](https://www.gnome.org/)
 
-    ![GNOME|690x359, 75%](/img/GNOME_DE.png)
+    ![Screenshot of the Bazzite desktop running GNOME|690x388, 75%](/img/GNOME_DE.png)
 
     - GNOME's default interface has an elegant and touch-friendly layout
     - Simple and concise

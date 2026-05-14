@@ -2,58 +2,20 @@
 title: Installing and Managing Applications
 ---
 
-<!-- ANCHOR: METADATA -->
-<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=35", "fetched_at": "2024-09-03 16:43:05.697052+00:00"}-->
-<!-- ANCHOR_END: METADATA -->
+# Installing and Managing Applications
 
-## Linux Package Formats
-
-Fedora Atomic Desktops have read-only root files to prioritize stability.  Therefore, containerized applications that do not interfere with your host system will work best.
-
->Check out the [**Frequently Asked Questions**](../General/FAQ/#what-are-the-advantages-to-using-fedora-atomic-desktop) page for why this priority exists.
-
-### **Package formats ranked from most recommended to least recommended for daily usage**:
-
-1. [**`ujust`**](./ujust.md) (_Convenience Commands_) - Custom scripts maintained by Bazzite & Universal Blue contributors that can also install a small subset of applications.
-2. [**Flatpak**](./Flatpak.md) (_Graphical Applications_) - Universal package format using a permissions-based model and should be used for most graphical applications.
-3. [**Homebrew**](./Homebrew.md) (_Command-Line Tools_) - Install applications intended to run inside of the terminal (CLI/TUI).
-4. [**Quadlet**](./Quadlet.md)  (_Services_) - Run containerized applications as a [systemd service](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/system_administrators_guide/chap-managing_services_with_systemd#sect-Managing_Services_with_systemd-Services).
-5. [**Distrobox Containers**](./Distrobox.md) (_Linux Packages & Development Workflows_) - Access to most Linux package managers for software that do not support Flatpak and Homebrew and for use as development boxes.
-6. [**AppImage**](./AppImage.md) (_Portable Graphical Applications_) - Portable universal package format that relies on specific host libraries at a system-level, usually obtained from a project's website.
-7. [**`rpm-ostree`**](./rpm-ostree.md) (_System-Level Packages_) - Layer Fedora packages at a system-level (**not recommended, use as a last resort**)
-
-![](../img/software-install-decision-tree-light.svg#only-light)
-![](../img/software-install-decision-tree-dark.svg#only-dark)
-
-## How do I run Windows applications?
-
-**Use a [WINE](https://www.winehq.org/) front-end**:
-
-- [**Steam**](https://store.steampowered.com/) (_pre-installed_) has a Windows compatibility layer built-in.
-- [**Lutris**](https://lutris.net/about) (_pre-installed_) for non-Steam video games.
-- [**Heroic**](https://heroicgameslauncher.com/) for Epic Games, GOG, and Amazon Games integration.
-- [**Zoom Platform**](https://www.zoom-platform.com/) has a built-in [Windows compatibility layer](https://zoom-platform.sh/) making use of [`umu-launcher`](https://github.com/Open-Wine-Components/umu-launcher).
-- [**WineZGUI**](https://github.com/fastrizwaan/WineZGUI) (Available in Bazaar) for Windows applications that don’t require special considerations for their prefix.
-
->Read the [**Bazzite Gaming Guide**](/Gaming/index.md) for more information on running Windows games on Linux.
-
-## How do I install Android applications?
-
-Follow the [**Waydroid Setup Guide**](./Waydroid_Setup_Guide.md) to install Android applications on Bazzite.
-
-!!! note
-    Waydroid is **not supported** on other Universal Blue images like [Aurora](https://getaurora.dev/) and [Bluefin](https://projectbluefin.io/).
-
-### Video Showcase of Installing Software
-
-!!! note
-
-    This video is missing a Homebrew and Quadlet walkthrough.
-
-https://www.youtube.com/watch?v=ITuT23YrgPs
-
-<hr>
-
-**See also**: [Updates, Rollbacks, & Rebasing](../Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/index.md)
-
-<-- [**View all Bazzite documentation**](../index.md)
+- [**Introduction to Installing Software on Bazzite**](./software-intro.md)
+- [**Bazzite Portal (`ujust`)**](./ujust.md)
+- [**Bazaar App Store (`flatpak`)**](./Flatpak.md)
+- [**Homebrew (`brew`)**](./Homebrew.md)
+- [**Containers**](./Containers.md)
+  - [**Distrobox (Linux Package Managers)**](./Distrobox.md)
+  - [**Quadlet (`systemd` and `podman` in Combination)**](./Quadlet.md) 
+- [**AppImage (Portable `.AppImage` Applications)**](./AppImage.md)
+- [**Package Layering (`rpm-ostree`)**](./rpm-ostree.md)
+- [**Waydroid Setup Guide (Android Applications)**](./Waydroid_Setup_Guide.md)
+- [**Updates, Rollbacks, and Rebasing Images**](./Updates_Rollbacks_and_Rebasing/index.md)
+  - [**Updates**](./Updates_Rollbacks_and_Rebasing/updating_guide.md)
+  - [**Rolling Back Updates**](./Updates_Rollbacks_and_Rebasing/rolling_back_system_updates.md)
+  - [**Rebasing Images**](./Updates_Rollbacks_and_Rebasing/rebase_guide.md)
+  - [**`bazzite-rollback-helper`**](./Updates_Rollbacks_and_Rebasing/bazzite_rollback_helper.md)

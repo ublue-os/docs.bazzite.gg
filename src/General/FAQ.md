@@ -45,7 +45,7 @@ A version of Bazzite that specifically caters to software development. It is not
 
 #### Bazzite Image Chart Example
 
-!!! not
+!!! note
 
     This does not include all of the Bazzite images.
 
@@ -55,7 +55,7 @@ Verify your Bazzite image by entering this **command** in the terminal:
 rpm-ostree status
 ```
 
-!!! note
+!!! important
 
     Every Bazzite image should start with `ostree-image-signed:docker://ghcr.io/ublue-os/...`.
     <sub> The `...` is a placeholder for the actual image name which can be referenced in the chart below. </sub>
@@ -110,7 +110,13 @@ There are currently no plans to support Kepler and older architectures (Most GTX
 
 Most hardware changes should **not** require any manual intervention outside of the expectations from that particular hardware which would be OS-agnostic.  However, if you swap from or to a Nvidia GPU, then [rebasing](../Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/brh.md) will be necessary as a manual intervention to get the appropriate graphics drivers.
 
-## Windows games claim that my graphic drivers are outdated, but I am not sure how to update them.
+## `error: System transaction in progress` shows up when updating the system manually
+
+![](/../img/system-transaction-in-progress.png)
+
+This warning occurs on the [Desktop Edition](#1-desktop-edition) because it automatically downloads system and application updates in the background. You can safely ignore it as the system is already performing an update for you.
+
+## Windows games claim that my graphic drivers are outdated, how do I update them?
 
 ![](/../img/gpu_driver_warning.png)
 Windows games cannot correctly detect Linux graphics drivers.
@@ -128,17 +134,23 @@ No. A notification with instructions on turning off CSM will occur when the inst
 * There may be individual game mods or [Decky plugins](https://github.com/xXJSONDeruloXx/Decky-Framegen) that mimic similar functionality.
 * If you own [Lossless Scaling](https://store.steampowered.com/app/993090/Lossless_Scaling/) on Steam, you can set up a LSFG Vulkan layer with the `ujust get-lsfg` terminal command.
 
+## Can I theme my GRUB/bootloader?
+Theming the bootloader (GRUB) is unsupported by Bazzite and can cause critical issues such as your system not booting. Please remove any GRUB themes before reporting issues.
+
 ## Can I change the hostname of my device?
 
 !!! note
 
     Hostnames must be **under 20 characters** due to a limitation with Distrobox containers.
 
-Edit the `/etc/hostname` file with a new hostname, save it, and reboot.
+Open the terminal and enter the following **command**
 
 ```
 hostnamectl hostname <hostname>
 ```
+
+Specify a hostname where `<hostname>` is.
+
 
 ## I installed Windows but Bazzite won't boot { id="windows-bootloader-override" }
 
@@ -167,7 +179,12 @@ Deployments can also be pinned to rollback for future use, so `:2`, `:3`, etc. c
 
 [Fedora Linux's Atomic Desktops](https://fedoraproject.org/atomic-desktops/) originally followed a naming scheme based on [minerals.](https://fedoraproject.org/kinoite/) Bazzite is a mineral that is known for being strong, lightweight, and is [blue](https://universal-blue.org/).
 
-<hr>
+## I want Bazzite on a device where video games are not a priority
+
+Universal Blue offers two other desktop operating systems similar to Bazzite but without the focus on PC gaming. While both can still run video games, they include less pre-installed gaming software and optimizations. All three projects share resources and development with each other, often involving the same contributors:
+
+- [**Aurora**](https://getaurora.dev/) if you want the **KDE Plasma** desktop environment
+- [**Bluefin**](https://projectbluefin.io/) if you want the **GNOME** desktop environment.
 
 ## I have questions or concerns that cannot be answered in the documentation
 
