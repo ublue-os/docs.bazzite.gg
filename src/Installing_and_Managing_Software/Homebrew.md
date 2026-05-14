@@ -20,6 +20,10 @@ Install packages in a host terminal with this **terminal command**:
 brew install <package>
 ```
 
+!!! note
+
+    For multiple user or atypical setups only: Root privileges (`sudo`) will be required to install Homebrew packages because it uses the `linuxbrew` user to install them.
+
 ## Bold Brew
 
 ![bbrew|3164x2060, 25%](../img/bbrew-installed-screenshot.png)
