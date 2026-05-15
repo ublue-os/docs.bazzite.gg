@@ -28,7 +28,6 @@ Il est également conçu pour une utilisation quotidienne, avec un accent partic
 - Accès à l'environnement de bureau **GNOME** comme alternative à KDE Plasma.
 - Prise en charge native de la **virtualisation** et du **"pass-through GPU"**.
 - Les **applications Android** peuvent être installées avec [Waydroid](/Installing_and_Managing_Software/Waydroid_Setup_Guide.md).
-- **Sunshine** est préinstallé, ce qui vous permet de diffuser facilement vos jeux en streaming.
 - [`ujust`](/Installing_and_Managing_Software/ujust.md) : scripts pratiques permettant de configurer des logiciels et d'effectuer des réglages tels que le démarrage sécurisé, ainsi que d'installer des logiciels supplémentaires.
 - Utilise le format de disque **BTRFS** avec **déduplication** et **compression** (SteamOS utilise **Ext4**) et prend en charge le **montage automatique** pour les **disques internes** et les **cartes SD**.
 

@@ -28,7 +28,6 @@ Je také navržen pro každodenní používání se zaměřením na **hry**, **m
 - Přístup do prostředí **GNOME** jako alternativa k KDE Plasma.
 - Po vybalení podpora pro **virtualizaci** a **průchod GPU**.
 - **Aplikace pro Android** lze nainstalovat pomocí [Waydroid](/Installing_and_Managing_Software/Waydroid_Setup_Guide.md).
-- **Sunshine** je předinstalovaný, což vám umožní snadno streamovat vaše hry.
 - [`ujust`](/Installing_and_Managing_Software/ujust.md) praktické skripty pro nastavení softwaru a vylepšení, jako je bezpečné spouštění a další software.
 - Používá formát disku **BTRFS** s **deduplikací** a **kompresí** (SteamOS používá **Ext4**) a podporuje **automatické připojení** jak pro **interní disky**, tak pro **SD ​​karty**.
 
