@@ -83,7 +83,7 @@ https://www.youtube.com/watch?v=uy8mi1pAj8E
 
 ### Nakonfigurujte svůj systém pomocí aplikace Bazzite Portal
 
-![bazzite-portal|997x785, 50%](../../img/bazzite-portal.png)
+![bazzite-portal|1364x1074, 50%](../../img/Bazzite_Portal.png)
 
 Seznamte se s portálem Bazzite, který provádí údržbu systému, instaluje malou podmnožinu dalších aplikací a konfiguruje pokročilá nastavení systému.
 

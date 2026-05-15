@@ -83,7 +83,7 @@ https://www.youtube.com/watch?v=uy8mi1pAj8E
 
 ### Configurer votre système à l'aide de l'application Portail Bazzite
 
-![bazzite-portal|997x785, 50%](../../img/bazzite-portal.png)
+![bazzite-portal|1364x1074, 50%](../../img/Bazzite_Portal.png)
 
 Découvrez le portail Bazzite, qui permet d'effectuer la maintenance du système, d'installer un certain nombre d'apps supplémentaires et de configurer les paramètres avancés du système.
 
