@@ -78,7 +78,11 @@ Enjoy using Bazzite and want to help sustain its development? Consider sponsorin
 {{ contributor("stellaberrant", "stellaberrant", "Translations and bug fixes") }}
 {{ contributor("wolfyreload", "wolfyreload", "Visual Guides on Youtube, QA Testing") }}
 {{ contributor("CharlieBros", "CharlieBros", "Language Translations in Spanish") }}
-{{ contributor("Crono", "EPOCHvoyager", "Does not think of himself as a contributor, but helps with significant testing", "https://github.com/sponsors/EPOCHvoyager") }}
+{{ contributor("Dylan Taylor", "dylanmtaylor", "Image and CI/CD work, new release enablement, and testing", "https://github.com/sponsors/dylanmtaylor") }}
+{{ contributor("Jill Fiore", "Lumaeris", "Language Translations in Russian, bug fixes & QoL improvements") }}
+{{ contributor("Alex Shek", "ykshek", "Advanced features like custom resolution support") }}
+{{ contributor("Crono", "EPOCHvoyager", "Significant testing", "https://github.com/sponsors/EPOCHvoyager") }}
+
     
 </div>
 
