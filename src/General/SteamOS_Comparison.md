@@ -28,7 +28,7 @@ It is also designed for daily driving, with a focus on **gaming**, **multi-media
 - Access to the **GNOME** desktop environment as an alternative to KDE Plasma.
 - Out of the box support for **virtualization** and **GPU passthrough**.
 - **Android applications** can be installed with [Waydroid](/Installing_and_Managing_Software/Waydroid_Setup_Guide.md).
-- [`ujust`](/Installing_and_Managing_Software/ujust.md) convenience scripts for setting up software and tweaks such as secure boot, and additional software.
+- **[Bazzite Portal](/Installing_and_Managing_Software/Bazzite_Portal.md)** includes [`ujust`](/Installing_and_Managing_Software/ujust.md) convenience scripts for setting up software and tweaks such as secure boot, and additional software.
 - Uses the disk format **BTRFS** with **deduplication** and **compression** (SteamOS uses **Ext4**) and supports **auto-mounting** for both **internal drives** and **SD cards**.
 
 ### Daily Driving
