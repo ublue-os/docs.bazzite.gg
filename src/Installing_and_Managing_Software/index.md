@@ -5,7 +5,8 @@ title: Installing and Managing Applications
 # Installing and Managing Applications
 
 - [**Introduction to Installing Software on Bazzite**](./software-intro.md)
-- [**Bazzite Portal (`ujust`)**](./ujust.md)
+- [**Bazzite Portal**](./Bazzite_Portal.md)
+- [**`ujust` Commands**](./ujust.md)
 - [**Bazaar App Store (`flatpak`)**](./Flatpak.md)
 - [**Homebrew (`brew`)**](./Homebrew.md)
 - [**Containers**](./Containers.md)

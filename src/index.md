@@ -39,7 +39,7 @@ hide:
 
   <small>Order reflects the recommendation degree.</small>
 
-  1. [Bazzite Portal][ujust] to use Bazzite tailored installers.
+  1. [Bazzite Portal][bazzite_portal] to use Bazzite tailored installers.
      {style="list-style-type: decimal;"}
   2. [Bazaar App Store (Flatpak)][flatpak] for most apps.
      {style="list-style-type: decimal;"}
@@ -90,7 +90,7 @@ hide:
 [run_win_game]: Installing_and_Managing_Software/index.md#how-do-i-run-windows-applications
 [enable_proton]: Gaming/Game_Launchers.md#enabling-proton-for-all-steam-games
 [flatpak]: Installing_and_Managing_Software/Flatpak.md
-[ujust]: Installing_and_Managing_Software/ujust.md
+[bazzite_portal]: Installing_and_Managing_Software/Bazzite_Portal.md
 [rpm-ostree]: Installing_and_Managing_Software/rpm-ostree.md
 [distrobox]: Installing_and_Managing_Software/Distrobox.md
 [installing_software]: Installing_and_Managing_Software/index.md
