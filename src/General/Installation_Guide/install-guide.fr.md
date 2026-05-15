@@ -133,15 +133,15 @@ Notez qu'une connexion Internet n'est pas nécessaire pour installer Bazzite, ma
 
 ## Sélectionnez votre langue, votre région et la disposition de votre clavier
 
-![installer1|1295x1054, 62%](../../img/live-installer-language.png)
+![installer1|1280x768, 70%](../../img/live-installer-language.png)
 
-![installer2|1295x1054, 62%](../../img/live-installer-time-date.png)
+![installer2|1280x768, 70%](../../img/live-installer-time-date.png)
 
 Les premières étapes de l'installation de Bazzite consistent à sélectionner la langue du système, la région correspondant à votre fuseau horaire et la disposition de votre clavier afin d'assurer un mappage correct des touches.
 
 ## Configuration de partition
 
-![drive|1273x1038, 63%](../../img/live-installer-drive.png)
+![drive|1280x768, 70%](../../img/live-installer-drive.png)
 
 !!! warning
 
@@ -151,7 +151,7 @@ Sélectionnez le disque sur lequel vous souhaitez installer Bazzite. Veuillez no
 
 ## Dual Boot Windows
 
-![dualboot|1773x1247, 52%](../../img/live-installer-dualboot.png)
+![dualboot|1280x768, 70%](../../img/live-installer-dualboot.png)
 
 !!! note
 
@@ -206,7 +206,7 @@ Pour les images Fedora Atomic Desktop sur le **même** disque : pour effectuer u
 
 ## Chiffrement du disque
 
-![installation|1284x1045, 62%](../../img/live-installer-storage-encryption.png)
+![installing|1280x768, 70%](../../img/live-installer-storage-encryption.png)
 
 !!! warning
 
@@ -216,25 +216,21 @@ Le chiffrement du disque est **facultatif**, mais il est disponible via [LUKS](h
 
 ## Configuration du compte utilisateur
 
-![installer2|1288x1050, 62%](../../img/live-installer-user-setup.png)
-
-!!! warning
-
-    Il n'est pas recommandé d'activer un compte root.
+![installer2|1280x768, 70%](../../img/live-installer-user-setup.png)
 
 Créez un nom d'utilisateur et un mot de passe pour vous connecter à votre compte Bazzite.  Ce mot de passe sera également utilisé pour tous les privilèges administratifs.  **Assurez-vous de choisir un mot de passe dont vous pourrez vous souvenir**.
 
 ## Installation de Bazzite
 
-![review|1283x1042, 62%](../../img/live-installer-partitions.png)
+![review|1280x768, 70%](../../img/live-installer-partitions.png)
 
-![installation|1282x1036, 63%](../../img/live-installer-installing.png)
+![installing|1280x768, 70%](../../img/live-installer-installing.png)
 
 Passez en revue les modifications que le programme d'installation est sur le point d'effectuer.  **Veuillez lire attentivement avant de poursuivre l'installation**. Veuillez patienter pendant l'installation de Bazzite.  Cela peut prendre un certain temps.
 
 ## Redémarrage
 
-![reboot|1288x1040, 62%](../../img/live-installer-installed.png)
+![reboot|1280x768, 70%](../../img/live-installer-installed.png)
 
 Redémarrez votre appareil. Vous pouvez désormais retirer le support de démarrage que vous avez utilisé pour installer Bazzite dès que votre appareil recommence à démarrer.
 
