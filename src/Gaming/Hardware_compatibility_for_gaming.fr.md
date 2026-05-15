@@ -66,9 +66,9 @@ vulkaninfo | grep 'Instance Version'
 
 >Essayez d'utiliser [**Proton-Sarek**](https://github.com/pythonlover02/Proton-Sarek) si votre matériel peut prendre en charge Vulkan 1.1, mais pas les versions plus récentes. Il peut être installé à l'aide de ProtonPlus.
 
-### Cartes graphiques ne supportant pas Vulkan
+### Cartes graphiques ne prenant pas en charge Vulkan
 
-Si votre carte graphique ne supporte pas du tout Vulkan, vous devez utiliser cette **option de lancement pour tout les jeux utilisant Proton:** :
+Si votre carte graphique ne prend pas du tout en charge Vulkan, vous devez utiliser cette **option de lancement pour tous les jeux utilisant Proton** :
 
 ```command
 PROTON_USE_WINED3D=1 %command%
