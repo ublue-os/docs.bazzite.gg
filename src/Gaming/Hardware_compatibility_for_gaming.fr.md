@@ -13,6 +13,8 @@ title: Compatibilité matérielle pour le jeu
 - **Carte Graphique (GPU)**: une carte graphique capable d'utiliser Vulkan 1.3 ou supérieure; les CG AMD récentes offrent les meilleures performances
 - **Stockage** : 50 Go d'espace libre sur un **disque SSD** interne
   - **Stockage recommandé** : 120 Go d'espace libre sur un **disque SSD** interne
+  - Les disques existants **doivent** être formatés en **GPT**. Essayer d'installer Bazzite sur un disque partitionné en MBR (Master Boot Record) ne fonctionnera pas. 
+    - Microsoft fournit un [outil pour convertir les installations existantes de Windows au format GPT](https://learn.microsoft.com/fr-fr/windows/deployment/mbr-to-gpt).
   - **Stockage externe et disques secondaires** : tous les disques doivent être formatés en **BTRFS (SSD)** ou **Ext4 (disques durs [HDD])** (_veuillez sauvegarder les fichiers et reformater après installation_)
 - **Réseau** : connexion Internet stable sans limitation de bande passante (_non requise pour l'installation_)
 - **Remarques supplémentaires** : certains périphériques ne sont **pas** compatibles avec Bazzite :
@@ -64,9 +66,9 @@ vulkaninfo | grep 'Instance Version'
 
 >Essayez d'utiliser [**Proton-Sarek**](https://github.com/pythonlover02/Proton-Sarek) si votre matériel peut prendre en charge Vulkan 1.1, mais pas les versions plus récentes. Il peut être installé à l'aide de ProtonPlus.
 
-### Cartes graphiques ne prenant pas en charge Vulkan
+### Cartes graphiques ne supportant pas Vulkan
 
-Toutefois, si votre carte graphique ne prend pas du tout en charge Vulkan, vous devez utiliser une version plus ancienne de Proton (Proton 3, 4 ou 5) et utiliser cette **option de lancement pour la plupart des jeux Steam** :
+Si votre carte graphique ne supporte pas du tout Vulkan, vous devez utiliser cette **option de lancement pour tout les jeux utilisant Proton:** :
 
 ```command
 PROTON_USE_WINED3D=1 %command%
