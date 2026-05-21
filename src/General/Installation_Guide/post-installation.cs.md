@@ -6,7 +6,7 @@ title: Post-Installation Setup
 
 ## Nastavení prvního spouštění
 
-![Rollbacks|690x402, 50%](../../img/GRUB_Menu.png)
+![GRUB Menu with two deployments and UEFI Firmware Settings](../../img/GRUB_Menu.png)
 
 Při prvním spuštění se zobrazí obrazovka s aktuálním a posledním nasazením. Je důležité poznamenat, že nabídku GRUB lze použít k vrácení zpět nasazení Bazzite, pokud narazíte na problémy.
 
@@ -83,7 +83,7 @@ https://www.youtube.com/watch?v=uy8mi1pAj8E
 
 ### Nakonfigurujte svůj systém pomocí aplikace Bazzite Portal
 
-![bazzite-portal|997x785, 50%](../../img/bazzite-portal.png)
+![bazzite-portal|1364x1074, 50%](../../img/Bazzite_Portal.png)
 
 Seznamte se s portálem Bazzite, který provádí údržbu systému, instaluje malou podmnožinu dalších aplikací a konfiguruje pokročilá nastavení systému.
 

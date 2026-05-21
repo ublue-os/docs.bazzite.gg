@@ -176,6 +176,7 @@ nav:
       - "Installing and Managing Software":
           - Installing_and_Managing_Software/index.md
           - "Introduction to Installing Software on Bazzite": Installing_and_Managing_Software/software-intro.md
+          - "Bazzite Portal": Installing_and_Managing_Software/Bazzite_Portal.md
           - "ujust Commands": Installing_and_Managing_Software/ujust.md
           - "Bazaar App Store": Installing_and_Managing_Software/Flatpak.md
           - "Homebrew": Installing_and_Managing_Software/Homebrew.md

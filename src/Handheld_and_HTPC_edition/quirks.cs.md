@@ -193,5 +193,5 @@ https://www.youtube.com/watch?v=gE1ff72g2Gk
 ## Exkluzivní problémy GPU Nvidia s herním režimem Steam
 
 - "Povolit GPU akcelerované vykreslování ve webových zobrazeních (vyžaduje restart)" musí být povoleno v nastavení Steam pro lepší výkon v uživatelském rozhraní.
-  - Rozlišení nad 2560x1440 způsobí při použití tohoto nastavení grafické artefakty, které zlomí hru.
+  - Zapnutí této možnosti s největší pravděpodobností způsobí grafické artefakty, které znemožní hraní.
 - HDR může způsobit herní grafické artefakty.

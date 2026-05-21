@@ -12,7 +12,7 @@ If a Linux native game does not launch, then force the **Legacy Runtime** compat
 
 ### Denuvo Anti-Tamper DRM Locking Games
 
-Games that use Denuvo Anti-Tamper DRM consider changing Proton versions as activating the game on different hardware which may cause you to get locked out of the game if you change the Proton version more than 5 times within a 24 hour period.
+Games that use Denuvo Anti-Tamper DRM consider changing Proton versions as activating the game on different hardware. This may cause you to get locked out of the game temporarily if you change the Proton version more than 5 times within a 24-hour period. In this case, you need to wait 24 hours before you can launch the game again.
 
 ## Source 1 Engine Audio and Custom Content Bugs
 
@@ -76,20 +76,19 @@ The `.pp` file should be in `/root` if you want to remove that.
 
 Steam games might not launch for a variety of reasons.
 
-### Gathering Steam log files:
+### gamemoderun
 
-If you encounter issues with a game launching on Steam:
+!!! note
+      Not to be confused with <b>Gaming Mode</b> on the Deck images. (Feral) GameMode is a library that allows games to request optimizations from the OS.
 
-1. Open the game's properties and **enter this launch option**:
-   `PROTON_LOG=1 %command%`
+Games will not launch if you add `gamemoderun %command%` to your launch options (commonly found on ProtonDB). GameMode is not installed or supported in Bazzite and generally doesn't do anything useful on modern hardware, or in some cases can even hurt performance. Please remove it from your launch options. 
 
-2. Launch the game
+It might work if you layer the `gamemode` package, but this is <b>NOT</b> supported.
 
-A log file should appear in your Home directory named after the game's application ID number.
 
 ### NTFS formatted drive permission issues:
 
-Make sure your games are **not** on a NTFS (Windows) partition. More information can be found [**here**](./Hardware_compatibility_for_gaming.md#unsupported-filesystems-for-secondary-drives).
+Make sure your games are **not** on an NTFS (Windows) partition. More information can be found [**here**](./Hardware_compatibility_for_gaming.md#unsupported-filesystems-for-secondary-drives).
 
 ### Multi-user WINE quirks:
 
@@ -118,4 +117,15 @@ lrwxrwxrwx. 1 USER2 USER2           49 Jan 29 15:12 temp
 lrwxrwxrwx. 1 USER2 USER2           53 Jan 29 15:12 workshop
 ```
 
-Similarly copy or symlink the appmanifest files from each library for games to show up properly in each Steam library. 
+Similarly, copy or symlink the appmanifest files from each library for games to show up properly in each Steam library. 
+
+### Gathering Steam log files:
+
+If you encounter issues with a game launching on Steam:
+
+1. Open the game's properties and **enter this launch option**:
+   `PROTON_LOG=1 %command%`
+
+2. Launch the game
+
+A log file should appear in your Home directory named after the game's application ID number. You can use this for requesting support or to submit a bug report to Valve.

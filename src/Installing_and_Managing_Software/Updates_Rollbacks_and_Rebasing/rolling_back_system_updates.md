@@ -22,7 +22,7 @@ Rollback to an older Bazzite image from the last 90 days using the **[`brh` comm
 
 ### Before Booting Bazzite (GRUB)
 
-![GRUB Menu|690x402](../../img/GRUB_Menu.png)
+![GRUB Menu with two deployments and UEFI Firmware Settings](../../img/GRUB_Menu.png)
 
 !!! note
 

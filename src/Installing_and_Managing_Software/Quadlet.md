@@ -90,6 +90,7 @@ Rootful Quadlet Paths
 
 If your quadlet for some reason isn't found or starting, you can debug the container unit using `/usr/libexec/podman/quadlet -dryrun` for system quadlet or `/usr/libexec/podman/quadlet -user -dryrun` for user quadlet.
 
+It's handy to get log output directly when you start the quadlet, add the `--verbose` flag, for example: `systemctl --user start --verbose myapp.service`
 
 ## Examples
 

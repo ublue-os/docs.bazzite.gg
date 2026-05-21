@@ -103,7 +103,7 @@ Další informace naleznete v [Příručce bezpečného spouštění](https://un
 
 ### Nabídka GRUB
 
-![Rollbacks|690x402, 50%](../../img/GRUB_Menu.png)
+![GRUB Menu with two deployments and UEFI Firmware Settings](../../img/GRUB_Menu.png)
 
 Při prvním spuštění se zobrazí obrazovka s aktuálním a posledním nasazením.  Je důležité poznamenat, že nabídku GRUB lze použít k vrácení zpět nasazení Bazzite, pokud narazíte na problémy.
 

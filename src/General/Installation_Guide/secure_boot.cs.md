@@ -39,7 +39,7 @@ Chcete-li to vyřešit, postupujte podle **metody B** níže, a pokud na ni nara
 
 ### **Metoda A** - Během způsobu instalace
 
-![Nabídka bezpečného spouštění: Pokračovat ve spouštění / Zapsat MOK / Zapsat klíč z disku / Zapsat hash z disku|200x102, 100%](../../img/Secure_Boot.png 'Zabezpečené spouštění')
+![Nabídka bezpečného spouštění: Pokračovat ve spouštění / Zapsat MOK / Zapsat klíč z disku / Zapsat hash z disku](../../img/Secure_Boot.png 'Zabezpečené spouštění')
 
 !!! note
 

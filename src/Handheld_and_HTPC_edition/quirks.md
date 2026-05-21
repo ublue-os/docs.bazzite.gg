@@ -193,5 +193,5 @@ https://www.youtube.com/watch?v=gE1ff72g2Gk
 ## Nvidia GPU Exclusive Issues with Steam Gaming Mode
 
 - "Enable GPU accelerated rendering in web views (requires restart)" must be enabled in the Steam settings for better performance in the UI.
-  - Resolutions above 2560x1440 will cause game-breaking graphical artifacts using this setting.
+  - Enabling this option will most likely cause game-breaking graphical artifacts.
 - HDR can cause game-breaking graphical artifacts.

@@ -8,7 +8,7 @@ title: Bazaar App Store
 
 ## Purpose
 
-Bazaar is the **primary method of installing applications on Bazzite** _(outside of the small selection of software available in the [Bazzite Portal or as a `ujust` command](./ujust.md))_  and is recommended to install most applications from Bazaar over other formats for most software when possible.  Bazaar is a frontend for [Flatpaks](https://flatpak.org/) that are from [Flathub](https://flathub.org/).
+Bazaar is the **primary method of installing applications on Bazzite** _(outside of the small selection of software available in the [Bazzite Portal](./Bazzite_Portal.md) or as a [`ujust` command](./ujust.md))_  and is recommended to install most applications from Bazaar over other formats for most software when possible.  Bazaar is a frontend for [Flatpaks](https://flatpak.org/) that are from [Flathub](https://flathub.org/).
 
 ## What is Flatpak?
 
