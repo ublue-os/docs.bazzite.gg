@@ -50,12 +50,12 @@ You may also try explicitly allowing the `Remote control` option under KDE Setti
 When checking `systemctl --user status homebrew.sunshine*`, the error `Error: Couldn't import RGB Image: 00003009` is observed, and you are using an Nvidia system.
 This is speculated to be some issues related to way Sunshine/CUDA is packaged on homebrew. Possible solutions include:
 
--    Updating Bazzite and reinstall Sunshine as a Flatpak through Bazzite Portal
+-    Update Bazzite and reinstall Sunshine as a Flatpak through Bazzite Portal
 -    Using **XDG Portal Capture** and trying different encoders.
 -    Manually specify the GPU to use for capture if available.
 -    Installing the Beta version of Sunshine with alternative means.
 
-!!! info "Help Sunshine fix this if you do find a solution by reporting to upstream!"
+!!! info "Help Sunshine fix this if you do find a solution by reporting it upstream!"
 
 ## Limitations of Installation through Bazzite Portal
 
