@@ -30,7 +30,7 @@ curl -LsSf https://raw.githubusercontent.com/elegos/Linux-Arctis-Manager/refs/he
     For Linux operating systems like Bazzite (image-based / read-only root filesystem), the app behaves like a native installation rather than an isolated container. Because Distrobox mounts your `/home`, `/var`, and `/etc` directly, the manager can interact with the system services and configuration files it needs to function.
 
 ### Enable Autostart (Optional)
-To launch the system tray icon automatically on login, copy its desktop entry to your autostart folder:
+To launch the system tray app automatically on login:
 
 ```bash
 ln -sf ~/.local/share/applications/ArctisManagerSystray.desktop ~/.config/autostart/
@@ -44,13 +44,13 @@ ln -sf ~/.local/share/applications/ArctisManagerSystray.desktop ~/.config/autost
    rm ~/.config/systemd/user/arctis-manager.service
    ```
 
-3. Remove the container:
+2. Remove the container:
  
    ```bash
    distrobox-rm -f arctis-manager
    ```
 
-4. Remove leftover host files:
+3. Remove leftover host files:
 
    ```bash
    # desktop menu entries
