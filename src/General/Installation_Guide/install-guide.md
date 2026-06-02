@@ -133,15 +133,15 @@ Please note that an internet connection is not required to install Bazzite, but 
 
 ## Select Your Language, Region, and Keyboard Layout
 
-![installer1|1295x1054, 62%](../../img/live-installer-language.png)
+![installer1|1280x768, 70%](../../img/live-installer-language.png)
 
-![installer2|1295x1054, 62%](../../img/live-installer-time-date.png)
+![installer2|1280x768, 70%](../../img/live-installer-time-date.png)
 
 The first steps to installing Bazzite include selecting the system language, region for your time zone, and the layout of your keyboard for the correct input mapping.
 
 ## Partitioning Setup
 
-![drive|1273x1038, 63%](../../img/live-installer-drive.png)
+![drive|1280x768, 70%](../../img/live-installer-drive.png)
 
 !!! warning
 
@@ -151,7 +151,7 @@ Select the drive that you plan to install Bazzite on. Please note that this will
 
 ## Dual Booting Windows
 
-![dualboot|1773x1247, 52%](../../img/live-installer-dualboot.png)
+![dualboot|1280x768, 70%](../../img/live-installer-dualboot.png)
 
 !!! note
 
@@ -206,7 +206,7 @@ For Fedora Atomic Desktop images on the **same** drive: to dual boot another **F
 
 ## Disk Encryption
 
-![installing|1284x1045, 62%](../../img/live-installer-storage-encryption.png)
+![installing|1280x768, 70%](../../img/live-installer-storage-encryption.png)
 
 !!! warning
 
@@ -216,25 +216,21 @@ Disk encryption is **optional** but is available via [LUKS](https://docs.fedorap
 
 ## User Account Setup
 
-![installer2|1288x1050, 62%](../../img/live-installer-user-setup.png)
+![installer2|1280x768, 70%](../../img/live-installer-user-setup.png)
 
-!!! warning
-
-    It is not recommended to enable a root account.
-
-Create a username and a password to login to your Bazzite account.  This password will also be used for any administrative privileges.  **Make sure it is a password that you can remember**.
+Create a username and a password to login to your Bazzite account.  This password will also be used for any administrative privileges. **Make sure it is a password that you can remember**.
 
 ## Installing Bazzite
 
-![review|1283x1042, 62%](../../img/live-installer-partitions.png)
+![review|1280x768, 70%](../../img/live-installer-partitions.png)
 
-![installing|1282x1036, 63%](../../img/live-installer-installing.png)
+![installing|1280x768, 70%](../../img/live-installer-installing.png)
 
 Review the changes that you are about to make in the installer.  **Please read carefully before proceeding with the installation**. Please wait for Bazzite to install.  This may take a while.
 
 ## Reboot
 
-![reboot|1288x1040, 62%](../../img/live-installer-installed.png)
+![reboot|1280x768, 70%](../../img/live-installer-installed.png)
 
 Reboot your device. You can now eject the flashable medium you used to install Bazzite out of your device once your device begins to boot up again.
 
