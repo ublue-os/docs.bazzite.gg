@@ -30,6 +30,33 @@ The guide below will walk you through switching to the Sunshine flatpak.
 The Bazzite Portal only helps you install and set up the stable Sunshine **flatpak** package. If you want to try a beta package for fixes to your system or due to other purposes, you will need to install it manually. 
 !!! info "Bazzite Portal retains the ability to install the **experimental** beta Sunshine **brew** package. However, it is known to have issues related to screen capture and Systray indicator."
 
+## Alternative Sunshine Installations
+
+Sunshine does provide a RPM (COPR) repository for their Fedora package. You may try to install Sunshine with alternative ways as listed below, albeit with some limitations.
+!!! warning "Installation of Sunshine via these methods is not officially supported. Please report issues with Sunshine to the main Sunshine repository, report issues with packaging to their respective packaging repositories."
+
+=== "Layering from the COPR"
+    
+    This is similar to the situation when sunshine is/was included in the image.
+    Layering the Sunshine package from the [official stable COPR](https://copr.fedorainfracloud.org/coprs/lizardbyte/stable/) by running
+    ```bash
+    sudo dnf5 copr enable lizardbyte/stable
+    rpm-ostree install Sunshine
+    ```
+    !!! info "Note that Sunshine does not maintain a stable version across major Fedora updates. It's likely that a new package for the next major update of Bazzite will be missing!. This will stop system updates from occurring until Sunshine provides an updated package. You will be asked to run `rpm-ostree reset` to remove all layered packages when this situation arises."
+
+=== "Layering a community maintained package"
+    
+    This is similar to the situation when sunshine is/was included in the image.
+    In contrast with the official Sunshine COPR, this repository will be maintained explicitly for Fedora and it will have an updated package for every major release of Sunshine and Bazzite. Breaking changes will be handled by the package and it is tested on Fedora and Bazzite to ensure a smooth upgrade.
+
+    Layering the Sunshine package from the [community maintained COPR](https://copr.fedorainfracloud.org/coprs/pvermeer/sunshine/) by running
+    ```bash
+    sudo dnf5 copr enable pvermeer/sunshine
+    rpm-ostree install sunshine
+    ```
+    !!! info "This community package is maintained by *pvermeer*, and is not officially endorsed, maintained, nor packaged by Bazzite."
+    
 ## Installing Sunshine Beta
 
 Sunshine does not provide a repository for their flatpak package. You may try to install Sunshine Beta with alternative ways as listed below, albeit with some limitations.
