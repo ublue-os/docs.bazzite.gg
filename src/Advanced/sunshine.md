@@ -43,7 +43,7 @@ Sunshine does provide an RPM (COPR) repository for their Fedora package. You may
     sudo dnf5 copr enable lizardbyte/stable
     rpm-ostree install Sunshine
     ```
-    !!! info "Note that Sunshine does not maintain a stable version across major Fedora updates. It's likely that a new package for the next major update of Bazzite will be missing!. This will stop system updates from occurring until Sunshine provides an updated package. You will be asked to run `rpm-ostree reset` to remove all layered packages when this situation arises."
+    !!! info "Note that Sunshine does not maintain a stable version across major Fedora updates. It's likely that a new package for the next major update of Bazzite will be missing! This will stop system updates from occurring until Sunshine provides an updated package. You will be asked to run `rpm-ostree reset` to remove all layered packages when this situation arises."
 
 === "Layering a community maintained package"
     
