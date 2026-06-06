@@ -47,7 +47,7 @@ Sunshine does provide an RPM (COPR) repository for their Fedora package. You may
 
 === "Layering a community maintained package"
     
-    This is similar to the situation when sunshine is/was included in the image.
+    This is similar to the situation when Sunshine is/was included in the image.
     In contrast with the official Sunshine COPR, this repository will be maintained explicitly for Fedora and it will have an updated package for every major release of Sunshine and Bazzite. Breaking changes will be handled by the package and it is tested on Fedora and Bazzite to ensure a smooth upgrade.
 
     Layering the Sunshine package from the [community maintained COPR](https://copr.fedorainfracloud.org/coprs/pvermeer/sunshine/) by running
