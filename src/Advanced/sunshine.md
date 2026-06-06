@@ -15,7 +15,7 @@ The recommended way of setting up Sunshine on Bazzite is through **Bazzite Porta
 
 ## What Should I Do If I am Currently Using Sunshine?
 
-!!! notice "Users of the Bazzite-Deck images, please read this [Section](./sunshine.md#setting-up-sunshine-on-deck-images)"
+!!! notice "Users of the Bazzite-Deck images, please read this [Section](/Advanced/sunshine.md#setting-up-sunshine-on-deck-images)"
 
 The guide below will walk you through switching to the Sunshine flatpak.
 !!! warning "It is highly recommended that you do this with physical access to your machine, or at least with an ssh connection set up."
