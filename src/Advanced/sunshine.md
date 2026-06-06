@@ -32,7 +32,7 @@ The Bazzite Portal only helps you install and set up the stable Sunshine **flatp
 
 ## Alternative Sunshine Installations
 
-Sunshine does provide a RPM (COPR) repository for their Fedora package. You may try to install Sunshine with alternative ways as listed below, albeit with some limitations.
+Sunshine does provide an RPM (COPR) repository for their Fedora package. You may try to install Sunshine with alternative ways as listed below, albeit with some limitations.
 !!! warning "Installation of Sunshine via these methods is not officially supported. Please report issues with Sunshine to the main Sunshine repository, report issues with packaging to their respective packaging repositories."
 
 === "Layering from the COPR"
