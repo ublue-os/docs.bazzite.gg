@@ -2,6 +2,8 @@
 title: "ZeroTier Setup"
 authors:
   - "@Zeglius"
+  - "@adokitkat"
+  - "@Ruvonn"
 tags:
   -  Community
 search:
@@ -55,10 +57,27 @@ Reboot, and run this at the terminal:
 sudo rm -fv /etc/yum.repos.d/zerotier.repo
 ```
 
-## Fix not seeing your teammates in games
+## Fix not seeing your teammates in games relying on broadcast, e.g., Warcraft III LAN
 
-_(Set routing through the ZeroTier network interface)_
+_(Route broadcast through the ZeroTier network interface)_
 
-Get your ZeroTier network interface name by running: `ifconfig -a` (compare the IP address to one in your ZeroTier web dashboard)
+Get your ZeroTier network interface name by running: `ip a` (compare the IP addresses at the inet/inet6 entries to the ones in your ZeroTier web dashboard)
 
-Add the route: `sudo route add -host 255.255.255.255 dev <interface name>`
+Add the route: `sudo ip route add 255.255.255.255 dev <INTERFACE_NAME>` (replace `<INTERFACE_NAME>` with the name you got from `ip a`, likely `ztbto7vntf`)
+
+Note that this change will be ephemeral, so after a restart of your system you will have to add the route again.
+
+If you want NetworkManager to automatically create the route as soon as the ZeroTier interface comes up run the following from your terminal:
+
+```sh
+sudo tee /etc/NetworkManager/dispatcher.d/99-zerotier-broadcast.sh >/dev/null <<'EOF' && sudo chmod 755 /etc/NetworkManager/dispatcher.d/99-zerotier-broadcast.sh && sudo systemctl restart zerotier-one.service
+#!/bin/bash
+INTERFACE=$1
+ACTION=$2
+
+# Check if the interface starts with "zt" and is coming UP
+if [[ "$INTERFACE" =~ ^zt ]] && [ "$ACTION" = "up" ]; then
+  ip route replace 255.255.255.255 dev "$INTERFACE"
+fi
+EOF
+```
