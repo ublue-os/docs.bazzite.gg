@@ -15,6 +15,8 @@ The recommended way of setting up Sunshine on Bazzite is through **Bazzite Porta
 
 ## What Should I Do If I am Currently Using Sunshine?
 
+!!! notice "Users of Bazzite-Deck images, please read this [Section](/Advanced/sunshine.md#setting-up-sunshine-on-deck-images)"
+
 The guide below will walk you through switching to the Sunshine flatpak.
 !!! warning "It is highly recommended that you do this with physical access to your machine, or at least with an ssh connection set up."
 
@@ -28,12 +30,12 @@ The guide below will walk you through switching to the Sunshine flatpak.
 ## Limitations of Installation through Bazzite Portal
 
 The Bazzite Portal only helps you install and set up the stable Sunshine **flatpak** package. If you want to try a beta package for fixes to your system or due to other purposes, you will need to install it manually. 
-!!! info "Bazzite Portal retains the ability to install the **experimental** beta Sunshine **brew** package. However, it is known to have issues related to screen capture and Systray indicator."
+!!! info "Bazzite Portal retains the ability to install the **experimental** beta Sunshine **brew** package for use in deck images. However, it is known to have issues related to screen capture and Systray indicator."
 
 ## Installing Sunshine Beta
 
 Sunshine does not provide a repository for their flatpak package. You may try to install Sunshine Beta with alternative ways as listed below, albeit with some limitations.
-!!! warning "Installation of Sunshine via these methods is not officially supported. Please report issues with Sunshine **Beta** to the main Sunshine repository, report issues with packaging to their respective packaging repositories."
+!!! notice "Installation of Sunshine via these methods is not officially supported. Please report issues with Sunshine **Beta** to the main Sunshine repository, and issues with packaging to their respective packaging repositories."
 
 === "Installing the Beta Flatpak manually"
 
@@ -48,7 +50,7 @@ Sunshine does not provide a repository for their flatpak package. You may try to
     ```
     !!! info "You will have to manually update the package by repeating the steps above for each version."
 
-=== "Layering from the COPR"
+=== "Layering the official LizardByte package"
     
     This is similar to the situation when sunshine is/was included in the image.
     Layering the Sunshine Beta package from the [official Beta COPR](https://copr.fedorainfracloud.org/coprs/lizardbyte/beta/) by running
@@ -56,9 +58,9 @@ Sunshine does not provide a repository for their flatpak package. You may try to
     sudo dnf5 copr enable lizardbyte/beta
     rpm-ostree install Sunshine
     ```
-    !!! info "Note that this will stop system updates from occurring if Sunshine does not provide an updated package for future Fedora version updates (e.g. Fedora 45). You will be asked to run `rpm-ostree reset` to remove all layered packages when this situation arises."
+    !!! warning "Note that this will stop system updates from occurring if Sunshine does not provide an updated package for future Fedora version updates (e.g. Fedora 45). You will be asked to run `rpm-ostree reset` to remove all layered packages when this situation arises."
 
-=== "Layering a community maintained package"
+=== "Layering a community maintained beta package"
     
     Layering the Sunshine/Sunshine-Beta community maintained [package](https://copr.fedorainfracloud.org/coprs/pvermeer/sunshine/) by running
     ```bash
@@ -69,8 +71,53 @@ Sunshine does not provide a repository for their flatpak package. You may try to
     
 === "Installing the experimental brew package"
 
+    This method is primarily for users on the Deck images.
     Select Yes in Bazzite Portal 🡒 App Install 🡒 Sunshine 🡒 Enable Beta (Brew).
-    !!! warning "This package is experimental and has known issues related to screen capture and systray indicator."
+    !!! notice "This package is experimental and has known issues related to screen capture and systray indicator. Systray will be disabled and capture mode will be set to KMS by default when installed via Bazzite Portal."
+    
+## Setting up Sunshine on Deck Images
+
+Deck Images make use of Valve's gamescope microcompositor while in **Game Mode**. As gamescope does not support XDG Portal capture or Kwin Screencast, streaming must be done using KMS Capture. As the flatpak package of Sunshine does not support Capture via Kernel Mode Setting, you will need to install Sunshine via alternate means if you want to stream from **Game Mode**. You can stream using XDG Portal capture if you use **Desktop Mode**.
+
+=== "Installing the experimental brew package from Bazzite Portal"
+
+    Select Yes in Bazzite Portal 🡒 App Install 🡒 Sunshine 🡒 Enable Beta (Brew).
+    !!! notice "This package is experimental and has known issues related to screen capture and systray indicator. Systray will be disabled and capture mode will be set to KMS by default when installed via Bazzite Portal."
+    
+=== "Layering the official LizardByte Stable package"
+    
+    This is similar to the situation when sunshine is/was included in the image.
+    Layering the Sunshine Beta package from the [official Beta COPR](https://copr.fedorainfracloud.org/coprs/lizardbyte/beta/) by running
+    ```bash
+    sudo dnf5 copr enable lizardbyte/stable
+    rpm-ostree install Sunshine
+    ```
+    !!! warning "Note that this will stop system updates from occurring if Sunshine does not provide an updated package for future Fedora version updates (e.g. Fedora 45). You will be asked to run `rpm-ostree reset` to remove all layered packages when this situation arises."
+
+=== "Layering a community maintained stable package"
+    
+    Layering the Sunshine/Sunshine-Beta community maintained [package](https://copr.fedorainfracloud.org/coprs/pvermeer/sunshine/) by running
+    ```bash
+    sudo dnf5 copr enable pvermeer/sunshine
+    rpm-ostree install sunshine
+    ```
+    !!! info "This community package is maintained by *pvermeer*, and is not officially endorsed, maintained, nor packaged by Bazzite."
+    
+## Comparison of Ways to Install Sunshine on Bazzite
+
+| Method                         | Flatpak (Bazzite Portal)                    | Brew (Bazzite Portal)                         | Layer from Official COPR                          | Layer from Community COPR                         |
+| :----------------------------: | :------------------------------------------ | :-------------------------------------------- | :------------------------------------------------ | :------------------------------------------------ |
+| Doesn't block system updates   | ✅ User space Installation                  | ✅ User space Installation                    | ❌ May block updates if COPR is not updated       | ℹ️ Is actively maintained by **pvermeer**         |
+| Independent version from image | ✅ Manual pinning possible                  | ✅ Pinned version by default                  | ❌ Manual pinning not possible via rpm-ostree[^1] | ❌ Manual pinning not possible via rpm-ostree[^1] |
+| Kernel Mode Setting Capture    | ❌ SetCap not supported by Flatpak          | ℹ️ May have issues on Nvidia                  | ✅ No known issues                                | ✅ No known issues                                |
+| Stable Version                 | ✅ Stable is used by default                | ℹ️ Requires manual installation               | ❌ Inconsistent builds for Fedora releases[^2]    | ✅ Auto updates, Community-Tested                 |
+| Beta Version                   | ℹ️ Requires manual installation and updates | ✅ Beta is used by default, pinned by default | ℹ️ Auto updates, may have breaking changes        | ✅ Auto updates, Community-Tested                 |
+| Stability & Support            | ✅ Offically Supported                      | ℹ️ Experimental, known issues with systray    | ❌ Inconsistent builds for Fedora releases[^2]    | ✅ Auto updates, Community-Tested                 |
+
+[^1]: Technically, you can grab and manually layer the builds generated from the COPR, but that requires you to uninstall and reinstall.
+[^2]: Sunshine had inconsistent builds for their stable package (as in not providing packages for new fedora releases). See [this section](/Advanced/sunshine/#what-is-happening-to-sunshine-on-bazzite).
+
+Ultimately, it was decided to use Flatpak for desktop and Brew(beta) for deck images in the Bazzite Portal's Sunshine installation helper.
     
 ## Something Went Wrong, What Should I do?
 
