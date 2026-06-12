@@ -157,7 +157,7 @@ This let's us re-use the `SCB_GAMESCOPE_ARGS` we set in our `scb.conf`
 
 ### Is there a graphical application for making configurations?
 
-Yes! There is one on flathub: [ScopeBuddy GUI](https://flathub.org/en/apps/io.github.rfrench3.ScopeBuddy-gui)
+Yes! There is one on flathub: [ScopeBuddy GUI](https://flathub.org/en/apps/io.github.rfrench3.scopebuddy-gui)
 
 ### Can I use ScopeBuddys functions without using gamescope?
 
