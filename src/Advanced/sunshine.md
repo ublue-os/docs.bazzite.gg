@@ -114,7 +114,7 @@ Deck Images make use of Valve's gamescope microcompositor while in **Game Mode**
 === "Layering the official LizardByte Stable package"
     
     This is similar to the situation when sunshine is/was included in the image.
-    Layering the Sunshine Beta package from the [official Beta COPR](https://copr.fedorainfracloud.org/coprs/lizardbyte/beta/) by running
+    Layering the Sunshine package from the [official stable COPR](https://copr.fedorainfracloud.org/coprs/lizardbyte/stable/) by running
     ```bash
     sudo dnf5 copr enable lizardbyte/stable
     rpm-ostree install Sunshine
