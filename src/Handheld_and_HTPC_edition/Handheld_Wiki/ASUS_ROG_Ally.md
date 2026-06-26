@@ -24,6 +24,8 @@ title: ASUS Handhelds
 
 ### Known Issues
 - Changing A/C power sometimes leads to a stuck TDP.
+  - This happens when removing the charger while in standby.
+  - Attaching and removing the charger while not in standby is a workaround.
 - Some users report the mic sounding garbled
   - Solution to that is to set the mic/input volume to 10%-15% in settings
   - For Discord you also need to set the input profile in the Discord Settings to voice cancellation.
