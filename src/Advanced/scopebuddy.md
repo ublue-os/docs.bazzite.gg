@@ -248,7 +248,19 @@ SCB_NOSCOPE=1
 command+=" -provider Portal"
 
 # Get the game directory from the expanded %command% variable from steam
-GAMEDIR=$(echo $command | awk -F '" "' '{ print $12 }' | sed 's/\/Gw2-64.exe//')
+cmdARGS=$(echo $command | awk -F '" "' '{ print NF }')
+for ((i = 1; i <= cmdARGS; i++))
+do
+    GAMEDIR=$(echo $command | awk -F '" "' -v i="$i" '{ print $i }')
+    # If we found "waitforexitandrun"
+    if [ "$GAMEDIR" == "waitforexitandrun" ]; then
+        # Increase i by 1 and grab the game directory then exit the loop early
+        i=$(($i+1))
+        GAMEDIR=$(echo $command | awk -F '" "' -v i="$i" '{ print $i }' | sed 's/\/Gw2-64.exe//')
+        break
+    fi
+done
+
 # Run the arcdps updater script before game starts
 "$SCB_CONFIGDIR/scripts/dl-arcdps" "$GAMEDIR"
 ```
