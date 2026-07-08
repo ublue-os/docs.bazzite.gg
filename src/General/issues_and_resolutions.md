@@ -105,7 +105,7 @@ There are different steps to resolve this depending on your current Wi-Fi backen
     We are going to configure NetworkManager to not use the power save feature for all Wi-Fi devices. Open a terminal and run
 
     ```bash
-    printf "[connection]\nwifi.powersave = 2" | sudo tee /etc/NetworkManager/conf.d/wifi-powersave-off.conf
+    echo -e "[connection]\nwifi.powersave = 2" | sudo tee /etc/NetworkManager/conf.d/wifi-powersave-off.conf
     systemctl restart NetworkManager
     ```
 
@@ -125,7 +125,7 @@ There are different steps to resolve this depending on your current Wi-Fi backen
     We are going to configure iwd to not use the power save feature for all Wi-Fi devices. Open a terminal and run
 
     ```bash
-    printf "[DriverQuirks]\nPowerSaveDisable = *" | sudo tee /etc/iwd/main.conf
+    echo -e "[DriverQuirks]\nPowerSaveDisable = *" | sudo tee /etc/iwd/main.conf
     systemctl restart iwd
     ```
 
