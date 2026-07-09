@@ -98,7 +98,7 @@ Power save: on
 ```
 
 There are different steps to resolve this depending on your current Wi-Fi backend.
-!!! info "[`iwd`](https://wiki.archlinux.org/title/Iwd) has been abandoned due to the big Intel layoffs in 2026. You may still try it to fix lag spikes caused by [`wpa_supplicant`](https://wiki.archlinux.org/title/Wpa_supplicant), but it may stop working at anytime and is thus highly advisable to [switch your Wi-Fi backend](../issues_and_resolutions/#switching-wi-fi-backends) to [`wpa_supplicant`](https://wiki.archlinux.org/title/Wpa_supplicant)"
+!!! info "[`iwd`](https://wiki.archlinux.org/title/Iwd) has been abandoned due to Intel shifting their priorities away from open source. You may still try it to fix lag spikes caused by [`wpa_supplicant`](https://wiki.archlinux.org/title/Wpa_supplicant), but it may stop working at anytime and is thus highly advisable to [switch your Wi-Fi backend](./#switching-wi-fi-backends) to [`wpa_supplicant`](https://wiki.archlinux.org/title/Wpa_supplicant)"
 
 === "wpa_supplicant (iwd is OFF)"
 
@@ -144,7 +144,7 @@ There are different steps to resolve this depending on your current Wi-Fi backen
 
 ## Error on connecting to Wi-Fi: "Failed to add new connection: 802.1x connections must have IWD provisioning files"
 
-!!! warning "This is an [`iwd`](https://wiki.archlinux.org/title/Iwd) specific issue. It is highly advisable to [switch your Wi-Fi backend](../issues_and_resolutions/#switching-wi-fi-backends) to [`wpa_supplicant`](https://wiki.archlinux.org/title/Wpa_supplicant) as the [`iwd`](https://wiki.archlinux.org/title/Iwd) project is no longer maintained by Intel."
+!!! warning "This is an [`iwd`](https://wiki.archlinux.org/title/Iwd) specific issue. It is highly advisable to [switch your Wi-Fi backend](./#switching-wi-fi-backends) to [`wpa_supplicant`](https://wiki.archlinux.org/title/Wpa_supplicant) as the [`iwd`](https://wiki.archlinux.org/title/Iwd) project is no longer maintained by Intel."
 
 NetworkManager cannot automatically generate 802.1x connections when using the `iwd` backend.
 
@@ -182,7 +182,7 @@ And try to connect again.
 
 ## Error on connecting to Wi-Fi: "IP configuration was unavailable" when connecting to 802.1x wireless networks
 
-!!! warning "This is an [`iwd`](https://wiki.archlinux.org/title/Iwd) specific issue. It is highly advisable to [switch your Wi-Fi backend](../issues_and_resolutions/#switching-wi-fi-backends) to [`wpa_supplicant`](https://wiki.archlinux.org/title/Wpa_supplicant) as the [`iwd`](https://wiki.archlinux.org/title/Iwd) project is no longer maintained by Intel."
+!!! warning "This is an [`iwd`](https://wiki.archlinux.org/title/Iwd) specific issue. It is highly advisable to [switch your Wi-Fi backend](./#switching-wi-fi-backends) to [`wpa_supplicant`](https://wiki.archlinux.org/title/Wpa_supplicant) as the [`iwd`](https://wiki.archlinux.org/title/Iwd) project is no longer maintained by Intel."
 
 Check the system logs with `ujust logs-this-boot | grep NetworkManager`, you should be able to see that 
 
@@ -224,7 +224,7 @@ You should be able to connect to the enterprise network.
 
 !!! info "[`iwd`](https://wiki.archlinux.org/title/Iwd) has been abandoned due to the big Intel layoffs in 2026. You may still try it to fix lag spikes caused by [`wpa_supplicant`](https://wiki.archlinux.org/title/Wpa_supplicant), but it may stop working at anytime and is thus highly advisable to switch your Wi-Fi backend to [`wpa_supplicant`](https://wiki.archlinux.org/title/Wpa_supplicant)"
 
-To switch your Wi-Fi backend, open [Bazzite Portal](../../Installing_and_Managing_Software/Bazzite_Portal/), and under the **Troubleshooting** page, select **Change Wi-Fi system back-end**.
+To switch your Wi-Fi backend, open [Bazzite Portal](/Installing_and_Managing_Software/Bazzite_Portal/), and under the **Troubleshooting** page, select **Change Wi-Fi system back-end**.
 
 <hr>
 
