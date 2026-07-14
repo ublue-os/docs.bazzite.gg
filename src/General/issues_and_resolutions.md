@@ -98,7 +98,7 @@ Power save: on
 ```
 
 There are different steps to resolve this depending on your current Wi-Fi backend.
-!!! info "[`iwd`](https://wiki.archlinux.org/title/Iwd) has been abandoned due to Intel shifting their priorities away from open source. You may still try it to fix lag spikes caused by [`wpa_supplicant`](https://wiki.archlinux.org/title/Wpa_supplicant), but it may stop working at anytime and is thus highly advisable to [switch your Wi-Fi backend](./#switching-wi-fi-backends) to [`wpa_supplicant`](https://wiki.archlinux.org/title/Wpa_supplicant)"
+!!! info "[`iwd`](https://wiki.archlinux.org/title/Iwd) has been abandoned due to Intel shifting their priorities away from open source. You may still try it to fix lag spikes caused by [`wpa_supplicant`](https://wiki.archlinux.org/title/Wpa_supplicant), but it may stop working at anytime and is thus highly advisable to [switch your Wi-Fi backend](./#switching-wi-fi-backends) to [`wpa_supplicant`](https://wiki.archlinux.org/title/Wpa_supplicant)."
 
 === "wpa_supplicant (iwd is OFF)"
 
@@ -222,7 +222,7 @@ You should be able to connect to the enterprise network.
 
 ## Switching Wi-Fi Backends
 
-!!! info "[`iwd`](https://wiki.archlinux.org/title/Iwd) has been abandoned due to the big Intel layoffs in 2026. You may still try it to fix lag spikes caused by [`wpa_supplicant`](https://wiki.archlinux.org/title/Wpa_supplicant), but it may stop working at anytime and is thus highly advisable to switch your Wi-Fi backend to [`wpa_supplicant`](https://wiki.archlinux.org/title/Wpa_supplicant)"
+!!! info "[`iwd`](https://wiki.archlinux.org/title/Iwd) has been abandoned due to Intel shifting their priorities away from open source. You may still try it to fix lag spikes caused by [`wpa_supplicant`](https://wiki.archlinux.org/title/Wpa_supplicant), but it may stop working at anytime and is thus highly advisable to [switch your Wi-Fi backend](./#switching-wi-fi-backends) to [`wpa_supplicant`](https://wiki.archlinux.org/title/Wpa_supplicant)."
 
 To switch your Wi-Fi backend, open [Bazzite Portal](/Installing_and_Managing_Software/Bazzite_Portal/), and under the **Troubleshooting** page, select **Change Wi-Fi system back-end**.
 
