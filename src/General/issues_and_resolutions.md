@@ -235,7 +235,7 @@ To switch your Wi-Fi backend, open [Bazzite Portal](/Installing_and_Managing_Sof
 **Resolution:** You need to enable supergfxctl which will automatically switch to the discrete Nvidia GPU when launching your games. Open a terminal and run:
 
 ```bash
-ujust enable-supergfxctl
+sudo systemctl enable --now supergfxd.service
 ```
 
 <hr>
