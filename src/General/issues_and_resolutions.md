@@ -246,7 +246,7 @@ ujust enable-supergfxctl
 
 **Resolution:** Update the Flatpak Nvidia Runtimes in **Bazzite Updater**, or from the command line with `flatpak update`.
 
-!!! info "Previous attempts at automating this was causing longer boot times and did not work if there was no internet access and is thus not adopted. The better solution is for upstream Flatpak/Nvidia to improve the way these Runtimes are handled, or to create a package that provides a Flatpak Nvidia driver using system libraries, but there is a lot more work needed to make that happen."
+!!! info "Previous attempts at automating this caused longer boot times and did not work without internet access and was thus not adopted. The better solution is for upstream Flatpak/Nvidia to improve the way these Runtimes are handled, or to create a package that provides a Flatpak Nvidia driver using system libraries, but those require a lot more work to make possible."
 
 <hr>
 
