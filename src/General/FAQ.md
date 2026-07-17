@@ -98,6 +98,8 @@ Since Bazzite is a custom Fedora Atomic Desktop image, it makes use of read-only
 - The legacy (`-nvidia`) image supports Pascal, Maxwell, and Volta architectures (GTX 900, GTX 1000, Nvidia Titan V, GTX 750 (TI) and GTX 745).
 - The modern (`-nvidia-open`) image supports every Nvidia card from the Turing architecture and newer (GTX 16 and all RTX cards).
 
+!!! notice "If you are encountering issues with Nvidia in certain apps, verify that you are on the [correct image](./#bazzite-image-chart-example) for your device, and that the [Flatpak Runtime is updated](/General/issues_and_resolutions/#flatpak-apps-have-no-hardware-acceleration-on-nvidia)."
+
 #### Will support for much older Nvidia graphics cards be added?
 
 There are currently no plans to support Kepler and older architectures (Most GTX 700 cards and older) since they are **no longer supported** by the upstream Nvidia drivers.
