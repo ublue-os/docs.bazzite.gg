@@ -145,14 +145,46 @@ Deck Images make use of Valve's gamescope microcompositor while in **Game Mode**
 [^2]: Sunshine had inconsistent builds for their stable package (as in not providing packages for new fedora releases). See [this section](/Advanced/sunshine/#what-is-happening-to-sunshine-on-bazzite).
 
 Ultimately, it was decided to use Flatpak for desktop and Brew(beta) for deck images in the Bazzite Portal's Sunshine installation helper.
+
+## Streaming Using a Virtual Display
+
+See [Custom Resolutions](/Advanced/custom_resolution/#guide-for-creating-a-custom-resolution-for-sunshine-game-streaming)
     
 ## Something Went Wrong, What Should I do?
 
+<hr>
+
 ### Is a display connected and turned on? (error 503)
 
-!!! info "Capturing with X11 is not supported. Screen capture is now handled via the compositor of your Desktop Environment (Kwin or Mutter) or via Kernel Mode Setting."
-This usually means that the Sunshine executable has trouble capturing the screen. Try other screen capture methods such as XDG Portal, Kwin Screencast, or NvFBC.
-You may also try explicitly allowing the `Remote control` option under KDE Settings 🡒 Application Permissions 🡒 Sunshine.
+This usually means that the Sunshine executable has trouble capturing the screen. 
+
+=== "KWin ScreenCast"
+
+    On some KDE Plasma/Sunshine versions, the permission of KWin ScreenCast is not set up properly with the `zkde_screencast_unstable_v1` protocol. It can temporarily be fixed by setting the `KWIN_WAYLAND_NO_PERMISSION_CHECKS=1` environment variable, which can be done automatically in [Bazzite Portal](/Installing_and_Managing_Software/Bazzite_Portal/) → Install Applications → Setup Virtual Monitor → Fix Error 503, or by setting it in any of the following 3 places:
+    
+    -   System Wide Configuration: `/etc/environment.d/`
+    -   User Configuration: `~/.config/environment.d/` (Bazzite Portal sets it here)
+    -   KDE Plasma Specific Configuration: `~/.config/plasma-workspace/env/kwin_vars.sh`
+    
+    !!! info "You may also try explicitly allowing the `Remote control` option under KDE Settings 🡒 Application Permissions 🡒 Sunshine. "
+
+=== "Kernel Mode Setting"
+    
+    !!! warning "Kernel Mode Setting capture does **not** work on the Flatpak version of Sunshine due to Flatpak's sandboxing."
+    On installations via Brew, this generally means that the Sunshine executable is not given permission to capture the screen with Kernel Mode Setting. You can fix it by updating Sunshine through Bazzite Portal or manually running the post install script in `/usr/libexec/sunshine-postinst`.
+    
+=== "XDG Portal"
+
+    Try to remove and set permissions for screen capture again. An XDG Desktop Portal window should pop up once asking for permissions for remote desktop.
+    
+=== "Other Capture Methods"
+    
+    !!! warning "Capturing with X11 is not supported. Screen capture is now handled via the compositor of your Desktop Environment (Kwin or Mutter) or via Kernel Mode Setting."
+    -   X11 is not supported by Bazzite.
+    -   NvFBC is an X11-specific option, and is thus also not supported by Bazzite.
+    -   wlroots uses a specific protocol for wlroots-based compositors, which are usually tiling window managers. Bazzite does not have images with these compositors, so this option should only be needed in custom images with said compositors.
+
+<hr>
 
 ### Error: Couldn't import RGB Image: 00003009 (error -1) 
 
@@ -165,6 +197,8 @@ This is speculated to be some issues related to way Sunshine/CUDA is packaged on
 -    Installing the Beta version of Sunshine with alternative means.
 
 !!! info "Help Sunshine fix this if you do find a solution by reporting it upstream!"
+
+<hr>
 
 ### The \`brew link\` step did not complete successfully
 
