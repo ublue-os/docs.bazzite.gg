@@ -44,6 +44,8 @@ title: Custom Resolutions
 
 A command-line utility that assists with **creating** and **managing** custom resolutions for your Bazzite installation.
 
+<hr>
+
 ### Using `custom-resolution-helper`
 
 Open a host terminal and **enter**:
@@ -57,6 +59,8 @@ There is also an **alias** which is less typing for those on handhelds or HTPC s
 ```command
 crh
 ```
+
+<hr>
 
 ### Guide for creating a custom resolution using `custom-resolution-helper`
 
@@ -100,6 +104,8 @@ crh
 
 - **Margins**: This is useful when the margins of the picture are hidden beyond the borders of the screen, as if the picture is zoomed in. Most of the time you would want this to be adjusted in the Monitor/TV instead.
 
+<hr>
+
 ### Guide for creating a custom resolution for Sunshine Game Streaming
 
 Let's say you are streaming from your host PC (running Bazzite) to your laptop:
@@ -109,13 +115,28 @@ Let's say you are streaming from your host PC (running Bazzite) to your laptop:
 
 ...and text in the stream looks blurry because of resolution scaling.
 
-You can use `custom-resolution-helper` to add a virtual display to your host PC (running Bazzite) without a dummy plug!
+You can add a virtual display to your host PC (running Bazzite) without a dummy plug!
 
-- Simply follow the steps for creating a custom resolution, and select the option to make the display **always enabled**. After rebooting, you can press <kbd>Super</kbd> + <kbd>P</kbd> to switch multi-monitor modes on KDE. After that, make sure the correct display is selected in Sunshine.
+=== "KDE Virtual Monitor"
 
-- Alternatively, you can also add a `2560x1600MR@120` mode to your host PC's main display. This may cause your host PC's monitor to black out and show an `unsupported mode` dialog, and you will have to change the resolution during game streaming. You can try this method if you don't want to deal with multiple monitors.
+    !!! info "This method is KWin-specific and will only work on KDE images and in Desktop Mode. Use Custom Resolution Helper instead if you need it on GNOME or Game Mode. Note that you must reinstall to switch Desktop Environments."
 
-!!! warning "Do **not** disable the main display, as doing that may leave you with no available display out (which may also break streaming). <br>If you do encounter a black screen that persists after rebooting, you can try going into a `tty` by pressing <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F2</kbd>, and edit or remove `~/.config/kwinoutputconfig.json` from the command line. Note that this will remove your monitor configurations. <br>An example command will be `mv ~/.config/kwinoutputconfig.json ~/.config/kwinoutputconfig.json.bak`"
+    1. Open [Bazzite Portal](/Installing_and_Managing_Software/Bazzite_Portal/) → Install Applications → Setup Virtual Monitor → Add Virtual Monitor.
+    2. Set the Screen Capture method to KWin ScreenCast.
+    3. Restart Sunshine through the Web Portal.
+    
+    !!! notice "If you encounter an Error -1 or Error 503, try [Bazzite Portal](/Installing_and_Managing_Software/Bazzite_Portal/) → Install Applications → Setup Virtual Monitor → Fix Error 503. You can learn more about it [here](/Advanced/sunshine/#is-a-display-connected-and-turned-on-error-503)."
+    !!! warning "This will disable your current monitor during streaming! Make sure you click **Quit Session** in Moonlight after streaming."
+
+=== "Custom Resolution Helper"
+
+    - Simply follow the steps for creating a custom resolution, and select the option to make the display **always enabled**. After rebooting, you can press <kbd>Super</kbd> + <kbd>P</kbd> to switch multi-monitor modes on KDE. After that, make sure the correct display is selected in Sunshine.
+
+    - Alternatively, you can also add a `2560x1600MR@120` mode to your host PC's main display. This may cause your host PC's monitor to black out and show an `unsupported mode` dialog, and you will have to change the resolution during game streaming. You can try this method if you don't want to deal with multiple monitors.
+
+    !!! warning "Do **not** disable the main display, as doing that may leave you with no available display out (which may also break streaming). <br>If you do encounter a black screen that persists after rebooting, you can try going into a `tty` by pressing <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F2</kbd>, and edit or remove `~/.config/kwinoutputconfig.json` from the command line. Note that this will remove your monitor configurations. <br>An example command will be `mv ~/.config/kwinoutputconfig.json ~/.config/kwinoutputconfig.json.bak`"
+
+<hr>
 
 ### Advanced Usage
 
