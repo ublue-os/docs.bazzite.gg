@@ -182,7 +182,7 @@ This usually means that the Sunshine executable has trouble capturing the screen
     !!! warning "Capturing with X11 is not supported. Screen capture is now handled via the compositor of your Desktop Environment (Kwin or Mutter) or via Kernel Mode Setting."
     -   X11 is not supported by Bazzite.
     -   NvFBC is an X11-specific option, and is thus also not supported by Bazzite.
-    -   wlroots uses a specific protocol for wlroots-based compositors, which are usually tiling window managers. Bazzite do not have images with these compositors, so this option should only be needed in custom images with said compositors.
+    -   wlroots uses a specific protocol for wlroots-based compositors, which are usually tiling window managers. Bazzite does not have images with these compositors, so this option should only be needed in custom images with said compositors.
 
 <hr>
 
