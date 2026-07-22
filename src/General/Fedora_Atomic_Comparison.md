@@ -21,7 +21,7 @@ The following is a list of features Bazzite ships with that differs from upstrea
 
 ### Ease of Use
 
-- Convenient [**`ujust`**](/Installing_and_Managing_Software/ujust/) scripts by maintainers and contributors of the project.
+- Commonly used tools and shortcuts integrated into the convenient [Bazzite Portal](/Installing_and_Managing_Software/Bazzite_Portal/) interface and [**`ujust`**](/Installing_and_Managing_Software/ujust/) scripts by maintainers and contributors of the project.
 - Steam Gaming Mode is setup out of the box and auto-starts on [**Bazzite-Deck images**](/Handheld_and_HTPC_edition/Steam_Gaming_Mode/) which are intended for handheld and couch gaming. 
 
 ### Made with Developers in Mind
