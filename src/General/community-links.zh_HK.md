@@ -1,0 +1,70 @@
+---
+title: 社區資源
+---
+
+# 社區資源
+
+!!! note
+
+    這裏包含一些有用的非官方文檔。
+
+!!! warning
+
+    這些文檔及資源或未更新，閱讀時還請注意。**若資訊有衝突，請以Bazzite 指南(英文)及Bazzite的維護團隊之資訊為準**。
+
+## 硬件
+
+- [**Framework Linux Guides**](https://knowledgebase.frame.work/categories/linux-S1IUEcFbkx)
+- [**Framework Laptop Guides**](https://guides.frame.work/)
+- [**Lenovo Legion Go Tips and Tricks**](https://github.com/aarron-lee/legion-go-tricks)
+- [**How to Update the BIOS on the Lenovo Legion Go from Bazzite (No Windows Required) [*Potential Risk of Bricking Handheld*]**](https://universal-blue.discourse.group/t/how-to-update-the-bios-on-the-lenovo-legion-go-from-bazzite-no-windows-required/3064)
+- [**GPD Win Tips and Tricks**](https://github.com/aarron-lee/gpd-win-tricks)
+- [**Minisforum V3 Tips and Tricks**](https://github.com/aarron-lee/awesome-minisforum-v3)
+- [**HUION H1060P Drawing Tablet Workaround <small>(Also works for other non-Wacom tablets that have issues with OpenTabletDriver)</small>**](https://www.answeroverflow.com/m/1275988149402861709)
+- [**Beelink GTR6 Compatibility List**](https://docs.google.com/spreadsheets/d/1stEL43uuNny6HV4HhV347T0iEprstmahngEJEOqz_b4/)
+- [**Wake on Lan Via Ethernet Tutorial**](https://universal-blue.discourse.group/t/is-wake-on-lan-supported/1165/6)
+- [**USB Wakeup on Bazzite**](https://arnaught.neocities.org/blog/2024/12/28/bazzite-usb-wakeup)
+
+## 運行軟件及遊戲須知
+
+- [**OLD Bazzite Portal Application List**](https://universal-blue.discourse.group/t/old-bazzite-portal-flatpak-list-restored-as-a-forum-post/5440)
+- [**Microsoft's Tutorial on Xbox Cloud Streaming for Game Pass Ultimate (and Fortnite)**](https://support.microsoft.com/en-us/topic/xbox-cloud-gaming-in-microsoft-edge-with-steam-deck-43dd011b-0ce8-4810-8302-965be6d53296)
+- [**Browser Games Using Web Apps**](https://universal-blue.discourse.group/t/how-to-run-old-browser-games-with-web-apps/486)
+- [**StreamingServiceLauncher**](https://github.com/aarron-lee/StreamingServiceLauncher)
+- [**Crunchyroll for Linux**](https://github.com/aarron-lee/crunchyroll-linux)
+- [**Running Valve's Hammer Level Editor Software for Map Making in the Source 1 Engine**](https://andrealmeid.com/post/2020-05-28-csgo-hammer-linux/)
+- [**boxkit: Template to build your own OCI Distrobox container**](https://github.com/ublue-os/boxkit)
+- [**bazzite-arch: Gaming packages inside of a Distrobox container**](https://github.com/ublue-os/bazzite-arch)
+- [**davincibox: Container for DaVinci Resolve installation and runtime dependencies**](https://github.com/zelikos/davincibox)
+- [**DAWbox: An Ubuntu based OCI ready for music production, powered by Distrobox**](https://github.com/Messaiga/DAWbox)
+- [**ZeroTier Setup**](/General/zerotier.md)
+- [**Installing Arctis Manager**](/Advanced/arctis-manager.md)
+
+## 容器為本／原子化更新有關的資源
+
+- [**List of Bootable Container Images**](https://workshop.blue-build.org/images)
+- [**Bootcrew**](https://github.com/bootcrew)
+- [**secureblue**](https://secureblue.dev/)
+- [**Blue95**](https://github.com/winblues/blue95)
+- [**Wayblue**](https://github.com/wayblueorg/wayblue)
+- [**Pocketblue**](https://pocketblue.github.io/)
+- [**HeliumOS**](https://www.heliumos.org/)
+- [**List of Community Created Custom Images**](https://universal-blue.discourse.group/t/list-of-community-created-custom-images/340)
+- [**Installing Universal Blue's Base Images**](https://universal-blue.discourse.group/t/how-to-install-universal-blues-base-images/868)
+- [**Self-Hosting Images**](https://github.com/ublue-os/forge)
+- [**BlueBuild Project**](https://blue-build.org/)
+
+## 參考資料及文檔
+
+- [**Fedora Kinoite Documentation**](https://docs.fedoraproject.org/en-US/fedora-kinoite/)
+- [**Fedora Silverblue Documentation**](https://docs.fedoraproject.org/en-US/fedora-silverblue/)
+- [**Aurora Documentation**](https://docs.getaurora.dev/)
+- [**Bluefin Documentation**](https://docs.projectbluefin.io/)
+- [**Bazzite Newsletter Archive**](https://universal-blue.discourse.group/t/bazzite-newsletters/2252)
+- [**DeepWiki**](https://deepwiki.com/ublue-os/bazzite)
+
+<hr>
+
+## 合作與貢獻
+
+幫助我們更新Bazzite 指南，加入更多有用的資訊！

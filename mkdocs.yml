@@ -83,7 +83,95 @@ plugins:
           build: true
         - locale: cs
           name: Čeština
-          build: true          
+          build: true
+        - locale: zh_HK
+          name: 中文（香港）
+          build: true
+          site_name: Bazzite 指南
+          theme:
+            language: zh-Hant
+          nav:
+            - 主頁: index.md
+            - 常見問題: "General/FAQ.md"
+            - 安裝指南:
+                - "安裝 Bazzite": General/Installation_Guide/index.md
+                - "安裝教學": General/Installation_Guide/install-guide.md
+                - "安裝後設定": General/Installation_Guide/post-installation.md
+                - "安裝疑難排解": General/Installation_Guide/troubleshoot_guide.md
+                - "舊版ISO安裝教學": General/Installation_Guide/legacy-install.md
+                - "備用安裝辦法": General/Installation_Guide/alternate-install-guide.md
+            - 常用指南:
+                - "常用教學": General/index.md
+                - "用語和詞庫": General/terms.md
+                - "Bazzite與Fedora原子化發行版": General/Fedora_Atomic_Comparison.md
+                - "對比SteamOS": "General/SteamOS_Comparison.md"
+                - "桌面環境個人化、主題與其他設置": General/Desktop_Environment_Tweaks.md
+                - "使用VPN": General/VPN.md
+                - "疑難排解": "General/issues_and_resolutions.md"
+                - "提交Bug報告": General/reporting_bugs.md
+                - "社區資源": General/community-links.md
+                - "安全性政策": https://github.com/ublue-os/bazzite/blob/main/SECURITY-ZH-TW.md
+                - "許可證(License)": https://github.com/ublue-os/bazzite/blob/main/LICENSE
+                - "新聞資料包": https://github.com/ublue-os/bazzite/tree/main/press_kit
+                - "卸載Bazzite": General/uninstalling-bazzite.md
+            - 遊戲指南:
+                - "遊戲簡介": Gaming/index.md
+                - "硬體相容性": Gaming/Hardware_compatibility_for_gaming.md
+            - Bazzite掌機版(Bazzite-Deck):
+                - "Bazzite掌機版教學": Handheld_and_HTPC_edition/index.md
+                - "Bazzite掌機版概覽": Handheld_and_HTPC_edition/Steam_Gaming_Mode.md
+                - "Steam遊戲模式的常見問題與解決辦法": Handheld_and_HTPC_edition/quirks.md
+                - "掌機相容性":
+                    - Handheld_and_HTPC_edition/Handheld_Wiki/index.md
+                    - "華碩": Handheld_and_HTPC_edition/Handheld_Wiki/ASUS_ROG_Ally.md
+                    - "聯想": Handheld_and_HTPC_edition/Handheld_Wiki/Lenovo_Legion_Go.md
+                    - "GPD": Handheld_and_HTPC_edition/Handheld_Wiki/GPD_Handhelds.md
+                    - "OneXPlayer": Handheld_and_HTPC_edition/Handheld_Wiki/OneXPlayer_Handhelds.md
+                    - "Ayn": Handheld_and_HTPC_edition/Handheld_Wiki/Ayn_Handhelds.md
+                    - "Ayaneo": Handheld_and_HTPC_edition/Handheld_Wiki/Ayaneo_Handhelds.md
+                    - "Steam Deck": Handheld_and_HTPC_edition/Handheld_Wiki/Steam_Deck.md
+                    - "其他掌機": Handheld_and_HTPC_edition/Handheld_Wiki/Other_Handhelds.md
+            - 軟件:
+                - "安裝及管理軟件":
+                    - Installing_and_Managing_Software/index.md
+                    - "Bazzite軟件安裝概覽": Installing_and_Managing_Software/software-intro.md
+                    - "Bazzite Portal": Installing_and_Managing_Software/Bazzite_Portal.md
+                    - "ujust 命令行指令": Installing_and_Managing_Software/ujust.md
+                    - "Bazaar 應用程式商店": Installing_and_Managing_Software/Flatpak.md
+                    - "Homebrew": Installing_and_Managing_Software/Homebrew.md
+                    - "容器":
+                        - Installing_and_Managing_Software/Containers.md
+                        - "Distrobox": Installing_and_Managing_Software/Distrobox.md
+                        - "Quadlet": Installing_and_Managing_Software/Quadlet.md
+                    - "Appimage": Installing_and_Managing_Software/AppImage.md
+                    - "rpm-ostree": Installing_and_Managing_Software/rpm-ostree.md
+                    - "Waydroid 設置教程": Installing_and_Managing_Software/Waydroid_Setup_Guide.md
+                - "系統更新與回溯":
+                    - "Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/index.md"
+                    - "系統更新教程": "Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/updating_guide.md"
+                    - "回溯系統更新": "Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/rolling_back_system_updates.md"
+                    - "切換更新頻道": "Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/rebase_guide.md"
+                    - "Bazzite更新助手(bazzite-rollback-helper)": "Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/bazzite_rollback_helper.md"
+            - 進階指南:
+                - "目錄": Advanced/index.md
+                - "設置硬盤自動掛載": Advanced/Auto-Mounting_Secondary_Drives.md
+                - "使用ScopeBuddy管理Gamescope渲染器": Advanced/scopebuddy.md
+                - "自定義解像度": Advanced/custom_resolution.md
+                - "Bazzite 命令行工具": Advanced/bazzite-cli.md
+                - "Looking-Glass指南": Advanced/looking-glass.md
+                - "系統殼層(Shell)設置須知": Advanced/Best_Shell_Practices.md
+                - "重啟至系統救援模式(Rescue Mode)": Advanced/rescue-and-emergency-mode.md
+                - "重置用戶密碼": Advanced/Reset_Forgotten_User_Password.md
+                - "設置系統內存分頁以擴展內存及啟用休眠模式": Advanced/swapfile.md
+                - "系統啟動時顯示日誌輸出": Advanced/plymouth_init.md
+                - "使用Sunshine進行遊戲串流": Advanced/sunshine.md
+                - "如何更改Initramfs和Dracut": Advanced/dracut-and-initramfs.md
+                - "創建自定義Bazzite系統映像檔": Advanced/creating_custom_image.md
+            - Bazzite-DX: https://dev.bazzite.gg
+            - 合作與貢獻: https://universal-blue.org/contributing.html
+            - 社群: community.md
+            - 捐款: donations.md
+            - 下載: https://bazzite.gg/#image-picker
 
   - search
   - macros:

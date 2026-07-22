@@ -25,21 +25,15 @@ Bazzite offers multiple images, but most images will be following _one of these 
 
 ### 1. Desktop Edition
 
-<sub>(**Variant 1**)</sub>
-
 **Steam Gaming Mode is not on these specific images!**
 
 Intended specifically for desktops and laptops with a focus on gaming which is influenced by SteamOS's Desktop Mode and the maintenance-free nature of ChromeOS. A gaming-focused Fedora Atomic Desktop (Kinoite/Silverblue) operating system.  Steam and other gaming utilities are part of the base operating system. System rollbacks available with a rock-solid stable Fedora Linux base. Most modern PC hardware should be compatible outside of specific drivers that do not work well on desktop Linux.  [Flathub](https://flathub.org/) is enabled out of the box, so all of the applications that you would find on SteamOS are available on Bazzite.  System and application updates are automatically downloaded in the background and applied on a restart by default.
 
-### [2. Bazzite-Deck Edition](../Handheld_and_HTPC_edition/Steam_Gaming_Mode.md)
-
-<sub>(**Variant 2**)</sub>
+### [2. Handheld Edition (Bazzite-Deck)](../Handheld_and_HTPC_edition/Steam_Gaming_Mode.md)
 
 "**Steam Gaming Mode**" is pre-installed and its features fully functional for supported hardware. This version of Bazzite boots directly into the Steam Gaming Mode session and is intended for handhelds and couch-gaming scenarios. It also includes a Desktop Mode session. System and application updates are manually upgraded in Steam Gaming Mode and applied on a reboot.
 
 ### [3. Bazzite-DX (Developer eXperience Edition)](https://dev.bazzite.gg/)
-
-<sub>(**Variant 3**)</sub>
 
 A version of Bazzite that specifically caters to software development. It is not installed via an ISO; instead, you switch to it by rebasing from your current image to a Bazzite-DX image.
 
@@ -47,7 +41,7 @@ A version of Bazzite that specifically caters to software development. It is not
 
 !!! note
 
-    This does not include all of the Bazzite images.
+    This is not an exhaustive list.
 
 Verify your Bazzite image by entering this **command** in the terminal:
 
@@ -58,20 +52,20 @@ rpm-ostree status
 !!! important
 
     Every Bazzite image should start with `ostree-image-signed:docker://ghcr.io/ublue-os/...`.
-    <sub> The `...` is a placeholder for the actual image name which can be referenced in the chart below. </sub>
+    <sub> The `...` is a placeholder for the actual **image name** which can be referenced in the chart below. </sub>
 
-| Image                       | Desktop Environment | Steam Gaming Mode | Hardware                                 | Edition       |
+| **Image Name**              | Desktop Environment | Steam Gaming Mode | Hardware                                 | Edition       |
 | --------------------------- | ------------------- | ----------------- | ---------------------------------------- | ------------- |
 | `bazzite`                   | KDE Plasma          | No                | AMD/Intel GPUs                           | Desktop       |
 | `bazzite-nvidia`            | KDE Plasma          | No                | Nvidia GPUs                              | Desktop       |
-| `bazzite-nvidia-open`            | KDE Plasma          | No                | Nvidia GPUs (Newer Nvidia GPUs)                             | Desktop       |
+| `bazzite-nvidia-open`       | KDE Plasma          | No                | Nvidia GPUs (Newer Nvidia GPUs)          | Desktop       |
 | `bazzite-gnome`             | GNOME               | No                | AMD/Intel GPUs                           | Desktop       |
 | `bazzite-gnome-nvidia`      | GNOME               | No                | Nvidia GPUs                              | Desktop       |
-| `bazzite-gnome-nvidia-open`      | GNOME               | No                | Nvidia GPUs (Newer Nvidia GPUs)                            | Desktop       |
-| `bazzite-deck`              | KDE Plasma          | Yes               | AMD/Intel Arc GPUs                       | Bazzite-Deck |
-| `bazzite-deck-nvidia`              | KDE Plasma          | Yes               | Nvidia GPUs (Newer Nvidia GPUs)                       | Bazzite-Deck |
-| `bazzite-deck-nvidia-gnome`              | GNOME          | Yes               | Nvidia GPUs (Newer Nvidia GPUs)                       | Bazzite-Deck |
-| `bazzite-deck-gnome`        | GNOME               | Yes               | AMD/Intel Arc GPUs                       | Bazzite-Deck |
+| `bazzite-gnome-nvidia-open` | GNOME               | No                | Nvidia GPUs (Newer Nvidia GPUs)          | Desktop       |
+| `bazzite-deck`              | KDE Plasma          | Yes               | AMD/Intel Arc GPUs                       | Handheld      |
+| `bazzite-deck-nvidia`       | KDE Plasma          | Yes               | Nvidia GPUs (Newer Nvidia GPUs)          | Handheld      |
+| `bazzite-deck-nvidia-gnome` | GNOME               | Yes               | Nvidia GPUs (Newer Nvidia GPUs)          | Handheld      |
+| `bazzite-deck-gnome`        | GNOME               | Yes               | AMD/Intel Arc GPUs                       | Handheld      |
 
 ## SteamOS is based on Arch Linux, so why use Fedora Atomic Desktop?
 
@@ -90,11 +84,12 @@ Since Bazzite is a custom Fedora Atomic Desktop image, it makes use of read-only
 
 ## Are AMD and Intel graphics card drivers pre-installed?
 
-**Yes** and they are updated during a system upgrade when new drivers are available. It is not possible to manually update them separately as they are part of the image.
+**Yes**. Most hardware drivers are integrated into the upstream Linux kernel and updated with it, and the kernel is updated as part of Bazzite's system image. When using Bazzite images, it is not possible to manually change driver or kernel versions; on the flip side, every single Bazzite image is tested to make sure the combination of kernel patches, software, and runtimes works and shipped to your system.
 
 ### Are Nvidia graphics card drivers pre-installed?
 
 **Yes, on the Nvidia images** and they are updated during a system upgrade when new drivers are available. It is not possible to manually update them.
+
 - The legacy (`-nvidia`) image supports Pascal, Maxwell, and Volta architectures (GTX 900, GTX 1000, Nvidia Titan V, GTX 750 (TI) and GTX 745).
 - The modern (`-nvidia-open`) image supports every Nvidia card from the Turing architecture and newer (GTX 16 and all RTX cards).
 
@@ -103,10 +98,15 @@ Since Bazzite is a custom Fedora Atomic Desktop image, it makes use of read-only
 #### Will support for much older Nvidia graphics cards be added?
 
 There are currently no plans to support Kepler and older architectures (Most GTX 700 cards and older) since they are **no longer supported** by the upstream Nvidia drivers.
-- You can still install Bazzite, using the open-source nouveau driver.
-    - However, the performance and stability of this driver lags behind the official Nvidia drivers.
-- It is **not possible** to manually install the proprietary Nvidia drivers for your older card in Bazzite.
--     You would need a different Linux distribution that allows for such, if you wish to use the proprietary Nvidia drivers for your GPU.
+
+-   You can still install Bazzite, using the open-source `nouveau` driver.
+    -   However, the performance and stability of this driver lags behind the official Nvidia drivers as the open source driver cannot communicate with the closed source GSP firmware, causing the card to be stuck at its lowest clocks.
+-   It is **not possible** to manually install the proprietary Nvidia drivers for your older card in Bazzite.
+-   You would need a different Linux distribution that allows for such, if you wish to use the proprietary Nvidia drivers for your GPU. Support for these cards are essentially cut off by Nvidia on Fedora based distributions.
+
+!!! info
+
+    Nvidia only started initial support for the Wayland protocol at version 495, while the last driver to support Kepler or older cards was version 470. Bazzite does not support running the legacy X11 display server. If you need to run games on these graphics cards, try other Linux distributions such as Linux Mint and Debian.
 
 ### What if I change hardware?
 
@@ -122,21 +122,30 @@ This warning occurs on the [Desktop Edition](#1-desktop-edition) because it auto
 
 ![](/../img/gpu_driver_warning.png)
 Windows games cannot correctly detect Linux graphics drivers.
-- Because the version numbers are different between the Windows and Linux drivers, games will occasionally warn you about outdated drivers.
-- **You can safely ignore any such warning.**
-- [Please see here for more details.](#are-amd-and-intel-graphics-card-drivers-pre-installed)
+
+-   Because the version numbers are different between the Windows and Linux drivers, games will occasionally warn you about outdated drivers.
+-   **You can safely ignore any such warning.**
+-   [Please see here for more details.](#are-amd-and-intel-graphics-card-drivers-pre-installed)
 
 ## Does Bazzite support CSM/Legacy Boot?
 
 No. A notification with instructions on turning off CSM will occur when the installer detects Legacy BIOS boot: ![CSM](../img/csm.webp)
 
-## Am I able to use AMD Fluid Motion Frames?
+## Am I able to use Frame Generation technologies such as AFMF and FSR-FG?
 
-**Yes**, but only if the game supports it. It's not available globally for every game like on Windows, but:
-* There may be individual game mods or [Decky plugins](https://github.com/xXJSONDeruloXx/Decky-Framegen) that mimic similar functionality.
-* If you own [Lossless Scaling](https://store.steampowered.com/app/993090/Lossless_Scaling/) on Steam, you can set up a LSFG Vulkan layer with the `ujust get-lsfg` terminal command.
+**Yes**, but only if the game supports FSR3.1 or newer. Note that:
+
+-   In open source drivers, there are no driver-level frame generation similar to AFMF.
+-   There may be individual game mods or [Decky plugins](https://github.com/xXJSONDeruloXx/Decky-Framegen) that mimic similar functionality.
+-   When using `Proton-CachyOS 11.0-20260702` or its derivatives, games that support FSR3.1+ will be automatically upgraded to FSR4.1.1(see [Proton-CachyOS's GitHub Releases Page](https://github.com/CachyOS/proton-cachyos/releases/tag/cachyos-11.0-20260702-slr)). Additionally, **Bazzite Portal** allows you to toggle the FSR-MLFG workaround for RDNA3 GPUs.
+* If you own [Lossless Scaling](https://store.steampowered.com/app/993090/Lossless_Scaling/) on Steam, you can set up a LSFG Vulkan layer with its respective entry in **Bazzite Portal**.
 
 ## Can I theme my GRUB/bootloader?
+
+!!! note
+    
+    GRUB is hidden by default on Bazzite.
+    
 Theming the bootloader (GRUB) is unsupported by Bazzite and can cause critical issues such as your system not booting. Please remove any GRUB themes before reporting issues.
 
 ## Can I change the hostname of my device?
@@ -153,16 +162,17 @@ hostnamectl hostname <hostname>
 
 Specify a hostname where `<hostname>` is.
 
-
 ## I installed Windows but Bazzite won't boot { id="windows-bootloader-override" }
 
-Flash the Bazzite Live ISO to a thumb drive, and run the **Bazzite Bootloader Restoration Tool**.
+Flash the Bazzite Live ISO to a thumb drive, boot into it, and run the **Bazzite Bootloader Restoration Tool**.
 
 ## Can I switch to a different desktop environment on my current installation?
 
 <sub> (Example: Swapping from KDE Plasma to GNOME or vice-versa) </sub>
 
-It is **not recommended to switch between desktop environments** due to configuration files having different standards **which usually lead to broken installations after rebasing to a different Bazzite image with a different desktop environment installed**.
+It is **not recommended to switch between desktop environments** due to configuration files having different standards **which usually lead to broken installations after rebasing to a different Bazzite image with a different desktop environment installed**. You may try [Mending Wall](https://flathub.org/en/apps/org.indii.mendingwall), which helps manage these configuration files, at your own risk.
+
+The safest, and the only way to switch desktop environments that we recommend, is to backup your personal files and reinstall Bazzite.
 
 ## Am I able to install _this_ desktop environment or _that_ window manager?
 
