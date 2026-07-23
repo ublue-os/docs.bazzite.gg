@@ -39,6 +39,7 @@ title: Community Resources
 - [**DAWbox: An Ubuntu based OCI ready for music production, powered by Distrobox**](https://github.com/Messaiga/DAWbox)
 - [**ZeroTier Setup**](/General/zerotier.md)
 - [**Installing Arctis Manager**](/Advanced/arctis-manager.md)
+- [**Couchside — phone dashboard, remote console & controller for your HTPC**](/Advanced/couchside.md)
 
 ## Bootable Container Topics
 
