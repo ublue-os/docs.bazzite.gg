@@ -32,8 +32,8 @@ Bazzite是一個基於[**Fedora原子化發行版**](https://fedoraproject.org/a
 
 ### 額外功能
 
--   使用[**Waydroid**](/Installing_and_Managing_Software/Waydroid_Setup_Guide.md)支持運行Android應用程式
+-   透過[**Waydroid**](/Installing_and_Managing_Software/Waydroid_Setup_Guide.md)支持運行Android應用程式
 -   取消Firefox系統包，改為可卸載、更新更頻密的Flatpak版本
 -   自動掛載任何BTRFS或Ext4格式的次要硬盤
 -   附帶額外桌面環境插件和主題
--   支持回溯至任何90日內的Bazzite映像
+-   支持回溯至90日內的任意Bazzite映像

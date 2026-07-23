@@ -164,7 +164,7 @@ Specify a hostname where `<hostname>` is.
 
 ## I installed Windows but Bazzite won't boot { id="windows-bootloader-override" }
 
-Flash the Bazzite Live ISO to a thumb drive, boot into it, and run the **Bazzite Bootloader Restoration Tool**.
+This is usually because Windows ate Bazzite's bootloader. Flash the Bazzite Live ISO to a thumb drive, boot into it, and run the **Bazzite Bootloader Restoration Tool**.
 
 ## Can I switch to a different desktop environment on my current installation?
 

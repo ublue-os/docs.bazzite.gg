@@ -10,7 +10,7 @@ hide:
 
 - [:material-harddisk: **安裝Bazzite**](General/Installation_Guide/index.md){ style="font-size: 1.1rem" }
 
-  Bazzite可以運行於絕大部分x86-64架構的桌機和筆記本之上。此外，Bazzite亦有針對於特定設備的支持，例如 [Framework](https://frame.work/). <br>
+  Bazzite可以運行於絕大部分x86-64架構的桌機和筆記本之上。此外，Bazzite亦有針對於特定設備的支持，例如 [Framework](https://frame.work/)。 <br>
 
   Bazzite亦支持以控制器為主要交互方式的系統和設備，如家庭劇院（HTPC）以及各式各樣的掌機：
   
@@ -39,7 +39,7 @@ hide:
 
   <small>註：由上之下的次序代表各種安裝途徑的推介先序</small>
 
-  1. [Bazzite Portal][bazzite_portal]使用Bazzite獨家的安裝方式
+  1. [Bazzite Portal][bazzite_portal]使用Bazzite推薦的安裝方式
      {style="list-style-type: decimal;"}
   2. [Bazaar 應用程式商店 (Flatpak)][flatpak]包含大部份應用程式
      {style="list-style-type: decimal;"}
@@ -54,7 +54,7 @@ hide:
 
 - [:fontawesome-solid-circle-arrow-down: **系統更新與回溯**][updateindex]{ style="font-size: 1.1rem" }
 
-  Bazzite使用Fedora原子化更新系統，每次更新皆為啟動一個完整的唯讀系統映像檔。若更新後，你的系統出現異常，你可以回溯至90日內任意一個系統映像檔，而你的個人檔案皆不會受影響。
+  Bazzite使用Fedora原子化更新系統，每次更新皆為啟動一個完整的唯讀系統映像檔。若更新後，你的系統出現異常，你可以回溯至90日內的任意一個系統映像檔，而你的個人檔案皆不會受影響。
 
   - [更新指南][updates]
   - [系統回溯][rollbacks]
@@ -76,7 +76,7 @@ hide:
 
   - 新系統壞了？你可以在[這裡提交Bug報告](General/reporting_bugs.md)
   - 在[自定義映像][customimage]裏測試你的修改
-  - 幫助我們更新**Bazzite 指南**和[加入翻譯文檔](https://github.com/KyleGospo/docs.bazzite.gg/blob/main/README.md#translate-documentation)！
+  - 幫助我們更新**Bazzite 指南**和[加入翻譯文檔](https://github.com/ublue-os/docs.bazzite.gg/blob/main/README.md#translate-documentation)！
 
 </div>
 
