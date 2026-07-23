@@ -6,7 +6,7 @@ title: Bazzite與Fedora原子化發行版
 
 ## 甚麼是Bazzite？
 
-Bazzite是一個基於[**Fedora原子化發行版**](https://fedoraproject.org/atomic-desktops/)的系統映像。其中，KDE和GNOME的原生映像又分別稱為[**Fedora Kinoite**](https://fedoraproject.org/atomic-desktops/kinoite/)和[**Fedora Silverblue**](https://fedoraproject.org/atomic-desktops/silverblue/)。Bazzite在基於Fedora原子化發行版的基礎上額外作出修改，旨在提供一個更容易上手的體驗。
+Bazzite是一個基於[**Fedora原子桌面**](https://fedoraproject.org/atomic-desktops/)的系統映像。其中，KDE和GNOME的原生映像又分別稱為[**Fedora Kinoite**](https://fedoraproject.org/atomic-desktops/kinoite/)和[**Fedora Silverblue**](https://fedoraproject.org/atomic-desktops/silverblue/)。Bazzite在基於Fedora原子化發行版的基礎上額外作出修改，旨在提供一個更容易上手的體驗。
 
 ## 主要差異
 
