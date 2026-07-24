@@ -10,9 +10,9 @@ Report bugs experienced with Bazzite in our [**issue tracker**](https://github.c
 
 If you are not sure if what you encountered is a bug or not, you may try asking in the #bazzite-help channels on the [Bazzite Discord Server](/community/#discord-no-discord-account).
 
-!!! note
-
-    Please use English in your Bug Report! Even if you are not fluent in English, please still try your best in writing it and do not use LLMs to translate it for you. If you have difficulty in writing English Bug Reports, you may add the issue you intend to write in your preferred language, and add [Needs Translation] in the title. Community members may give you a hand in translate it.
+>Please use English in your Bug Report! If you use LLMs to translate it for you, please also include your original handwritten report in your preferred language, to catch any potential mistakes or meanings lost in translation. 
+    
+>If you have difficulty in writing English Bug Reports, you may add [Needs Translation] in the title of the bug report. Community members may give you a hand in translate it.
 
 ## Bazzite Issue Template Walkthrough
 

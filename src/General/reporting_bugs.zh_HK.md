@@ -10,9 +10,7 @@ Bug 報告應於 Bazzite 的[**issue tracker**](https://github.com/ublue-os/bazz
 
 如你不肯定你遇到的是否為 Bug ，你可以試試在 [Bazzite Discord 伺服器]((/community/#discord-no-discord-account))的 #bazzite-help 頻道詢問。
 
-!!! 溫馨提示
-
-    請使用英文提交Bug報告！若你不擅長英文，請仍然盡量以英文書寫而不要使用LLM翻譯。倘若你在書寫英文Bug報告時遇到困難，你可以試試在Issue裏加入原文及[Needs Translation]，社區成員或會幫助你翻譯。
+>請使用英文提交Bug報告！倘若你使用LLM進行翻譯，請在Bug報告中附上原文，以免產生誤會。倘若你在書寫英文Bug報告時遇到困難，你可以試試在Issue裏加入原文及[Needs Translation]，社區成員或會幫助你翻譯。
 
 ## Bazzite Issue 範本
 
