@@ -260,11 +260,11 @@ In this case, you should update all Flatpaks in **Bazaar**, or select **Update N
 
 <hr>
 
-## Waking from sleep doesn't work with a Gigabyte B550 motherboard
+## Waking from sleep doesn't work with some Gigabyte motherboard
 
-<small>_Why does Life Slumber? ...Because Gigabyte B550 motherboards can't wake from sleep._</small>
+<small>_Why does Life Slumber? ...Because Gigabyte motherboards can't wake from sleep._</small>
 
-Once a Gigabyte B550 motherboard suspends, it may not properly resume, and the display remains black until a reboot.
+Once a Gigabyte motherboard suspends, it may not properly resume, and the display remains black until a reboot.
 
 This can be fixed by disabling GPP0 and GPP8 wakeup. A hidden ujust command is provided to toggle this fix:
 
@@ -305,3 +305,17 @@ This is typically due to bugs in the GPU drivers. You can temporarily disable Ha
     ```
     
 !!! warning "This fix may negatively affect the battery life of your laptop or handheld."
+
+<hr>
+
+## Dolphin SMB Share does not work
+
+This is because Atomic installations puts Usergroups somewhere different to where Dolphin expects, so the button to add user to group does not actually work.
+
+Replace `<username>` with your username, and run the following commands.
+```bash
+grep -E '^usershares:' /usr/lib/group | sudo tee -a /etc/group
+sudo usermod -aG usershares <username>
+```
+
+
