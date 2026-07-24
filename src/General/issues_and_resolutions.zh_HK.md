@@ -145,11 +145,11 @@ ujust enable-supergfxctl
 
 <hr>
 
-## 技嘉B550主板無法從睡眠中甦醒
+## 技嘉主板無法從睡眠中甦醒
 
-<small>_生命因何而沉睡？ ...因為技嘉B550主板無法從睡眠中醒來。_</small>
+<small>_生命因何而沉睡？ ...因為技嘉主板無法從睡眠中醒來。_</small>
 
-鵰牌的B550主板在進入睡眠模式之後，其有機會無法正常恢復且在重啟前僅會顯示黑屏，而此問題可透過關閉GPP0及GPP8甦醒來解決。為此，Bazzite 提供一個隱藏的指令：
+鵰牌的主板在進入睡眠模式之後，其有機會無法正常恢復且在重啟前僅會顯示黑屏，而此問題可透過關閉GPP0及GPP8甦醒來解決。為此，Bazzite 提供一個隱藏的指令：
 
 ```bash
 ujust _toggle-gigabyte-wake-fix
@@ -186,3 +186,13 @@ ujust _toggle-gigabyte-wake-fix
     ```
 
 !!! warning "此設置或會縮短裝置的續航時長"
+
+## 無法開啟 Dolphin 的 SMB Share 功能
+
+這是因為原子化系統存取 Usergroup 的位置與 Dolphin 預期的位置不同，所以你的用戶無法透過 Dolphin 介面上的按鈕加入 usershares 組別。
+
+將 `<username>` 替換成你的用戶名，然後運行以下指令：
+```bash
+grep -E '^usershares:' /usr/lib/group | sudo tee -a /etc/group
+sudo usermod -aG usershares <username>
+```
