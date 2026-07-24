@@ -11,7 +11,7 @@ title: 常見教程
 - [**桌面環境設置**](/General/Desktop_Environment_Tweaks.md)
 - [**VPN Setup**](/General/VPN.md)
 - [**疑難排解**](/General/issues_and_resolutions.md)
-- [**Reporting Bugs**](/General/reporting_bugs.md)
+- [**提交Bug報告**](/General/reporting_bugs.md)
 - [**Community Resources**](/General/community-links.md)
 - [**Security Policy**](https://github.com/ublue-os/bazzite/blob/main/SECURITY.md)
 - [**License**](https://github.com/ublue-os/bazzite/blob/main/LICENSE)
