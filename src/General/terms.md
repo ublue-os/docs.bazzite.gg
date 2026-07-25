@@ -26,7 +26,7 @@ title: Dictonary & Terminology
 - [**Vulkan**](https://www.vulkan.org/): Cross-platform, open standard graphics API derived from AMD's Mantle as an alternative to DirectX, which is Windows exclusive.
 - [**OpenGL**](https://www.opengl.org/): Legacy graphics API when Vulkan is not available.
 - **[Flatpak](https://flatpak.org/)**: Universal applications for Linux.  The default remote is from [Flathub](https://www.flathub.org).
-- [**Containers**](https://www.redhat.com/en/topics/containers) - Isolated environments for software.
+- [**Containers**](https://www.redhat.com/en/topics/containers): Isolated environments for software.
 
 ## Underlying Technology
 
