@@ -103,7 +103,6 @@ These are just some of the common Bazzite `ujust` script examples, there are muc
 - **ujust setup-decky** - Install and configure Decky Loader
 - **ujust setup-boot-windows-steam** - Adds a script in Steam to boot Windows which is useful for dual-boot setups
 - **ujust enable-tailscale** - Enables support for Tailscale
-- **ujust enable-supergfxctl** - Enable Supergfxctl, a GPU switcher for hybrid laptops
 - **ujust bazzite-cli** - Bazzite CLI mod for Bluefin styled cli enhancements. More information in [Bazzite Command Line Tools](../Advanced/bazzite-cli.md)
 
 ### Troubleshooting Scripts

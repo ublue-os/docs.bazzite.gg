@@ -243,7 +243,7 @@ If you are running Bazzite on a laptop with an Nvidia Optimus GPU, you might not
 In this case, you will need to enable supergfxctl which automatically switches to the discrete Nvidia GPU when launching your games. Open a terminal and run:
 
 ```bash
-ujust enable-supergfxctl
+sudo systemctl enable --now supergfxd.service
 ```
 
 !!! info "If you are looking for **Advanced Optimus** functions, we regret to tell you that there are currently **no** working way to dynamically MUX displays outside of some very early work on AMD SmartMUX. Changing MUX settings currently **requires** a reboot."
