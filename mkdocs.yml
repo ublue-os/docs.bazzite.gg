@@ -123,7 +123,7 @@ plugins:
                 - "啟動選項與環境函數": Gaming/launch-options-env-variables.md
                 - "遊戲常見問題": Gaming/Common_gaming_issues.md
             - Bazzite掌機版(Bazzite-Deck):
-                - "Bazzite掌機版教學": Handheld_and_HTPC_edition/index.md
+                - "Bazzite掌機版索引": Handheld_and_HTPC_edition/index.md
                 - "Bazzite掌機版概覽": Handheld_and_HTPC_edition/Steam_Gaming_Mode.md
                 - "Steam遊戲模式的常見問題與解決辦法": Handheld_and_HTPC_edition/quirks.md
                 - "掌機相容性":
