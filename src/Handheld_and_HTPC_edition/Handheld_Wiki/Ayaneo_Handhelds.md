@@ -14,6 +14,12 @@ title: Ayaneo Handhelds
 
 ### Known Issues
 
+#### Bazzite 44 Known Issues
+
+- No RGB Control.
+
+#### Other Known Issues
+
 - Suspending the device requires the latest BIOS update.
   - Reports of controller issues on wake have reported inconsistency. Enabling "full initial usb support" in Bios seems to have an impact on how frequent the issue is.
 - VRAM size option is missing from BIOS as it's controlled by AYASPACE application under windows. You can change the amount of UMA buffer size using [Smokeless_UMAF](https://github.com/DavidS95/Smokeless_UMAF), but this method has its own associated risks.

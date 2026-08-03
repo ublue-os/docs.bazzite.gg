@@ -20,6 +20,12 @@ title: Ayn Handhelds
 
 ### Known Issues
 
+#### Bazzite 44 Known Issues
+
+- No RGB Control.
+
+#### Other Known Issues
+
 - Games can sometimes default to 800p resolution.
   - Manually change the resolution per game in the `Steam Settings > Properties > Game Resolution` to either "Native" or other higher resolutions.
 - Back buttons are hard mapped to L3 and R3.
