@@ -23,6 +23,15 @@ title: ASUS Handhelds
 - Adjust the scaling of the UI in the Display Settings.
 
 ### Known Issues
+
+#### Bazzite-Deck 44 Known Issues
+
+- Using the PS5 controller profile on OpenGamepadUI is needed to make controllers work.
+- No RGB Control.
+- TDP Control may not be available on some devices.
+
+#### Other Known Issues
+
 - Changing A/C power sometimes leads to a stuck TDP.
   - This happens when removing the charger while in standby.
   - Attaching and removing the charger while not in standby is a workaround.
