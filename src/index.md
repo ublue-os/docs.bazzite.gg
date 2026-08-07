@@ -10,28 +10,28 @@ hide:
 
 - [:material-harddisk: **Installing Bazzite**](General/Installation_Guide/index.md){ style="font-size: 1.1rem" }
 
-  Bazzite supports PC hardware from most modern desktop and laptops to specialized models like [Framework](https://frame.work/). <br>
+  Bazzite supports PC hardware from most modern desktop and laptops to specialized models like [**Framework**](https://frame.work/). <br>
 
   Bazzite also supports controller-friendly hardware like home theater PC setups and a multitude of handhelds:
   
-  - [Asus Handhelds][ally]
-  - [Lenovo Handhelds][legion_go]
-  - [GPD Handhelds][gpd]
-  - [OneXPlayer Handhelds][onex]
-  - [Ayn Handhelds][ayn]
-  - [Ayaneo Handhelds][ayaneo]
-  - [Steam Deck][deck]
-  - [Other PC Handhelds][otherhand]
+  - [**Asus Handhelds**][ally]
+  - [**Lenovo Handhelds**][legion_go]
+  - [**GPD Handhelds**][gpd]
+  - [**OneXPlayer Handhelds**][onex]
+  - [**Ayn Handhelds**][ayn]
+  - [**Ayaneo Handhelds**][ayaneo]
+  - [**Steam Deck**][deck]
+  - [**Other PC Handhelds**][otherhand]
 
 - [:material-controller: **Playing Video Games**][gaming]{ style="font-size: 1.1rem" }
 
-  Bazzite comes bundled with :fontawesome-brands-steam: [Steam](https://store.steampowered.com) and [Lutris](Gaming/Game_Launchers.md#non-steam-games) to run all of your PC games<sup>1</sup> on multiple hardware configurations!
+  Bazzite comes bundled with :fontawesome-brands-steam: [**Steam**](https://store.steampowered.com) and [**Lutris**](Gaming/Game_Launchers.md#non-steam-games) to run all of your PC games<sup>1</sup> on multiple hardware configurations!
 
   It is also compatible with other tools like:
 
-  - [Heroic Games Launcher](https://heroicgameslauncher.com/) for seamless Epic Games, GOG, and Amazon Games integration.
-  - Games and emulators from the built-in app store that range from [osu!](https://flathub.org/apps/sh.ppy.osu) to [Minecraft](https://flathub.org/apps/org.prismlauncher.PrismLauncher).
-  - ...And [more!](https://flathub.org/en/apps/category/game/1)
+  - [**Heroic Games Launcher**](https://heroicgameslauncher.com/) for seamless Epic Games, GOG, and Amazon Games integration.
+  - Games and emulators from the built-in app store that range from [**osu!**](https://flathub.org/apps/sh.ppy.osu) to [**Minecraft**](https://flathub.org/apps/org.prismlauncher.PrismLauncher).
+  - ...And [**more!**](https://flathub.org/en/apps/category/game/1)
 
   <small>\*<sup>1</sup> PC games that are known to work on the Linux desktop, visit [**ProtonDB**](https://protondb.com) and [**Are We Anti-Cheat Yet?**](https://areweanticheatyet.com) for more information</small>.
 
@@ -39,44 +39,44 @@ hide:
 
   <small>Order reflects the recommendation degree.</small>
 
-  1. [Bazzite Portal][bazzite_portal] to use Bazzite tailored installers.
+  1. [**Bazzite Portal**][bazzite_portal] to use Bazzite tailored installers.
      {style="list-style-type: decimal;"}
-  2. [Bazaar App Store (Flatpak)][flatpak] for most apps.
+  2. [**Bazaar App Store (Flatpak)**][flatpak] for most apps.
      {style="list-style-type: decimal;"}
-  3. [Homebrew][homebrew] for command-line apps and tools.
+  3. [**Homebrew**][homebrew] for command-line apps and tools.
      {style="list-style-type: decimal;"}
-  4. [Containers][containers] for access to most Linux package managers (`apt`, `dnf`, `pacman`, etc.), as development toolboxes, and for hosting services.
+  4. [**Containers**][containers] for access to most Linux package managers (`apt`, `dnf`, `pacman`, etc.), as development toolboxes, and for hosting services.
      {style="list-style-type: decimal;"}
-  5. [Appimage][appimage] for portable apps found on the web.
+  5. [**Appimage**][appimage] for portable apps found on the web.
      {style="list-style-type: decimal;"}
 
-  There is also [package layering with `rpm-ostree`][rpm-ostree], but it is [advised to avoid using it if possible][rpm-ostree_caveats] since layered packages can break future upgrades until packages are removed.
+  There is also [package layering with `rpm-ostree`][rpm-ostree], but it is [**advised to avoid using it if possible**][rpm-ostree_caveats] since layered packages can break future upgrades until packages are removed.
 
 - [:fontawesome-solid-circle-arrow-down: **Updates & Rollbacks**][updateindex]{ style="font-size: 1.1rem" }
 
   Hassle-free updates with protections against regressions. Rollback to the previous deployment or rebase to an earlier Bazzite build within the last 90 days without losing your personal files.
 
-  - [Updating Guide][updates]
-  - [Rollback System Updates][rollbacks]
-  - [Rebasing to Other Images][rebasing]
+  - [**Updating Guide**][updates]
+  - [**Rollback System Updates**][rollbacks]
+  - [**Rebasing to Other Images**][rebasing]
   - [`bazzite-rollback-helper`][rollback-helper]
 
 - [:fontawesome-brands-android: **Android Applications**][waydroid]{ style="font-size: 1.1rem" }
 
-  Run Android applications in a container using [Waydroid](https://waydro.id/)!
+  Run Android applications in a container using [**Waydroid**](https://waydro.id/)!
 
   - Launch anything from productivity software to games.
   - ARM translation support for most applications.
   - Use your favorite streaming service without the limitations of DRM.
-  - Install software through [Google Play Store](https://play.google.com/store/games) and [F-Droid](https://f-droid.org/).
+  - Install software through [**Google Play Store**](https://play.google.com/store/games) and [**F-Droid**](https://f-droid.org/).
 
 - [:fontawesome-solid-handshake: **Contributing**][contrib]{ style="font-size: 1.1rem" }
 
   One of the strengths of Bazzite (inherited from [Universal Blue](https://universal-blue.org/)) is how easy it is to contribute.
 
-  - Something seems broken? You might want to [report a bug](General/reporting_bugs.md).
-  - Add new changes by testing them in a [custom image][customimage].
-  - Editing current documentation and [adding translations](https://github.com/KyleGospo/docs.bazzite.gg/blob/main/README.md#translate-documentation) are also appreciated.
+  - Something seems broken? You might want to [**report a bug**](General/reporting_bugs.md).
+  - Add new changes by testing them in a [**custom image**][customimage].
+  - Editing current documentation and [**adding translations**](https://github.com/KyleGospo/docs.bazzite.gg/blob/main/README.md#translate-documentation) are also appreciated.
 
 </div>
 
