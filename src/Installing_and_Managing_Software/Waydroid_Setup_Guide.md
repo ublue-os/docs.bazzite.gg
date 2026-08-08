@@ -11,6 +11,7 @@ title: Waydroid Setup Guide
 !!! attention
 
     Waydroid does **not** work on Nvidia hardware.
+    
 
 ![Waydroid](../img/Waydroid.jpeg)
 
