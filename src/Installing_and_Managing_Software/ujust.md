@@ -12,7 +12,7 @@ title: ujust Commands
 
     Use the [Bazzite Portal](./Bazzite_Portal.md) application as a graphical interface for popular `ujust` commands.
 
-`ujust` commands that automate tasks using scripts which can be utilized to for system configuration and maintenance. It also can install specialized software that ships with Bazzite as an installation script by the maintainers and contributors of the project.  Please note that _some_ of the software that can be installed from `ujust` commands can add [**layered packages**](../rpm-ostree.md) to your installation which is generally not recommended.
+`ujust` commands that automate tasks using scripts which can be utilized for system configuration and maintenance. It also can install specialized software that ships with Bazzite as an installation script by the maintainers and contributors of the project.  Please note that _some_ of the software that can be installed from `ujust` commands can add [**layered packages**](../rpm-ostree.md) to your installation which is generally not recommended.
 
 ![ujust command list|690x411](../img/ujust_command_list.png)
 <sub>This will output a list of available commands.</sub>
