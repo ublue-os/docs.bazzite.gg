@@ -8,7 +8,7 @@ title: ujust Commands
 
 ![Shell Scripts (.sh)|96x96, 100%](../img/Shell_Scripts__sh.png)
 
-!!! note
+**Note:**
 
     Use the [Bazzite Portal](./Bazzite_Portal.md) application as a graphical interface for popular `ujust` commands.
 
@@ -75,7 +75,7 @@ ujust --show <command>
 Alternatively, you can find the `ujust` commands locally in:
 `/usr/share/ublue-os/just`
 
-!!! note
+**Note:**
 
     This directory also shows **hidden** `ujust` commands.
 
