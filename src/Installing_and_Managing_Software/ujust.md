@@ -96,15 +96,15 @@ These are just some of the common Bazzite `ujust` script examples, there are muc
 
 ### Configuration/Enabling Scripts
 
-- **ujust configure-waydroid** - a configuration helper for Waydroid. More information in [Waydroid Setup Guide](../Installing_and_Managing_Software/Waydroid_Setup_Guide.md)
-- **ujust setup-virtualization** - setup and configure virtualization and vfio
-- **ujust setup-sunshine** - toggle Sunshine Game Streaming host on or off
-- **ujust setup-luks-tpm-unlock** - enable auto LUKS unlock via TPM
-- **ujust setup-decky** - Install and configure Decky Loader
-- **ujust setup-boot-windows-steam** - Adds a script in Steam to boot Windows which is useful for dual-boot setups
-- **ujust enable-tailscale** - Enables support for Tailscale
-- **ujust enable-supergfxctl** - Enable Supergfxctl, a GPU switcher for hybrid laptops
-- **ujust bazzite-cli** - Bazzite CLI mod for Bluefin styled cli enhancements. More information in [Bazzite Command Line Tools](../Advanced/bazzite-cli.md)
+- `ujust configure-waydroid` - a configuration helper for Waydroid. More information in [Waydroid Setup Guide](../Installing_and_Managing_Software/Waydroid_Setup_Guide.md)
+- `ujust setup-virtualization` - setup and configure virtualization and vfio
+- `ujust setup-sunshine` - toggle Sunshine Game Streaming host on or off
+- `ujust setup-luks-tpm-unlock` - enable auto LUKS unlock via TPM
+- `ujust setup-decky` - Install and configure Decky Loader
+- `ujust setup-boot-windows-steam` - Adds a script in Steam to boot Windows which is useful for dual-boot setups
+- `ujust enable-tailscale` - Enables support for Tailscale
+- `ujust enable-supergfxctl` - Enable Supergfxctl, a GPU switcher for hybrid laptops
+- `ujust bazzite-cli` - Bazzite CLI mod for Bluefin styled cli enhancements. More information in [Bazzite Command Line Tools](../Advanced/bazzite-cli.md)
 
 ### Troubleshooting Scripts
 
