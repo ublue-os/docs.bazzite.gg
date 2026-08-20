@@ -108,9 +108,9 @@ These are just some of the common Bazzite `ujust` script examples, there are muc
 
 ### Troubleshooting Scripts
 
-- **ujust logs-last-boot** - Shows all messages from last boot
-- **ujust logs-this-boot** - Shows all messages from this boot
-- **ujust device-info** - Gathers useful device information to a pastebin. This is very useful for providing information when creating support tickets.
+- `ujust logs-last-boot` - Shows all messages from last boot
+- `ujust logs-this-boot` - Shows all messages from this boot
+- `ujust device-info` - Gathers useful device information to a pastebin. This is very useful for providing information when creating support tickets.
 
 ## Project Website
 
