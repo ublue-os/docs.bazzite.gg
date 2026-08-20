@@ -23,7 +23,6 @@ Open a host terminal and **enter this command**:
 ujust
 ```
 
-
 ![ujust TUI|690x403](../img/ujust_TUI.png)
 
 ```
