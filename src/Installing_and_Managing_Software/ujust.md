@@ -32,7 +32,7 @@ ujust --choose
 
 This will show a terminal user interface of `ujust` commands that you can choose to execute with arrow keys or mouse input.
 
-!!! attention
+**Attention:**
 
     Commands that require values or flags do not function with this method.
 
