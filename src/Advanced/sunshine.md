@@ -52,7 +52,7 @@ The recommended way of setting up Sunshine on Bazzite is through **Bazzite Porta
     ![Bazzite Portal Submenu Preview|250x200](../img/sunshine-bazzite-portal-submenu-deck.png)
     3. A Terminal Window will appear. Wait for the installation to complete and you will be instructed to restart.
 
-    !!!tip
+    !!! tip
 
         As layering does not permit us to set up the autostart service before hand, we need to enable the service **after** restarting. This can be done by either:
 
@@ -60,6 +60,13 @@ The recommended way of setting up Sunshine on Bazzite is through **Bazzite Porta
         *   Running `systemctl --user enable --now sunshine`.
         
     4. You may now test whether Sunshine works now.
+    
+    !!! info
+
+        If you encounter bugs such as missing menus during streaming, you may want to enable **Force Composite** to ensure proper streams at the cost of a tiny bit of latency. 
+
+        1. Enable developer mode under **Settings → System → Enable Developer Mode**.
+        2. Under the **Miscellaneous** section, enable **Force Composite**.
 
 === "Command Line"
 
@@ -186,3 +193,5 @@ This usually means that the Sunshine executable has trouble capturing the screen
 ---
 
 Should you encounter any other issue, feel free to reach out on the [Bazzite Discord](/community.md)!
+
+---
