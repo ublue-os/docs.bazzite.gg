@@ -159,6 +159,21 @@ This let's us re-use the `SCB_GAMESCOPE_ARGS` we set in our `scb.conf`
 
 Yes! There is one on flathub: [ScopeBuddy GUI](https://flathub.org/en/apps/io.github.rfrench3.scopebuddy-gui)
 
+### Is there an easy way to get the directory path to the game
+
+Yes, scopebuddy has a built in function for this which requires awk.
+Add this into your your AppID config.
+
+```bash
+GAMEDIR=$(SCB_GetGameDir "$command")
+```
+
+This will make `$GAMEDIR` contain the path to the directory containing the games binary/exe.
+
+!!! note
+
+    This function is designed for use with Steam, it might work in Lutris and Heroic, but has not been tested against it.
+
 ### Can I use ScopeBuddys functions without using gamescope?
 
 Yes, just use the env var `SCB_NOSCOPE=1` in the Launch Options like this
@@ -229,6 +244,7 @@ Some handy variables available to you are
 - `$SCB_GAMEMODE` will be set to 1 if ScopeBuddy is ran from within steam Steam Gaming Mode (this also implies `SCB_NOSCOPE=1`)
 - `$SCB_CONFIGDIR` will be `$HOME/.config/scopebuddy` this means you can source other configs within your config (please do not make an infinite loop!)
 - `$command` will contain the expanded %command% variable from Steam and any launch options you added after it.
+- `GAMEDIR=$(SCB_GetGameDir "$command")` will add the games directory (that contains the binary/exe) into `$GAMEDIR` for use in your scripts.
 
 Let your creativity go wild!
 But please be responsible!
@@ -248,18 +264,7 @@ SCB_NOSCOPE=1
 command+=" -provider Portal"
 
 # Get the game directory from the expanded %command% variable from steam
-cmdARGS=$(echo $command | awk -F '" "' '{ print NF }')
-for ((i = 1; i <= cmdARGS; i++))
-do
-    GAMEDIR=$(echo $command | awk -F '" "' -v i="$i" '{ print $i }')
-    # If we found "waitforexitandrun"
-    if [ "$GAMEDIR" == "waitforexitandrun" ]; then
-        # Increase i by 1 and grab the game directory then exit the loop early
-        i=$(($i+1))
-        GAMEDIR=$(echo $command | awk -F '" "' -v i="$i" '{ print $i }' | sed 's/\/Gw2-64.exe//')
-        break
-    fi
-done
+GAMEDIR=$(SCB_GetGameDir "$command")
 
 # Run the arcdps updater script before game starts
 "$SCB_CONFIGDIR/scripts/dl-arcdps" "$GAMEDIR"
