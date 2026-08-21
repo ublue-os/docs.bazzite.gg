@@ -12,7 +12,7 @@ Bazaar is the **primary method of installing applications on Bazzite** _(outside
 
 ## What is Flatpak?
 
-Flatpak is a universal containerized package format that tries to sandbox applications through flexible permissions that the application has access to on your system.  It is the **primary method of installing applications on Bazzite** and the most recommended way to install software over other formats outside of the few exceptions of software available in the Bazzite Portal which take priority. Flatpaks can be graphically installed, upgraded, and uninstalled via the Bazaar app store.
+Flatpak is a universal containerized package format that sandboxes applications through a permissions system to restrict the access of an application to your system. Flatpaks can be graphically installed, upgraded, and uninstalled via the Bazaar app store.
 
 ### Terminal Installation
 
@@ -24,7 +24,7 @@ flatpak install <application>
 
 ## Manage Flatpaks
 
-Manage Flatpaks with [Flatseal](https://github.com/tchx84/Flatseal) and [Warehouse](https://github.com/flattool/warehouse) which are both pre-installed.
+Manage Flatpaks with [Flatseal](https://github.com/tchx84/Flatseal) and [Warehouse](https://github.com/flattool/warehouse) which are both pre-installed. You may also use the built-in **Application Permissions → Manage Flatpak Settings** page to manage Flatpak permissions.
 
 ### Flatseal
 
