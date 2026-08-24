@@ -107,14 +107,14 @@ Below is a non-exhaustive list of common `ujust` scripts and their description. 
 
 | Command | Description |
 | --- | --- |
-| `ujust update` | Updates system, flatpaks, and containers all at once |
-| `ujust configure-grub` | Configures GRUB boot menu visibility |
-| `ujust fix-reset-steam` | Reset the Steam folder back to a fresh state without removing games, music, saves, etc. Very useful if Steam is giving trouble or if you are getting a blank screen in Game Mode |
-| `ujust fix-proton-hang` | Force terminates all processes related to wine and proton. Useful if you can't launch games after a game fails to close properly |
-| `ujust bios` | Reboots straight into this device's BIOS/UEFI screen |
-| `ujust restart-pipewire` | Crackling audio? Restarting Pipewire sometimes fixes that |
-| `ujust enroll-secure-boot-key` | Enrolls the Nvidia driver & KMOD signing key for secure boot. You'll need this if you want to use Bazzite with Secure Boot enabled |
-| `ujust clean-system` | Cleans up old unused podman images, volumes, flatpak packages, and rpm-ostree content |
+| `ujust update` | Updates system, flatpaks, and containers all at once. |
+| `ujust configure-grub` | Configures GRUB boot menu visibility. |
+| `ujust fix-reset-steam` | Reset the Steam folder back to a fresh state without removing games, music, saves, etc. Very useful if Steam is giving trouble or if you are getting a blank screen in Game Mode. |
+| `ujust fix-proton-hang` | Force terminates all processes related to wine and proton. Useful if you can't launch games after a game fails to close properly. |
+| `ujust bios` | Reboots straight into this device's BIOS/UEFI screen. |
+| `ujust restart-pipewire` | Crackling audio? Restarting Pipewire sometimes fixes that. |
+| `ujust enroll-secure-boot-key` | Enrolls the Nvidia driver & KMOD signing key for secure boot. You'll need this if you want to use Bazzite with Secure Boot enabled. |
+| `ujust clean-system` | Cleans up old unused podman images, volumes, flatpak packages, and rpm-ostree content. |
 
 ---
 
@@ -122,14 +122,14 @@ Below is a non-exhaustive list of common `ujust` scripts and their description. 
 
 | Command | Description |
 | --- | --- |
-| `ujust configure-waydroid` | A configuration helper for Waydroid. More information in [Waydroid Setup Guide](../Installing_and_Managing_Software/Waydroid_Setup_Guide.md) |
-| `ujust setup-virtualization` | Setup and configure virtualization and VFIO |
-| `ujust setup-sunshine` | Toggle Sunshine Game Streaming |
-| `ujust setup-luks-tpm-unlock` | Enable auto LUKS unlock via TPM |
-| `ujust setup-decky` | Install and configure Decky Loader |
-| `ujust setup-boot-windows-steam` | Adds a script in Steam to boot Windows, which is useful for dual-boot setups |
-| `ujust enable-tailscale` | Enables support for Tailscale |
-| `ujust bazzite-cli` | Bazzite CLI mod for Bluefin-styled CLI enhancements. More information in [Bazzite Command Line Tools](../Advanced/bazzite-cli.md) |
+| `ujust configure-waydroid` | A configuration helper for Waydroid. More information in [Waydroid Setup Guide](../Installing_and_Managing_Software/Waydroid_Setup_Guide.md). |
+| `ujust setup-virtualization` | Setup and configure virtualization and VFIO. |
+| `ujust setup-sunshine` | Toggle Sunshine Game Streaming. |
+| `ujust setup-luks-tpm-unlock` | Enable auto LUKS unlock via TPM. |
+| `ujust setup-decky` | Install and configure Decky Loader. |
+| `ujust setup-boot-windows-steam` | Adds a script in Steam to boot Windows, which is useful for dual-boot setups. |
+| `ujust enable-tailscale` | Enables support for Tailscale. |
+| `ujust bazzite-cli` | Bazzite CLI mod for Bluefin-styled CLI enhancements. More information in [Bazzite Command Line Tools](../Advanced/bazzite-cli.md). |
 
 ---
 
@@ -137,8 +137,8 @@ Below is a non-exhaustive list of common `ujust` scripts and their description. 
 
 | Command | Description |
 | --- | --- |
-| `ujust logs-last-boot` | Shows all system logs from last boot |
-| `ujust logs-this-boot` | Shows all system logs from this boot |
+| `ujust logs-last-boot` | Shows all system logs from last boot. |
+| `ujust logs-this-boot` | Shows all system logs from this boot. |
 | `ujust device-info` | Gathers useful device information to a pastebin. This is very useful for providing information when creating support tickets. |
 
 ---
@@ -146,3 +146,5 @@ Below is a non-exhaustive list of common `ujust` scripts and their description. 
 ## Project Website
 
 https://just.systems/man/en/
+
+---
