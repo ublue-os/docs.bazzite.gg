@@ -12,11 +12,13 @@ title: Homebrew
 
     Any package that requires root privileges will either need a rootful Distrobox container or has to be layered with `rpm-ostree`.
 
-Homebrew is a package manager that installs packages into their own prefix. It is primarily used for command-line interface (CLI) and terminal user interface (TUI) applications. Homebrew can also install graphical applications using the `--cask` flag, but most are for macOS as support for casks on Linux is still developing. Use the Bold Brew application or the terminal using the command below to install packages.
+Homebrew is a package manager that installs packages into their own prefix. It is primarily used for command-line interface (CLI) and terminal user interface (TUI) applications.
 
-Install packages in a host terminal with this **terminal command**:
+Homebrew can also install graphical applications using the `--cask` flag, though most are MacOS only, as support for casks on Linux is still work-in-progress.
 
-```
+Install packages in a host terminal with this **terminal command** or via Bold Brew:
+
+```bash
 brew install <package>
 ```
 
