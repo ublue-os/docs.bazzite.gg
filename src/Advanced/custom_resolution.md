@@ -122,11 +122,11 @@ You can add a virtual display to your host PC (running Bazzite) without a dummy 
 
     !!! info "This method is KWin-specific and will only work on KDE images and in Desktop Mode. Use Custom Resolution Helper instead if you need it on GNOME or Game Mode. Note that you must reinstall to switch Desktop Environments."
 
-    1. Open [Bazzite Portal](/Installing_and_Managing_Software/Bazzite_Portal/) → Install Applications → Setup Virtual Monitor → Add Virtual Monitor.
+    1. Open [Bazzite Portal](/Installing_and_Managing_Software/Bazzite_Portal/) → Install Applications → Sunshine → Setup Virtual Monitor → Add Virtual Monitor.
     2. Set the Screen Capture method to KWin ScreenCast.
     3. Restart Sunshine through the Web Portal.
     
-    !!! notice "If you encounter an Error -1 or Error 503, try [Bazzite Portal](/Installing_and_Managing_Software/Bazzite_Portal/) → Install Applications → Setup Virtual Monitor → Fix Error 503. You can learn more about it [here](/Advanced/sunshine/#is-a-display-connected-and-turned-on-error-503)."
+    !!! notice "If you encounter an Error -1 or Error 503, try [Bazzite Portal](/Installing_and_Managing_Software/Bazzite_Portal/) → Install Applications → Sunshine → Setup Virtual Monitor → Fix Error 503. You can learn more about it [here](/Advanced/sunshine/#is-a-display-connected-and-turned-on-error-503)."
     !!! warning "This will disable your current monitor during streaming! Make sure you click **Quit Session** in Moonlight after streaming."
 
 === "Custom Resolution Helper"
