@@ -41,7 +41,7 @@ Follow the [**Waydroid Setup Guide**](./Waydroid_Setup_Guide.md) to install Andr
 
 !!! note
         
-        Please note that only a small selection of software are available to install in the Bazzite Portal so it is not listed.
+    Please note that only a small selection of software are available to install in the Bazzite Portal so it is not listed.
 
 ![Software Installation Decision Tree](../img/software-install-decision-tree-light.svg#only-light)
 ![Software Installation Decision Tree](../img/software-install-decision-tree-dark.svg#only-dark)
@@ -54,5 +54,6 @@ Follow the [**Waydroid Setup Guide**](./Waydroid_Setup_Guide.md) to install Andr
 | **Containers (Distrobox / Quadlet)** | If not available in Bazaar, install the generic Linux package inside a Distrobox container and export it. For services, create a Quadlet. | Recommended if a Homebrew package does not exist. |
 | **AppImage** | Find an AppImage online at your own risk from a trusted source. Use Gear Lever (available in Bazaar) for proper system integration. | — |
 | **Package Layering** | If none of the above options work, layer the package at your own risk. | Layer only if no other option works. |
-| **Other** | Some software ships as a `.tar.gz` with an executable. It *may* run on Bazzite after making it executable in the file properties. Alternatively, use a Wine frontend (e.g., Lutris) for Windows versions. Waydroid may work if an Android port exists. | — |
+| **Standalone Linux Executables** | Some software ships as a `.tar.gz` with an executable. It *may* run on Bazzite after making it executable in the file properties. If the project contains instructions for running on a specific Linux distribution, it may be possible to run it with Distrobox. | — |
+| **Non-Linux Applications** | Use a Wine frontend (e.g., Lutris) for Windows versions. Waydroid may work if an Android port exists. | — |
 | **[Custom Image](../Advanced/creating_custom_image.md)** | — | Intended for alternate desktop environments or software for unusual hardware; a custom Bazzite image may be required.  |
