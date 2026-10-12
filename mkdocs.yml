@@ -80,6 +80,100 @@ plugins:
         - locale: cs
           name: Čeština
           build: true
+        - locale: ru
+          name: Русский
+          build: true
+          site_name: Документация Bazzite
+          theme:
+            language: ru
+          nav:
+            - Главная: index.md
+            - FAQ: "General/FAQ.md"
+            - Установка:
+                - "Установка Bazzite": General/Installation_Guide/index.md
+                - "Руководство по установке": General/Installation_Guide/install-guide.md
+                - "Настройка после установки": General/Installation_Guide/post-installation.md
+                - "Устранение проблем с установкой": General/Installation_Guide/troubleshoot_guide.md
+                - "Руководство по старому ISO-установщику": General/Installation_Guide/legacy-install.md
+                - "Альтернативная установка": General/Installation_Guide/alternate-install-guide.md
+            - Общее:
+                - "Общие руководства": General/index.md
+                - "Словарь и терминология": General/terms.md
+                - "Сравнение Bazzite и Fedora Atomic Desktop": General/Fedora_Atomic_Comparison.md
+                - "Сравнение со SteamOS": "General/SteamOS_Comparison.md"
+                - "Настройка рабочего стола": General/Desktop_Environment_Tweaks.md
+                - "Настройка VPN": General/VPN.md
+                - "Проблемы и решения": "General/issues_and_resolutions.md"
+                - "Сообщить об ошибке": General/reporting_bugs.md
+                - "Ресурсы сообщества": General/community-links.md
+                - "Политика безопасности": https://github.com/ublue-os/bazzite/blob/main/SECURITY.md
+                - "Лицензия": https://github.com/ublue-os/bazzite/blob/main/LICENSE
+                - "Пресс-кит": https://github.com/ublue-os/bazzite/tree/main/press_kit
+                - "Удаление Bazzite": General/uninstalling-bazzite.md
+            - Игры:
+                - "Игровые руководства": Gaming/index.md
+                - "Игры на Bazzite: введение": Gaming/gaming-intro.md
+                - "Совместимость оборудования для игр": Gaming/Hardware_compatibility_for_gaming.md
+                - "Игровые лаунчеры": Gaming/Game_Launchers.md
+                - "Управление играми и модификациями": Gaming/Managing_and_modding_games.md
+                - "Параметры запуска и переменные окружения": Gaming/launch-options-env-variables.md
+                - "Частые игровые проблемы": Gaming/Common_gaming_issues.md
+            - Bazzite-Deck:
+                - "Руководства Bazzite-Deck": Handheld_and_HTPC_edition/index.md
+                - "Bazzite-Deck: общий обзор": Handheld_and_HTPC_edition/Steam_Gaming_Mode.md
+                - "Особенности Steam Gaming Mode и обходные решения": Handheld_and_HTPC_edition/quirks.md
+                - "Совместимость портативных устройств":
+                    - Handheld_and_HTPC_edition/Handheld_Wiki/index.md
+                    - "Портативные устройства ASUS": Handheld_and_HTPC_edition/Handheld_Wiki/ASUS_ROG_Ally.md
+                    - "Портативные устройства Lenovo": Handheld_and_HTPC_edition/Handheld_Wiki/Lenovo_Legion_Go.md
+                    - "Портативные устройства GPD": Handheld_and_HTPC_edition/Handheld_Wiki/GPD_Handhelds.md
+                    - "Портативные устройства OneXPlayer": Handheld_and_HTPC_edition/Handheld_Wiki/OneXPlayer_Handhelds.md
+                    - "Портативные устройства Ayn": Handheld_and_HTPC_edition/Handheld_Wiki/Ayn_Handhelds.md
+                    - "Портативные устройства Ayaneo": Handheld_and_HTPC_edition/Handheld_Wiki/Ayaneo_Handhelds.md
+                    - "Steam Deck": Handheld_and_HTPC_edition/Handheld_Wiki/Steam_Deck.md
+                    - "Другие портативные устройства": Handheld_and_HTPC_edition/Handheld_Wiki/Other_Handhelds.md
+            - Программы:
+                - "Установка и управление программами":
+                    - Installing_and_Managing_Software/index.md
+                    - "Установка программ в Bazzite: введение": Installing_and_Managing_Software/software-intro.md
+                    - "Bazzite Portal": Installing_and_Managing_Software/Bazzite_Portal.md
+                    - "Команды ujust": Installing_and_Managing_Software/ujust.md
+                    - "Магазин приложений Bazaar": Installing_and_Managing_Software/Flatpak.md
+                    - "Homebrew": Installing_and_Managing_Software/Homebrew.md
+                    - "Контейнеры":
+                        - Installing_and_Managing_Software/Containers.md
+                        - "Distrobox": Installing_and_Managing_Software/Distrobox.md
+                        - "Quadlet": Installing_and_Managing_Software/Quadlet.md
+                    - "AppImage": Installing_and_Managing_Software/AppImage.md
+                    - "rpm-ostree": Installing_and_Managing_Software/rpm-ostree.md
+                    - "Настройка Waydroid": Installing_and_Managing_Software/Waydroid_Setup_Guide.md
+                - "Обновления, откаты и переходы на другие образы":
+                    - "Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/index.md"
+                    - "Руководство по обновлению": "Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/updating_guide.md"
+                    - "Откат системных обновлений": "Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/rolling_back_system_updates.md"
+                    - "Переход на другие образы": "Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/rebase_guide.md"
+                    - "Bazzite Rollback Helper": "Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/bazzite_rollback_helper.md"
+            - Продвинутое:
+                - "Продвинутые руководства": Advanced/index.md
+                - "Автомонтирование дополнительных дисков": Advanced/Auto-Mounting_Secondary_Drives.md
+                - "Управление Gamescope через ScopeBuddy": Advanced/scopebuddy.md
+                - "Пользовательские разрешения": Advanced/custom_resolution.md
+                - "Инструменты командной строки Bazzite": Advanced/bazzite-cli.md
+                - "Using Looking-Glass": Advanced/looking-glass.md
+                - "Лучшие практики для shell": Advanced/Best_Shell_Practices.md
+                - "Загрузка в rescue mode": Advanced/rescue-and-emergency-mode.md
+                - "Сброс забытого пароля": Advanced/Reset_Forgotten_User_Password.md
+                - "Swap для дополнительной памяти или гибернации": Advanced/swapfile.md
+                - "Подробные логи при загрузке": Advanced/plymouth_init.md
+                - "Настройка Sunshine в Bazzite": Advanced/sunshine.md
+                - "Как изменить Initramfs и Dracut": Advanced/dracut-and-initramfs.md
+                - "Создание собственного образа Bazzite": Advanced/creating_custom_image.md
+            - Bazzite-DX: https://dev.bazzite.gg
+            - Участие: https://universal-blue.org/contributing.html
+            - Сообщество: community.md
+            - Видео: https://www.youtube.com/playlist?list=PLuiT7cNvThNC956b5rtSPCjwcHe2tKBmY
+            - Поддержать проект: donations.md
+            - Скачать: https://bazzite.gg/#image-picker
         - locale: zh_HK
           name: 中文（香港）
           build: true
