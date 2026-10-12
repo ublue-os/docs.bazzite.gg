@@ -200,7 +200,6 @@ markdown_extensions:
   - md_in_html
   - nl2br
   - mdx_better_lists
-  - footnotes
   - toc:
       permalink: true
   - pymdownx.emoji:
