@@ -8,6 +8,7 @@ title: General Guides
 - [**Comparison of Bazzite and Fedora Atomic Desktop**](/General/Fedora_Atomic_Comparison.md)
 - [**SteamOS Comparison**](/General/SteamOS_Comparison.md)
 - [**Desktop Environment Tweaks**](/General/Desktop_Environment_Tweaks.md)
+- [**Backup Guide**](/General/Backup.md)
 - [**VPN Setup**](/General/VPN.md)
 - [**Issues & Resolution**](/General/issues_and_resolutions.md)
 - [**Reporting Bugs**](/General/reporting_bugs.md)
