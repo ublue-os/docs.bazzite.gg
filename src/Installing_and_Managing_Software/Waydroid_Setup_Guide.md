@@ -7,12 +7,7 @@ title: Waydroid Setup Guide
 ## What is Waydroid?
 
 ![Google Play Store|650x500](../img/Google_Play_Store.jpeg)
-
-!!! attention
-
-    Waydroid does **not** work on Nvidia hardware.
     
-
 ![Waydroid](../img/Waydroid.jpeg)
 
 [Waydroid](https://waydro.id/) is an Android container that runs on Linux. Bazzite users can run Android applications using this method.
