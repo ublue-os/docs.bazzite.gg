@@ -80,6 +80,9 @@ plugins:
         - locale: cs
           name: Čeština
           build: true
+        - locale: uk
+          name: Українська
+          build: true
         - locale: zh_HK
           name: 中文（香港）
           build: true
