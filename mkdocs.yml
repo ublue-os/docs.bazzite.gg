@@ -89,6 +89,11 @@ plugins:
           build: true
           theme:
             language: cs
+        - locale: uk
+          name: Українська
+          build: true
+          theme:
+            language: uk
         - locale: zh_CN
           name: 中文（中国）
           build: true
