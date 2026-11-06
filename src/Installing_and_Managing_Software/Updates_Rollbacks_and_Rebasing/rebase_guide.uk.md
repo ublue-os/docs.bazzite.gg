@@ -6,11 +6,11 @@ title: Посібник з перебазування
 
 ## Що таке перебазування?
 
-!!! warning "Перебазування між різними робочими середовищами (наприклад, з KDE Plasma на GNOME) **може спричинити проблеми** й **офіційно не підтримується**. Докладніше можна прочитати [тут](/General/FAQ/#can-i-switch-to-a-different-desktop-environment-on-my-current-installation)."
+!!! warning "Перебазування між різними робочими середовищами (наприклад, з KDE Plasma на GNOME) **може спричинити проблеми** й **офіційно не підтримується**. Докладніше можна прочитати [тут](../../General/FAQ.md#can-i-switch-to-a-different-desktop-environment-on-my-current-installation)."
 
 Перебазування дає змогу перейти на інший **варіант образу** та/або **гілку оновлень** _без_ перевстановлення і без втрати особистих файлів і даних застосунків.
 
-> Для перебазування рекомендуємо використовувати [Bazzite Portal](/Installing_and_Managing_Software/Bazzite_Portal.md) або [утиліту Bazzite Rollback Helper](./bazzite_rollback_helper.md).
+> Для перебазування рекомендуємо використовувати [Bazzite Portal](../Bazzite_Portal.md) або [утиліту Bazzite Rollback Helper](./bazzite_rollback_helper.md).
 
 ---
 
@@ -74,7 +74,7 @@ title: Посібник з перебазування
 
 ### Перебазування на інший варіант Bazzite
 
-Перебазування дуже схоже на оновлення (чи радше навпаки), адже Bazzite просто завантажується з нового [завантажувального образу контейнера](/General/terms/?h=bootable+container+image#underlying-technology). Усі наведені нижче команди лише завантажують і готують новий образ, з якого завантажиться система.
+Перебазування дуже схоже на оновлення (чи радше навпаки), адже Bazzite просто завантажується з нового [завантажувального образу контейнера](../../General/terms.md#underlying-technology). Усі наведені нижче команди лише завантажують і готують новий образ, з якого завантажиться система.
 
 !!! tip "Якщо це ще не очевидно: щоб завершити перебазування, після виконання наведених нижче команд потрібно перезавантажитися."
 
@@ -82,7 +82,7 @@ title: Посібник з перебазування
 
 === "Bazzite Portal"
 
-    [Bazzite Portal](/Installing_and_Managing_Software/Bazzite_Portal.md) має два пункти для зручного перемикання між гілками оновлень `stable` і `testing`.
+    [Bazzite Portal](../Bazzite_Portal.md) має два пункти для зручного перемикання між гілками оновлень `stable` і `testing`.
     
     Просто виберіть **Bazzite Portal → Manage Bazzite → Move to the stable update track/Move to the testing update track**.
     
@@ -155,7 +155,7 @@ title: Посібник з перебазування
     Rebase failed. Image may not exist or be accessible.
     ```
 
-    Це означає, що варіант образу чи гілка, на які ви намагаєтеся перебазуватися, збігаються з поточними. Просто [оновіться](/Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/updating_guide/), щоб отримати найновішу версію поточного образу.
+    Це означає, що варіант образу чи гілка, на які ви намагаєтеся перебазуватися, збігаються з поточними. Просто [оновіться](./updating_guide.md), щоб отримати найновішу версію поточного образу.
 
 ---
 
@@ -191,7 +191,7 @@ title: Посібник з перебазування
 
 ## Перемикання гілок оновлень в ігровому режимі Steam
   
-> Див. [тут](/Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/rebase_guide/#__tabbed_2_3).
+> Див. [тут](#__tabbed_2_3).
 
 ---
 

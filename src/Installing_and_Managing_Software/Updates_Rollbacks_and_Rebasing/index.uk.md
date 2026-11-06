@@ -26,7 +26,7 @@ title: Оновлення, відкати та перебазування
 
 !!! warning
 
-    **Не** перебазовуйтеся на інше робоче середовище, ніж те, яким користуєтеся зараз. Докладніше — [тут](/General/FAQ/#can-i-switch-to-a-different-desktop-environment-on-my-current-installation).
+    **Не** перебазовуйтеся на інше робоче середовище, ніж те, яким користуєтеся зараз. Докладніше — [тут](../../General/FAQ.md#can-i-switch-to-a-different-desktop-environment-on-my-current-installation).
 
 Перебазовуйтеся на збірки Bazzite за останні 90 днів, змінюйте канали оновлень Bazzite, перемикайтеся між образами для настільних ПК і Bazzite-Deck або повністю переходьте на інший образ Fedora Atomic Desktop.
 
@@ -48,7 +48,7 @@ Bazzite має кілька утиліт, які допомагають нала
 
     Bazzite Portal — це графічний інтерфейс для поширених налаштувань і змін системи за допомогою скриптів `just`. Тут можна перебазуватися на популярні гілки оновлень, як-от `testing`.
 
-    > [**Bazzite Portal**](/Installing_and_Managing_Software/Bazzite_Portal.md)
+    > [**Bazzite Portal**](../Bazzite_Portal.md)
 
 === "Bazzite Rollback Helper"
 

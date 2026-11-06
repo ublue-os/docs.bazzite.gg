@@ -8,7 +8,7 @@ title: Bazzite Rollback Helper
 
 !!! note
 
-    [Bazzite Portal](/Installing_and_Managing_Software/Bazzite_Portal.md) показує команди Bazzite Rollback Helper у графічному інтерфейсі.
+    [Bazzite Portal](../Bazzite_Portal.md) показує команди Bazzite Rollback Helper у графічному інтерфейсі.
 
 ---
 
@@ -16,7 +16,7 @@ title: Bazzite Rollback Helper
 
 `bazzite-rollback-helper` — це утиліта командного рядка, яка спрощує відкат оновлень системи та зміну **варіанта образу** / **гілки оновлень**. Базова команда `rpm-ostree rebase` вимагає вказувати для перебазування **повне посилання ostree**, а `brh rebase` автоматично доповнить решту за вас.
 
-> Докладні посібники з перебазування можна знайти [тут](/Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/rebase_guide.md).
+> Докладні посібники з перебазування можна знайти [тут](./rebase_guide.md).
 
 ---
 
@@ -57,7 +57,7 @@ bazzite-rollback-helper
 
 ### Перебазування на старіший образ Bazzite
 
-> Див. [Посібник з перебазування](/Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/rebase_guide/#rebasing-to-older-builds)
+> Див. [Посібник з перебазування](./rebase_guide.md#rebasing-to-older-builds)
 
 ---
 
