@@ -60,7 +60,7 @@ Bazzite оновлює власні налаштування, пакети з Fe
 
 ## Як переглянути список змін для кожного оновлення?
 
-Списки змін можна переглянути в [Bazzite Updater](./bazzite_updater/#viewing-changlogs) або на сторінці [GitHub Releases](https://github.com/ublue-os/bazzite/releases).
+Списки змін можна переглянути в [Bazzite Updater](./bazzite_updater.md#viewing-changelogs) або на сторінці [GitHub Releases](https://github.com/ublue-os/bazzite/releases).
 
 !!! tip "Під час перегляду звертайте увагу на свою **поточну версію образу** та гілку. Багато релізів призначені лише для гілки **testing**."
 

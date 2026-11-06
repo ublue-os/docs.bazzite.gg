@@ -35,7 +35,7 @@ title: Посібник з перебазування
 
 === "Bazzite Updater"
 
-    У [Bazzite Updater](./bazzite-updater.md) перейдіть до **Other Utilities → System Image Information → Current Image**.
+    У [Bazzite Updater](./bazzite_updater.md) перейдіть до **Other Utilities → System Image Information → Current Image**.
 
     Ви побачите поточну версію системи у форматі `IMAGE:TAG`.
 
