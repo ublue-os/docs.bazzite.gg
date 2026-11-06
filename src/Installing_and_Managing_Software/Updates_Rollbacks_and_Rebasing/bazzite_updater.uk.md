@@ -42,6 +42,6 @@ title: Bazzite Updater
 
 ![Add Bazzite Updater to Steam|897x612, 50%](/img/bazzite-updater-add-to-steam.png)
 
-У [Bazzite Portal](/Installing_and_Managing_Software/Bazzite_Portal.md) виберіть **Manage Bazzite → Update your system → Add Bazzite Updater to Steam Big Picture**.
+У [Bazzite Portal](../Bazzite_Portal.md) виберіть **Manage Bazzite → Update your system → Add Bazzite Updater to Steam Big Picture**.
 
 ---

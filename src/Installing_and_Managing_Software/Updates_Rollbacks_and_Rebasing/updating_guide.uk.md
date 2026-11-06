@@ -45,7 +45,7 @@ Bazzite оновлює власні налаштування, пакети з Fe
     ujust update
     ```
     
-    !!! note "Якщо із системою виникли проблеми, зверніться по допомогу на [Discord-сервер Bazzite](/community/#discord-no-discord-account)"
+    !!! note "Якщо із системою виникли проблеми, зверніться по допомогу на [Discord-сервер Bazzite](../../community.md#discord-no-discord-account)"
 
 ---
 

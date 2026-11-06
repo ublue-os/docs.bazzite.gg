@@ -14,7 +14,7 @@ Bazzite пропонує кілька способів повернутися д
 
     Якщо вам доступний графічний сеанс, можна відкотити оновлення за допомогою Bazzite Updater.
     
-    > Меню відкату можна відкрити [тут](/Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/bazzite_updater/#rollback-updates).
+    > Меню відкату можна відкрити [тут](./bazzite_updater.md#rollback-updates).
     
     Якщо пристрій завантажується в чорний екран, скористайтеся способом [**Перед завантаженням Bazzite (GRUB)**](#__tabbed_1_3).
 
@@ -128,7 +128,7 @@ sudo ostree admin pin -u <id>
 
 Flatpak-застосунками зручно керувати й повертати їх до старіших версій у Warehouse.
 
-> Про заздалегідь встановлений застосунок Warehouse читайте [тут](/Installing_and_Managing_Software/Flatpak.md#warehouse).
+> Про заздалегідь встановлений застосунок Warehouse читайте [тут](../Flatpak.md#warehouse).
 
 ---
 
