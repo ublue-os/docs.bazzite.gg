@@ -35,7 +35,7 @@ Check the Image Flavor and Update Branch of your system first.
 
 === "Bazzite Updater"
 
-    In [Bazzite Updater](./bazzite-updater.md), go to **Other Utilities → System Image Information → Current Image**.
+    In [Bazzite Updater](./bazzite_updater.md), go to **Other Utilities → System Image Information → Current Image**.
 
     You will see your current system version in the format of `IMAGE:TAG`.
 
