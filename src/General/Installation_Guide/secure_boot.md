@@ -8,17 +8,15 @@ search:
 
 # Secure Boot Guide
 
-## Bazzite Supports Secure Boot
+## What is Secure Boot?
 
-!!! note
+Secure Boot is a security feature that checks your bootloader and operating system really come from Bazzite and haven't been tampered with before letting them start. Future anti-cheats will require it to be enabled. Your PC already trusts Microsoft's keys, but not the Universal Blue key that Bazzite is signed with, so you need to enroll that key once.
 
-    Click "Continue boot" if your device doesn't support Secure Boot or you don't want to enable it.
+Terminology: 
 
-!!! important
-
-    The enrollment prompt uses an English QWERTY keyboard layout, indiscriminately of your actual hardware keyboard. Other layouts can therefore interfere with the characters of the password (i.e. `A` and `Q` are swapped on AZERTY layouts).
-
-Bazzite supports Secure Boot however Universal Blue's key must be enrolled to use it otherwise keeping Secure Boot on in your BIOS will result in Bazzite not booting.
+* MOK (Machine Owner Key): a key you choose to trust on top of the ones your PC shipped with. Universal Blue's key is added as a MOK.
+* MokManager: the blue screen at boot where you confirm the enrollment by choosing Enroll MOK and entering universalblue.
+* Shim: a small bootloader signed by Microsoft that your PC trusts out of the box. It checks Bazzite against your enrolled MOKs.
 
 ## Important Secure Boot Notes:
 
