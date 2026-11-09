@@ -18,7 +18,7 @@ title: Dictonary & Terminology
 -   **[Steam Deck](https://store.steampowered.com/steamdeck)**: Valve's gaming handheld PC that utilizes their own operating system which runs their own Linux operating system based around the [Steam client](https://store.steampowered.com/about/download).
 -   **[SteamOS](https://www.steamdeck.com/en/software)**: Valve's Linux operating system based on [Arch Linux](https://archlinux.org/) that the Steam Deck runs.
 -   **[Gamescope](https://github.com/ValveSoftware/gamescope)**: Micro-compositor developed for SteamOS.  Usage includes scaling, filtering, framerate limiting, and HDR support.
--   **[Steam Gaming Mode](https://github.com/bazzite-org/gamescope-session)**: A session that runs Steam's Big Picture Mode user interface inside of Gamescope.  Also known as *Game Mode*.
+-   **[Steam Gaming Mode](https://github.com/OpenGamingCollective/gamescope-session)**: A session that runs Steam's Big Picture Mode user interface inside of Gamescope.  Also known as *Game Mode*.
 
 ## Software
 
