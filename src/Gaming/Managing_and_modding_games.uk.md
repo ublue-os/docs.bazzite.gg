@@ -63,7 +63,7 @@ title: Керування іграми та моди
     
     1. Виберіть гру в Protontricks
     2. Натисніть **Вибрати wineprefix за замовчуванням** (Select the default wineprefix)
-    3. Натисніть **Видалити УСІ ДАНІ ТА ПРОГРАМИ З ЦЬОГО WINEPREFIX** (Delete ALL DATA AND APPLICATIONS INSIDE THIS WINEPREFIX)
+    3. Натисніть **Delete ALL DATA AND APPLICATIONS INSIDE THIS PROTON PREFIX** (Protontricks показує цей пункт англійською)
     
 === "Видалення вручну"
     

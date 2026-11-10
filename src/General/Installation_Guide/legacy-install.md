@@ -275,7 +275,7 @@ Bazzite supports Secure Boot however Universal Blue's key must be enrolled to us
 
 ```
 error: ../../grub-core/kern/efi/sb.c:182:bad shim signature.
-error: ../../grub-core/loader/1389/efi/linux.c:256:you need to load the kernel first.
+error: ../../grub-core/loader/i386/efi/linux.c:256:you need to load the kernel first.
 
 Press any key to continue...
 ```

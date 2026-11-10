@@ -110,7 +110,7 @@ There are currently no plans to support Kepler and older architectures (Most GTX
 
 ### What if I change hardware?
 
-Most hardware changes should **not** require any manual intervention outside of the expectations from that particular hardware which would be OS-agnostic.  However, if you swap from or to a Nvidia GPU, then [rebasing](../Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/brh.md) will be necessary as a manual intervention to get the appropriate graphics drivers.
+Most hardware changes should **not** require any manual intervention outside of the expectations from that particular hardware which would be OS-agnostic.  However, if you swap from or to a Nvidia GPU, then [rebasing](../Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/bazzite_rollback_helper.md) will be necessary as a manual intervention to get the appropriate graphics drivers.
 
 ## `error: System transaction in progress` shows up when updating the system manually
 
@@ -189,7 +189,7 @@ Deployments can also be pinned to rollback for future use, so `:2`, `:3`, etc. c
 
 ## Why is it called Bazzite?
 
-[Fedora Linux's Atomic Desktops](https://fedoraproject.org/atomic-desktops/) originally followed a naming scheme based on [minerals.](https://fedoraproject.org/kinoite/) Bazzite is a mineral that is known for being strong, lightweight, and is [blue](https://universal-blue.org/).
+[Fedora Linux's Atomic Desktops](https://fedoraproject.org/atomic-desktops/) originally followed a naming scheme based on [minerals.](https://fedoraproject.org/atomic-desktops/kinoite/) Bazzite is a mineral that is known for being strong, lightweight, and is [blue](https://universal-blue.org/).
 
 ## I want Bazzite on a device where video games are not a priority
 

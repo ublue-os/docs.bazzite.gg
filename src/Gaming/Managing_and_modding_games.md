@@ -45,7 +45,7 @@ For games on Steam, they are located in your `~/.steam/root/steamapps/compatdata
 
 !!! tip
     
-    You can open this folder by using ProtonPlus → **Games** tab and selecting **Open prefix directory** under each respective game.
+    You can open this folder by using ProtonPlus → **Games** tab and selecting **Open Prefix Folder** under each respective game.
     ![Open Prefix through ProtonPlus|1777x853, 25%](../img/protonplus_open_prefix.png)
 
 - This ID by going into the game's properties on Steam in the games **Properties** → **Updates** → **App ID**
@@ -89,7 +89,7 @@ WINE DLL overrides can be set using any of the following methods:
 
     1. Select your game in Protontricks
     2. Click **Select the default wineprefix**
-    3. Click **Run wincfg**
+    3. Click **Run winecfg**
     4. Under the Libraries tab, add your DLL override
     
 === "Wine Configuration (Non-Steam games)"
