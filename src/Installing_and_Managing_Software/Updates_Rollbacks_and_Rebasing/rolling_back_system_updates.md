@@ -117,7 +117,7 @@ sudo ostree admin pin -u <id>
     ```bash
     sudo ostree admin pin -u 0
     ```
-    The command to pin the previous deployment will be:
+    The command to unpin the previous deployment will be:
     ```bash
     sudo ostree admin pin -u 1
     ```

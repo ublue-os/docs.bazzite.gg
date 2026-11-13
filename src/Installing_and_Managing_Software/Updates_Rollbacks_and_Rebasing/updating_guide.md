@@ -60,7 +60,7 @@ Bazzite updates its own customizations, Fedora’s upstream packages, graphics d
 
 ## How do I view the changelog for each update?
 
-Changelogs can be viewed in [Bazzite Updater](./bazzite_updater/#viewing-changlogs) or [GitHub Releases](https://github.com/ublue-os/bazzite/releases).
+Changelogs can be viewed in [Bazzite Updater](./bazzite_updater.md#viewing-changelogs) or [GitHub Releases](https://github.com/ublue-os/bazzite/releases).
 
 !!! tip "Make sure to take note of your **current image version** and branch when viewing. A lot of releases are for the **testing** branch only."
 

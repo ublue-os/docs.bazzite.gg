@@ -27,7 +27,7 @@ After this, your boot manager should boot normally showing "FEDORA" as the optio
 
 !!! note
 
-The new installer may not boot if your BIOS is in CSM Legacy boot as opposed to UEFI. Read more in the [**Bazzite system requirements**](../../Gaming/Hardware_compatibility_for_gaming.md#minimum-system-requirements).
+    The new installer may not boot if your BIOS is in CSM Legacy boot as opposed to UEFI. Read more in the [**Bazzite system requirements**](../../Gaming/Hardware_compatibility_for_gaming.md#minimum-system-requirements).
 
 Use the [legacy ISO](./legacy-install.md) or try the [alternative method](./alternate-install-guide.md) of installing Bazzite.
 

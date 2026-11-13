@@ -10,7 +10,7 @@ title: Homebrew
 
 !!! note
 
-    Any package that requires root privileges will either need a rootful Distrobox container or has to be layered with `rpm-ostree`.
+    Any [formula](#formulae-and-casks) that requires root privileges will either need a rootful Distrobox container or has to be layered with `rpm-ostree`.
 
 Homebrew is a package manager that installs packages into their own prefix. It is primarily used for command-line interface (CLI) and terminal user interface (TUI) applications. Homebrew can also install graphical applications using the `--cask` flag, but most are for macOS as support for casks on Linux is still developing. Use the Bold Brew application or the terminal using the command below to install packages.
 
@@ -23,6 +23,33 @@ brew install <package>
 !!! note
 
     For multiple user or atypical setups only: Root privileges (`sudo`) will be required to install Homebrew packages because it uses the `linuxbrew` user to install them.
+
+## Formulae and casks
+
+Homebrew installs two kinds of packages:
+
+- **Formulae** are command-line programs, for example `go` or `node`. They are installed into the Homebrew prefix (`/home/linuxbrew/.linuxbrew`).
+- **Casks** are ready-made applications, mostly graphical ones, and fonts. Graphical casks add a shortcut to the application menu. [Bazzite Portal](./Bazzite_Portal.md) installs some applications as casks, for example Visual Studio Code (`visual-studio-code-linux`).
+
+The command above installs formulae. To install a cask, add `--cask`:
+
+```
+brew install --cask <cask>
+```
+
+!!! note
+
+    Some casks change system files, for example to add a system service. These casks can ask for your password with `sudo` when you install, upgrade or remove them. If an automatic update cannot upgrade such a cask, upgrade it manually in a terminal:
+
+    ```
+    brew upgrade --cask <cask>
+    ```
+
+    If the password prompt does not appear and the command fails with a `sudo` error, run it like this instead. This makes `sudo` ask for the password in the terminal rather than in a separate window:
+
+    ```
+    env -u SUDO_ASKPASS brew upgrade --cask <cask>
+    ```
 
 ## Bold Brew
 

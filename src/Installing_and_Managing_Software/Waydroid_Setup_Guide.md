@@ -215,7 +215,73 @@ ujust configure-waydroid
 
 Then `Select GPU for Waydroid` which will give the option on what GPU to utilize for Waydroid to fix graphical corruptions.
 
+### NVIDIA GPUs
+
+Bazzite's NVIDIA images ship `waydroid-nvidia` instead of stock Waydroid. It replaces the graphics stack so Android renders on the NVIDIA GPU, and it has three driver modes:
+
+| Mode | How it works | When to use |
+| :--- | :--- | :--- |
+| `nvidia-prolapse` (default) | Mesa's NVK Vulkan driver runs **inside** Android and talks to the kernel module directly | almost always |
+| `glibc-shim` | your host's own NVIDIA driver runs inside Android through compatibility libraries | when the default mode misbehaves |
+| `venus` | Android's Vulkan calls go over a unix socket to a renderer on the host | older installs, and hosts where the other modes fail |
+
+Pick one with:
+
+```bash
+sudo waydroid-nvidia-setup --mode nvidia-prolapse
+```
+
+Add `-s GAPPS` on the first setup if you want the Google apps image:
+
+```bash
+sudo waydroid-nvidia-setup --mode nvidia-prolapse -s GAPPS
+```
+
+!!! note "Open kernel modules"
+
+    These modes need NVIDIA's **open kernel modules**. The `bazzite-nvidia-open` images ship them; with the closed module only `glibc-shim` is a viable option. NVIDIA stopped shipping the closed module for Turing and newer from driver 615.
+
+!!! warning "Run the setup with the container stopped"
+
+    If `waydroid-container` is running, its `vendor.img` is already loop-mounted and the setup fails with `wrong fs type, bad option, bad superblock on /dev/loop*`. Stop it first:
+
+    ```bash
+    sudo systemctl stop waydroid-container
+    sudo waydroid-nvidia-setup --mode nvidia-prolapse
+    ```
+
+!!! warning "The vendor image is tied to the kernel module"
+
+    The image installed by the setup is gated on the NVIDIA kernel module it ran on. After a kernel or driver update the container **refuses to start** until the setup runs again. Symptom, in the journal:
+
+    ```
+    NVIDIA driver mode nvidia-prolapse: install record ... is invalid
+    ```
+
+    Running `sudo waydroid-nvidia-setup --mode nvidia-prolapse` again is the fix. If the new driver version is not in the release's supported range, wait for an update rather than forcing it.
+
+!!! tip "Hybrid laptops with the desktop on the NVIDIA GPU"
+
+    In `venus` mode the render server offers every Vulkan device on the host to Android, and Android's UI toolkit always picks the **first** one. When the integrated GPU comes first, every window fails to import its buffer and Waydroid shows nothing. Pin the render server to NVIDIA:
+
+    ```bash
+    mkdir -p ~/.config/systemd/user/wd-venus.service.d
+    cat > ~/.config/systemd/user/wd-venus.service.d/20-nvidia-only.conf <<'EOF'
+    [Service]
+    Environment=VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/nvidia_icd.x86_64.json
+    EOF
+    systemctl --user daemon-reload
+    systemctl --user restart wd-venus
+    ```
+
+    Use the exact file name (`nvidia_icd.x86_64.json`); a wrong path leaves the render server with no driver and it restart-loops. `nvidia-prolapse` is not affected by this.
+
+!!! note "Android versions"
+
+    The official Waydroid images are still Android 13. Newer Android versions come from community builds and are outside what the setup above supports.
+
 ### Reset Waydroid
+
 
 !!! warning
 
