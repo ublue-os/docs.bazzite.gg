@@ -12,25 +12,29 @@ Quadlet is a feature of [podman](https://podman.io/) that allows a user to run a
 
 Quadlet can be used for application packaged as a container such as a server application. You can find a lot of examples of containerized applications from [Linux Server](https://docs.linuxserver.io/images/).
 
+---
+
 ## Managing Quadlet
 
 Quadlet can be managed like any other systemd service using below command.
 
-**Checking Quadlet status**
-```sh
+Checking Quadlet status
+```bash
 systemctl --user status <service>
 ```
 
-**Stopping Quadlet**
-```sh
+Stopping Quadlet
+```bash
 systemctl --user stop <service>
 ```
 
-You can see more commands in [man systemctl](https://man.archlinux.org/man/systemctl.1) or [tldr systemctl](https://tldr.inbrowser.app/pages/linux/systemctl).
+> You may see more commands in [man systemctl](https://man.archlinux.org/man/systemctl.1) or [tldr systemctl](https://tldr.inbrowser.app/pages/linux/systemctl).
 
 !!! note
 
     Do not add the `.container` suffix when you interact with systemctl or an error will occur.
+
+---
 
 ### Quadlet File Locations
 
@@ -45,6 +49,8 @@ You can put your quadlet in these locations sorted by priority:
 
     If you want your service to start even when you are not logged in, run `loginctl enable-linger $USER` to start it automatically.
 
+---
+
 ### Running Quadlet on Startup
 
 You may want to run your quadlet automatically on startup, just add an install section to the quadlet file if you want it to autostart. Most of the time `default.target` is what you want but if you need other target you can read about that on systemd docs.
@@ -54,6 +60,8 @@ You may want to run your quadlet automatically on startup, just add an install s
 WantedBy=default.target
 ```
 
+---
+
 ### Converting Docker Compose to Quadlet Unit
 
 You will find that most of containerized apps in the web are built using docker compose. Even the Linux Server that is linked above has all containers documented using a compose file. So you will need to convert it first, before running it as quadlet, fortunately you can use [podlet](https://github.com/containers/podlet) to help you converting it.
@@ -62,14 +70,19 @@ You will find that most of containerized apps in the web are built using docker 
 
     By default quadlet require full repository name. Most images are in docker hub so add `docker.io/` (e.g "nginxinc/nginx-unprivileged" becomes "docker.io/nginxinc/nginx-unprivileged") to it.
 
+---
+
 ### Running Rootful Container as Quadlet
 
 While ideally you would run all containers using rootless podman, unfortunately not all containers will work with it.  Use rootful podman by using a different quadlet path and run using root systemctl (without `--user`).
 
 Rootful Quadlet Paths
+
 - `/run/containers/systemd/` - Temporary quadlet
-- `/etc/containers/systemd/` - Recommended location
-- `/usr/share/containers/systemd/` - Image defined
+- `/etc/containers/systemd/` - **Recommended location**
+- `/usr/share/containers/systemd/` - Image defined (unavailable)
+
+---
 
 ## Common Quadlet Key Description
 
@@ -92,120 +105,132 @@ If your quadlet for some reason isn't found or starting, you can debug the conta
 
 It's handy to get log output directly when you start the quadlet, add the `--verbose` flag, for example: `systemctl --user start --verbose myapp.service`
 
+---
+
 ## Examples
 
-Real world examples for Quadlet usage.
+!!! example "Below shows some real world examples for Quadlet usage."
 
-### Minecraft Server Hosting
+    ### Minecraft Server Hosting
 
-!!! note
+    !!! note
 
-    Don't forget to run `systemctl --user daemon-reload` after creating the file
+        Don't forget to run `systemctl --user daemon-reload` after creating the file
 
-Documentation: https://docker-minecraft-server.readthedocs.io/en/latest
-Quadlet File:
-```
-# ~/.config/containers/systemd/minecraft.container
-[Container]
-ContainerName=minecraft
-Environment=EULA=TRUE
-Image=docker.io/itzg/minecraft-server
-AutoUpdate=registry
-PublishPort=25565:25565
-Volume=/path/to/data:/data:z
+    Documentation: https://docker-minecraft-server.readthedocs.io/en/latest
+    Quadlet File:
+    ```
+    # ~/.config/containers/systemd/minecraft.container
+    [Container]
+    ContainerName=minecraft
+    Environment=EULA=TRUE
+    Image=docker.io/itzg/minecraft-server
+    AutoUpdate=registry
+    PublishPort=25565:25565
+    Volume=/path/to/data:/data:z
 
-# Remove if you don't want autostart
-[Install]
-WantedBy=default.target
-```
-!!! note
+    # Remove if you don't want autostart
+    [Install]
+    WantedBy=default.target
+    ```
+    !!! note
 
-    Use absolute path for volume, e.g `/home/username/minecraft/data`.
+        Use absolute path for volume, e.g `/home/username/minecraft/data`.
+    
+    ---
 
-### NGINX Web Server
+    ### NGINX Web Server
 
-Create a file called `~/.config/containers/systemd/nginx.container` with content below.
-```
-[Container]
-ContainerName=nginx
-Image=docker.io/nginxinc/nginx-unprivileged
-AutoUpdate=registry
-PublishPort=8080:8080
-```
+    Create a file called `~/.config/containers/systemd/nginx.container` with content below.
+    ```
+    [Container]
+    ContainerName=nginx
+    Image=docker.io/nginxinc/nginx-unprivileged
+    AutoUpdate=registry
+    PublishPort=8080:8080
+    ```
 
-Save it and run the code below.
+    Save it and run the code below.
 
-```sh
-systemctl --user daemon-reload
-systemctl --user start nginx
-xdg-open localhost:8080
-```
+    ```sh
+    systemctl --user daemon-reload
+    systemctl --user start nginx
+    xdg-open localhost:8080
+    ```
+    
+    ---
 
-### Plex Media Server
+    ### Plex Media Server
 
-Documentation: https://github.com/plexinc/pms-docker
-Quadlet File:
-```
-# ~/.config/containers/systemd/plex.container
-[Container]
-ContainerName=plex
-Environment=TZ=Your/TimeZone
-Image=docker.io/plexinc/pms-docker
-AutoUpdate=registry
-Network=host
-Volume=/path/to/config:/config:z
-Volume=/path/to/transcode:/transcode:z
-Volume=/path/to/media:/data:z
+    Documentation: https://github.com/plexinc/pms-docker
+    Quadlet File:
+    ```
+    # ~/.config/containers/systemd/plex.container
+    [Container]
+    ContainerName=plex
+    Environment=TZ=Your/TimeZone
+    Image=docker.io/plexinc/pms-docker
+    AutoUpdate=registry
+    Network=host
+    Volume=/path/to/config:/config:z
+    Volume=/path/to/transcode:/transcode:z
+    Volume=/path/to/media:/data:z
 
-# Remove if you don't want autostart
-[Install]
-WantedBy=default.target
-```
-!!! note
+    # Remove if you don't want autostart
+    [Install]
+    WantedBy=default.target
+    ```
+    !!! note
 
-    You can find list of timezones [here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
-!!! note
+        You can find list of timezones [here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
+    !!! note
 
-    Use absolute path for volume, e.g `/home/username/plex/config`.
-!!! note
+        Use absolute path for volume, e.g `/home/username/plex/config`.
+    !!! note
 
-    You can mount multiple volumes for your media, e.g `Volume=/path/to/media:/tv:z` and `Volume=/path/to/another/media:/movie:z`. Consult the documentation for more info.
+        You can mount multiple volumes for your media, e.g `Volume=/path/to/media:/tv:z` and `Volume=/path/to/another/media:/movie:z`. Consult the documentation for more info.
 
 
-#### Video Tutorial
-https://www.youtube.com/watch?v=xTVFmvyZGpg
+    #### Video Tutorial
+    https://www.youtube.com/watch?v=xTVFmvyZGpg
+    
+    ---
 
-### Samba Server
+    ### Samba Server
 
-Documentation: https://github.com/ServerContainers/samba
-Quadlet File:
-```
-# /etc/containers/systemd/samba.container
-[Container]
-Environment=ACCOUNT_username=password
-# Protected share with write access
-Environment="SAMBA_VOLUME_CONFIG_protected=[My Share]; path=/shares/protected; valid users = username; guest ok = no; read only = no; browseable = yes"
-# Open share with readonly access
-Environment="SAMBA_VOLUME_CONFIG_guest=[Guest Share]; path=/shares/guest; guest ok = yes; browseable = yes"
-Image=ghcr.io/servercontainers/samba:smbd-only-latest
-AutoUpdate=registry
-Network=host
-Volume=/path/to/protected:/shares/protected:z
-Volume=/path/to/guest:/shares/guest:z
+    Documentation: https://github.com/ServerContainers/samba
+    Quadlet File:
+    ```
+    # /etc/containers/systemd/samba.container
+    [Container]
+    Environment=ACCOUNT_username=password
+    # Protected share with write access
+    Environment="SAMBA_VOLUME_CONFIG_protected=[My Share]; path=/shares/protected; valid users = username; guest ok = no; read only = no; browseable = yes"
+    # Open share with readonly access
+    Environment="SAMBA_VOLUME_CONFIG_guest=[Guest Share]; path=/shares/guest; guest ok = yes; browseable = yes"
+    Image=ghcr.io/servercontainers/samba:smbd-only-latest
+    AutoUpdate=registry
+    Network=host
+    Volume=/path/to/protected:/shares/protected:z
+    Volume=/path/to/guest:/shares/guest:z
 
-# Remove if you don't want autostart
-[Install]
-WantedBy=default.target
-```
-!!! note
+    # Remove if you don't want autostart
+    [Install]
+    WantedBy=default.target
+    ```
+    !!! note
 
-    You can find list of timezone [here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
-!!! note
+        You can find list of timezone [here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
+    !!! note
 
-    Use absolute path for volume, e.g `/home/username/samba/guest`.
+        Use absolute path for volume, e.g `/home/username/samba/guest`.
+
+---
 
 ## Useful Links
 
 - https://podman.io/
 - https://docs.podman.io/en/stable/markdown/podman-systemd.unit.5.html
 - https://www.redhat.com/en/blog/quadlet-podman
+
+---

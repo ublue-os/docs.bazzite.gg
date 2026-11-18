@@ -9,7 +9,7 @@ title: Bazzite Portal
 The Bazzite Portal is a configuration tool that uses [`ujust`](./ujust.md) commands to enable features, install system updates, install specific packages, and troubleshoot system issues:
 
 - Installs useful tools like [Decky](https://github.com/SteamDeckHomebrew/decky-loader), [OpenRGB](https://github.com/calcprogrammer1/openrgb), and [Waydroid](https://github.com/waydroid/waydroid).
-- Uses [`topgrade`](https://github.com/topgrade-rs/topgrade) to install updates for multiple package managers, including Bazzite, Flatpak (Bazaar), firmware (`fwupdmgr`), and Brew.
+- Uses [`uupd`](https://github.com/ublue-os/uupd) to install updates for multiple package managers, including Bazzite, Flatpak (Bazaar), firmware (`fwupdmgr`), and Brew.
 - Installs Homebrew apps from the [Universal Blue tap](https://github.com/ublue-os/homebrew-tap), and adds web apps for various streaming services.
 - Gathers system logs, rolls back system updates, resets Bazzite to its default configuration, or rebases your system to a different version.
 
@@ -23,16 +23,15 @@ The Bazzite Portal is installed by default. To launch the app:
 
 === "KDE Plasma"
 
-    1\. Click **Application Launcher** in the bottom-left corner.
-    2\. Click **System**.
-    3\. Click **Bazzite Portal**.
+    1. Click **Application Launcher** in the bottom-left corner.
+    2. Click **System**.
+    3. Click **Bazzite Portal**.
 
 === "GNOME"
 
-    1\. Click the **Activities** button in the top-left corner.
-    2\. Click **App Grid**.
-    3\. Type in "Bazzite".
-    4\. In the search results, click **Bazzite Portal**.
+    1. Click the **Activities** button in the top-left corner.
+    2. Click **App Grid**.
+    3. Type to search and click **"Bazzite Portal"**.
 
 ## Configuration Settings
 
@@ -42,7 +41,7 @@ The Bazzite Portal's features are organized into categories:
 
 Below is a list of non-exhaustive previews, containing select entries of each category.
 
-<hr>
+---
 
 ### Welcome!
 
@@ -56,7 +55,7 @@ This category provides essential resources, community links, and documentation t
 | **See our announcements in Discourse** | Links to Discourse forum announcements for breaking Bazzite news. | `xdg-open https://universal-blue.discourse.group/tags/c/bazzite/announcements/` |
 | **Join the official community on Reddit** | Opens the official Bazzite subreddit. | `xdg-open https://www.reddit.com/r/Bazzite/` |
 
-<hr>
+---
 
 ### Install Applications
 
@@ -72,7 +71,7 @@ This category offers software packages, development toolchains, gaming plugins, 
 | **VSCodium** | Open source community edition of Visual Studio Code (via Brew). | Brew cask script |
 | **Waydroid** | Android container compatibility layer for Linux. | `configure-waydroid` |
 
-<hr>
+---
 
 ### Media Applications
 
@@ -82,7 +81,7 @@ This integration lets you run the web app directly from your Steam library. For 
 
 ![Screenshot of the Spotify web app in the Steam Library|460x243, 70%](../img/Steam_Library_spotify.png)
 
-<hr>
+---
 
 ### Manage Bazzite
 
@@ -102,7 +101,7 @@ This category lets you update your system and do advanced troubleshooting. You c
 | **Configure GRUB timeout** | Set waiting period before GRUB boots default entry. | `grub-timeout` |
 | **Reboot to UEFI** | Reboot directly into UEFI firmware settings. | `systemctl reboot --firmware-setup` |
 
-<hr>
+---
 
 ### Tweak Systems
 
@@ -118,7 +117,7 @@ This category provides system tweaks, including user permissions, disk automount
 | **Toggle Input Remapper** | Manage Input Remapper and GUI launcher visibility. | `restore-input-remapper` |
 | **SteamOS Automounting** | Enable or disable file system automounting rules from SteamOS. | `steamos-automount` |
 
-<hr>
+---
 
 ### Troubleshoot
 
@@ -134,7 +133,7 @@ This category offers diagnostic and recovery utilities designed to resolve commo
 | **Enable REISUB** | Toggle SysRq shortcut key for safer forced reboots. | `reisub` |
 | **Regenerate GRUB config** | Regenerate GRUB configuration and probe for dual-boot OS installations. | `regenerate-grub` |
 
-<hr>
+---
 
 ## How the Bazzite Portal works
 
@@ -142,27 +141,26 @@ This section explains how the Bazzite Portal uses a configuration file to organi
 
 The Bazzite Portal's configuration is stored in `/usr/share/yafti/yafti.yml`, where you can see the menu items and the commands they'll run.
 
-For example, this entry shows the `ujust` commands used by the `iwd` setting:
+For example, this entry shows the `ujust` commands used by the `reisub` setting:
 
 ```yaml
-     - id: "toggle-iwd"
-        title: "iwd"
-        description: "Enable or disable iwd as the Wi-Fi backend instead of wpa_supplicant."
+      - id: "reisub"
+        title: "Enable REISUB failure recovery"
+        description: "Toggle the ‘magic’ SysRq key and allow using the REISUB shortcut to force-reboot your computer slightly more safely. Not recommended, as it allows bypassing certain security features."
         default: false
-        status_script: "ujust toggle-iwd status"
+        status_script: "ujust reisub status"
         options:
           - id: "enable"
-            label: "Enable"
-            script: "ujust toggle-iwd enable"
+            label: "Enable REISUB Recovery"
+            script: "ujust reisub enable"
           - id: "disable"
-            label: "Disable"
-            script: "ujust toggle-iwd disable"
-
+            label: "Disable REISUB Recovery"
+            script: "ujust reisub disable"
 ```
 
-This configuration generates menu options in Bazzite Portal that let you enable or disable `iwd`:
+This configuration generates menu options in Bazzite Portal that let you enable or disable `reisub`:
 
-![Screenshot of the Bazzite Portal iwd options|909x639, 50%](../img/Bazzite_Portal_iwd.png)
+![Screenshot of the Bazzite Portal reisub options|909x639, 50%](../img/Bazzite_Portal_reisub.png)
 
 !!! tip "Want to know more?"
 
