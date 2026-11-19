@@ -9,16 +9,16 @@ title: Enabling TRIM on LUKS-Encrypted Drives
 use `lsblk` to find the name of the LUKS volume (e.g.: `luks-5641321xc65c6`). Copy that name and run the following:
 
 ```bash
-sudo cryptsetup refresh --perf-same_cpu_crypt --perf-submit_from_crypt_cpus
-       --perf-no_read_workqueue --perf-no_write_workqueue
+sudo cryptsetup refresh --perf-same_cpu_crypt --perf-submit_from_crypt_cpus \
+       --perf-no_read_workqueue --perf-no_write_workqueue \
        --allow-discards --persistent <LUKS-volume-name>
 ```
 
 !!! example
 
     ```bash
-    sudo cryptsetup refresh --perf-same_cpu_crypt --perf-submit_from_crypt_cpus
-        --perf-no_read_workqueue --perf-no_write_workqueue
+    sudo cryptsetup refresh --perf-same_cpu_crypt --perf-submit_from_crypt_cpus \
+        --perf-no_read_workqueue --perf-no_write_workqueue \
         --allow-discards --persistent luks-5641321xc65c6
     ```
 

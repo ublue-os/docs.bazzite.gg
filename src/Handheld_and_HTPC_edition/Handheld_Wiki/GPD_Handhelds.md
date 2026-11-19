@@ -22,7 +22,7 @@ title: GPD Handhelds
 - Back buttons may need to be manually remapped before they are usable.
   - Manually remap back buttons using the QAM, which is now handled by [OpenGamepadUI.](https://github.com/ShadowBlip/OpenGamepadUI)
 - Games can sometimes default to 800p resolution.
-  - Manually change the resolution per game in the **Steam Settings → Properties → Game Resolution** to either **Native** or other higher resolutions.
+  - Manually change the resolution per game in the game's **Properties → General → Maximum Game Resolution** to either **Native** or other higher resolutions.
 
 ---
 

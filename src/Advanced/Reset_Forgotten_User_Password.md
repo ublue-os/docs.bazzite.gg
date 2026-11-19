@@ -24,7 +24,7 @@ Edit the GRUB prompt and append `init=/bin/bash` to the line beginning with `lin
 
 Continue boot process with <kbd>Ctrl</kbd>+<kbd>X</kbd>
 
-Once you are in the GRUB command line:
+Once you are in the root shell:
 
 1. Temporarily mount SELinux
 
