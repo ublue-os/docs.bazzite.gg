@@ -6,7 +6,6 @@ title: "VPN Setup"
 
 ## Using functional VPN Flatpaks
 
-Using functional VPN Flatpaks¶
 VPN clients are not generally offered on the Bazaar app store, as the Flatpak sandbox restricts features permitting their use. However there are a small selection that will function, to some degree:
 
 - [Mozilla VPN](https://flathub.org/apps/org.mozilla.vpn)

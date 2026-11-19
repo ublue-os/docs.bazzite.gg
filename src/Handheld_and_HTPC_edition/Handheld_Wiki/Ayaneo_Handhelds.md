@@ -42,7 +42,7 @@ Using e-GPU via Thunderbolt 3, 4 and USB4 enclosures over USB4 are partially sup
 
 === "NVIDIA"
   
-    Currently untested but _may_ work with the “-nvidia-deck” variant of bazzite.
+    Currently untested but _may_ work with the “-deck-nvidia” variant of bazzite.
 
 ---
 

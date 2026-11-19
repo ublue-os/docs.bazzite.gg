@@ -42,7 +42,7 @@ Distrobox containers can be used for both **development environments** and **ins
 
 ![Distroshelf|970x752, 75%](../img/distroshelf_fixedcrop.png)
 
-Distrobox containers can be created and managed graphically with [**DistroShelf**](https://github.com/ranfdev/DistroShelf) which is pre-installed.
+Distrobox containers can be created and managed graphically with [**Kontainer**](https://github.com/DenysMb/Kontainer) on new KDE installs or [**DistroShelf**](https://github.com/ranfdev/DistroShelf) on GNOME and older KDE installs, which are pre-installed.
 
 ## Desktop Integration
 
@@ -77,7 +77,7 @@ distrobox enter <container>
 
 ## Removing Distrobox Containers
 
-Delete containers graphically with DistroShelf.
+Delete containers graphically with Kontainer or DistroShelf.
 
 Alternatively, use the command line:
 
