@@ -33,20 +33,24 @@ def on_post_build(config, **kwargs):
     # Group docs by language based on location prefix
     docs_by_lang = {lang: [] for lang in languages}
     for doc in data["docs"]:
-        location = doc["location"]
+        location = doc["location"].lstrip("./")
         matched = False
         for lang in languages:
             if lang == default_lang:
                 continue
-            prefix = f"{lang}/"
-            if location.startswith(prefix):
+            if location == lang:
+                location = ""
+            elif location.startswith(f"{lang}/"):
+                location = location[len(lang) +1:]
                 # Strip the language prefix so relative paths work
                 # from within the language subdirectory
-                stripped = deepcopy(doc)
-                stripped["location"] = location[len(prefix):]
-                docs_by_lang[lang].append(stripped)
-                matched = True
-                break
+            else:
+                continue
+            stripped = deepcopy(doc)
+            stripped["location"] = location
+            docs_by_lang[lang].append(stripped)
+            matched = True
+            break
         if not matched:
             docs_by_lang[default_lang].append(doc)
 
