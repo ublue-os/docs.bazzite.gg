@@ -69,6 +69,7 @@ hooks:
   - hooks/cmdrun.py # 100-99
   - hooks/embed_youtube.py # 80
   - hooks/md_image_sizing.py
+  - hooks/localized_search_split.py
 
 plugins:
   - privacy
