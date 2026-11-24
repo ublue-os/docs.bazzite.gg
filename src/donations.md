@@ -77,7 +77,7 @@ Enjoy using Bazzite and want to help sustain its development? Consider sponsorin
 {{ contributor("Zacharias Xenakis", "Xarishark", "Bazzite Portal, UX enhancements, bug fixes & translations", "https://github.com/sponsors/Xarishark") }}
 {{ contributor("stellaberrant", "stellaberrant", "Translations and bug fixes") }}
 {{ contributor("wolfyreload", "wolfyreload", "Visual Guides on YouTube, QA Testing") }}
-{{ contributor("Andy East", "andy10115", "Additional scripting and major update announcements") }}
+{{ contributor("Andy East", "andy10115", "Communcation, Announcements, Testing Coordination, and Scripting") }}
 {{ contributor("Dylan Taylor", "dylanmtaylor", "Image and CI/CD work, new release enablement, and testing", "https://github.com/sponsors/dylanmtaylor") }}
 {{ contributor("Alex Shek", "ykshek", "Bazzite Portal, UX enhancements, advanced features & translations") }}
 {{ contributor("Crono", "EPOCHvoyager", "Significant testing", "https://github.com/sponsors/EPOCHvoyager") }}
