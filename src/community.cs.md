@@ -10,7 +10,7 @@ title: Community
 
 ## [:simple-bluesky: Bluesky](https://bsky.app/profile/bazzite.gg)
 
-## [:simple-x: X/Twitter](https://x.com/bazzite_gg) <sup>([Žádný účet X/Twitter?](https://xcancel.com/bazzite_gg))</sup>
+## [:simple-x: X/Twitter](https://x.com/bazzite_gg)
 
 ## [:simple-reddit: Reddit](https://www.reddit.com/r/bazzite)
 
