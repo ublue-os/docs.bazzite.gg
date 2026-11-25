@@ -50,7 +50,7 @@ ujust | grep "<search keyword(s)>"
 ```
 
 - `install-`: Install program, there is no configuration or uninstall commands at this time.
-    - **Warning**: Some of the applications avaliable to install as a `ujust` command can end up layering packages to your system.
+  - **Warning**: Some of the applications avaliable to install as a `ujust` command can end up layering packages to your system.
 - `get-`: Install an "extension" like Decky plugins, and if it is an extension then it can use `get-` too.
 - `setup-`: Install program, provides uninstall and configuration options for after install.
 - `configure-`: Configure something that came by default on the image.

@@ -100,7 +100,7 @@ Since Bazzite is a custom Fedora Atomic Desktop image, it makes use of read-only
 There are currently no plans to support Kepler and older architectures (Most GTX 700 cards and older) since they are **no longer supported** by the upstream Nvidia drivers.
 
 -   You can still install Bazzite, using the open-source `nouveau` driver.
-    -   However, the performance and stability of this driver lags behind the official Nvidia drivers as the open source driver cannot communicate with the closed source GSP firmware, causing the card to be stuck at its lowest clocks.
+  -   However, the performance and stability of this driver lags behind the official Nvidia drivers as the open source driver cannot communicate with the closed source GSP firmware, causing the card to be stuck at its lowest clocks.
 -   It is **not possible** to manually install the proprietary Nvidia drivers for your older card in Bazzite.
 -   You would need a different Linux distribution that allows for such, if you wish to use the proprietary Nvidia drivers for your GPU. Support for these cards are essentially cut off by Nvidia on Fedora based distributions.
 
