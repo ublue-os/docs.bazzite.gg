@@ -76,7 +76,7 @@ Non-Steam games can have the prefix folder anywhere you specify.  By default Lut
 -   **Steam workshop** is the most straightforward method to obtain mods, though it may not necessarily be supported for every title or mod, and requires you to own the game on Steam.
 -   Some mod managers have Linux ports like [r2modman](https://github.com/ebkr/r2modmanPlus).
 -   Adding and replacing game files is still viable in both the game directory and prefix, but there may be some extra steps involved.
-    -   Some mods require an [additional setting for WINE DLL override](#wine-dll-override)
+  -   Some mods require an [additional setting for WINE DLL override](#wine-dll-override)
 -   You may also add some Windows-only mod managers and launchers as a non-Steam game on Steam, then use symlinks to link its prefix to the game's actual prefix.
     
 
