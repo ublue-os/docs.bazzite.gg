@@ -150,6 +150,14 @@ Ultimately, it was decided to use Flatpak for desktop and Brew(beta) for deck im
 
 See [Custom Resolutions](/Advanced/custom_resolution/#guide-for-creating-a-custom-resolution-for-sunshine-game-streaming)
     
+### Unlocking a KDE desktop from a TV client
+
+A locked desktop is an existing user session; it is different from the login manager shown before a session starts. Verify that your capture method and client can display the lock screen and enter the account password before relying on remote access.
+
+If the client's software keyboard cannot enter the password, native **Plasma Keyboard** may be an alternative when installed and selected as KWin's virtual keyboard. Mouse-capable mode allows a controller acting as a mouse to operate it. Return the keyboard mode to **None** after unlocking if you do not want it appearing during normal desktop use.
+
+A [community guide with helper sources and rollback](https://github.com/ThrowStuff/sunshine-kde-tv-unlock) records successful TV lock-screen password entry on Bazzite 44, Plasma 6.7.5 Wayland and an AMD RX 6750 XT using official standalone Sunshine 2026.914.233613. It describes an optional service that enables mouse keyboard mode while locked and disables it after unlock; that automation's live lock/unlock cycle remains unverified. The standalone deployment is a community recipe, not a supported Bazzite installation method. Its optional automatic login starts a session before password entry and does not unlock encrypted disks or KWallet.
+
 ## Something Went Wrong, What Should I do?
 
 <hr>
@@ -159,6 +167,9 @@ See [Custom Resolutions](/Advanced/custom_resolution/#guide-for-creating-a-custo
 This usually means that the Sunshine executable has trouble capturing the screen. 
 
 === "KWin ScreenCast"
+
+    !!! note "Flatpak capture limitation"
+        Direct KWin capture can fail to identify Sunshine's executable inside Flatpak; see [Sunshine issue #5716](https://github.com/LizardByte/Sunshine/issues/5716). For this failure, the upstream guidance is to use XDG Portal capture. A standalone build is another approach for users who specifically need direct KWin capture, subject to the unsupported-installation limitations above. Setting `KWIN_WAYLAND_NO_PERMISSION_CHECKS=1` disables KWin's permission checks globally, rather than granting permission only to Sunshine.
 
     On some KDE Plasma/Sunshine versions, the permission of KWin ScreenCast is not set up properly with the `zkde_screencast_unstable_v1` protocol. It can temporarily be fixed by setting the `KWIN_WAYLAND_NO_PERMISSION_CHECKS=1` environment variable, which can be done automatically in [Bazzite Portal](/Installing_and_Managing_Software/Bazzite_Portal/) → Install Applications → Setup Virtual Monitor → Fix Error 503, or by setting it in any of the following 3 places:
     
