@@ -44,7 +44,7 @@ title: 常见问题及解决方法
 
 在 Bazzite 进行系统更新之后，NVIDIA 用户有时会碰到 Flatpak 安装的程序性能较差和/或失去视频加速的情况，通常伴随 **NVIDIA Flatpak 运行时组件版本不匹配**一类的警告。
 
-此时需要通过 **Bazaar** 升级所有 Flatpak 包，或在 **Bazzite Portal** → **Manage Bazzite** 下选择 **Update Nvidia Flatpak Runtime**。
+此时需要通过 **Bazaar** 升级所有 Flatpak 包，或在 **Bazzite Portal** → **Troubleshoot** 下选择 **Update Flatpak libraries for NVIDIA**。
 
 !!! info "Bazzite 在最近的版本提供了一个能够自动进行相关更新的脚本，但如果碰到类似于启动时没有网络连接这一类的情况，则可能仍需手动更新。最理想的解决方案需要上游 Flatpak 或者 NVIDIA 改善运行时组件的配置方式，或提供直接调用系统组件的“假包”，但这些方法都超出了 Bazzite 的能力范围。"
 

@@ -76,7 +76,7 @@ Prefix 是 Proton 和 Wine 在运行 Windows 程序时创建的模拟 Windows �
 -   最方便的模组配置方法是 **Steam 创意工坊**，但它很可能不支持你需要的游戏或模组，并且必须在 Steam 上购买该游戏才能使用。
 -   有些模组管理器，比如 [r2modman](https://github.com/ebkr/r2modmanPlus)，提供了专门的 Linux 版本。
 -   如果只是单纯的替换游戏文件，通常可以在游戏目录和 Proton Prefix 目录下直接操作，但偶尔会有特殊情况。
-    -   有些模组，尤其是 DLL 替换相关，可能需要 [在 WINE 设置中更改 DLL 顶替](#wine-dll-override)
+  -   有些模组，尤其是 DLL 替换相关，可能需要 [在 WINE 设置中更改 DLL 顶替](#wine-dll-override)
 -   有些只支持 Windows 的模组管理器或启动器可以作为非 Steam 游戏加入 Steam 资源库，然后通过符号链接绑定到目标游戏的实际 Prefix 上。
     
 

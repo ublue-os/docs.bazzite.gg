@@ -42,7 +42,7 @@ Distrobox 可以运行[许多 Linux 发行版](https://distrobox.it/compatibilit
 
 ![Distroshelf|970x752, 75%](../img/distroshelf_fixedcrop.png)
 
-Bazzite 预装了 [**DistroShelf**](https://github.com/ranfdev/DistroShelf) 方便 Distrobox 的管理。
+Bazzite 预装了 [**Kontainer**](https://github.com/DenysMb/Kontainer)（新的 KDE 镜像）或 [**DistroShelf**](https://github.com/ranfdev/DistroShelf)（GNOME 和旧的 KDE 镜像），方便 Distrobox 的管理。
 
 ## 桌面环境集成
 
