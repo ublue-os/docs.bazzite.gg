@@ -191,6 +191,91 @@ plugins:
             language: zh
           nav_translations:
             Home: 主页
+            FAQ: 常见问题
+            Installation: 安装指南
+            Installing Bazzite: 安装 Bazzite
+            Installation Guide: 安装指南
+            Post-Installation Setup: 安装后配置
+            Installation Troubleshoot Guide: 安装故障排除
+            Legacy ISO Installation Guide: 旧版 ISO 安装指南
+            Alternative Installation Method: 备选安装方式
+            General: 通用指南
+            General Guides: 通用指南
+            Dictionary and Terminology: 术语表
+            Comparison of Bazzite and Fedora Atomic Desktop: Bazzite 和 Atomic Fedora 的比较
+            SteamOS Comparison: 和 SteamOS 的比较
+            Desktop Environment Tweaks: 桌面环境个性化配置
+            VPN Setup: 使用 VPN
+            Issues & Resolutions: 故障排除
+            Reporting Bugs: 报告问题
+            Community Resources: 社区资源
+            Security Policy: 安全性策略
+            License: 许可
+            Press Kit: 宣传资源包
+            Uninstalling Bazzite: 卸载 Bazzite
+            Gaming: 游戏指南
+            Gaming Guides: 游戏指南
+            Introduction to Gaming on Bazzite: Bazzite 游戏入门
+            Hardware Compatibility for Gaming: 游戏与硬件兼容性
+            Game Launchers: 游戏启动器
+            Managing & Modding Games: 游戏和模组管理
+            Launch Options and Environment Variables: 启动选项与环境变量
+            Common Gaming Issues: 游戏常见问题
+            Bazzite-Deck: Bazzite 掌机版
+            Bazzite-Deck Guides: Bazzite 掌机版指南
+            Bazzite-Deck General Overview: Bazzite 掌机版简介
+            Steam Gaming Mode Quirks and Workarounds: Steam 游戏模式的常见问题与解决方法
+            Handheld Compatibility: 掌机兼容性
+            ASUS Handhelds: 华硕
+            Lenovo Handhelds: 联想
+            GPD Handhelds: GPD
+            OneXPlayer Handhelds: OneXPlayer
+            Ayn Handhelds: Ayn
+            Ayaneo Handhelds: Ayaneo
+            Steam Deck: Steam Deck
+            Other Handhelds: 其他掌机
+            Software: 软件
+            Installing and Managing Software: 软件安装与管理
+            Introduction to Installing Software on Bazzite: Bazzite 软件安装简介
+            Bazzite Portal: Bazzite Portal
+            ujust Commands: ujust 命令
+            Bazaar App Store: Bazaar 应用商店
+            Homebrew: Homebrew
+            Containers: 容器
+            Distrobox: Distrobox
+            Quadlet: Quadlet
+            Appimage: Appimage
+            rpm-ostree: rpm-ostree
+            Waydroid Setup Guide: Waydroid 配置指南
+            Updates, Rollbacks, & Rebasing: 系统更新与回滚
+            Bazzite Updater: Bazzite Updater
+            Updating Guide: 系统更新指南
+            Rolling Back System Updates: 回滚系统更新
+            Rebase Guide: 切换频道指南
+            Bazzite Rollback Helper: Bazzite 更新助手（bazzite-rollback-helper）
+            Advanced: 高级指南
+            Advanced Guides: 高级指南
+            Adding User to a Group: 将用户添加到组
+            Auto-Mounting Secondary Drives: 配置硬盘自动挂载
+            Managing Gamescope Using ScopeBuddy: 使用 ScopeBuddy 配置 Gamescope
+            Cardwire: Cardwire
+            Custom Resolutions: 自定义分辨率
+            Bazzite Command Line Tools: Bazzite 命令行工具
+            Using Looking-Glass: Looking-Glass 指南
+            Best Shell Practices: 系统 Shell 配置建议
+            Booting to Rescue Mode: 重启到应急模式
+            Reset Forgotten User Password: 重置用户密码
+            Using Swap for Additional Memory or Hibernation: 配置交换空间用于额外内存或休眠
+            Show Detailed Init Logs During Boot: 系统启动时显示详细日志
+            Setting up Sunshine on Bazzite: 使用 Sunshine 进行游戏串流
+            Enabling TRIM on LUKS-Encrypted Drives: 在 LUKS 加密的硬盘上启用 TRIM
+            How to Modify Initramfs and Dracut: 如何更改 Initramfs 和 Dracut
+            Creating A Custom Bazzite Image: 创建自定义 Bazzite 镜像
+            Bazzite-DX: Bazzite-DX
+            Contribute: 参与开发
+            Community: 社区
+            Donate: 捐款
+            Download: 下载
         - locale: zh_HK
           name: 中文（香港）
           build: true

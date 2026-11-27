@@ -1,8 +1,8 @@
 ---
-title: 程序安装与管理
+title: 软件安装与管理
 ---
 
-# 程序安装与管理
+# 软件安装与管理
 
 - [**Bazzite 软件安装概述**](./software-intro.md)
 - [**Bazzite Portal**](./Bazzite_Portal.md)
