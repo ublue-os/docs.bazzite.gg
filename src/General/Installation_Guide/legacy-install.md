@@ -192,6 +192,10 @@ If you install Windows after Bazzite, you can restore Bazzite's bootloader with 
 
 !!! attention "Bazzite only supports the BTRFS filesystem for `/`."
 
+!!! note "Missing EFI System Partition option"
+
+    If Blivet-GUI doesn't offer **EFI System Partition** (or vfat) as a format, this is an upstream bug ([blivet-gui#563](https://github.com/storaged-project/blivet-gui/issues/563)). Use the **Custom** option instead of **Advanced Custom (Blivet-GUI)**, or use the live ISO with the [**manual partitioning guide**](./manual_partitioning.md).
+
 If you need a tutorial video for manual partitioning, watch this [tutorial at timestamp 9:10](https://www.youtube.com/watch?v=JxPsKhJGTrs&t=550s).
 
 1.  Select Installation Destination
