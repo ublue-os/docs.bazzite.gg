@@ -10,7 +10,7 @@ title: Rebase Guide
 
 Rebasing allows users to switch to a different **Image Flavor** and/or **Update Branch** _without_ having to reinstall and lose personal files and application data.
 
-> It is recommended to use the [Bazzite Portal](/Installing_and_Managing_Software/Bazzite_Portal.md) or [Bazzite Rollback Helper utility](./bazzite_rollback_helper.md) to rebase.
+> It is recommended to use the [Bazzite Portal](/Installing_and_Managing_Software/Bazzite_Portal.md), [Bazzite Updater](/Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/bazzite_updater/#rebase-system), or [Bazzite Rollback Helper utility](./bazzite_rollback_helper.md) to rebase.
 
 ---
 
@@ -87,6 +87,14 @@ The process of rebasing is very similar to updating(or rather the other way arou
     Simply select **Bazzite Portal → Manage Bazzite → Move to the stable update track/Move to the testing update track**.
     
     !!! info "For switching between Bazzite Image Flavors such as `bazzite-nvidia`, use other methods."
+
+=== "Bazzite Updater"
+
+    [Bazzite Updater](/Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/bazzite_updater/#rebase-system) provides a page to allow easy switching between Update Branches as well as Image Flavors.
+
+    To switch between Update Branches, click on the card for your current image and then click on a new Update Branch in its dropdown menu.
+
+    To switch between Image Flavors, click on the image you wish to switch to and then click on an Update Branch in its dropdown menu.
 
 === "Bazzite Rollback Helper"
 
@@ -199,9 +207,9 @@ The process of rebasing is very similar to updating(or rather the other way arou
 
 !!! warning "Switching to older Bazzite builds will not bring new updates until you upgrade back to `:stable` which means there will be no security updates until you rebase back to the stable branch."
 
-Like rolling back to the previous Bazzite deployment, users can also rebase to a specific Bazzite builds that was were built within the last 90 days.  All of your userdata will remain intact.
+Like rolling back to the previous Bazzite deployment, users can also rebase to a specific Bazzite builds that was were built within the last 90 days. All of your userdata will remain intact.
 
-However, you will have to rebase manually back to `:stable` to update the system to receive the features and security patches. 
+However, you will have to rebase manually back to `:stable` to update the system to receive the features and security patches.
 
 ### Viewing Available Images
 
