@@ -70,6 +70,7 @@ hooks:
   - hooks/cmdrun.py # 100-99
   - hooks/embed_youtube.py # 80
   - hooks/md_image_sizing.py
+  - hooks/localized_search_split.py
 
 plugins:
   - privacy
@@ -91,6 +92,94 @@ plugins:
             language: cs
         - locale: uk
           name: Українська
+          nav_translations:
+            Home: Головна
+            FAQ: Поширені запитання
+            Installation: Встановлення
+            Installing Bazzite: Встановлення Bazzite
+            Installation Guide: Посібник зі встановлення
+            Post-Installation Setup: Налаштування після встановлення
+            Installation Troubleshoot Guide: Вирішення проблем зі встановленням
+            Legacy ISO Installation Guide: Встановлення з legacy ISO
+            Alternative Installation Method: Альтернативний спосіб встановлення
+            General: Загальне
+            General Guides: Загальні посібники
+            Dictionary and Terminology: Словник і терміни
+            Comparison of Bazzite and Fedora Atomic Desktop: Порівняння Bazzite і Fedora Atomic Desktop
+            SteamOS Comparison: Порівняння зі SteamOS
+            Desktop Environment Tweaks: Налаштування робочого середовища
+            VPN Setup: Налаштування VPN
+            "Issues & Resolutions": Проблеми та їх вирішення
+            Reporting Bugs: Повідомлення про помилки
+            Community Resources: Ресурси спільноти
+            Security Policy: Політика безпеки
+            License: Ліцензія
+            Press Kit: Матеріали для преси
+            Uninstalling Bazzite: Видалення Bazzite
+            Gaming: Ігри
+            Gaming Guides: Посібники з ігор
+            Introduction to Gaming on Bazzite: Вступ до ігор на Bazzite
+            Hardware Compatibility for Gaming: Сумісність обладнання для ігор
+            Game Launchers: Ігрові лаунчери
+            "Managing & Modding Games": Керування іграми та моди
+            Launch Options and Environment Variables: Параметри запуску та змінні середовища
+            Common Gaming Issues: Поширені проблеми з іграми
+            Bazzite-Deck: Bazzite-Deck
+            Bazzite-Deck Guides: Посібники з Bazzite-Deck
+            Bazzite-Deck General Overview: Загальний огляд Bazzite-Deck
+            Steam Gaming Mode Quirks and Workarounds: Особливості ігрового режиму Steam і способи їх обійти
+            Handheld Compatibility: Сумісність портативних пристроїв
+            ASUS Handhelds: Портативні пристрої ASUS
+            Lenovo Handhelds: Портативні пристрої Lenovo
+            GPD Handhelds: Портативні пристрої GPD
+            OneXPlayer Handhelds: Портативні пристрої OneXPlayer
+            Ayn Handhelds: Портативні пристрої Ayn
+            Ayaneo Handhelds: Портативні пристрої Ayaneo
+            Steam Deck: Steam Deck
+            Other Handhelds: Інші портативні пристрої
+            Software: Програми
+            Installing and Managing Software: Встановлення застосунків і керування ними
+            Introduction to Installing Software on Bazzite: Вступ до встановлення програм у Bazzite
+            Bazzite Portal: Bazzite Portal
+            ujust Commands: Команди ujust
+            Bazaar App Store: Магазин застосунків Bazaar
+            Homebrew: Homebrew
+            Containers: Контейнери
+            Distrobox: Distrobox
+            Quadlet: Quadlet
+            Appimage: AppImage
+            rpm-ostree: rpm-ostree
+            Waydroid Setup Guide: Налаштування Waydroid
+            "Updates, Rollbacks, & Rebasing": "Оновлення, відкати та перебазування"
+            Bazzite Updater: Bazzite Updater
+            Updating Guide: Посібник з оновлення
+            Rolling Back System Updates: Відкат оновлень системи
+            Rebase Guide: Посібник з перебазування
+            Bazzite Rollback Helper: Bazzite Rollback Helper
+            Advanced: Додатково
+            Advanced Guides: Додаткові посібники
+            Adding User to a Group: Додавання користувача до групи
+            Auto-Mounting Secondary Drives: Автоматичне монтування додаткових дисків
+            Managing Gamescope Using ScopeBuddy: Керування Gamescope за допомогою ScopeBuddy
+            Cardwire: Cardwire
+            Custom Resolutions: Власні роздільності екрана
+            Bazzite Command Line Tools: Інструменти командного рядка Bazzite
+            Using Looking-Glass: Використання Looking-Glass
+            Best Shell Practices: Рекомендації щодо роботи з оболонкою
+            Booting to Rescue Mode: Завантаження в режимі відновлення
+            Reset Forgotten User Password: Скидання забутого пароля користувача
+            Using Swap for Additional Memory or Hibernation: "Swap для додаткової пам'яті або гібернації"
+            Show Detailed Init Logs During Boot: Докладний журнал під час завантаження
+            Setting up Sunshine on Bazzite: Налаштування Sunshine у Bazzite
+            Enabling TRIM on LUKS-Encrypted Drives: Увімкнення TRIM на дисках із шифруванням LUKS
+            How to Modify Initramfs and Dracut: Як змінити initramfs і dracut
+            Creating A Custom Bazzite Image: Створення власного образу Bazzite
+            Bazzite-DX: Bazzite-DX
+            Contribute: Долучитися
+            Community: Спільнота
+            Videos: Відео
+            Donate: Підтримати
+            Download: Завантажити
           build: true
           theme:
             language: uk

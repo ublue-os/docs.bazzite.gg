@@ -10,4 +10,4 @@ title: Посібники з ігор
 - [**Ігрові лаунчери**](Game_Launchers.md)
 - [**Керування іграми та моди**](Managing_and_modding_games.md)
 - [**Параметри запуску та змінні середовища**](launch-options-env-variables.md)
-- [**Поширені проблеми в іграх**](Common_gaming_issues.md)
+- [**Поширені проблеми з іграми**](Common_gaming_issues.md)

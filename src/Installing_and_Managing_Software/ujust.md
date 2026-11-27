@@ -12,7 +12,7 @@ title: ujust Commands
 
     Use the [Bazzite Portal](./Bazzite_Portal.md) application as a graphical interface for popular `ujust` commands.
 
-`ujust` commands that automate tasks using scripts which can be utilized for system configuration and maintenance. It also can install specialized software that ships with Bazzite as an installation script by the maintainers and contributors of the project.  Please note that _some_ of the software that can be installed from `ujust` commands can add [**layered packages**](../rpm-ostree.md) to your installation which is generally not recommended.
+`ujust` commands that automate tasks using scripts which can be utilized for system configuration and maintenance. It also can install specialized software that ships with Bazzite as an installation script by the maintainers and contributors of the project.  Please note that _some_ of the software that can be installed from `ujust` commands can add [**layered packages**](./rpm-ostree.md) to your installation which is generally not recommended.
 
 ![ujust command list|690x411](../img/ujust_command_list.png)
 <sub>This will output a list of available commands.</sub>
@@ -50,7 +50,7 @@ ujust | grep "<search keyword(s)>"
 ```
 
 - `install-`: Install program, there is no configuration or uninstall commands at this time.
-    - **Warning**: Some of the applications avaliable to install as a `ujust` command can end up layering packages to your system.
+  - **Warning**: Some of the applications avaliable to install as a `ujust` command can end up layering packages to your system.
 - `get-`: Install an "extension" like Decky plugins, and if it is an extension then it can use `get-` too.
 - `setup-`: Install program, provides uninstall and configuration options for after install.
 - `configure-`: Configure something that came by default on the image.
@@ -61,7 +61,7 @@ ujust | grep "<search keyword(s)>"
 - `distrobox-`: Distrobox exclusive verb intended to make container usage easier.
 - `foo`: Replace this with whatever the command is called.
   - These are shortcuts that we have deemed necessary to not have a verb.
-    - **Examples**: `ujust update` & `ujust enroll-secureboot-key`.
+    - **Examples**: `ujust update` & `ujust enroll-secure-boot-key`.
 
 ## View each `ujust` script's source code
 

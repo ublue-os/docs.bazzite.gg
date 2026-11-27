@@ -44,7 +44,7 @@ This is typically due to bugs in the GPU drivers. You may temporarily disable Ha
 
 If you have recently updated Bazzite on a device with an Nvidia GPU, you might notice that Flatpak applications are running poorly and/or have no hardware acceleration, and/or receive a warning about **Nvidia Flatpak Runtime mismatch**.
 
-In this case, you should update all Flatpaks in **Bazaar**, or select **Update Nvidia Flatpak Runtime** under **Bazzite Portal** → **Manage Bazzite** if you do not want to update other Flatpaks.
+In this case, you should update all Flatpaks in **Bazaar**, or select **Update Flatpak libraries for NVIDIA** under **Bazzite Portal** → **Troubleshoot** if you do not want to update other Flatpaks.
 
 !!! info "Bazzite provides a systemd service that automates this, but you may still need to update it manually in some situations (e.g. No Internet connection on startup). The ideal solution is for upstream Flatpak/Nvidia to improve the way these Runtimes are handled, or to create a package that provides a Flatpak Nvidia driver using system libraries, but those require a lot more work to make possible."
 

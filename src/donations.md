@@ -77,6 +77,7 @@ Enjoy using Bazzite and want to help sustain its development? Consider sponsorin
 {{ contributor("Zacharias Xenakis", "Xarishark", "Bazzite Portal, UX enhancements, bug fixes & translations", "https://github.com/sponsors/Xarishark") }}
 {{ contributor("stellaberrant", "stellaberrant", "Translations and bug fixes") }}
 {{ contributor("wolfyreload", "wolfyreload", "Visual Guides on YouTube, QA Testing") }}
+{{ contributor("Andy East", "andy10115", "Communcation, Announcements, Testing Coordination, and Scripting") }}
 {{ contributor("Dylan Taylor", "dylanmtaylor", "Image and CI/CD work, new release enablement, and testing", "https://github.com/sponsors/dylanmtaylor") }}
 {{ contributor("Alex Shek", "ykshek", "Bazzite Portal, UX enhancements, advanced features & translations") }}
 {{ contributor("Crono", "EPOCHvoyager", "Significant testing", "https://github.com/sponsors/EPOCHvoyager") }}
@@ -102,6 +103,7 @@ Enjoy using Bazzite and want to help sustain its development? Consider sponsorin
 {{ contributor("RJ Trujillo", "EyeCantCU", "Early Maintainer of Bazzite. CI/CD Pipelines, Initial Alternate Desktop Environment Support, and proper Steam Deck support. Emeritus.") }}
 {{ contributor("Pat Connors", "nicknamenamenick", "Documentation") }}
 {{ contributor("CharlieBros", "CharlieBros", "Language Translations in Spanish") }}
+{{ contributor("Andrii Butsvin", "andreysey", "Language Translations in Ukrainian and documentation QoL fixes") }}
 {{ contributor("Jill Fiore", "Lumaeris", "Language Translations in Russian, bug fixes & QoL improvements. Emeritus.") }}
 {{ contributor("Aarron Lee", "aarron-lee", "Decky plugin creator for alternate handhelds. Provided a lot of early testing, especially with GPD and Legion Go devices. Emeritus.") }}
 {{ contributor("Jan", "Jan200101", "Early Kernel maintainer of Bazzite through the kernel-fsync project. Emeritus.") }}

@@ -38,7 +38,7 @@ Read our [Secure Boot guide](/General/Installation_Guide/secure_boot.md#method-b
 
     As of July 2025, external monitors works without issues. The external display can be set to its respective native resolution and refresh rate.
 
-If your screen doesn't display the correct output or looks grainy, noisy, or oddly colorful then you will have to enter a [TTY session](/Handheld_and_HTPC_edition/quirks.md#tty-if-you-cannot-access-desktop-mode) or establish an ssh connection and enter this command:
+If your screen doesn't display the correct output or looks grainy, noisy, or oddly colorful then you will have to enter a [TTY session](/Handheld_and_HTPC_edition/quirks.md#stuck-at-bazzite-logo) (see the TTY Method tab) or establish an ssh connection and enter this command:
 
 ```bash
 mv ~/.config/kwinoutputconfig.json ~/.config/kwinoutputconfig.json.old

@@ -14,7 +14,7 @@ title: Waydroid Setup Guide
 
 ## First Time Setup
 
-Open a host terminal and **enter this command to setup Waydroid**:
+Open a host terminal and **enter this command to set up Waydroid**:
 
 ```bash
 ujust configure-waydroid
@@ -65,12 +65,12 @@ Selecting `Configure Waydroid` will allow users to install additional Android tw
 
 ##### Available Waydroid Extras:
 
-- [**GApps**](https://github.com/opengapps/opengapps/wiki/FAQ) (Default Android applications including the **Google Play Store)** or [microG](https://microg.org/) (Free alternatives to Google applications)
+- [**GApps**](https://github.com/opengapps/opengapps/wiki/FAQ) (Default Android applications including the **Google Play Store**) or [microG](https://microg.org/) (Free alternatives to Google applications)
 
 - **ARM Translation** (**_libndk_** or **_libhoudini_**)
-- _libhoudini_ offers better overall compatibility compared to _libndk_.
-    - Some games may run on only one of _libhoudini_ or _libndk_.  On Android 11, _libhoudini_ will run significantly slower than _libndk_ if you have AMD CPU.
-    - **Do not install both of them at the same time. If you need to switch, uninstall your current translation layer before installing a new one.**
+  - _libhoudini_ offers better overall compatibility compared to _libndk_.
+  - Some games may run on only one of _libhoudini_ or _libndk_.  On Android 11, _libhoudini_ will run significantly slower than _libndk_ if you have AMD CPU.
+  - **Do not install both of them at the same time. If you need to switch, uninstall your current translation layer before installing a new one.**
 
 - [**Magisk**](https://github.com/topjohnwu/Magisk) (Android power user suite)
 
@@ -118,7 +118,7 @@ To use multi-touch gestures in Waydroid while running under Steam Gaming Mode, y
 
 This section is dedicated to more specific operations and issues within Waydroid running on Bazzite.
 
-## Waydroid Helper application
+### Waydroid Helper application
 
 ![Waydroid_Helper|400x400](../img/Waydroid_Helper.png)
 
@@ -130,7 +130,7 @@ To install it, run the following `ujust` command:
 ujust configure-waydroid helper
 ```
 
-You can alternatively go directly to their [releases](https://github.com/waydroid-helper/waydroid-helper/releases) and install the latest AppImage via GearLever.
+You can alternatively go directly to their [releases](https://github.com/waydroid-helper/waydroid-helper/releases) and install the latest AppImage via Gear Lever.
 
 ### Disable Inputs to Waydroid When Unfocused
 

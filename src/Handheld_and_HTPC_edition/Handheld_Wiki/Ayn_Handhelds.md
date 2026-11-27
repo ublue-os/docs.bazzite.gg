@@ -18,7 +18,7 @@ title: Ayn Handhelds
 ## General Issues
 
 - Games may sometimes default to 800p resolution.
-  - You may manually change the resolution per game in the **Steam Settings → Properties → Game Resolution** to either "Native" or other higher resolutions.
+  - You may manually change the resolution per game in the game's **Properties → General → Maximum Game Resolution** to either "Native" or other higher resolutions.
 
 ---
 

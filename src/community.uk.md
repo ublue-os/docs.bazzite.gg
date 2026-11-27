@@ -10,7 +10,7 @@ title: Спільнота
 
 ## [:simple-bluesky: Bluesky](https://bsky.app/profile/bazzite.gg) { #bluesky }
 
-## [:simple-x: X/Twitter](https://x.com/bazzite_gg) <sup>([Немає облікового запису X/Twitter?](https://xcancel.com/bazzite_gg))</sup> { #xtwitter-no-xtwitter-account }
+## [:simple-x: X/Twitter](https://x.com/bazzite_gg)
 
 ## [:simple-reddit: Reddit](https://www.reddit.com/r/bazzite) { #reddit }
 

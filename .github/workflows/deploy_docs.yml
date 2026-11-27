@@ -25,11 +25,9 @@ env:
   SITE_URL: https://docs.bazzite.gg
 
 jobs:
-  deploy:
+  build:
     permissions:
-      contents: read # To push a branch
-      pages: write # To push to a GitHub Pages site
-      id-token: write # To update the deployment status
+      contents: read
 
     runs-on: ubuntu-latest
     steps:
@@ -51,3 +49,23 @@ jobs:
           output_dir: ${{ github.workspace }}/book
           upload_github_page: ${{ github.event_name == 'pull_request' && 'false' || 'true' }}
           github_token: ${{ github.token }}
+
+  deploy:
+    needs: build
+    if: ${{ github.event_name != 'pull_request' }}
+    permissions:
+      pages: write # To push to a GitHub Pages site
+      id-token: write # To update the deployment status
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Pages
+        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
+        with:
+          token: ${{ github.token }}
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
+        with:
+          token: ${{ github.token }}

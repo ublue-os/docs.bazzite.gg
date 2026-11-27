@@ -68,6 +68,6 @@ Install [Decky Loader](https://decky.xyz/) then install [CSS Loader](https://doc
 <hr>
 
 ## Desktop Environment Documentation
-- [**KDE Plasma Documentation**](https://docs.kde.org/stable5/en/plasma-desktop/plasma-desktop/index.html)
+- [**KDE Plasma Documentation**](https://docs.kde.org/stable_kf6/en/plasma-desktop/plasma-desktop/index.html)
 - [**GNOME Documentation**](https://help.gnome.org/users/gnome-help/stable/)
 - [**Bazzite's Steam Gaming Mode Documentation**](../Handheld_and_HTPC_edition/Steam_Gaming_Mode.md)
