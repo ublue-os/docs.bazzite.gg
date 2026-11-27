@@ -161,7 +161,7 @@ Select the drive that you plan to install Bazzite on. Please note that this will
 
      The "format as efi" button when dual-booting says it will format the Windows EFI, but what it actually does is add itself to the EFI. This is an upstream bug with the installer.
 
-If you are dual-booting with Windows then use automatic partitioning as it is the only option available in the live ISO, but it should work for most people's dual-booting usecases.  If you require manual partitioning, then download the legacy ISO and follow the [**legacy ISO installation guide**](./legacy-install.md). For dual booting Windows on **separate** drives, use your motherboard's UEFI boot menu as the GRUB bootloader may not recognize each boot entry correctly.
+If you are dual-booting with Windows then automatic partitioning should work for most people's dual-booting usecases. If you require manual partitioning, follow the [**manual partitioning guide**](./manual_partitioning.md). For dual booting Windows on **separate** drives, use your motherboard's UEFI boot menu as the GRUB bootloader may not recognize each boot entry correctly.
 
 ### Video Walkthrough
 

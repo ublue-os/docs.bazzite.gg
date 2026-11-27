@@ -26,7 +26,7 @@ search:
     4. Reboot into Bazzite and run `ujust regenerate-grub` in the terminal to add Windows to the GRUB.
 
 
-=== "Shared Drive (Manual Partitioning) [Only Available on Legacy ISO]"
+=== "Shared Drive (Manual Partitioning)"
 
     1. (In Windows) Resize the Windows partition with the Disk Management app to have enough space for Bazzite.
     Usually should look something like this:
@@ -56,6 +56,12 @@ If you install Windows after Bazzite, you can restore Bazzite's bootloader with 
 !!! warning "Only users who are dual booting on the same drive should use these instructions. Automatic partitioning is preferred in other cases."
 
 !!! warning "Bazzite only supports the BTRFS filesystem for `/`."
+
+!!! note
+
+    These instructions are for the **legacy ISO** (Blivet-GUI). For the live ISO, follow the [**manual partitioning guide**](./manual_partitioning.md).
+
+    If Blivet-GUI doesn't offer **EFI System Partition** (or vfat) as a format, this is an upstream bug ([blivet-gui#563](https://github.com/storaged-project/blivet-gui/issues/563)). Use the **Custom** option instead of **Advanced Custom (Blivet-GUI)**, or use the live ISO.
 
 If you need a tutorial video for manual partitioning, watch this [tutorial at timestamp 9:10](https://www.youtube.com/watch?v=JxPsKhJGTrs&t=550s).
 
